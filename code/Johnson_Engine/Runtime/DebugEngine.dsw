@@ -1,0 +1,771 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ButeMgr"=..\..\Johnson_Libs\ButeMgr\ButeMgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime", VXXBAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ClientFxDLL"=..\..\Johnson_Client\clientfxdll\ClientFxDLL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/clientfxdll", WCGCAAAA
+    ..\..\Johnson_Client\clientfxdll
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MFCStub
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LTGUIMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ClientRes"=..\..\Johnson_Client\ClientRes\SA\ClientRes.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ClientRes/SA", UEGCAAAA
+    ..\..\Johnson_Client\ClientRes\SA
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ClientShellDLL"=..\..\Johnson_Client\ClientShellDLL\sa\ClientShellDLL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ClientShellDLL/sa", TAHCAAAA
+    ..\..\Johnson_Client\ClientShellDLL\sa
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ClientShellShared
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MFCStub
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ServerDir
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name WONAPI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_LogicObject
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Packet
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ClientRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LTGUIMgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ClientShellShared"=..\..\Johnson_Client\ClientShellDLL\clientshellshared\ClientShellShared.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ClientShellDLL/clientshellshared", LGGCAAAA
+    ..\..\Johnson_Client\ClientShellDLL\clientshellshared
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ClientRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_LogicObject
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Packet
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CryptMgr"=..\..\Johnson_Libs\CryptMgr\cryptmgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/CryptMgr", XNDCAAAA
+    ..\..\johnson_libs\cryptmgr
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DLL_LTMsg"=.\winbuild\ltmsg\DLL_LTMsg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/winbuild/ltmsg", TNZBAAAA
+    .\winbuild\ltmsg
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DLL_Server"=.\winbuild\server\DLL_Server.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/winbuild/server", LOZBAAAA
+    .\winbuild\server
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_RezMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Info
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DLL_dx8"=.\sound\src\sys\s_dx8\DLL_dx8.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/sound/src/sys/s_dx8", AIZBAAAA
+    .\sound\src\sys\s_dx8
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Engine"=.\Engine.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime", VXXBAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name DLL_LTMsg
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DLL_Server
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Exe_LithTech
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DLL_dx8
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Exe_LithTech"=.\winbuild\lithtech\EXE_Lithtech.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/winbuild/lithtech", YLZBAAAA
+    .\winbuild\lithtech
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name LIB_D3DRender
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_ILTSound
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_NullRender
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_RezMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_UI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_ZLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Info
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Game"=..\..\Johnson_Client\SA.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client", NAGCAAAA
+    ..\..\johnson_client
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ClientFxDLL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ClientRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ClientShellDLL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Object
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ServerRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Engine
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LIB_D3DRender"=.\render_a\src\sys\d3d\LIB_D3DRender.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/render_a/src/sys/d3d", ZSYBAAAA
+    .\render_a\src\sys\d3d
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LTGUIMgr"=..\..\Johnson_Client\Libs\LTGUIMgr\ltguimgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/Libs/LTGUIMgr", UDICAAAA
+    ..\..\johnson_client\libs\ltguimgr
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_ILTSound"=.\sound\src\Lib_ILTSound.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/sound/src", KHZBAAAA
+    .\sound\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_Info"=.\info\src\Lib_Info.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/info/src", UIYBAAAA
+    .\info\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_Lith"=..\..\Johnson_Libs\lith\Lib_Lith.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/lith", YODCAAAA
+    ..\..\johnson_libs\lith
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_LogicObject"=..\..\Johnson_Client\ClientShellDLL\Lib_LogicObject\Lib_LogicObject.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ClientShellDLL/Lib_LogicObject", DWGCAAAA
+    ..\..\johnson_client\clientshelldll\lib_logicobject
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_Network"=..\..\Johnson_Client\ClientShellDLL\Lib_Network\Lib_Network.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ClientShellDLL/Lib_Network", VWGCAAAA
+    ..\..\johnson_client\clientshelldll\lib_network
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_NullRender"=.\render_a\src\sys\nulldib\Lib_NullRender.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/render_a/src/sys/nulldib", HAZBAAAA
+    .\render_a\src\sys\nulldib
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_Packet"=..\..\Johnson_Client\ClientShellDLL\Lib_Packet\Lib_Packet.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ClientShellDLL/Lib_Packet", DAHCAAAA
+    ..\..\johnson_client\clientshelldll\lib_packet
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_RezMgr"=..\libs\rezmgr\Lib_RezMgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/libs/rezmgr", JXXBAAAA
+    ..\libs\rezmgr
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_StdLith"=..\..\Johnson_Libs\stdlith\Lib_StdLith.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/stdlith", XQDCAAAA
+    ..\..\johnson_libs\stdlith
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_UI"=.\ui\src\Lib_UI.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/Runtime/ui/src", ZIZBAAAA
+    .\ui\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_ZLib"=..\..\Johnson_Libs\zlib\Lib_ZLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/zlib", TEFCAAAA
+    ..\..\johnson_libs\zlib
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltmem
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MFCStub"=..\..\Johnson_Libs\MFCStub\MFCStub60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/MFCStub", AQDCAAAA
+    ..\..\johnson_libs\mfcstub
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Object"=..\..\Johnson_Client\ObjectDLL\SA\Object.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ObjectDLL/SA", UXJCAAAA
+    ..\..\Johnson_Client\ObjectDLL\SA
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MFCStub
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ObjectShared
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ServerDir
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name WONAPI
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ObjectShared"=..\..\Johnson_Client\ObjectDLL\ObjectShared\ObjectShared.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ObjectDLL/ObjectShared", FAJCAAAA
+    ..\..\Johnson_Client\ObjectDLL\ObjectShared
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RegMgr"=..\..\Johnson_Libs\RegMgr\regmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/RegMgr", NQDCAAAA
+    ..\..\johnson_libs\regmgr
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ServerDir"=..\..\Johnson_Client\Libs\ServerDir\ServerDir.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/Libs/ServerDir", EFICAAAA
+    ..\..\johnson_client\libs\serverdir
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name WONAPI
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ServerRes"=..\..\Johnson_Client\ServerRes\ServerRes.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/ServerRes", YCKCAAAA
+    ..\..\johnson_client\serverres
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WONAPI"=..\..\Johnson_Client\Libs\WONAPI\WONAPI.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Client/Libs/WONAPI", RFICAAAA
+    ..\..\johnson_client\libs\wonapi
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ltmem"=..\libs\ltmem\ltmem.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Engine/libs/ltmem", SWXBAAAA
+    ..\libs\ltmem
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "regmgr32"=..\..\Johnson_Libs\RegMgr32\regmgr32.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SA/Johnson_Libs/RegMgr32", RQDCAAAA
+    ..\..\johnson_libs\regmgr32
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[LIB_D3DRender.vcproj]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Runtime/render_a/src/sys/d3d", NLXBAAAA
+
+[LIB_D3DRender.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Runtime/render_a/src/sys/d3d", NLXBAAAA

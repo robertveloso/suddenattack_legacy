@@ -1,0 +1,21 @@
+SCC = This is a Source Code Control file
+
+[game.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Client", QXRBAAAA
+
+[SA.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Client", QXRBAAAA
+
+[SA.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Client", QXRBAAAA
+
+[SA_AllProjects.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Client", QXRBAAAA
+
+[SA_DedicatedServer.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Client", QXRBAAAA

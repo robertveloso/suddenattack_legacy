@@ -1,0 +1,19 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ButeMgrMfcDll - Win32 Final--------------------
+</h3>
+
+--------------------Configuration: ButeMgr - Win32 Final MFC DLL--------------------
+
+ButeMgrMfcDll.lib - 0 error(s), 0 warning(s)
+
+
+
+<h3>Results</h3>
+ButeMgrMfcDll.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

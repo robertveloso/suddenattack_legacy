@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DLL_Server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+warning: unresolved Environment Variable  "$(SA_MAIN_DIR)"
+warning: unresolved Environment Variable  "$(SA_MAIN_DIR)"
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSPDA.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \Johnson_Work\Johnson_Code\Lib\Debug\server.dll
+echo copy \Johnson_Work\Johnson_Code\Lib\Debug\server.dll 
+copy \Johnson_Work\Johnson_Code\Lib\Debug\server.dll 
+]
+Creating command line "C:\DOCUME~1\noname\LOCALS~1\Temp\RSPDA.bat"
+<h3>Output Window</h3>
+Performing Custom Build Step on \Johnson_Work\Johnson_Code\Lib\Debug\server.dll
+copy \Johnson_Work\Johnson_Code\Lib\Debug\server.dll 
+已复制         1 个文件。
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSPDB.tmp" with contents
+[
+/nologo /o"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/DLL_Server.bsc" 
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\bdefs.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\animtracker.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\bindmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\classbind.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\classmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\collision.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\compress.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\concommand.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\conparse.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\counter.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\d3d_model_load.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_file.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_mainworld.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_memory.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_nodes.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_objects.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\debugging.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\dhashtable.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\dsys_interface.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\dutil.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\engine_vars.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\findobj.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ftserv.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\fullintersectline.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\game_serialize.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\gamemath.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\genericprop_setup.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\genltstream.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\geometry.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\geomroutines.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\impl_common.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\interlink.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\intersect_line.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\intersectsweptsphere.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\leech.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\light_table.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\lightmap_planes.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\localdriver.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\lthread.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltmessage.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltmessage_server.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltmodule.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltobjref.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltquatbase.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltthread.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\lttimer.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\model.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\model_load.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\modelallocations.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\motion.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\moveobject.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\moveplayer.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\netmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\nexus.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\NFPacketDebug.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\objectmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\packet.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\parse_world_info.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ratetracker.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_client.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_concommand.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\S_Intersect.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_net.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_object.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_consolestate.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_extradata.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_filemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_interface.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_loaderthread.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\serverde_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\serverevent.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\servermgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\sloaderthread.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\smoveabstract.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\sounddata.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\soundtrack.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\spritecontrolimpl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\stacktrace.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\stdlterror.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\streamsim.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\stringmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\strtools.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\systeminfo.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\timemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\transformmaker.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\udpdriver.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\wave.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_blind_object_data.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_blocker_data.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_blocker_math.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_particle_blocker_data.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_tree.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_server_bsp.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_shared_bsp.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\modellt_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltmodel.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltcommon.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\shared_iltcommon.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltsoundmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\transformlt_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltphysics.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\shared_iltphysics.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\interface_linkage.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\noname\LOCALS~1\Temp\RSPDB.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+server.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

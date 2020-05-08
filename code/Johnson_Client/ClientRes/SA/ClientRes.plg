@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ClientRes - Win32 Final ES--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\FinalES\ClientRes\TO2/ClientRes.res" /i ".\\" /i "lang\es" /i "..\shared" /i "..\shared\lang\es" /i "..\..\shared\\" /i "..\..\shared\Lang\es" /i "Lang\ES" /d "NDEBUG" "E:\Johnson_Work\Johnson_Code\Johnson_Client\ClientRes\SA\Lang\ES\ClientRes.rc"" 
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP25C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\shared\lang\es" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_FINAL" /Fp"..\..\built\FinalES\ClientRes\TO2/ClientRes.pch" /YX /Fo"..\..\built\FinalES\ClientRes\TO2/" /Fd"..\..\built\FinalES\ClientRes\TO2/" /FD /c 
+"E:\Johnson_Work\Johnson_Code\Johnson_Client\ClientRes\SA\main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\noname\LOCALS~1\Temp\RSP25C.tmp" 
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP25D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\built\FinalES\ClientRes\TO2/CRes.pdb" /machine:I386 /out:"..\..\built\FinalES\ClientRes\TO2\CRes.dll" /implib:"..\..\built\FinalES\ClientRes\TO2/CRes.lib" 
+\Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\main.obj
+\Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\ClientRes.res
+]
+Creating command line "link.exe @C:\DOCUME~1\noname\LOCALS~1\Temp\RSP25D.tmp"
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP25E.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\CRes.dll
+echo copy \Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\CRes.dll d:\TouchdownEntertainment\Jupiter_Ent\Development\TO2\Game
+copy \Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\CRes.dll d:\TouchdownEntertainment\Jupiter_Ent\Development\TO2\Game
+]
+Creating command line "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP25E.bat"
+Compiling resources...
+Compiling...
+main.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\CRes.dll
+copy \Johnson_Work\Johnson_Code\Johnson_Client\built\FinalES\ClientRes\TO2\CRes.dll d:\TouchdownEntertainment\Jupiter_Ent\Development\TO2\Game
+已复制         1 个文件。
+
+
+
+<h3>Results</h3>
+CRes.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

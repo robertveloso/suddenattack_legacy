@@ -1,0 +1,2869 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFCStub - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP4DBE.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\stdlith" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/MFCStub60.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/" /FD /c 
+"D:\sa\code\Johnson_Libs\MFCStub\mfcs_point.cpp"
+"D:\sa\code\Johnson_Libs\MFCStub\mfcs_rect.cpp"
+"D:\sa\code\Johnson_Libs\MFCStub\mfcs_string.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP4DBE.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP4DBF.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\MFCStub.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\MFCStub\mfcs_point.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\MFCStub\mfcs_rect.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\MFCStub\mfcs_string.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP4DBF.tmp"
+<h3>Output Window</h3>
+Compiling...
+mfcs_point.cpp
+mfcs_rect.cpp
+mfcs_string.cpp
+Creating library...
+<h3>
+--------------------Configuration: ButeMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP4F37.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\STLPORT-4.0\STLPORT" /I "..\stdlith" /I "..\mfcstub" /I "..\cryptmgr" /I "..\lith" /D "_DEBUG" /D "_NOMFC" /D "WIN32" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/ButeMgr.pch" /Yu"StdAfx.h" /Fo"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\ButeMgr\ARange.cpp"
+"D:\sa\code\Johnson_Libs\ButeMgr\AVector.cpp"
+"D:\sa\code\Johnson_Libs\ButeMgr\ButeMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP4F37.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP4F38.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\STLPORT-4.0\STLPORT" /I "..\stdlith" /I "..\mfcstub" /I "..\cryptmgr" /I "..\lith" /D "_DEBUG" /D "_NOMFC" /D "WIN32" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/ButeMgr.pch" /Yc"StdAfx.h" /Fo"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\ButeMgr\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP4F38.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP4F48.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\ButeMgr.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\ARange.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\AVector.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\ButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\Stdafx.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP4F48.tmp"
+<h3>Output Window</h3>
+Compiling...
+Stdafx.cpp
+Compiling...
+ARange.cpp
+AVector.cpp
+ButeMgr.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: CryptMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP51E9.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Z7 /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/cryptmgr.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\CryptMgr\blowfish.cpp"
+"D:\sa\code\Johnson_Libs\CryptMgr\CryptMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP51E9.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\Lib\Debug\cryptmgr.lib"  \sa\code\Johnson_Built\Johnson_Client\Debug\CryptMgr\blowfish.obj \sa\code\Johnson_Built\Johnson_Client\Debug\CryptMgr\CryptMgr.obj "
+<h3>Output Window</h3>
+Compiling...
+blowfish.cpp
+CryptMgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: LTGUIMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP5303.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Engine\sdk\inc\compat" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_LITHTECH2" /D "LT15_COMPAT" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr/" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr/" /FD /c 
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguibutton.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguicolumnctrl.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguicommandhandler.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\LTGUICount.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguictrl.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguicyclectrl.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguidragbutton.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguieditbox.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguiframe.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguilistview.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguislider.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguitextitemctrl.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguitoggle.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguitooltip.cpp"
+"D:\sa\code\Johnson_Client\Libs\LTGUIMgr\ltguiwindow.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP5303.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP5314.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\LTGuiMgr.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguibutton.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguicolumnctrl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguicommandhandler.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\LTGUICount.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguictrl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguicyclectrl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguidragbutton.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguieditbox.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguiframe.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguilistview.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguislider.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguitextitemctrl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguitoggle.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguitooltip.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\LTGuiMgr\ltguiwindow.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP5314.tmp"
+<h3>Output Window</h3>
+Compiling...
+ltguibutton.cpp
+ltguicolumnctrl.cpp
+ltguicommandhandler.cpp
+LTGUICount.cpp
+ltguictrl.cpp
+ltguicyclectrl.cpp
+ltguidragbutton.cpp
+ltguieditbox.cpp
+ltguiframe.cpp
+ltguilistview.cpp
+ltguislider.cpp
+ltguitextitemctrl.cpp
+ltguitoggle.cpp
+ltguitooltip.cpp
+ltguiwindow.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: ClientFxDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6DF0.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\..\Johnson_Engine\sdk\inc" /I "..\..\Johnson_Libs\mfcstub" /I "..\..\Johnson_Libs\stdlith" /I "..\..\Johnson_Libs\butemgr" /I "..\..\Johnson_Libs\cryptmgr" /I "..\..\Johnson_Libs\lith" /I "..\libs\ltguimgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENTFX" /FR"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /Fp"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/ClientFxDLL.pch" /Yu"stdafx.h" /Fo"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /Fd"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientFxDLL\BaseFx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\bouncychunkfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\camjitterfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\camwobblefx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\clientfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\CreateFX.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\cycletimer.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebugNew.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\dynalightfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\fallingstufffx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\FlareSpriteFX.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\lightningfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\LTBbouncychunkfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\ltbmodelfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\nullfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\ParticleSystemFX.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\playrandomsoundfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\playsoundfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\polyfanfx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\polytubefx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\spritefx.cpp"
+"D:\sa\code\Johnson_Client\ClientFxDLL\spritesystemfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP6DF0.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6E01.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\..\Johnson_Engine\sdk\inc" /I "..\..\Johnson_Libs\mfcstub" /I "..\..\Johnson_Libs\stdlith" /I "..\..\Johnson_Libs\butemgr" /I "..\..\Johnson_Libs\cryptmgr" /I "..\..\Johnson_Libs\lith" /I "..\libs\ltguimgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENTFX" /FR"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /Fo"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /Fd"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /FD /c 
+"D:\sa\code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP6E01.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6E02.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\..\Johnson_Engine\sdk\inc" /I "..\..\Johnson_Libs\mfcstub" /I "..\..\Johnson_Libs\stdlith" /I "..\..\Johnson_Libs\butemgr" /I "..\..\Johnson_Libs\cryptmgr" /I "..\..\Johnson_Libs\lith" /I "..\libs\ltguimgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENTFX" /FR"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /Fp"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/ClientFxDLL.pch" /Yc"stdafx.h" /Fo"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /Fd"..\..\Johnson_Built\Johnson_Client\debug\ClientFxDll/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientFxDLL\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP6E02.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6E12.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib ButeMgr.lib MFCStub.lib CryptMgr.lib Lib_StdLith.lib Lib_Lith.lib LTGUIMgr.lib LTMem.lib /nologo /subsystem:windows /dll /profile /debug /machine:I386 /out:"..\..\Lib\debug\ClientFx.fxd" /implib:"..\..\Lib\Debug/ClientFx.lib" /libpath:"..\..\Lib\Debug" 
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\BaseFx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\bouncychunkfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\camjitterfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\camwobblefx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\clientfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\CreateFX.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\cycletimer.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\DebugNew.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\dynalightfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\fallingstufffx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\FlareSpriteFX.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\lightningfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\LTBbouncychunkfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\ltbmodelfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\ltmodule.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\ltquatbase.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\nullfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\ParticleSystemFX.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\playrandomsoundfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\playsoundfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\polyfanfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\polytubefx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\spritefx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\spritesystemfx.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientFxDll\stdafx.obj
+\sa\code\Lib\Debug\MFCStub.lib
+\sa\code\Lib\Debug\ButeMgr.lib
+\sa\code\Lib\Debug\cryptmgr.lib
+\sa\code\Lib\Debug\LTGuiMgr.lib
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP6E12.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6E13.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\debug\ClientFx.fxd
+echo copy \sa\code\Lib\debug\ClientFx.fxd D:\sa\code\Johnson_Client\game
+copy \sa\code\Lib\debug\ClientFx.fxd D:\sa\code\Johnson_Client\game
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP6E13.bat"
+Compiling...
+stdafx.cpp
+Compiling...
+BaseFx.cpp
+bouncychunkfx.cpp
+camjitterfx.cpp
+camwobblefx.cpp
+clientfx.cpp
+CreateFX.cpp
+cycletimer.cpp
+DebugNew.cpp
+dynalightfx.cpp
+fallingstufffx.cpp
+FlareSpriteFX.cpp
+lightningfx.cpp
+LTBbouncychunkfx.cpp
+ltbmodelfx.cpp
+nullfx.cpp
+ParticleSystemFX.cpp
+playrandomsoundfx.cpp
+playsoundfx.cpp
+polyfanfx.cpp
+polytubefx.cpp
+Generating Code...
+Compiling...
+spritefx.cpp
+spritesystemfx.cpp
+Generating Code...
+Compiling...
+ltmodule.cpp
+ltquatbase.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Lib\Debug/ClientFx.lib and object ..\..\Lib\Debug/ClientFx.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\debug\ClientFx.fxd
+copy \sa\code\Lib\debug\ClientFx.fxd D:\sa\code\Johnson_Client\game
+        1 arquivo(s) copiado(s).
+<h3>
+--------------------Configuration: RegMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP776B.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\lith" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\debug\RegMgr/regmgr60.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\debug\RegMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\debug\RegMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\RegMgr\Regmgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP776B.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\Lib\Debug\Regmgr.lib"  \sa\code\Johnson_Built\Johnson_Client\debug\RegMgr\Regmgr.obj "
+<h3>Output Window</h3>
+Compiling...
+Regmgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: ClientRes - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\Johnson_Built\Johnson_Client\debug\ClientRes\SA/ClientRes.res" /i ".\\" /i "lang\en" /i "..\shared" /i "..\shared\lang\en" /i "..\..\shared\\" /i "..\..\shared\Lang\EN" /i "Lang\EN" /d "_DEBUG" "D:\sa\code\Johnson_Client\ClientRes\SA\Lang\EN\ClientRes.rc"" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7941.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /I "..\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\shared\lang\en" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"..\..\..\Johnson_Built\Johnson_Client\debug\ClientRes\SA/ClientRes.pch" /YX /Fo"..\..\..\Johnson_Built\Johnson_Client\debug\ClientRes\SA/" /Fd"..\..\..\Johnson_Built\Johnson_Client\debug\ClientRes\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientRes\SA\main.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7941.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7951.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\..\Johnson_Built\Johnson_Client\debug\ClientRes\SA/CRes.pdb" /debug /machine:I386 /out:"..\..\..\Lib\Debug\CRes.dll" /implib:"..\..\..\Johnson_Built\Johnson_Client\debug\ClientRes\SA/CRes.lib" /pdbtype:sept 
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientRes\SA\main.obj
+\sa\code\Johnson_Built\Johnson_Client\debug\ClientRes\SA\ClientRes.res
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP7951.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7952.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\CRes.dll
+echo copy \sa\code\Lib\Debug\CRes.dll D:\sa\code\Johnson_Client\game
+copy \sa\code\Lib\Debug\CRes.dll D:\sa\code\Johnson_Client\game
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP7952.bat"
+Compiling resources...
+Compiling...
+main.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\Debug\CRes.dll
+copy \sa\code\Lib\Debug\CRes.dll D:\sa\code\Johnson_Client\game
+        1 arquivo(s) copiado(s).
+<h3>
+--------------------Configuration: Lib_LogicObject - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7DF7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject/Lib_LogicObject.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\Room\Option.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\Player\Stock.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\Item.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\Time.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7DF7.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7DF8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject/Lib_LogicObject.pch" /Yc /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7DF8.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7E08.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\Lib_LogicObject.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject\StdAfx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject\Option.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject\Stock.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject\Item.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\LogicObject\Time.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP7E08.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Option.cpp
+Stock.cpp
+Item.cpp
+Time.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Lib_Network - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7F13.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/Lib_Network.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\ClientGate.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\CommSocket.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\HttpResponser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\ListenSocket.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\Message.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\MessageQueue.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\PacketAssembler.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\PacketBuffer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\PacketMessage.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Application\Peer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\QueryBuffer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\QueryMessage.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\Responser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SendPacket.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SessionGate.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SessionManager.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SignalMessage.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SignalQueue.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\Timer.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7F13.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7F14.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/Lib_Network.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Network\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7F14.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7F25.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\Lib_Network.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\StdAfx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\ClientGate.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\CommSocket.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\HttpResponser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\ListenSocket.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Message.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\MessageQueue.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\PacketAssembler.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\PacketBuffer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\PacketMessage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Peer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\QueryBuffer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\QueryMessage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Responser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SendPacket.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SessionGate.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SessionManager.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SignalMessage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SignalQueue.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\TcpAsyncSelect.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Timer.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP7F25.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientGate.cpp
+CommSocket.cpp
+HttpResponser.cpp
+ListenSocket.cpp
+Message.cpp
+MessageQueue.cpp
+PacketAssembler.cpp
+PacketBuffer.cpp
+PacketMessage.cpp
+Peer.cpp
+QueryBuffer.cpp
+QueryMessage.cpp
+Responser.cpp
+SendPacket.cpp
+SessionGate.cpp
+SessionManager.cpp
+SignalMessage.cpp
+SignalQueue.cpp
+TcpAsyncSelect.cpp
+Timer.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Lib_Packet - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP8223.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet/Lib_Packet.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Packet\Builder.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP8223.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP8224.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet/Lib_Packet.pch" /Yc /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_Packet\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP8224.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\Lib\Debug\Lib_Packet.lib"  \sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet\StdAfx.obj \sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Packet\Builder.obj "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Builder.cpp
+Creating library...
+<h3>
+--------------------Configuration: ClientShellShared - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP83AC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\clientres\shared" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\Johnson_Libs\regmgr" /I "..\\" /I "..\..\libs\serverdir" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_CLIENTBUILD" /D "NOPS2" /D "MEMTRACK_CLIENT" /D "DEBUG_SHOP" /D "BIG_FAT_MODE_TEST" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/ClientShellShared.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ActivateObjectFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\ActivateTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\Animator.cpp"
+"D:\sa\code\Johnson_Client\Shared\AssertMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\AttachButeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BaseLineSystemFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BaseMenu.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BaseParticleSystemFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BasePolyDrawFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BaseScaleFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BaseScreen.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BeamFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BodyFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\BulletTrailFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\ButeListReader.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\CameraOffsetMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ChainedFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\CharacterFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\CheatMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\client_physics.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientButeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientFXDB.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientFXMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientInfoMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientMultiplayerMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientSaveLoadMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\ClientServerShared.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientSoundMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientTrackedNodeContext.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientTrackedNodeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientUtilities.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientWeapon.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientWeaponMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ClientWeaponUtils.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\CMoveMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\CommonUtilities.cpp"
+"D:\sa\code\Johnson_Client\Shared\CRC32.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\Credits.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\CursorMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DamageFXMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\DamageTypes.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DeathFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DebrisFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebrisMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebugLine.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DebugLineFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebugNew.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DoomsdayPieceFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DynamicLightFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\DynamicOccluderVolumeFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ExplosionFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\FinalGameText.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\FireFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\FlashLight.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\FullScreenTint.cpp"
+"D:\sa\code\Johnson_Client\Shared\FXButeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\FXStructs.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GadgetDisabler.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GadgetTargetFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\GameAlloc.cpp"
+"D:\sa\code\Johnson_Client\Shared\GameButeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GameClientShell.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GameDocument.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GameSettings.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GameString.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GameText.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GameTextFileMngr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GibFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\GlobalClientMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\GlobalMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HanText.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HeadBobMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HitBox.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDBar.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDChatInput.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDDamage.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDDecision.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDDisplayMeter.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDDistance.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\SA\HUDHealth.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\sa\HUDHelp.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDList.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDMessage.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDMessageQueue.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDMeter.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDPaused.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDPopup.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDRadar.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDScores.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDSubtitles.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\HUDTransmission.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\IntelItemList.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\InterfaceMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\InterfaceResMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\InterfaceSurfMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\InterfaceTimer.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\IpMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\JumpVolumeFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\KeyMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LaserBeam.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LaserTriggerFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LayoutMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LeanMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LensFlareFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LightFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LightGroupFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LightningFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LightScaleMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LineSystemFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\LoadingScreen.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MarkSFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuIntel.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuInventory.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuKeys.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuMission.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuPlayer.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MenuSystem.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MessageBox.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MineFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\MissionButeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MissionMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\ModelButeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\Music.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MuzzleFlashFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\MuzzleFlashParticleFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\NetDefs.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\Network.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\NodeController.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\NodeLinesFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ObjectiveControl.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ObjSpriteFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\ParsedMsg.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ParticleExplosionFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ParticleShowerFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ParticleSystemFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ParticleTrailFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ParticleTrailSegmentFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PerformanceMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PerformanceTest.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PickupItemFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerCamera.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerInfoMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerLureFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerSoundFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerStats.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerVehicleFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PlayerViewAttachmentMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PolyDebrisFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PolyGridFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PolyLineFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PopupMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PopupText.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ProfileMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\ProfileUtils.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ProjectileFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\PVFXMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\RadarObjectFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\RadarTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\RadioFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\RagDoll.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\RagDollConstraint.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\RandomSparksFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\SaveLoadMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScatterFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\ScmdConsole.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScmdConsoleDriver_CShell.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScreenMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScreenPostload.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScreenPreload.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScreenSpriteMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ScreenTintMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\Searcher.cpp"
+"D:\sa\code\Johnson_Client\Shared\SearchItemMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SearchLightFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SFXMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedFXStructs.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedMission.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedScoring.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\ShellCasingFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SkillControl.cpp"
+"D:\sa\code\Johnson_Client\Shared\SkillsButeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SmokeFX.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SnowFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\SoundButeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SoundFilterMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SoundFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\SoundMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\Sparam.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SpecialFXList.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\sprinklesfx.cpp"
+"D:\sa\code\Johnson_Client\Shared\stacktrace.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SteamFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\SurfaceFunctions.cpp"
+"D:\sa\code\Johnson_Client\Shared\SurfaceMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\SystemInfo.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\TargetMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\TeamMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\TemplateList.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\TextureFXMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\TimedText.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\TracerFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNode.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNodeContext.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNodeControlFn.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNodeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\TransitionFXMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\TriggerFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\TriggerTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\UberAssert.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\VehicleMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\VersionMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\VisionModeMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\VKDefs.cpp"
+"D:\sa\code\Johnson_Client\Shared\WaveFn.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\WeaponChooser.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\WeaponFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\WeaponMgr.cpp"
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\WeatherFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\WinUtil.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP83AC.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP83BD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\clientres\shared" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\Johnson_Libs\regmgr" /I "..\\" /I "..\..\libs\serverdir" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_CLIENTBUILD" /D "NOPS2" /D "MEMTRACK_CLIENT" /D "DEBUG_SHOP" /D "BIG_FAT_MODE_TEST" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /FD /GZ /c 
+"D:\sa\code\Johnson_Engine\sdk\inc\iltbaseclass.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\LTEulerAngles.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltobjref.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP83BD.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP83BE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\clientres\shared" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\Johnson_Libs\regmgr" /I "..\\" /I "..\..\libs\serverdir" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_CLIENTBUILD" /D "NOPS2" /D "MEMTRACK_CLIENT" /D "DEBUG_SHOP" /D "BIG_FAT_MODE_TEST" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/ClientShellShared.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\CLIENTSHELLDLL\ClientShellShared\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP83BE.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP83BF.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\ClientShellShared.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ActivateObjectFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ActivateTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\Animator.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\AssertMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\AttachButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BaseLineSystemFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BaseMenu.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BaseParticleSystemFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BasePolyDrawFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BaseScaleFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BaseScreen.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BeamFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BodyFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\BulletTrailFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ButeListReader.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CameraOffsetMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ChainedFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CharacterFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CheatMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\client_physics.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientFXDB.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientFXMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientInfoMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientMultiplayerMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientSaveLoadMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientServerShared.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientSoundMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientTrackedNodeContext.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientTrackedNodeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientUtilities.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientWeapon.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientWeaponMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ClientWeaponUtils.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CMoveMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CommonUtilities.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CRC32.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\Credits.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\CursorMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DamageFXMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DamageTypes.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DeathFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DebrisFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DebrisMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DebugLine.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DebugLineFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DebugNew.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DoomsdayPieceFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DynamicLightFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\DynamicOccluderVolumeFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ExplosionFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\FinalGameText.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\FireFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\FlashLight.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\FullScreenTint.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\FXButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\FXStructs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GadgetDisabler.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GadgetTargetFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameAlloc.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameClientShell.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameDocument.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameSettings.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameString.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameText.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GameTextFileMngr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GibFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GlobalClientMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\GlobalMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HanText.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HeadBobMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HitBox.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDBar.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDChatInput.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDDamage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDDecision.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDDisplayMeter.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDDistance.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDHealth.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDHelp.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDList.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDMessage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDMessageQueue.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDMeter.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDPaused.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDPopup.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDRadar.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDScores.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDSubtitles.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\HUDTransmission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\iltbaseclass.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\IntelItemList.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\InterfaceMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\InterfaceResMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\InterfaceSurfMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\InterfaceTimer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\IpMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\JumpVolumeFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\KeyMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LaserBeam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LaserTriggerFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LayoutMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LeanMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LensFlareFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LightFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LightGroupFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LightningFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LightScaleMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LineSystemFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LoadingScreen.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\LTEulerAngles.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ltmodule.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ltobjref.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ltquatbase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MarkSFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuIntel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuInventory.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuKeys.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuPlayer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MenuSystem.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MessageBox.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MineFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MissionButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ModelButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\Music.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MuzzleFlashFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\MuzzleFlashParticleFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\NetDefs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\Network.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\NodeController.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\NodeLinesFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ObjectiveControl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ObjSpriteFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ParsedMsg.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ParticleExplosionFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ParticleShowerFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ParticleSystemFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ParticleTrailFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ParticleTrailSegmentFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PerformanceMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PerformanceTest.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PickupItemFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerCamera.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerInfoMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerLureFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerSoundFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerStats.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerVehicleFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PlayerViewAttachmentMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PolyDebrisFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PolyGridFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PolyLineFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PopupMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PopupText.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ProfileMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ProfileUtils.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ProjectileFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\PVFXMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\RadarObjectFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\RadarTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\RadioFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\RagDoll.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\RagDollConstraint.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\RandomSparksFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SaveLoadMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScatterFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScmdConsole.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScmdConsoleDriver_CShell.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScreenMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScreenPostload.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScreenPreload.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScreenSpriteMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ScreenTintMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\Searcher.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SearchItemMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SearchLightFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SFXMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SharedFXStructs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SharedMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SharedScoring.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\ShellCasingFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SkillControl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SkillsButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SmokeFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SnowFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SoundButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SoundFilterMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SoundFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SoundMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\Sparam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SpecialFXList.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\sprinklesfx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\stacktrace.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\StdAfx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SteamFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SurfaceFunctions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SurfaceMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\SystemInfo.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TargetMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TeamMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TemplateList.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TextureFXMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TimedText.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TracerFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TrackedNode.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TrackedNodeContext.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TrackedNodeControlFn.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TrackedNodeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TransitionFXMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TriggerFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\TriggerTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\UberAssert.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\VehicleMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\VersionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\VisionModeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\VKDefs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\WaveFn.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\WeaponChooser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\WeaponFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\WeaponMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\WeatherFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\ClientShellShared\WinUtil.obj
+\sa\code\Lib\Debug\Lib_LogicObject.lib
+\sa\code\Lib\Debug\Lib_Network.lib
+\sa\code\Lib\Debug\Lib_Packet.lib
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP83BF.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ActivateObjectFX.cpp
+ActivateTypeMgr.cpp
+Animator.cpp
+AssertMgr.cpp
+AttachButeMgr.cpp
+BaseLineSystemFX.cpp
+BaseMenu.cpp
+BaseParticleSystemFX.cpp
+BasePolyDrawFX.cpp
+BaseScaleFX.cpp
+BaseScreen.cpp
+BeamFX.cpp
+BodyFX.cpp
+BulletTrailFX.cpp
+ButeListReader.cpp
+CameraOffsetMgr.cpp
+ChainedFX.cpp
+CharacterFX.cpp
+CheatMgr.cpp
+client_physics.cpp
+Generating Code...
+Compiling...
+ClientButeMgr.cpp
+ClientFXDB.cpp
+ClientFXMgr.cpp
+ClientInfoMgr.cpp
+ClientMultiplayerMgr.cpp
+ClientSaveLoadMgr.cpp
+FIXFIX:  Should really be called ClientConnectionMgr.
+FIXFIX: Remember to remove sections defined without SOURCE_RELEASE defines
+ClientServerShared.cpp
+ClientSoundMgr.cpp
+ClientTrackedNodeContext.cpp
+ClientTrackedNodeMgr.cpp
+ClientUtilities.cpp
+ClientWeapon.cpp
+ClientWeaponMgr.cpp
+ClientWeaponUtils.cpp
+CMoveMgr.cpp
+CommonUtilities.cpp
+CRC32.cpp
+Credits.cpp
+CursorMgr.cpp
+DamageFXMgr.cpp
+Generating Code...
+Compiling...
+DamageTypes.cpp
+DeathFX.cpp
+DebrisFX.cpp
+DebrisMgr.cpp
+DebugLine.cpp
+DebugLineFX.cpp
+DebugNew.cpp
+DoomsdayPieceFX.cpp
+DynamicLightFX.cpp
+DynamicOccluderVolumeFX.cpp
+ExplosionFX.cpp
+FinalGameText.cpp
+FireFX.cpp
+FlashLight.cpp
+FullScreenTint.cpp
+FXButeMgr.cpp
+FXStructs.cpp
+GadgetDisabler.cpp
+GadgetTargetFX.cpp
+GameAlloc.cpp
+Generating Code...
+Compiling...
+GameButeMgr.cpp
+GameClientShell.cpp
+GameDocument.cpp
+GameSettings.cpp
+GameString.cpp
+GameText.cpp
+GameTextFileMngr.cpp
+GibFX.cpp
+GlobalClientMgr.cpp
+GlobalMgr.cpp
+HanText.cpp
+HeadBobMgr.cpp
+HitBox.cpp
+HUDBar.cpp
+HUDChatInput.cpp
+HUDDamage.cpp
+HUDDecision.cpp
+HUDDisplayMeter.cpp
+HUDDistance.cpp
+HUDHealth.cpp
+Generating Code...
+Compiling...
+HUDHelp.cpp
+HUDList.cpp
+HUDMessage.cpp
+HUDMessageQueue.cpp
+HUDMeter.cpp
+HUDMgr.cpp
+HUDPaused.cpp
+HUDPopup.cpp
+HUDRadar.cpp
+HUDScores.cpp
+HUDSubtitles.cpp
+HUDTransmission.cpp
+IntelItemList.cpp
+InterfaceMgr.cpp
+InterfaceResMgr.cpp
+InterfaceSurfMgr.cpp
+InterfaceTimer.cpp
+IpMgr.cpp
+JumpVolumeFX.cpp
+KeyMgr.cpp
+Generating Code...
+Compiling...
+LaserBeam.cpp
+LaserTriggerFX.cpp
+LayoutMgr.cpp
+LeanMgr.cpp
+LensFlareFX.cpp
+LightFX.cpp
+LightGroupFX.cpp
+LightningFX.cpp
+LightScaleMgr.cpp
+LineSystemFX.cpp
+LoadingScreen.cpp
+MarkSFX.cpp
+MenuIntel.cpp
+MenuInventory.cpp
+MenuKeys.cpp
+MenuMgr.cpp
+MenuMission.cpp
+MenuPlayer.cpp
+MenuSystem.cpp
+MessageBox.cpp
+Generating Code...
+Compiling...
+MineFX.cpp
+MissionButeMgr.cpp
+MissionMgr.cpp
+ModelButeMgr.cpp
+Music.cpp
+MuzzleFlashFX.cpp
+MuzzleFlashParticleFX.cpp
+NetDefs.cpp
+Network.cpp
+NodeController.cpp
+NodeLinesFX.cpp
+ObjectiveControl.cpp
+ObjSpriteFX.cpp
+ParsedMsg.cpp
+ParticleExplosionFX.cpp
+ParticleShowerFX.cpp
+ParticleSystemFX.cpp
+ParticleTrailFX.cpp
+ParticleTrailSegmentFX.cpp
+PerformanceMgr.cpp
+Generating Code...
+Compiling...
+PerformanceTest.cpp
+PickupItemFX.cpp
+PlayerCamera.cpp
+PlayerInfoMgr.cpp
+PlayerLureFX.cpp
+PlayerMgr.cpp
+PlayerSoundFX.cpp
+PlayerStats.cpp
+PlayerVehicleFX.cpp
+PlayerViewAttachmentMgr.cpp
+PolyDebrisFX.cpp
+PolyGridFX.cpp
+PolyLineFX.cpp
+PopupMgr.cpp
+PopupText.cpp
+ProfileMgr.cpp
+ProfileUtils.cpp
+ProjectileFX.cpp
+PVFXMgr.cpp
+RadarObjectFX.cpp
+Generating Code...
+Compiling...
+RadarTypeMgr.cpp
+RadioFX.cpp
+RagDoll.cpp
+RagDollConstraint.cpp
+RandomSparksFX.cpp
+SaveLoadMgr.cpp
+ScatterFX.cpp
+ScmdConsole.cpp
+ScmdConsoleDriver_CShell.cpp
+ScreenMgr.cpp
+ScreenPostload.cpp
+ScreenPreload.cpp
+ScreenSpriteMgr.cpp
+ScreenTintMgr.cpp
+Searcher.cpp
+SearchItemMgr.cpp
+SearchLightFX.cpp
+SFXMgr.cpp
+SharedFXStructs.cpp
+SharedMission.cpp
+Generating Code...
+Compiling...
+SharedScoring.cpp
+ShellCasingFX.cpp
+SkillControl.cpp
+SkillsButeMgr.cpp
+SmokeFX.cpp
+SnowFX.cpp
+SoundButeMgr.cpp
+SoundFilterMgr.cpp
+SoundFX.cpp
+SoundMgr.cpp
+Sparam.cpp
+SpecialFXList.cpp
+sprinklesfx.cpp
+stacktrace.cpp
+SteamFX.cpp
+SurfaceFunctions.cpp
+SurfaceMgr.cpp
+SystemInfo.cpp
+TargetMgr.cpp
+TeamMgr.cpp
+Generating Code...
+Compiling...
+TemplateList.cpp
+TextureFXMgr.cpp
+TimedText.cpp
+TracerFX.cpp
+TrackedNode.cpp
+TrackedNodeContext.cpp
+TrackedNodeControlFn.cpp
+TrackedNodeMgr.cpp
+TransitionFXMgr.cpp
+TriggerFX.cpp
+TriggerTypeMgr.cpp
+UberAssert.cpp
+VehicleMgr.cpp
+VersionMgr.cpp
+VisionModeMgr.cpp
+VKDefs.cpp
+WaveFn.cpp
+WeaponChooser.cpp
+WeaponFX.cpp
+WeaponMgr.cpp
+Generating Code...
+Compiling...
+WeatherFX.cpp
+WinUtil.cpp
+Generating Code...
+Compiling...
+iltbaseclass.cpp
+LTEulerAngles.cpp
+ltmodule.cpp
+ltobjref.cpp
+ltquatbase.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: WONAPI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPAA3.tmp" with contents
+[
+/nologo /MDd /W2 /Gm /GR /GX /ZI /Od /I "." /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /D "_DEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "__WON_MASTER_CPP_BUILD__" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\WonAPI/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\WonAPI/WONAPI.pch" /YX /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\WonAPI/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\WonAPI/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONAuth\Auth.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONCommon\Common.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONCrypt\Crypt.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONDB\DB.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONDir\Dir.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONMisc\gqueryreporting.c"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONMisc\Misc.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONMisc\nonport.c"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONRouting\Routing.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONServer\Server.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONSocket\Socket.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONAPI.cpp"
+"D:\sa\code\Johnson_Client\Libs\WONAPI\WONStatus.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPAA3.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPAA4.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\WONAPI.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Auth.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Common.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Crypt.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\DB.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Dir.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\gqueryreporting.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Misc.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\nonport.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Routing.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Server.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Socket.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\WONAPI.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\WONStatus.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSPAA4.tmp"
+<h3>Output Window</h3>
+Compiling...
+Auth.cpp
+Common.cpp
+Crypt.cpp
+DB.cpp
+Dir.cpp
+gqueryreporting.c
+Misc.cpp
+nonport.c
+Routing.cpp
+Server.cpp
+Socket.cpp
+WONAPI.cpp
+WONStatus.cpp
+Creating library...
+<h3>
+--------------------Configuration: ServerDir - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A71.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\libs\wonapi" /I "..\..\ClientRes\Shared" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/ServerDir.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\LIBS\SERVERDIR\CServerDir_Titan.cpp"
+"D:\sa\code\Johnson_Client\LIBS\SERVERDIR\TitanTest.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2A71.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A72.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\libs\wonapi" /I "..\..\ClientRes\Shared" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/ServerDir.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\LIBS\SERVERDIR\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2A72.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A83.tmp" with contents
+[
+wonapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"..\..\..\Johnson_Built\Johnson_Client\Debug\libs\ServerDir/ServerDir.pdb" /debug /machine:I386 /out:"..\..\..\Lib\Debug\ServerDir.dll" /implib:"..\..\..\Lib\Debug\ServerDir.lib" /pdbtype:sept /libpath:"..\..\..\Lib\Debug" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\ServerDir\CServerDir_Titan.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\ServerDir\StdAfx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\libs\ServerDir\TitanTest.obj
+\sa\code\Lib\Debug\WONAPI.lib
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP2A83.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A84.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\ServerDir.dll
+echo copy \sa\code\Lib\Debug\ServerDir.dll D:\sa\code\Johnson_Client
+copy \sa\code\Lib\Debug\ServerDir.dll D:\sa\code\Johnson_Client
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP2A84.bat"
+Compiling...
+StdAfx.cpp
+Compiling...
+CServerDir_Titan.cpp
+TitanTest.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\..\Lib\Debug\ServerDir.lib and object ..\..\..\Lib\Debug\ServerDir.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\Debug\ServerDir.dll
+copy \sa\code\Lib\Debug\ServerDir.dll D:\sa\code\Johnson_Client
+        1 arquivo(s) copiado(s).
+<h3>
+--------------------Configuration: ClientShellDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP339D.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\Shared\SA" /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\ClientShellShared" /I "..\..\clientres\shared" /I "..\..\clientres\SA" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs\wonapi" /I "..\..\libs\serverdir" /D "_DEBUG" /D "_CLIENTBUILD" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENT" /D "DEBUG_SHOP" /D "BIG_FAT_MODE_TEST" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/ClientShellDLL.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\GameHIIME.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\GlobalModule.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\GlobalsInit.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\Room\Option.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAClientWeaponAllocator.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAGameClientShell.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAHUDMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAInterfaceMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SALayoutMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SA\SAMissionButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAPlayerMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAPlayerStats.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAScreenMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SA\SAVersionMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDAir.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDCarrying.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDDoomsday.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDHiding.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDHidingBar.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDObjectives.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDAmmo.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDCameraBloodFX.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDChooser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDCompass.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDCrosshair.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDDamageDir.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDFlashBangFX.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDGameOver.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDGameState.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDGogglesFX.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDMiniMap.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDPlayerState.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDProgressBar.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDRadio.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDRespawn.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDSensiCtrl.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDTimer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupHelp.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupInvite.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupItemBuy.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupMenu.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupNickName.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupOption_Ex.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupPassword.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupRoomOption.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupScreenBase.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupScreenCreateRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupScreenOption.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupSearchResult.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupSearchUser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupUserInfo.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\PopupWeaponDetail.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenBase.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenChannel.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenCharacter.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenInventory.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenMain.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenResult.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenShop.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAListChannel.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAListRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAListTeam.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAListText.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAListUser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\SAMapList.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\TextScroll.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenAudio.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenConfigure.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenControls.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenCreateRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenCrosshair.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenDisplay.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenEndCoopMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenEndDMMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenEndMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenFailure.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenGame.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHost.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostDDOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostDMOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostLevels.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostTDMOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenHostWeapons.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenJoin.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenJoinLAN.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenJoystick.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenKeyboard.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenLoad.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenMouse.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenMulti.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenPerformance.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenPlayer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenPlayerSkills.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenPlayerTeam.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenProfile.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenSave.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenSingle.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenTeam.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\ScreenWeapon.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP339D.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP339E.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\Shared\SA" /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\ClientShellShared" /I "..\..\clientres\shared" /I "..\..\clientres\SA" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs\wonapi" /I "..\..\libs\serverdir" /D "_DEBUG" /D "_CLIENTBUILD" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENT" /D "DEBUG_SHOP" /D "BIG_FAT_MODE_TEST" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /FD /c 
+"D:\sa\code\Johnson_Engine\sdk\inc\iltbaseclass.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltobjref.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP339E.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP339F.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\Shared\SA" /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\ClientShellShared" /I "..\..\clientres\shared" /I "..\..\clientres\SA" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs\wonapi" /I "..\..\libs\serverdir" /D "_DEBUG" /D "_CLIENTBUILD" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENT" /D "DEBUG_SHOP" /D "BIG_FAT_MODE_TEST" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/ClientShellDLL.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\SA\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP339F.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP33B0.tmp" with contents
+[
+winmm.lib ole32.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib advapi32.lib ClientShellShared.lib ButeMgr.lib MFCStub.lib CryptMgr.lib Lib_StdLith.lib Lib_Lith.lib LtGuiMgr.lib ServerDir.lib RegMgr.lib LTMem.lib d3dx8.lib imm32.lib Shell32.lib CurseFilter.lib /nologo /subsystem:windows /dll /profile /debug /machine:I386 /nodefaultlib:"LIBCD" /out:"..\..\..\Lib\Debug\CShell.dll" /implib:"..\..\..\Lib\Debug\CShell.lib" /libpath:"..\..\..\Lib\Debug" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\GameHIIME.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\GlobalModule.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\GlobalsInit.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\iltbaseclass.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ltmodule.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ltobjref.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ltquatbase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\Option.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAClientWeaponAllocator.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAGameClientShell.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAHUDMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAInterfaceMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SALayoutMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAMissionButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAPlayerMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAPlayerStats.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAScreenMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAVersionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\Stdafx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDAir.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDCarrying.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDDoomsday.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDHiding.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDHidingBar.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDObjectives.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDAmmo.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDCameraBloodFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDChooser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDCompass.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDCrosshair.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDDamageDir.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDFlashBangFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDGameOver.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDGameState.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDGogglesFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDMiniMap.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDPlayerState.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDProgressBar.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDRadio.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDRespawn.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDSensiCtrl.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\HUDTimer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupHelp.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupInvite.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupItemBuy.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupMenu.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupNickName.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupOption_Ex.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupPassword.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupRoomOption.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupScreenBase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupScreenCreateRoom.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupScreenOption.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupSearchResult.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupSearchUser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupUserInfo.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\PopupWeaponDetail.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenBase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenChannel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenCharacter.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenInventory.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenMain.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenResult.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenRoom.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenShop.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAListChannel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAListRoom.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAListTeam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAListText.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAListUser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\SAMapList.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\TextScroll.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenAudio.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenConfigure.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenControls.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenCreateRoom.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenCrosshair.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenDisplay.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenEndCoopMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenEndDMMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenEndMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenFailure.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenGame.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHost.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostDDOptions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostDMOptions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostLevels.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostOptions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostTDMOptions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenHostWeapons.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenJoin.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenJoinLAN.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenJoystick.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenKeyboard.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenLoad.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenMouse.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenMulti.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenOptions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenPerformance.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenPlayer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenPlayerSkills.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenPlayerTeam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenProfile.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenSave.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenSingle.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenTeam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ClientShellDll\SA\ScreenWeapon.obj
+\sa\code\Lib\Debug\ButeMgr.lib
+\sa\code\Lib\Debug\cryptmgr.lib
+\sa\code\Lib\Debug\LTGuiMgr.lib
+\sa\code\Lib\Debug\MFCStub.lib
+\sa\code\Lib\Debug\Regmgr.lib
+\sa\code\Lib\Debug\ClientShellShared.lib
+\sa\code\Lib\Debug\ServerDir.lib
+\sa\code\Lib\Debug\WONAPI.lib
+\sa\code\Lib\Debug\Lib_LogicObject.lib
+\sa\code\Lib\Debug\Lib_Network.lib
+\sa\code\Lib\Debug\Lib_Packet.lib
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP33B0.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP33B1.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\CShell.dll
+echo copy \sa\code\Lib\Debug\CShell.dll D:\sa\code\Johnson_Client\game
+copy \sa\code\Lib\Debug\CShell.dll D:\sa\code\Johnson_Client\game
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP33B1.bat"
+Compiling...
+Stdafx.cpp
+Compiling...
+GameHIIME.cpp
+GlobalModule.cpp
+GlobalsInit.cpp
+Option.cpp
+SAClientWeaponAllocator.cpp
+SAGameClientShell.cpp
+SAHUDMgr.cpp
+SAInterfaceMgr.cpp
+SALayoutMgr.cpp
+SAMissionButeMgr.cpp
+SAPlayerMgr.cpp
+SAPlayerStats.cpp
+SAScreenMgr.cpp
+SAVersionMgr.cpp
+HUDAir.cpp
+HUDCarrying.cpp
+HUDDoomsday.cpp
+HUDHiding.cpp
+HUDHidingBar.cpp
+HUDObjectives.cpp
+Generating Code...
+Compiling...
+HUDAmmo.cpp
+HUDCameraBloodFX.cpp
+HUDChooser.cpp
+HUDCompass.cpp
+HUDCrosshair.cpp
+HUDDamageDir.cpp
+HUDFlashBangFX.cpp
+HUDGameOver.cpp
+HUDGameState.cpp
+D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDGameState.cpp(164) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\sa\code\Johnson_Client\ClientShellDLL\SA\HUDGameState.cpp(165) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+HUDGogglesFX.cpp
+HUDMiniMap.cpp
+HUDPlayerState.cpp
+HUDProgressBar.cpp
+HUDRadio.cpp
+HUDRespawn.cpp
+HUDSensiCtrl.cpp
+HUDTimer.cpp
+PopupHelp.cpp
+PopupInvite.cpp
+PopupItemBuy.cpp
+Generating Code...
+Compiling...
+PopupMenu.cpp
+PopupNickName.cpp
+PopupOption_Ex.cpp
+PopupPassword.cpp
+PopupRoomOption.cpp
+PopupScreenBase.cpp
+PopupScreenCreateRoom.cpp
+PopupScreenOption.cpp
+PopupSearchResult.cpp
+PopupSearchUser.cpp
+PopupUserInfo.cpp
+PopupWeaponDetail.cpp
+ScreenBase.cpp
+ScreenChannel.cpp
+ScreenCharacter.cpp
+ScreenInventory.cpp
+ScreenMain.cpp
+ScreenResult.cpp
+ScreenRoom.cpp
+ScreenShop.cpp
+Generating Code...
+Compiling...
+SAListChannel.cpp
+SAListRoom.cpp
+SAListTeam.cpp
+SAListText.cpp
+SAListUser.cpp
+SAMapList.cpp
+TextScroll.cpp
+ScreenAudio.cpp
+ScreenConfigure.cpp
+ScreenControls.cpp
+ScreenCreateRoom.cpp
+ScreenCrosshair.cpp
+ScreenDisplay.cpp
+ScreenEndCoopMission.cpp
+ScreenEndDMMission.cpp
+ScreenEndMission.cpp
+ScreenFailure.cpp
+ScreenGame.cpp
+ScreenHost.cpp
+ScreenHostDDOptions.cpp
+Generating Code...
+Compiling...
+ScreenHostDMOptions.cpp
+ScreenHostLevels.cpp
+ScreenHostMission.cpp
+ScreenHostOptions.cpp
+ScreenHostTDMOptions.cpp
+ScreenHostWeapons.cpp
+ScreenJoin.cpp
+ScreenJoinLAN.cpp
+ScreenJoystick.cpp
+ScreenKeyboard.cpp
+ScreenLoad.cpp
+ScreenMouse.cpp
+ScreenMulti.cpp
+ScreenOptions.cpp
+ScreenPerformance.cpp
+ScreenPlayer.cpp
+ScreenPlayerSkills.cpp
+ScreenPlayerTeam.cpp
+ScreenProfile.cpp
+ScreenSave.cpp
+Generating Code...
+Compiling...
+ScreenSingle.cpp
+ScreenTeam.cpp
+ScreenWeapon.cpp
+Generating Code...
+Compiling...
+iltbaseclass.cpp
+ltmodule.cpp
+ltobjref.cpp
+ltquatbase.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\..\Lib\Debug\CShell.lib and object ..\..\..\Lib\Debug\CShell.exp
+CurseFilter.lib(CurseFilter.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\Debug\CurseFilter.lib" or at "D:\sa\code\Lib\Debug\vc60.pdb"; linking object as if no debug info
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\Debug\CShell.dll
+copy \sa\code\Lib\Debug\CShell.dll D:\sa\code\Johnson_Client\game
+        1 arquivo(s) copiado(s).
+<h3>
+--------------------Configuration: ObjectShared - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7EF3.bat" with contents
+[
+@echo off
+..\..\bison --defines -v --verbose -pyyanimation -oAnimationParse.o AnimationParse.y
+if exist AnimationLexSymbols.h del AnimationLexSymbols.h
+ren AnimationParse.o.h AnimationLexSymbols.h
+ren AnimationParse.o AnimationParse.o
+del AnimationParse.o.output
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP7EF3.bat"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7EF4.bat" with contents
+[
+@echo off
+..\..\flex -Pyyanimation -oAnimationLex.o AnimationLex.l
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP7EF4.bat"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7F05.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs" /I "..\..\libs\serverdir" /D "_DEBUG" /D "_LIB" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "_SERVERBUILD" /D "_NO_AI_ASSERT" /D "MEMTRACK_SERVER" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/ObjectShared.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\Shared\ActivateTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ActiveWorldModel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AI.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIAssert.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIBrain.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AICentralKnowledgeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIClassFactory.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAbstract.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAbstractSearch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAbstractStimulated.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAbstractTargeted.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAbstractUseObject.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAlarm.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAnimate.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalApprehend.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAssassinate.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttack.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackFromCover.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackfromRandomVantage.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackfromRoofVantage.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackfromVantage.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackFromView.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackMelee.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackProne.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackProp.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackRanged.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalAttackRangedDynamic.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalCatch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalCharge.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalChase.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalCheckBody.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalCover.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalDeflect.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalDisappearReappear.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalDisappearReappearEvasive.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalDistress.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalDramaDeath.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalDrawWeapon.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalExitLevel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalFlee.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalFollow.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalFollowFootprint.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalGetBackup.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalGoto.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalGuard.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalHolsterWeapon.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalInvestigate.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalLoveKitty.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalLunge.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalMenace.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalMountedFlashlight.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalObstruct.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalPatrol.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalProximityCommand.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalPsychoChase.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalReclassifyToEnemy.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalRespondToAlarm.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalRespondToBackup.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalResurrecting.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalRetreat.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSearch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSentryChallenge.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSentryMark.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSerumDeath.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSleep.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSniper.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalSpecialDamage.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalTail.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalTalk.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIGoalWork.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHuman.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanState.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateApprehend.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateAttackMove.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateAttackProne.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateCatch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateDeflect.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateDisappearReappear.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateLaunch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateObstruct.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateResurrecting.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateSentryChallenge.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStateSniper.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStrategy.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStrategyShootStream.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIHumanStrategyToggleLights.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIInformationVolumeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIMovement.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIMovementModifier.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AINode.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AINodeDisturbance.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AINodeGuard.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AINodeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AINodeSensing.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIPath.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIPathKnowledgeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIPathMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIRegion.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIRegionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AISenseRecorderAbstract.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AISenseRecorderGame.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AISounds.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AISpatialRepresentationMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIState.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIStimulusMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AITarget.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AITypes.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIUtils.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIVolume.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIVolumeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AIVolumeNeighbor.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Alarm.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AmmoBox.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AnimationMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AnimationParser.cpp"
+"D:\sa\code\Johnson_Client\Shared\Animator.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AnimatorPlayer.cpp"
+"D:\sa\code\Johnson_Client\Shared\AssertMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\AttachButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Attachments.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\BanIPMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Body.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\BodyState.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Bombable.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Breakable.cpp"
+"D:\sa\code\Johnson_Client\Shared\ButeListReader.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ButeTools.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Camera.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Character.cpp"
+"D:\sa\code\Johnson_Client\Shared\CharacterAlignment.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CharacterHitBox.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CharacterMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ClientLightFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\ClientServerShared.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ClientSFX.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ClientWeaponSFX.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CollectiveRelationMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CommandButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CommandMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CommandObject.cpp"
+"D:\sa\code\Johnson_Client\Shared\CommonUtilities.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Controller.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\CoopMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\CRC32.cpp"
+"D:\sa\code\Johnson_Client\Shared\DamageTypes.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DeathMatchMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DeathScene.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DebrisFuncs.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebrisMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebugLine.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DebugLineSystem.cpp"
+"D:\sa\code\Johnson_Client\Shared\DebugNew.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DecisionObject.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Destructible.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DestructibleModel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Dialogue.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DisplayMeter.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DisplayTimer.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DoomsDayDevice.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DoomsDayMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DoomsDayPiece.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Door.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DoorKnob.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\DynamicOccluderVolume.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Editable.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\EventCounter.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ExitTrigger.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Explosion.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Fire.cpp"
+"D:\sa\code\Johnson_Client\Shared\FXButeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\FXStructs.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GadgetTarget.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GadgetTargetMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\GameAlloc.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GameBase.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GameBaseLite.cpp"
+"D:\sa\code\Johnson_Client\Shared\GameButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GameServerShell.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GameStartPoint.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GearItems.cpp"
+"D:\sa\code\Johnson_Client\Shared\GlobalMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\GlobalServerMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Group.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\HHWeaponModel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Intelligence.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\IntelMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\InventoryButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\JumpVolume.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Key.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\KeyData.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\KeyFramer.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\KeyItem.cpp"
+"D:\sa\code\Johnson_Client\Shared\KeyMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\KeyPad.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\LaserTrigger.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\LightGroup.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Lightning.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\LiteObjectMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Lock.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Mine.cpp"
+"D:\sa\code\Johnson_Client\Shared\MissionButeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\ModelButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ModItem.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\MusicMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\NetDefs.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\NodeLine.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\NoPlayerTrigger.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ObjectiveSprite.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ObjectRelationMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ObjectRemover.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ObjectTemplateMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\ParsedMsg.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ParticleSystem.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PickupItem.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PlayerLure.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PlayerObj.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PlayerTracker.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PlayerTrigger.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PlayerVehicle.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Point.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PolyGrid.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PolyGridModifier.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PowerArmor.cpp"
+"D:\sa\code\Johnson_Client\Shared\ProfileUtils.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Projectile.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ProjectileTypes.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Prop.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PropType.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\PropTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RadarObject.cpp"
+"D:\sa\code\Johnson_Client\Shared\RadarTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RandomSpawner.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RelationButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RelationMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RotatingDoor.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RotatingSwitch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\RotatingWorldModel.cpp"
+"D:\sa\code\Johnson_Client\Shared\SaveLoadMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ScaleSprite.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Scanner.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ScatterVolume.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ScmdServer.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ScreenShake.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Searchable.cpp"
+"D:\sa\code\Johnson_Client\Shared\SearchItemMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SearchLight.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SearchProp.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SecurityCamera.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerAssetMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerMark.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerSaveLoadMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerSoundFX.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerSoundMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerSpecialFX.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerTrackedNodeContext.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerTrackedNodeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\ServerUtilities.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SFXFuncs.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedFXStructs.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedMission.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedMovement.cpp"
+"D:\sa\code\Johnson_Client\Shared\SharedScoring.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SinglePlayerMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Skills.cpp"
+"D:\sa\code\Johnson_Client\Shared\SkillsButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SlidingDoor.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SlidingSwitch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SlidingWorldModel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SnowVolume.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SoundButeFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\SoundButeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SoundFilterMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SoundMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Sparam.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Spawner.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Speaker.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SpinningWorldModel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Sprinkles.cpp"
+"D:\sa\code\Johnson_Client\Shared\stacktrace.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\StartupCommand.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Steam.cpp"
+"D:\sa\code\Johnson_Client\Shared\SurfaceFunctions.cpp"
+"D:\sa\code\Johnson_Client\Shared\SurfaceMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\SurvivalMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Switch.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\TeamDeathMatchMissionMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\TeamMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\TeleportPoint.cpp"
+"D:\sa\code\Johnson_Client\Shared\TemplateList.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\TextureFX.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNode.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNodeContext.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNodeControlFn.cpp"
+"D:\sa\code\Johnson_Client\Shared\TrackedNodeMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\TransitionAggregate.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\TransitionArea.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\TransitionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Trigger.cpp"
+"D:\sa\code\Johnson_Client\Shared\TriggerTypeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\UberAssert.cpp"
+"D:\sa\code\Johnson_Client\Shared\VersionMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\VolumeBrush.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\VolumeBrushTypes.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\VolumeEffect.cpp"
+"D:\sa\code\Johnson_Client\Shared\WaveFn.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Weapon.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\WeaponItems.cpp"
+"D:\sa\code\Johnson_Client\Shared\WeaponMgr.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Weapons.cpp"
+"D:\sa\code\Johnson_Client\Shared\WinUtil.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\WorldModel.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\WorldModelDebris.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\WorldProperties.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7F05.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7F06.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs" /I "..\..\libs\serverdir" /D "_DEBUG" /D "_LIB" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "_SERVERBUILD" /D "_NO_AI_ASSERT" /D "MEMTRACK_SERVER" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AnimationLex.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\AnimationParse.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\iltbaseclass.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltengineobjects.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltobjref.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7F06.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP7F17.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I ".\\" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs" /I "..\..\libs\serverdir" /D "_DEBUG" /D "_LIB" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "_SERVERBUILD" /D "_NO_AI_ASSERT" /D "MEMTRACK_SERVER" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/ObjectShared.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared/" /FD /GZ /c 
+"D:\sa\code\Johnson_Client\ObjectDLL\ObjectShared\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP7F17.tmp" 
+Performing Custom Build Step on .\AnimationParse.y
+Performing Custom Build Step on .\AnimationLex.l
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP807F.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\ObjectShared.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ActivateTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ActiveWorldModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AI.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIAssert.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIBrain.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AICentralKnowledgeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIClassFactory.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAbstract.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAbstractSearch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAbstractStimulated.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAbstractTargeted.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAbstractUseObject.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAlarm.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAnimate.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalApprehend.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAssassinate.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttack.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackFromCover.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackfromRandomVantage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackfromRoofVantage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackfromVantage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackFromView.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackMelee.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackProne.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackProp.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackRanged.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalAttackRangedDynamic.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalCatch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalCharge.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalChase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalCheckBody.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalCover.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalDeflect.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalDisappearReappear.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalDisappearReappearEvasive.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalDistress.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalDramaDeath.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalDrawWeapon.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalExitLevel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalFlee.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalFollow.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalFollowFootprint.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalGetBackup.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalGoto.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalGuard.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalHolsterWeapon.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalInvestigate.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalLoveKitty.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalLunge.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalMenace.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalMountedFlashlight.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalObstruct.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalPatrol.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalProximityCommand.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalPsychoChase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalReclassifyToEnemy.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalRespondToAlarm.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalRespondToBackup.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalResurrecting.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalRetreat.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSearch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSentryChallenge.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSentryMark.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSerumDeath.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSleep.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSniper.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalSpecialDamage.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalTail.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalTalk.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIGoalWork.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHuman.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanState.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateApprehend.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateAttackMove.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateAttackProne.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateCatch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateDeflect.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateDisappearReappear.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateLaunch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateObstruct.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateResurrecting.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateSentryChallenge.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStateSniper.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStrategy.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStrategyShootStream.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIHumanStrategyToggleLights.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIInformationVolumeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIMovement.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIMovementModifier.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AINode.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AINodeDisturbance.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AINodeGuard.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AINodeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AINodeSensing.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIPath.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIPathKnowledgeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIPathMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIRegion.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIRegionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AISenseRecorderAbstract.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AISenseRecorderGame.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AISounds.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AISpatialRepresentationMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIState.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIStimulusMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AITarget.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AITypes.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIUtils.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIVolume.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIVolumeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AIVolumeNeighbor.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Alarm.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AmmoBox.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AnimationLex.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AnimationMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AnimationParse.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AnimationParser.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Animator.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AnimatorPlayer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AssertMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\AttachButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Attachments.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\BanIPMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Body.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\BodyState.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Bombable.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Breakable.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ButeListReader.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ButeTools.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Camera.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Character.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CharacterAlignment.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CharacterHitBox.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CharacterMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ClientLightFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ClientServerShared.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ClientSFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ClientWeaponSFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CollectiveRelationMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CommandButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CommandMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CommandObject.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CommonUtilities.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Controller.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CoopMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\CRC32.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DamageTypes.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DeathMatchMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DeathScene.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DebrisFuncs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DebrisMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DebugLine.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DebugLineSystem.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DebugNew.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DecisionObject.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Destructible.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DestructibleModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Dialogue.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DisplayMeter.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DisplayTimer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DoomsDayDevice.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DoomsDayMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DoomsDayPiece.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Door.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DoorKnob.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\DynamicOccluderVolume.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Editable.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\EventCounter.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ExitTrigger.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Explosion.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Fire.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\FXButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\FXStructs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GadgetTarget.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GadgetTargetMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GameAlloc.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GameBase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GameBaseLite.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GameButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GameServerShell.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GameStartPoint.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GearItems.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GlobalMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\GlobalServerMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Group.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\HHWeaponModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\iltbaseclass.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Intelligence.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\IntelMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\InventoryButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\JumpVolume.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Key.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\KeyData.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\KeyFramer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\KeyItem.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\KeyMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\KeyPad.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\LaserTrigger.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\LightGroup.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Lightning.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\LiteObjectMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Lock.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ltengineobjects.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ltmodule.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ltobjref.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ltquatbase.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Mine.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\MissionButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ModelButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ModItem.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\MusicMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\NetDefs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\NodeLine.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\NoPlayerTrigger.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ObjectiveSprite.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ObjectRelationMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ObjectRemover.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ObjectTemplateMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ParsedMsg.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ParticleSystem.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PickupItem.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PlayerLure.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PlayerObj.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PlayerTracker.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PlayerTrigger.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PlayerVehicle.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Point.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PolyGrid.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PolyGridModifier.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PowerArmor.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ProfileUtils.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Projectile.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ProjectileTypes.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Prop.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PropType.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\PropTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RadarObject.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RadarTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RandomSpawner.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RelationButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RelationMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RotatingDoor.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RotatingSwitch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\RotatingWorldModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SaveLoadMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ScaleSprite.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Scanner.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ScatterVolume.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ScmdServer.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ScreenShake.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Searchable.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SearchItemMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SearchLight.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SearchProp.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SecurityCamera.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerAssetMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerMark.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerSaveLoadMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerSoundFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerSoundMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerSpecialFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerTrackedNodeContext.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerTrackedNodeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\ServerUtilities.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SFXFuncs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SharedFXStructs.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SharedMission.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SharedMovement.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SharedScoring.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SinglePlayerMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Skills.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SkillsButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SlidingDoor.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SlidingSwitch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SlidingWorldModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SnowVolume.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SoundButeFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SoundButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SoundFilterMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SoundMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Sparam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Spawner.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Speaker.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SpinningWorldModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Sprinkles.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\stacktrace.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\StartupCommand.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Stdafx.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Steam.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SurfaceFunctions.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SurfaceMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\SurvivalMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Switch.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TeamDeathMatchMissionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TeamMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TeleportPoint.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TemplateList.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TextureFX.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TrackedNode.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TrackedNodeContext.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TrackedNodeControlFn.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TrackedNodeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TransitionAggregate.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TransitionArea.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TransitionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Trigger.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\TriggerTypeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\UberAssert.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\VersionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\VolumeBrush.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\VolumeBrushTypes.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\VolumeEffect.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WaveFn.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Weapon.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WeaponItems.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WeaponMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\Weapons.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WinUtil.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WorldModel.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WorldModelDebris.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDll\ObjectShared\WorldProperties.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP807F.tmp"
+<h3>Output Window</h3>
+Compiling...
+Stdafx.cpp
+Compiling...
+ActivateTypeMgr.cpp
+ActiveWorldModel.cpp
+AI.cpp
+AIAssert.cpp
+AIBrain.cpp
+AIButeMgr.cpp
+AICentralKnowledgeMgr.cpp
+AIClassFactory.cpp
+AIGoalAbstract.cpp
+AIGoalAbstractSearch.cpp
+AIGoalAbstractStimulated.cpp
+AIGoalAbstractTargeted.cpp
+AIGoalAbstractUseObject.cpp
+AIGoalAlarm.cpp
+AIGoalAnimate.cpp
+AIGoalApprehend.cpp
+AIGoalAssassinate.cpp
+AIGoalAttack.cpp
+AIGoalAttackFromCover.cpp
+AIGoalAttackfromRandomVantage.cpp
+Generating Code...
+Compiling...
+AIGoalAttackfromRoofVantage.cpp
+AIGoalAttackfromVantage.cpp
+AIGoalAttackFromView.cpp
+AIGoalAttackMelee.cpp
+AIGoalAttackProne.cpp
+AIGoalAttackProp.cpp
+AIGoalAttackRanged.cpp
+AIGoalAttackRangedDynamic.cpp
+AIGoalButeMgr.cpp
+AIGoalCatch.cpp
+AIGoalCharge.cpp
+AIGoalChase.cpp
+AIGoalCheckBody.cpp
+AIGoalCover.cpp
+AIGoalDeflect.cpp
+AIGoalDisappearReappear.cpp
+AIGoalDisappearReappearEvasive.cpp
+AIGoalDistress.cpp
+AIGoalDramaDeath.cpp
+AIGoalDrawWeapon.cpp
+Generating Code...
+Compiling...
+AIGoalExitLevel.cpp
+AIGoalFlee.cpp
+AIGoalFollow.cpp
+AIGoalFollowFootprint.cpp
+AIGoalGetBackup.cpp
+AIGoalGoto.cpp
+AIGoalGuard.cpp
+AIGoalHolsterWeapon.cpp
+AIGoalInvestigate.cpp
+AIGoalLoveKitty.cpp
+AIGoalLunge.cpp
+AIGoalMenace.cpp
+AIGoalMgr.cpp
+AIGoalMountedFlashlight.cpp
+AIGoalObstruct.cpp
+AIGoalPatrol.cpp
+AIGoalProximityCommand.cpp
+AIGoalPsychoChase.cpp
+AIGoalReclassifyToEnemy.cpp
+AIGoalRespondToAlarm.cpp
+Generating Code...
+Compiling...
+AIGoalRespondToBackup.cpp
+AIGoalResurrecting.cpp
+AIGoalRetreat.cpp
+AIGoalSearch.cpp
+AIGoalSentryChallenge.cpp
+AIGoalSentryMark.cpp
+AIGoalSerumDeath.cpp
+AIGoalSleep.cpp
+AIGoalSniper.cpp
+AIGoalSpecialDamage.cpp
+AIGoalTail.cpp
+AIGoalTalk.cpp
+AIGoalWork.cpp
+AIHuman.cpp
+AIHumanState.cpp
+AIHumanStateApprehend.cpp
+AIHumanStateAttackMove.cpp
+AIHumanStateAttackProne.cpp
+AIHumanStateCatch.cpp
+AIHumanStateDeflect.cpp
+Generating Code...
+Compiling...
+AIHumanStateDisappearReappear.cpp
+AIHumanStateLaunch.cpp
+AIHumanStateObstruct.cpp
+AIHumanStateResurrecting.cpp
+AIHumanStateSentryChallenge.cpp
+AIHumanStateSniper.cpp
+AIHumanStrategy.cpp
+AIHumanStrategyShootStream.cpp
+AIHumanStrategyToggleLights.cpp
+AIInformationVolumeMgr.cpp
+AIMovement.cpp
+AIMovementModifier.cpp
+AINode.cpp
+AINodeDisturbance.cpp
+AINodeGuard.cpp
+AINodeMgr.cpp
+AINodeSensing.cpp
+AIPath.cpp
+AIPathKnowledgeMgr.cpp
+AIPathMgr.cpp
+Generating Code...
+Compiling...
+AIRegion.cpp
+AIRegionMgr.cpp
+AISenseRecorderAbstract.cpp
+AISenseRecorderGame.cpp
+AISounds.cpp
+AISpatialRepresentationMgr.cpp
+AIState.cpp
+AIStimulusMgr.cpp
+AITarget.cpp
+AITypes.cpp
+AIUtils.cpp
+AIVolume.cpp
+AIVolumeMgr.cpp
+AIVolumeNeighbor.cpp
+Alarm.cpp
+AmmoBox.cpp
+AnimationMgr.cpp
+AnimationParser.cpp
+Animator.cpp
+AnimatorPlayer.cpp
+Generating Code...
+Compiling...
+AssertMgr.cpp
+AttachButeMgr.cpp
+Attachments.cpp
+BanIPMgr.cpp
+Body.cpp
+BodyState.cpp
+Bombable.cpp
+Breakable.cpp
+ButeListReader.cpp
+ButeTools.cpp
+Camera.cpp
+Character.cpp
+CharacterAlignment.cpp
+CharacterHitBox.cpp
+CharacterMgr.cpp
+ClientLightFX.cpp
+ClientServerShared.cpp
+ClientSFX.cpp
+ClientWeaponSFX.cpp
+CollectiveRelationMgr.cpp
+Generating Code...
+Compiling...
+CommandButeMgr.cpp
+CommandMgr.cpp
+CommandObject.cpp
+CommonUtilities.cpp
+Controller.cpp
+CoopMissionMgr.cpp
+CRC32.cpp
+DamageTypes.cpp
+DeathMatchMissionMgr.cpp
+DeathScene.cpp
+DebrisFuncs.cpp
+DebrisMgr.cpp
+DebugLine.cpp
+DebugLineSystem.cpp
+DebugNew.cpp
+DecisionObject.cpp
+Destructible.cpp
+DestructibleModel.cpp
+Dialogue.cpp
+DisplayMeter.cpp
+Generating Code...
+Compiling...
+DisplayTimer.cpp
+DoomsDayDevice.cpp
+DoomsDayMissionMgr.cpp
+DoomsDayPiece.cpp
+Door.cpp
+DoorKnob.cpp
+DynamicOccluderVolume.cpp
+Editable.cpp
+EventCounter.cpp
+ExitTrigger.cpp
+Explosion.cpp
+Fire.cpp
+FXButeMgr.cpp
+FXStructs.cpp
+GadgetTarget.cpp
+GadgetTargetMgr.cpp
+GameAlloc.cpp
+GameBase.cpp
+GameBaseLite.cpp
+GameButeMgr.cpp
+Generating Code...
+Compiling...
+GameServerShell.cpp
+GameStartPoint.cpp
+GearItems.cpp
+GlobalMgr.cpp
+GlobalServerMgr.cpp
+Group.cpp
+HHWeaponModel.cpp
+Intelligence.cpp
+IntelMgr.cpp
+InventoryButeMgr.cpp
+JumpVolume.cpp
+Key.cpp
+KeyData.cpp
+KeyFramer.cpp
+KeyItem.cpp
+KeyMgr.cpp
+KeyPad.cpp
+LaserTrigger.cpp
+LightGroup.cpp
+Lightning.cpp
+Generating Code...
+Compiling...
+LiteObjectMgr.cpp
+Lock.cpp
+Mine.cpp
+MissionButeMgr.cpp
+ModelButeMgr.cpp
+ModItem.cpp
+MusicMgr.cpp
+NetDefs.cpp
+NodeLine.cpp
+NoPlayerTrigger.cpp
+ObjectiveSprite.cpp
+ObjectRelationMgr.cpp
+ObjectRemover.cpp
+ObjectTemplateMgr.cpp
+ParsedMsg.cpp
+ParticleSystem.cpp
+PickupItem.cpp
+PlayerLure.cpp
+PlayerObj.cpp
+PlayerTracker.cpp
+Generating Code...
+Compiling...
+PlayerTrigger.cpp
+PlayerVehicle.cpp
+Point.cpp
+PolyGrid.cpp
+PolyGridModifier.cpp
+PowerArmor.cpp
+ProfileUtils.cpp
+Projectile.cpp
+ProjectileTypes.cpp
+Prop.cpp
+PropType.cpp
+PropTypeMgr.cpp
+RadarObject.cpp
+RadarTypeMgr.cpp
+RandomSpawner.cpp
+RelationButeMgr.cpp
+RelationMgr.cpp
+RotatingDoor.cpp
+RotatingSwitch.cpp
+RotatingWorldModel.cpp
+Generating Code...
+Compiling...
+SaveLoadMgr.cpp
+ScaleSprite.cpp
+Scanner.cpp
+ScatterVolume.cpp
+ScmdServer.cpp
+ScreenShake.cpp
+FIXFIX:  Need to make the password use a public key, rather than just hash.
+Searchable.cpp
+SearchItemMgr.cpp
+SearchLight.cpp
+SearchProp.cpp
+SecurityCamera.cpp
+ServerAssetMgr.cpp
+ServerButeMgr.cpp
+ServerMark.cpp
+ServerMissionMgr.cpp
+ServerSaveLoadMgr.cpp
+ServerSoundFX.cpp
+ServerSoundMgr.cpp
+ServerSpecialFX.cpp
+ServerTrackedNodeContext.cpp
+Generating Code...
+Compiling...
+ServerTrackedNodeMgr.cpp
+ServerUtilities.cpp
+SFXFuncs.cpp
+SharedFXStructs.cpp
+SharedMission.cpp
+SharedMovement.cpp
+SharedScoring.cpp
+SinglePlayerMissionMgr.cpp
+Skills.cpp
+SkillsButeMgr.cpp
+SlidingDoor.cpp
+SlidingSwitch.cpp
+SlidingWorldModel.cpp
+SnowVolume.cpp
+SoundButeFX.cpp
+SoundButeMgr.cpp
+SoundFilterMgr.cpp
+SoundMgr.cpp
+Sparam.cpp
+Spawner.cpp
+Generating Code...
+Compiling...
+Speaker.cpp
+SpinningWorldModel.cpp
+Sprinkles.cpp
+stacktrace.cpp
+StartupCommand.cpp
+Steam.cpp
+SurfaceFunctions.cpp
+SurfaceMgr.cpp
+SurvivalMissionMgr.cpp
+Switch.cpp
+TeamDeathMatchMissionMgr.cpp
+TeamMgr.cpp
+TeleportPoint.cpp
+TemplateList.cpp
+TextureFX.cpp
+TrackedNode.cpp
+TrackedNodeContext.cpp
+TrackedNodeControlFn.cpp
+TrackedNodeMgr.cpp
+TransitionAggregate.cpp
+Generating Code...
+Compiling...
+TransitionArea.cpp
+TransitionMgr.cpp
+Trigger.cpp
+TriggerTypeMgr.cpp
+UberAssert.cpp
+VersionMgr.cpp
+VolumeBrush.cpp
+VolumeBrushTypes.cpp
+VolumeEffect.cpp
+WaveFn.cpp
+Weapon.cpp
+WeaponItems.cpp
+WeaponMgr.cpp
+Weapons.cpp
+WinUtil.cpp
+WorldModel.cpp
+WorldModelDebris.cpp
+WorldProperties.cpp
+Generating Code...
+Compiling...
+AnimationLex.cpp
+AnimationParse.cpp
+iltbaseclass.cpp
+ltengineobjects.cpp
+ltmodule.cpp
+ltobjref.cpp
+ltquatbase.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Object - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A2E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Shared\SA" /I ".\\" /I "..\objectshared" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs" /I "..\..\libs\serverdir" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "_SERVERBUILD" /D "MEMTRACK_SERVER" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/Object.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ObjectDLL\SA\GlobalsInit.cpp"
+"D:\sa\code\Johnson_Client\ObjectDLL\SA\SAGameServerShell.cpp"
+"D:\sa\code\Johnson_Client\Shared\SA\SAMissionButeMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SA\SAVersionMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2A2E.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A2F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Shared\SA" /I ".\\" /I "..\objectshared" /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\shared" /I "..\..\..\Johnson_Engine\sdk\inc" /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\..\Johnson_Libs\butemgr" /I "..\..\..\Johnson_Libs\cryptmgr" /I "..\..\..\Johnson_Libs\lith" /I "..\..\..\Johnson_Libs\mfcstub" /I "..\..\..\Johnson_Libs\regmgr" /I "..\..\libs" /I "..\..\libs\serverdir" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "_SERVERBUILD" /D "MEMTRACK_SERVER" /FR"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/Object.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ObjectDLL\SA\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2A2F.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A30.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ObjectShared.lib ButeMgr.lib MFCStub.lib Cryptmgr.lib Lib_StdLith.lib Lib_lith.lib RegMgr.lib ServerDir.lib LTMem.lib /nologo /subsystem:windows /dll /profile /debug /machine:I386 /out:"..\..\..\Lib\Debug\Object.lto" /implib:"..\..\..\Lib\Debug\Object.lib" /libpath:"..\..\..\Lib\Debug" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA\GlobalsInit.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA\SAGameServerShell.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA\SAMissionButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA\SAVersionMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ObjectDLL\SA\Stdafx.obj
+\sa\code\Lib\Debug\ButeMgr.lib
+\sa\code\Lib\Debug\cryptmgr.lib
+\sa\code\Lib\Debug\MFCStub.lib
+\sa\code\Lib\Debug\Regmgr.lib
+\sa\code\Lib\Debug\ObjectShared.lib
+\sa\code\Lib\Debug\ServerDir.lib
+\sa\code\Lib\Debug\WONAPI.lib
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP2A30.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2A40.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\Object.lto
+echo copy \sa\code\Lib\Debug\Object.lto D:\sa\code\Johnson_Client\game
+copy \sa\code\Lib\Debug\Object.lto D:\sa\code\Johnson_Client\game
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP2A40.bat"
+Compiling...
+Stdafx.cpp
+Compiling...
+GlobalsInit.cpp
+SAGameServerShell.cpp
+SAMissionButeMgr.cpp
+SAVersionMgr.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\..\Lib\Debug\Object.lib and object ..\..\..\Lib\Debug\Object.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\Debug\Object.lto
+copy \sa\code\Lib\Debug\Object.lto D:\sa\code\Johnson_Client\game
+        1 arquivo(s) copiado(s).
+<h3>
+--------------------Configuration: ServerRes - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\Johnson_Built\Johnson_Client\Debug\ServerRes/ServerRes.res" /d "_DEBUG" "D:\sa\code\Johnson_Client\ServerRes\ServerRes.rc"" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3935.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\ServerRes/ServerRes.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\Debug\ServerRes/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\ServerRes/" /FD /c 
+"D:\sa\code\Johnson_Client\ServerRes\Main.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP3935.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3936.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Johnson_Built\Johnson_Client\Debug\ServerRes/SRes.pdb" /debug /machine:I386 /out:"..\..\Lib\Debug\SRes.dll" /implib:"..\..\Johnson_Built\Johnson_Client\Debug\ServerRes/SRes.lib" /pdbtype:sept 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ServerRes\Main.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ServerRes\ServerRes.res
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP3936.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3947.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\SRes.dll
+echo copy \sa\code\Lib\Debug\SRes.dll D:\sa\code\Johnson_Client\game
+copy \sa\code\Lib\Debug\SRes.dll D:\sa\code\Johnson_Client\game
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP3947.bat"
+Compiling resources...
+Compiling...
+Main.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\Debug\SRes.dll
+copy \sa\code\Lib\Debug\SRes.dll D:\sa\code\Johnson_Client\game
+        1 arquivo(s) copiado(s).
+<h3>
+--------------------Configuration: Game - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+
+
+
+<h3>Results</h3>
+Game.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,867 @@
+<html>
+
+<head>
+
+<title></title>
+
+<link rel=stylesheet href="../styles/body.css" type="text/css">
+
+</head>
+
+<body>
+
+<center>&nbsp;
+
+</center>
+
+
+
+<h1><a name="17805"></a>
+
+ How To Create a Custom Install Script
+
+
+
+</h1>
+
+<p><a name="17806"></a>In most instances, you can build your game using the
+Default Installation in the RealArcade Packager tool, but if you require any of
+the following, you will need to modify the Default Installation script or create a custom install script (i.e. SPC):</p>
+
+<ul>
+  <li>Special registry key settings needed for the game to run correctly (other
+    than those set by the Default Installation to help RealArcade find, run, and
+    uninstall your game).</li>
+  <li>Special file copy behavior other than simply copying all game files into
+    the game folder under the directory configured by the user in the RealArcade
+    preferences (e.g. copying files to the Windows system folder).</li>
+  <li>Launching an executable or running a script at the end of the installation
+    process.</li>
+  <li>Custom installation normally completed via a Setup at the end of the
+    standard installation process.</li>
+  <li>Any other custom installation procedures (e.g. registering fonts).</li>
+</ul>
+
+<p><a name="18475"></a>Setup Spec files contain commands to be executed by Setup Manager during installation or update process. Structure of the file is similar to a batch (<strong>.BAT</strong>) file - each command is stated on a new line. Each command is represented by the command name followed by a list of arguments. Each argument is separated by a white space between arguments.&nbsp;
+If you decide to create your own script file, you can use a text editor but the
+file should have a file extension of .spc when loading it into the RealArcade
+Game Packager. </p>
+
+<p><a name="22822"></a>If an argument is required to include spaces they should be enclosed in " (single quote) symbols. If the argument is required to include a " (single quote) symbol the single quote should be substituted by a _"_ placeholder with underscore characters on either side of the single quote.</p>
+
+<h1><a name="22825"></a> Installer Script Language Reference </h1>
+
+<p><a name="25566"></a><font color="#0066CC"><code><b>Command</b></code></font> names are case sensitive and must be in all capital (e.g., use <font color="#0066CC"><code><b>COPY</b></code></font> not <font color="#0066CC"><code><b>Copy</b></code></font>).</p>
+
+<p><a name="25578"></a><font color="#FF0000"><code><I>Parameters</I></code></font> are case-insensitive but are presented in upper and mixed-case format for readablity. Therefore <font color="#FF0000"><code><I>FileName</I></code></font><TT>=</tt><font color="#FF0000"><code><I>filename</I></code></font><TT>=</tt><font color="#FF0000"><code><I>FILEname</I></code></font><TT>=</tt><font color="#FF0000"><code><I>FILENAME</I></code></font>.</p>
+
+<p><a name="27236"></a>Install script commands must appear as one command per line. Line-wrapped commands will fail.</p>
+
+<p><a name="27237"></a>Comments are currently not supported in the Install script.<BR>
+
+</p>
+
+<h3><a name="25579"></a>  BACKUP</h3>
+
+<p><a name="21086"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b> 		BACKUP</b></code></font><font color="#FF0000"><code><I> FILE_DIR\FileName [Flags]</I></code></font></p>
+
+<p><a name="21088"></a><strong>Where</strong> symbolic name <font color="#FF0000"><code><I>FILE_DIR\FileName</I></code></font> is constructed by the same rules as for <font color="#0066CC"><code><b>COPY</b></code></font> command.</p>
+
+<h4><a name="21089"></a> Flags can be a combination of the following entries separated by spaces and not included in " as a single argument:</h4>
+
+<p></p>
+
+<Table Border="0" CELLPADDING=5>
+
+<caption></caption>
+
+
+
+<tr>
+
+<td valign=top><a name="25397"></a>Netscape32</td>
+
+<td valign=top><a name="25399"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="25401"></a>Netscape16</td>
+
+<td valign=top><a name="25403"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="25405"></a>IE32</td>
+
+<td valign=top><a name="25407"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="25409"></a>IE16</td>
+
+<td valign=top><a name="25411"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="25413"></a>AOL</td>
+
+<td valign=top><a name="25415"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="25417"></a>Opera</td>
+
+<td valign=top><a name="25419"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+</Table>
+
+<Table>
+
+<tr><td>
+
+</Table>
+
+<p><a name="21102"></a><strong>Description:</strong> renames file to a temporary (<strong>.tmp</strong>) name which will be renamed back to original filename when uninstallation of the product occurs.</p><BR>
+
+<h3><a name="21800"></a> BOOKMARK</h3>
+
+<p><a name="21801"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b> 		BOOKMARK</b></code></font><TT> </tt><font color="#FF0000"><code><I>Title URL ToolbarTitle</I></code></font></p>
+
+<p><a name="21803"></a><strong>Description:</strong> adds URL to a bookmark list of all found on user's machine Web browsers. ToolbarTitle - short title for additional toolbar bookmark on later versions of Netscape and IE.</p><BR>
+
+<h3><a name="21219"></a> BRUN</h3>
+
+<p><a name="21220"></a><strong>Usage:</strong> <font color="#0066CC"><code><b>BRUN</b></code></font><TT> </tt><font color="#FF0000"><code><I>APP_DIR\AppName [Arguments]</I></code></font> </p>
+
+<p><a name="21222"></a><strong>Where</strong> symbolic name <font color="#FF0000"><code><I>APP_DIR\AppName</I></code></font> is constructed by the same rules as for the <font color="#0066CC"><code><b>COPY</b></code></font> command.</p>
+
+<p><a name="21223"></a><strong>Description:</strong> parses application location and launches it passing <font color="#FF0000"><code><I>Arguments</I></code></font> string.  If Arguments string has symbolic directory names in it (%...%) they are parsed as described for <font color="#0066CC"><code><b>COPY</b></code></font> command. Blocks until the process launched is  finished.</p><BR>
+
+<h3><a name="21912"></a> CALL</h3>
+
+<p><a name="21913"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b>		CALL</b></code></font><TT> </tt><font color="#FF0000"><code><I>DLL_DIR\DllName FunctionName </I></code></font></p>
+
+<p><a name="21915"></a><strong>Where</strong> symbolic name <font color="#FF0000"><code><I>DLL_DIR\DllName</I></code></font> is constructed by the same rules as for <font color="#0066CC"><code><b>COPY</b></code></font> command.</p>
+
+<p><a name="21916"></a><strong>Description:</strong> loads DLL specified and calls function <font color="#FF0000"><code><I>FunctionName</I></code></font> in <font color="#FF0000"><code><I>PN_RESULT FunctionName(IUnknown* pUnknown)</I></code></font> format. <font color="#FF0000"><code><I>pUnknown</I></code></font> is supplied for an ability to query <font color="#FF0000"><code><I>IPNSetupManager</I></code></font> interface from it. If return value from this call is not <font color="#FF0000"><code><I>PNR_OK</I></code></font> setup/update would fail.</p><BR>
+
+<h3><a name="22430"></a> CMPPREF</h3>
+
+<p><a name="22431"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>CMPPREF</b></code></font><TT> </tt><font color="#FF0000"><code><I>PrefName PrefValue</I></code></font></p>
+
+<p><a name="25548"></a><strong>Description:</strong> sets <TT>setup/update</tt> component property <font color="#FF0000"><code><I>PrefName</I></code></font> to <font color="#FF0000"><code><I>PrefValue</I></code></font>.</p><BR>
+
+<h3><a name="25549"></a> COPY</h3>
+
+<p><a name="25550"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b>		COPY</b></code></font><TT> </tt><font color="#FF0000"><code><I>SRC_DIR\SrcFileName DEST_DIR\DestFileName [Flags]</I></code></font></p>
+
+<p><a name="23392"></a>
+
+<strong>Where</strong><font color="#0066CC"><code><b> </b></code></font><font color="#FF0000"><code><I>SRC_DIR</I></code></font> and <font color="#FF0000"><code><I>DEST_DIR</I></code></font> can start with:
+
+<p></p>
+
+<Table Border="0" CELLPADDING=5>
+
+<caption></caption>
+
+
+
+<tr>
+
+<td valign=top><a name="24266"></a>%SPEC%</td>
+
+<td valign=top><a name="24268"></a>directory of the current spec file</td></tr>
+
+<tr>
+
+<td valign=top><a name="24270"></a>%INSTALL%</td>
+
+<td valign=top><a name="24272"></a>main installation directory of the application</td></tr>
+
+<tr>
+
+<td valign=top><a name="24274"></a>%PLUGINS%</td>
+
+<td valign=top><a name="24276"></a>RMA core plugins directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24278"></a>%CODECS%</td>
+
+<td valign=top><a name="24280"></a>codecs directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24282"></a>%ENCSDK%</td>
+
+<td valign=top><a name="24284"></a>encoder SDK directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24286"></a>%RN_COMMON%</td>
+
+<td valign=top><a name="24288"></a>directory for common libraries, usually shared between different clients.</td></tr>
+
+<tr>
+
+<td valign=top><a name="24290"></a>%UPDATE%</td>
+
+<td valign=top><a name="24292"></a>setup/update components directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24294"></a>%SETUP%</td>
+
+<td valign=top><a name="24296"></a>directory of setup executable</td></tr>
+
+<tr>
+
+<td valign=top><a name="24298"></a>%SETUP_PATH%</td>
+
+<td valign=top><a name="24300"></a>full path of setup executable including file name</td></tr>
+
+<tr>
+
+<td valign=top><a name="24302"></a>%WINDOWS%</td>
+
+<td valign=top><a name="24304"></a>Windows directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24306"></a>%SYSTEM%</td>
+
+<td valign=top><a name="24308"></a>System directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24310"></a>%PROGRAM%</td>
+
+<td valign=top><a name="24312"></a>"Program Files" directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24314"></a>%OS_COMMON%</td>
+
+<td valign=top><a name="24316"></a>"Common Files" directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24318"></a>%DESKTOP%</td>
+
+<td valign=top><a name="24320"></a>Desktop directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24322"></a>%WBPLUGINS%</td>
+
+<td valign=top><a name="24324"></a>Web browser plugins directory</td></tr>
+
+<tr>
+
+<td valign=top><a name="24326"></a>%APP_PATH%::appname.exe</td>
+
+<td valign=top><a name="24328"></a>registered installation directory of <TT>appname.exe</tt> application c:\dirname - explicit path.</td></tr>
+
+</Table>
+
+<Table>
+
+<tr><td>
+
+</Table>
+
+<h4><a name="18124"></a> Flags can be a combination of the following entries separated by spaces and not included in " as a single argument:</h4>
+
+<p></p>
+
+<Table Border="0" CELLPADDING=5>
+
+<caption></caption>
+
+
+
+<tr>
+
+<td valign=top><a name="23991"></a>Netscape32</td>
+
+<td valign=top><a name="23993"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="23995"></a>Netscape16</td>
+
+<td valign=top><a name="23997"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="23999"></a>IE32</td>
+
+<td valign=top><a name="24001"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="24003"></a>IE16</td>
+
+<td valign=top><a name="24005"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="24007"></a>AOL</td>
+
+<td valign=top><a name="24009"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="24011"></a>Opera</td>
+
+<td valign=top><a name="24013"></a>web browser ID for %WBPLUGINS% destination</td></tr>
+
+<tr>
+
+<td valign=top><a name="24015"></a>OCX</td>
+
+<td valign=top><a name="24017"></a>registers as ActiveX control.</td></tr>
+
+<tr>
+
+<td valign=top><a name="24019"></a>CS</td>
+
+<td valign=top><a name="24021"></a>control sum verification for component validation</td></tr>
+
+<tr>
+
+<td valign=top><a name="24023"></a>VER</td>
+
+<td valign=top><a name="24025"></a>version string verification for component validation</td></tr>
+
+<tr>
+
+<td valign=top><a name="24027"></a>SIZE</td>
+
+<td valign=top><a name="24029"></a>size verification for component validation</td></tr>
+
+<tr>
+
+<td valign=top><a name="24031"></a>PR</td>
+
+<td valign=top><a name="24033"></a>presence verification for component validation</td></tr>
+
+<tr>
+
+<td valign=top><a name="24035"></a>SATEL</td>
+
+<td valign=top><a name="24037"></a>registers as a satellite DLL (localization)</td></tr>
+
+<tr>
+
+<td valign=top><a name="24039"></a>NoRemove</td>
+
+<td valign=top><a name="24041"></a>do not remove file on uninstall of the product</td></tr>
+
+</Table>
+
+<Table>
+
+<tr><td>
+
+</Table>
+
+<p><a name="20277"></a><strong>Description:</strong> parses source and destination locations and copies file; creates all required directories; registers copied files for removing by uninstaller. If unable to copy file because the destination file is in use, a temporary file is created and file is scheduled to be renamed after a reboot of the OS.</p><BR>
+
+<h3><a name="21507"></a> DATATYPE</h3>
+
+<p><a name="21508"></a><strong>Usage:</strong><font color="#0066CC"><code><b> DATATYPE</b></code></font><TT> </tt><font color="#FF0000"><code><I>"Extension1[ Extension2]...[ ExtensionN]" "MIMEType1[ MIMEType2]...[ MIMETypeN]" ServiceName Description Type</I></code></font></p>
+
+<p><a name="24424"></a><strong>Where</strong><font color="#0066CC"><code><b> </b></code></font>extensions do not include a starting dot (e.g., use <TT>COM</tt> not <TT>.COM</tt>).</p>
+
+<p><a name="24438"></a><strong>Where</strong> <font color="#FF0000"><code><I>Type</I></code></font>:
+
+<p></p>
+
+<Table Border="0" CELLPADDING=5>
+
+<caption></caption>
+
+
+
+<tr>
+
+<td valign=top>
+
+<p><a name="24427"></a>
+
+<font color="#FF0000"><code><I>1 </I></code></font></p></td>
+
+<td valign=top><a name="24429"></a>refers to <TT>private</tt> </td></tr>
+
+<tr>
+
+<td valign=top><a name="24431"></a><font color="#FF0000"><code><I>2 </I></code></font></td>
+
+<td valign=top><a name="24433"></a>refers to <TT>standard</tt></td></tr>
+
+<tr>
+
+<td valign=top><a name="24435"></a><font color="#FF0000"><code><I>3 </I></code></font></td>
+
+<td valign=top><a name="24437"></a>refers to <TT>public</tt></td></tr>
+
+</Table>
+
+<Table>
+
+<tr><td>
+
+</Table>
+
+<br><strong>Description:</strong> enters a data type in Supported Data Types table for the client application. Client then uses ATH (see <a href="ath.htm#16150">Appendix B: Ask, Tell, Help</a>) scheme to configure itself as a helper application:
+
+<p><a name="21522"></a>- for MimeTypes with all found on user's machine Web browsers;</p>
+
+<p><a name="21523"></a>- for Extensions with OS.</p><BR>
+
+<h3><a name="20202"></a> DEL</h3>
+
+<p><a name="20240"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>DEL</b></code></font><TT> </tt><font color="#FF0000"><code><I>FILE_DIR\FileName </I></code></font></p>
+
+<p><a name="26010"></a><strong>Where</strong> symbolic name <font color="#FF0000"><code><I>FILE_DIR\FileName</I></code></font> is constructed by the same rules as for the <font color="#0066CC"><code><b>COPY</b></code></font> command, except use of <font color="#FF0000"><code><I>%WBPLUGINS%</I></code></font> is not allowed.</p>
+
+<p><a name="26001"></a><strong>Description:</strong> decrements use counter and removes file if no other application is using it.</p><BR>
+
+<h3><a name="21604"></a> EXIT</h3>
+
+<p><a name="21605"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>EXIT</b></code></font></p>
+
+<p><a name="21607"></a><strong>Description:</strong> exits the client application.</p><BR>
+
+<h3><a name="21868"></a> GOTO</h3>
+
+<p><a name="21869"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>GOTO</b></code></font><TT> </tt><font color="#FF0000"><code><I>url</I></code></font></p>
+
+<p><a name="21871"></a><strong>Description:</strong> Hurls url to the default Web browser on the system.</p><BR>
+
+<h3><a name="21873"></a> LOAD</h3>
+
+<p><a name="21874"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b>		LOAD</b></code></font></p>
+
+<p><a name="21876"></a><strong>Description:</strong> forces the client application to reload all plugin components.</p><BR>
+
+<h3><a name="21692"></a> PREF</h3>
+
+<p><a name="21693"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b> 		PREF</b></code></font><TT> </tt><font color="#FF0000"><code><I>PrefName [[PrefValue ["shared"]]] </I></code></font></p>
+
+<p><a name="21695"></a><strong>Where</strong> <font color="#FF0000"><code><I>"shared"</I></code></font> flag is used for writing to shared preferences.</p>
+
+<p><a name="21696"></a><strong>Description:</strong> sets preference <TT>PrefName</tt> of the client application to <font color="#FF0000"><code><I>PrefValue</I></code></font>. If the <font color="#FF0000"><code><I>PrefValue</I></code></font> argument is missing the <TT>PrefName</tt> preference is removed.</p><BR>
+
+<h3><a name="21697"></a> QUIT</h3>
+
+<p><a name="21698"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b> 		QUIT</b></code></font> </p>
+
+<p><a name="21700"></a><strong>Description:</strong> asks user if she wants to "reboot now." If user agrees, the OS is restarted. </p><BR>
+
+<h3><a name="21373"></a> REG</h3>
+
+<p><a name="21374"></a><strong>Usage:</strong>		<font color="#0066CC"><code><b>REG</b></code></font><TT> </tt><font color="#FF0000"><code><I>[HKCR | HKCU | HKLM | HKU]</I></code></font><TT> KeyName ValueName ValueData</tt></p>
+
+<p><a name="22383"></a>
+
+<strong>Where:</strong><font color="#0066CC"><code><b>
+
+<p></p>
+
+<Table Border="0" CELLPADDING=5>
+
+<caption></caption>
+
+
+
+<tr>
+
+<td valign=top><a name="25282"></a><font color="#FF0000"><code><I>HKCR</I></code></font></td>
+
+<td valign=top><a name="25284"></a>refers to <TT>HKEY_CLASSES_ROOT</tt></td></tr>
+
+<tr>
+
+<td valign=top><a name="25286"></a><font color="#FF0000"><code><I>HKCU</I></code></font></td>
+
+<td valign=top><a name="25288"></a>refers to<TT> HKEY_CURRENT_USER</tt></td></tr>
+
+<tr>
+
+<td valign=top><a name="25290"></a><font color="#FF0000"><code><I>HKLM</I></code></font></td>
+
+<td valign=top><a name="25292"></a>refers to<TT> HKEY_LOCAL_MACHINE</tt></td></tr>
+
+<tr>
+
+<td valign=top><a name="25294"></a><font color="#FF0000"><code><I>HKU</I></code></font></td>
+
+<td valign=top><a name="25296"></a>refers to <TT>HKEY_USERS</tt></td></tr>
+
+</Table>
+
+<Table>
+
+<tr><td>
+
+</Table>
+
+</b></code></font>
+
+<p><a name="26527"></a><strong>Description:</strong> sets Windows registry entry(ies). ValueData may include symbolic paths.</p><BR>
+
+<h3><a name="26528"></a> RESTART</h3>
+
+<p><a name="21971"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>RESTART</b></code></font></p>
+
+<p><a name="21973"></a><strong>Description:</strong> restarts the client application.</p><BR>
+
+<h3><a name="18178"></a> RUN</h3>
+
+<p><a name="18180"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>RUN</b></code></font><TT> </tt><font color="#FF0000"><code><I>APP_DIR\AppName [Arguments] </I></code></font></p>
+
+<p><a name="20264"></a><strong>Where</strong> symbolic name <font color="#FF0000"><code><I>APP_DIR\AppName</I></code></font> is constructed by the same rules as for <font color="#0066CC"><code><b>COPY</b></code></font> command.</p>
+
+<p><a name="20265"></a><strong>Description:</strong> parses application location and launches it passing Arguments string. If Arguments string has symbolic directory names in it (%...%) they are parsed as described for <font color="#0066CC"><code><b>COPY</b></code></font> command.</p><BR>
+
+<h3><a name="18281"></a> SHORTCUT</h3>
+
+<p><a name="18283"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>SHORTCUT</b></code></font><TT> </tt><font color="#FF0000"><code><I>DisplayName [WORKING_DIR [APP_DIR\AppName [Arguments]]] </I></code></font></p>
+
+<p><a name="26150"></a><strong>Where</strong> <font color="#FF0000"><code><I>WORKING_DIR</I></code></font> and <font color="#FF0000"><code><I>APP_DIR</I></code></font> are constructed by the same rules as for <font color="#0066CC"><code><b>COPY</b></code></font> command. If Arguments string has symbolic directory names in it (%...%) they are parsed as described for <font color="#0066CC"><code><b>COPY</b></code></font> command. If the application definition variables is missing the main application of a package is used with no arguments.</p>
+
+<p><a name="18291"></a><strong>Description:</strong> creates a shortcut on the Desktop to the application specified with correspondent working directory and arguments string.</p><BR>
+
+<h3><a name="21746"></a> SHUTDOWN</h3>
+
+<p><a name="21747"></a><strong>Usage:</strong> 		<font color="#0066CC"><code><b>SHUTDOWN</b></code></font><TT> </tt><font color="#FF0000"><code><I>ClassName Title SendFlag </I></code></font></p>
+
+<p><a name="21749"></a><strong>Where</strong> <font color="#FF0000"><code><I>SendFlag</I></code></font>:</p>
+
+<p><a name="21750"></a>0 - asynchronous shutdown</p>
+
+<p><a name="21751"></a>1 - synchronous shutdown</p>
+
+<p><a name="21752"></a><strong>Description:</strong> sends/posts<font color="#FF0000"><code><I> WM_CLOSE</I></code></font> message to all top level windows with matching class name and title.</p><BR>
+
+<h3><a name="18295"></a> STARTMENU</h3>
+
+<p><a name="18297"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b>		STARTMENU</b></code></font><TT> </tt><font color="#FF0000"><code><I>Group Item APP_DIR\AppName [Arguments] </I></code></font></p>
+
+<p><a name="26167"></a><strong>Where</strong> symbolic name<font color="#FF0000"><code><I> APP_DIR\AppName</I></code></font> is constructed by the same rules as for <font color="#0066CC"><code><b>COPY</b></code></font> command. If <font color="#FF0000"><code><I>Arguments</I></code></font> string has symbolic directory names in it (%...%) they are parsed as described for<TT> </tt><font color="#0066CC"><code><b>COPY</b></code></font> command.</p>
+
+<p><a name="26168"></a><strong>Description:</strong> creates an item in the start menu group.</p><BR>
+
+<h3><a name="18347"></a> UNINSTALL</h3>
+
+<p><a name="18349"></a>
+
+<strong>Usage:</strong><font color="#0066CC"><code><b>		UNINSTALL</b></code></font><TT> </tt><font color="#FF0000"><code><I>ComponentName [ComponentVersion]</I></code></font></p>
+
+<p><a name="18351"></a><strong>Description:</strong> uninstalls a component of the same or earlier version.</p>
+
+<h1><a name="26440"></a> Examples</h1>
+
+<p><a name="27766"></a>Commands are shown in normal courier font while parameters and optional arguments are displayed in italics. The full script is displayed prior to the commented version so you can see it all at once.</p>
+
+<p><a name="28268"></a>The current install script language does not support comments and you should remove these if you cut and paste this code. Comments follow each command line or similar groups of commands in these examples.</p><BR>
+
+<h3><a name="27284"></a> Full Install Script for an RMA Datatype Plugin</h3>
+
+<p><a name="27805"></a><strong>Full script:</strong></p>
+
+<p><a name="28067"></a><TT>CMPPREF </tt><I>DisplayName "My New RMA Plugin"<br></I><TT>CMPPREF</tt><font color="#0066CC"><code><b> </b></code></font><I>Type 1<br></I><TT>COPY </tt><I>%SPEC%\*.dll %PLUGINS%\*.dll VER<br></I><TT>COPY </tt><I>%SPEC%\myplugin.exe %PROGRAM%\Real\MyRMA\myplugin.exe VER<br></I><TT>REG HKCR </tt><I>"Software\MyCompany\MyRMA\1.0\Preferences" "AlwaysOnTop" "0"<br></I><TT>REG HKCR </tt><I>"Software\MyCompany\MyRMA\1.0\Preferences" "MiniApp" "1"<br></I><TT>REG HKCR </tt><I>"Software\MyCompany\MyRMA\1.0\Preferences" "ToolTips" "1"<br></I><TT>DATATYPE</tt> <I>"mpg" "video/mpg" MyCompany.MPG.1 "MPG Clip" 3<br></I><TT>DATATYPE</tt><I> "mpeg" "video/mpeg" MyCompany.MPEG.1 "MPEG Clip" 3<br></I><TT>DATATYPE</tt><I> "xyz" "video/vnd.MyCompany-xyzstream" MyCompany.xyz.2 "Fancy XYZ Clip" 3<br></I><TT>LOAD</tt></p>
+
+<p><a name="27799"></a></p>
+
+<p><a name="27803"></a><strong>Commented Script:</strong></p>
+
+<p><a name="26632"></a></p>
+
+<p><a name="28134"></a><TT>CMPPREF </tt><I>DisplayName "My New RMA Plugin"</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Declares the display name, the name shown to the user when information about 
+
+the plugin is requested or displayed.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="27354"></a></p>
+
+<p><a name="27372"></a><TT>CMPPREF</tt><font color="#0066CC"><code><b> </b></code></font><I>Type 1</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Indicates that the plugin is a datatype plugin as opposed to a standalone  
+
+application for the Player. Most AutoUpdate packages will use this command.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="27417"></a></p>
+
+<p><a name="27419"></a><TT>COPY </tt><I>%SPEC%\*.dll %PLUGINS%\*.dll VER</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Copies all DLL files in the root directory of the install package to the RMA Plugins 
+
+directory. The Plugins directory is a declared variable in the Player. VER causes the 
+
+installer to record the version of the copied DLLs. If any of these DLLs are replaced 
+
+or changed at a later date, AutoUpdate will recognize the DLL as invalid or 
+
+damaged.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26648"></a></p>
+
+<p><a name="26459"></a><TT>COPY </tt><I>%SPEC%\myplugin.exe %PROGRAM%\Real\MyRMA\myplugin.exe VER</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Copies additional files, in this case an execuable, to other specific directories.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26466"></a></p>
+
+<p><a name="26709"></a><TT>REG HKCR </tt><I>"Software\MyCompany\MyRMA\1.0\Preferences" "AlwaysOnTop" "0"<br></I><TT>REG HKCR </tt><I>"Software\MyCompany\MyRMA\1.0\Preferences" "MiniApp" "1"<br></I><TT>REG HKCR </tt><I>"Software\MyCompany\MyRMA\1.0\Preferences" "ToolTips" "1"</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Sets necessary registry keys, as defined by your plugin, in the 
+
+HKEY_CLASSES_ROOT of the Windows registry. For example: In this case 
+
+AlwaysOnTop is set to "0" in the Preferences branch.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26860"></a></p>
+
+<p><a name="26843"></a><TT>DATATYPE</tt> <I>"mpg" "video/mpg" MyCompany.MPG.1 "MPG Clip" 3</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Declares support for the .MPG file extension and MIME-type. 
+
+MyCompany.MPG.1 is a unique identifier for the DATATYPE. MPG Clip is a 
+
+display name for the user. 3 declares MPG is a publically defined DATATYPE (see 
+
+<a href="ath.htm#16150">Appendix B: Ask, Tell, Help</a>). 
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26889"></a></p>
+
+<p><a name="27616"></a><TT>DATATYPE</tt><I> "mpeg" "video/mpeg" MyCompany.MPEG.1 "MPEG Clip" 3</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Declares support for the .MPEG file extension and MIME-type.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="27651"></a></p>
+
+<p><a name="26921"></a><TT>DATATYPE</tt><I> "xyz" "video/vnd.MyCompany-xyzstream" MyCompany.xyz.2 "Fancy XYZ Clip" 3</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Declares a new, proprietary DATATYPE. Again, this command is displayed in a 
+
+smaller font to emphasize that commands must appear on a single line.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26796"></a><TT>LOAD</tt></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Tells the Player that a new plugin has been installed and that this plugin should be 
+
+loaded by the RMA Engine.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="27675"></a></p><BR>
+
+<h3><a name="26944"></a> Full Install Script for a Separate Application</h3>
+
+<p><a name="28765"></a>When installing a stand alone application additional information needs to be provided to the installer about the product to be installed.</p>
+
+<p><a name="28811"></a>In the following example the <font color="#FF0000"><code><I>-e</I></code></font> option would be used with rngenrup.exe to pass  information by referencing a text file that contains the following:</p>
+
+<p><a name="28867"></a><TT>ALT_PRODUCT </tt><I>MyCompany|MyApp|1.0 <br></I><TT>COMPONENT </tt><I>MyApp|1.0|upgspec.inf</I></p>
+
+<p><a name="28923"></a></p>
+
+<p><a name="28302"></a><strong>Full script without comments:</strong></p>
+
+<p><a name="28502"></a><TT>COPY </tt><I>%SPEC%\*.dll %PLUGINS%\*.dll VER<br></I><TT>COPY </tt><I>%SPEC%\myapp.exe %PROGRAM%\MyCompany\MyApp\myapp.exe VER<br></I><TT>COPY </tt><I>%SPEC%\license.txt %PROGRAM%\MyCompany\MyApp\<br></I><TT>STARTMENU </tt><I>MYAPP "My Application" "%PROGRAM%\MyCompany\MyApp\myapp.exe"<br></I><TT>SHORTCUT</tt><I> "MyApp" "%PROGRAM%\MyCompany\MyApp" "%PROGRAM%\MyCompany\MyApp\myapp.exe"<br></I><TT>REG HKCR</tt><I> "Software\MyCompany\MyApp\1.0\Preferences" "AlwaysOnTop" "0"<br></I><TT>REG HKCR</tt><I> "Software\MyCompany\MyApp\1.0\Preferences" "MiniApp" "1"<br></I><TT>REG HKLM</tt><I> "Software\Microsoft\Windows\CurrentVersion\Uninstall\MyApp 1.0"<br></I><TT>REG HKLM </tt>"Software\Microsoft\Windows\CurrentVersion\Uninstall\MyApp 1.0" "UninstallString" "%UPDATE%\rnuninst.exe MyCompany|MyApp|1.0"<br><TT>REG HKLM </tt>"Software\Microsoft\Windows\CurrentVersion\Uninstall\MyApp 1.0""DisplayName" "My Application"<br><TT>STARTMENU</tt><I> MYAPP "My Application Uninstaller" %UPDATE%\rnuninst.exe MyCompany|MyApp|1.0<br></I><TT>RUN</tt><I> "%PROGRAM%\MyCompany\MyApp\myapp.exe" "%PROGRAM%\MyCompany\MyApp" </I></p>
+
+<p><a name="28298"></a></p>
+
+<p><a name="28446"></a><strong>Commented Script:</strong></p>
+
+<p><a name="26960"></a><TT>COPY </tt><I>%SPEC%\*.dll %PLUGINS%\*.dll VER</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Copies all DLL files in the root directory of the install package to the RMA Plugins 
+
+directory. The Plugins directory is a declared variable in the Player. VER causes the 
+
+installer to record the version of the copied DLLs. If any of these DLLs are replaced 
+
+or changed at a later date, AutoUpdate will recognize the DLL as invalid or 
+
+damaged.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26961"></a></p>
+
+<p><a name="26963"></a><TT>COPY </tt><I>%SPEC%\myapp.exe %PROGRAM%\MyCompany\MyApp\myapp.exe VER<br></I><TT>COPY </tt><I>%SPEC%\license.txt %PROGRAM%\MyCompany\MyApp\</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Copies additional files, in this case an execuable, to other specific directories. 
+
+Notice that VER is not used for the .txt file being copied. VER will have no effect on 
+
+files that are not executable or DLLs.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="28603"></a></p>
+
+<p><a name="27057"></a><TT>STARTMENU </tt><I>MYAPP "My Application" "%PROGRAM%\MyCompany\MyApp\myapp.exe"</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Sets a Windows Start menu shortcut to the executable in the above COPY 
+
+command creating a  MYAPP menu folder with the My Application menu choice 
+
+inside.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="28606"></a></p>
+
+<p><a name="26970"></a>SHORTCUT <I>"MyApp" "%PROGRAM%\MyCompany\MyApp" "%PROGRAM%\MyCompany\MyApp\myapp.exe" </I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Sets a Windows Desktop shortcut  to the executable in the above COPY command. 
+
+The command shown is in smaller font to fit on a single line. As noted above all 
+
+commands should be on one line or they will fail, commands cannot wrap multiple 
+
+lines. Note that the second parameter, <I>%PROGRAM%\MyCompany\MyApp</I>,  is the working 
+
+directory for the declared shortcut. 
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="26971"></a></p>
+
+<p><a name="28647"></a><TT>REG HKCR</tt><I> "Software\MyCompany\MyApp\1.0\Preferences" "AlwaysOnTop" "0"<br></I><TT>REG HKCR</tt><I> "Software\MyCompany\MyApp\1.0\Preferences" "MiniApp" "1"</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Sets necessary registry keys, as defined by your application, in the <br>
+
+<TT>HKEY_CLASSES_ROOT</tt> of the Windows registry. For example: In this case 
+
+AlwaysOnTop is set to "0" in the Preferences branch.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="28642"></a></p>
+
+<p><a name="27184"></a><TT>REG HKLM</tt><I> "Software\Microsoft\Windows\CurrentVersion\Uninstall\MyApp 1.0"<br></I></p>
+
+<p><a name="27108"></a><TT>REG HKLM</tt><I> "Software\Microsoft\Windows\CurrentVersion\Uninstall\MyApp 1.0" "UninstallString" "%UPDATE%\rnuninst.exe MyCompany|MyApp|1.0"<br></I></p>
+
+<p><a name="27110"></a><TT>REG HKLM</tt><I> "Software\Microsoft\Windows\CurrentVersion\Uninstall\MyApp 1.0" "DisplayName" "My Application"</I></p>
+
+<p><a name="28676"></a></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Registers your application with the Windows <strong>Add/Remove Programs</strong> control 
+
+panel  applet. Though shown on split lines, these should all be on a single line for 
+
+the script to run.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="27104"></a></p>
+
+<p><a name="27222"></a><TT>STARTMENU</tt> <I>MYAPP "My Application Uninstaller" %UPDATE%\rnuninst.exe MyCompany|MyApp|1.0</I></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Sets a Windows Start menu shortcut to the Uninstaller in the MYAPP menu folder.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="27224"></a></p>
+
+<p><a name="28722"></a><TT>RUN</tt><I> "%PROGRAM%\MyCompany\MyApp\myapp.exe" "%PROGRAM%\MyCompany\MyApp" </I></p>
+
+<p><a name="28725"></a></p><p><font color="#808080">
+
+<hr align=left color="#a9a9a9" size=1 width=90%>
+
+Launches the new application at the end of installation.
+
+</font><hr align=left color="#a9a9a9" size=1 width=90%>
+
+<p><a name="28727"></a></p>
+
+<p><a name="28723"></a></p>
+
+<hr align=left size=2 width=100%>
+
+<font size=-1><a href=notice.htm>Copyright</a> &#169; 1998
+
+<a href="http://www.real.com/" target="_top">RealNetworks</a>
+
+<br>For information on RealNetworks' technical support, <a href="feedback.htm#support">click here</a>. 
+
+<br><font size=-2>This file last updated on 02/19/99 at 15:11:10.</font> <center>
+</center>
+
+</body>
+
+</html>

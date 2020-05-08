@@ -1,0 +1,224 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ButeMgr"=.\ButeMgr\ButeMgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ButeMgrMfcDll"=.\ButeMgr\ButeMgrMfcDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CryptMgr"=.\CryptMgr\cryptmgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CryptMgrMfcDll"=.\CryptMgr\CryptMgrMfcDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DibMgr"=.\dibmgr\dibmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DibMgrMfcDll"=.\dibmgr\DibMgrMfcDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GenRegMgr"=.\genregmgr\genregmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_Lith"=.\lith\Lib_Lith.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_StdLith"=.\stdlith\Lib_StdLith.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_ZLib"=.\zlib\Lib_ZLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Libs"=.\Libs.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ButeMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DibMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DibMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GenRegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_ZLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MFCStub
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name regmgr32
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MFCStub"=.\MFCStub\MFCStub60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RegMgr"=.\RegMgr\regmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "regmgr32"=.\RegMgr32\regmgr32.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,94 @@
+//-----------------------------------------------------------------------------
+// 파  일 : ButeFileDefines.h
+//-----------------------------------------------------------------------------
+// 목  적 : 각종 bute file 정의
+// 날  자 : [2003, 8]
+// 작성자 : [burumal]
+// 소  유 : (c) GMOS
+//-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// 설명 : 상수정의
+//-----------------------------------------------------------------------------
+#ifndef __BUTE_FILE_DEFINES_H__
+#define __BUTE_FILE_DEFINES_H__
+
+// AI   
+#define AI_DEFAULT_BUTES						"SA_SCRIPTS\\AI\\AIButes.txt"
+#define AI_GOALS_DEFAULT_FILE					"SA_SCRIPTS\\AI\\AIGoals.txt"
+
+// Animation
+#define	MODELBMGR_MODEL_DEFAULT_ANIMATION		CString("SA_SCRIPTS\\Animation\\Ani_STUD.txt")
+
+// Attachment
+#define	ATTACHMENTS_DEFAULT_FILE				"SA_SCRIPTS\\Attachment\\Attachments.txt"
+
+// Command
+#define CBMGR_DEFAULT_FILE						"SA_SCRIPTS\\Command\\Commands.txt"
+
+// FX
+#define DTMGR_DEFAULT_FILE						"SA_SCRIPTS\\Fx\\DamageTypes.txt"
+#define DEBRISMGR_DEFAULT_FILE					"SA_SCRIPTS\\FX\\Debris.txt"
+#define FXBMGR_DEFAULT_FILE						"SA_SCRIPTS\\Fx\\Fx.txt"
+#define DMGFXMGR_DEFAULT_FILE					"SA_SCRIPTS\\Fx\\DamageFX.txt"
+
+// Gadget
+#define	GTMGR_DEFAULT_FILE						"SA_SCRIPTS\\Gadget\\GadgetTargets.txt"
+
+// GameShell
+#define CLIENT_BUTES_DEFAULT_FILE				"SA_SCRIPTS\\GameShell\\ClientButes.txt"
+#define SERVER_BUTES_DEFAULT_FILE				"SA_SCRIPTS\\GameShell\\ServerButes.txt"
+
+// Interface
+#define LO_DEFAULT_FILE							"SA_SCRIPTS\\Interface\\Layout.txt"
+
+// Item
+#define KEY_DEFAULT_FILE						"SA_SCRIPTS\\Item\\KeyItems.txt"
+#define SI_DEFAULT_FILE							"SA_SCRIPTS\\Item\\SearchItems.txt"
+#define POPUP_DEFAULT_FILE						"SA_SCRIPTS\\Item\\PopupItems.txt"
+#define INVENTORY_DEFAULT_FILE					"SA_SCRIPTS\\Item\\Inventory.txt"
+#define INTELMGR_DEFAULT_FILE					"SA_SCRIPTS\\Item\\IntelItems.txt"
+
+// Mission
+#define MISSION_DEFAULT_FILE					"SA_SCRIPTS\\Mission\\Missions.txt"
+#define MISSION_COOP_FILE						"SA_SCRIPTS\\Mission\\CoopMissions.txt" 
+#define MISSION_DEATHMATH_FILE                  "SA_SCRIPTS\\Mission\\DeathMathMission.txt"  // Death Mission.
+#define MISSION_TEAMDEATHMATH_FILE              "SA_SCRIPTS\\Mission\\TeamDeathMission.txt"  // TeamDeathMission.
+
+// Model
+#define MBMGR_DEFAULT_FILE						"SA_SCRIPTS\\Model\\ModelButes.txt"
+#define	MODELBMGR_MODEL_DEFAULT_MODELFILE		CString("Li_Characters\\Models\\STUD\\STUD_Base.ltb")
+#define	MODELBMGR_MODEL_DEFAULT_HANDSSKIN		CString("Li_Weapons\\Skins\\PV\\Hand.dtx")
+
+// ObjectTypes
+#define ATMGR_DEFAULT_FILE						"SA_SCRIPTS\\ObjectTypes\\ActivateTypes.txt"
+#define	RTMGR_DEFAULT_FILE						"SA_SCRIPTS\\ObjectTypes\\RadarTypes.txt"
+#define TTMGR_DEFAULT_FILE						"SA_SCRIPTS\\ObjectTypes\\TriggerTypes.txt"
+
+// Prop
+#define PTMGR_DEFAULT_FILE						"SA_SCRIPTS\\Prop\\PropTypes.txt"
+
+// Relation
+#define RELATION_DATA_DEFAULT_FILE				"SA_SCRIPTS\\Relation\\RelationData.txt"
+
+// Skill
+#define SMGR_DEFAULT_FILE						"SA_SCRIPTS\\Skill\\Skills.txt"
+
+// Sound 
+#define SOUND_BUTES_DEFAULT_FILE				"SA_SCRIPTS\\Sound\\SoundButes.txt"
+#define SFM_DEFAULT_FILE						"SA_SCRIPTS\\Sound\\SoundFilters.txt"
+#define CSNDMGR_DEFAULT_FILE					"SA_SCRIPTS\\Sound\\ClientSnd.txt"
+#define MUSIC_DEFAULT_FILE						"SA_SCRIPTS\\Sound\\Music.txt"
+#define SSNDMGR_DEFAULT_FILE					"SA_SCRIPTS\\Sound\\ServerSnd.txt"
+
+// Surface
+#define SRFMGR_DEFAULT_FILE						"SA_SCRIPTS\\Surface\\Surface.txt"
+
+// Weapon
+#define WEAPON_DEFAULT_FILE						"SA_SCRIPTS\\Weapon\\Weapons.txt"
+#define WEAPON_DEFAULT_MULTI_FILE				"SA_SCRIPTS\\Weapon\\mp_weapons.txt"
+
+// Weightset
+#define MODELBMGR_MODEL_DEFAULT_WEIGHTSET		CString("SA_SCRIPTS\\Weightset\\Ws_Default.txt")
+
+#endif // __BUTE_FILE_DEFINES_H__

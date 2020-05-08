@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lib_Lith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\±è±¤½Ä\LOCALS~1\Temp\RSPEE.tmp" with contents
+[
+/nologo /out:"..\built\Debug\Lib_Lith.lib" 
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\basehash.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\baselist.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\baselistcounter.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\dprintf.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\lith.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\lithbaselist.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\lithchunkallocator.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\lithsimpary.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\lithsimparystat.obj
+\work\SuddenAttack\libs\built\Debug\Lib_Lith\virtlist.obj
+\work\SuddenAttack\Engine\built\Debug\libs\ltmem.lib
+]
+Creating command line "link.exe -lib @"C:\DOCUME~1\±è±¤½Ä\LOCALS~1\Temp\RSPEE.tmp""
+<h3>Output Window</h3>
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_Lith.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

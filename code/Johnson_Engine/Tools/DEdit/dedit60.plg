@@ -1,0 +1,3844 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lib_StdLith - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP10.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I ".\\" /I "..\STLPORT-4.0\STLPORT" /I "..\zlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /FR"..\built\Release\Lib_StdLith/" /Fp"..\built\Release\Lib_StdLith/Lib_StdLith.pch" /YX /Fo"..\built\Release\Lib_StdLith/" /Fd"..\built\Release\Lib_StdLith/" /FD /c 
+"E:\Working\libs\stdlith\abstractio.cpp"
+"E:\Working\libs\stdlith\sys\win\compressedio.cpp"
+"E:\Working\libs\stdlith\dynarray.cpp"
+"E:\Working\libs\stdlith\fileio.cpp"
+"E:\Working\libs\stdlith\goodlinklist.cpp"
+"E:\Working\libs\stdlith\helpers.cpp"
+"E:\Working\libs\stdlith\l_allocator.cpp"
+"E:\Working\libs\stdlith\linklist.cpp"
+"E:\Working\libs\stdlith\lithexception.cpp"
+"E:\Working\libs\stdlith\memory.cpp"
+"E:\Working\libs\stdlith\memoryio.cpp"
+"E:\Working\libs\stdlith\stringholder.cpp"
+"E:\Working\libs\stdlith\struct_bank.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP10.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP11.tmp" with contents
+[
+/nologo /out:"..\built\Release\Lib_StdLith\Lib_StdLith.lib" 
+\Working\libs\built\Release\Lib_StdLith\abstractio.obj
+\Working\libs\built\Release\Lib_StdLith\compressedio.obj
+\Working\libs\built\Release\Lib_StdLith\dynarray.obj
+\Working\libs\built\Release\Lib_StdLith\fileio.obj
+\Working\libs\built\Release\Lib_StdLith\goodlinklist.obj
+\Working\libs\built\Release\Lib_StdLith\helpers.obj
+\Working\libs\built\Release\Lib_StdLith\l_allocator.obj
+\Working\libs\built\Release\Lib_StdLith\linklist.obj
+\Working\libs\built\Release\Lib_StdLith\lithexception.obj
+\Working\libs\built\Release\Lib_StdLith\memory.obj
+\Working\libs\built\Release\Lib_StdLith\memoryio.obj
+\Working\libs\built\Release\Lib_StdLith\stringholder.obj
+\Working\libs\built\Release\Lib_StdLith\struct_bank.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP11.tmp"
+<h3>Output Window</h3>
+Compiling...
+abstractio.cpp
+compressedio.cpp
+dynarray.cpp
+fileio.cpp
+goodlinklist.cpp
+helpers.cpp
+l_allocator.cpp
+linklist.cpp
+lithexception.cpp
+memory.cpp
+memoryio.cpp
+stringholder.cpp
+struct_bank.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_ZLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /FR"..\Built\Release\Lib_ZLib/" /Fp"..\Built\Release\Lib_ZLib/Lib_ZLib.pch" /YX /Fo"..\Built\Release\Lib_ZLib/" /Fd"..\Built\Release\Lib_ZLib/" /FD /c 
+"E:\Working\libs\zlib\adler32.c"
+"E:\Working\libs\zlib\compress.c"
+"E:\Working\libs\zlib\crc32.c"
+"E:\Working\libs\zlib\deflate.c"
+"E:\Working\libs\zlib\gzio.c"
+"E:\Working\libs\zlib\infblock.c"
+"E:\Working\libs\zlib\infcodes.c"
+"E:\Working\libs\zlib\inffast.c"
+"E:\Working\libs\zlib\inflate.c"
+"E:\Working\libs\zlib\inftrees.c"
+"E:\Working\libs\zlib\infutil.c"
+"E:\Working\libs\zlib\trees.c"
+"E:\Working\libs\zlib\uncompr.c"
+"E:\Working\libs\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP12.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP13.tmp" with contents
+[
+/nologo /out:"..\Built\Release\Lib_ZLib\Lib_ZLib.lib" 
+\Working\libs\Built\Release\Lib_ZLib\adler32.obj
+\Working\libs\Built\Release\Lib_ZLib\compress.obj
+\Working\libs\Built\Release\Lib_ZLib\crc32.obj
+\Working\libs\Built\Release\Lib_ZLib\deflate.obj
+\Working\libs\Built\Release\Lib_ZLib\gzio.obj
+\Working\libs\Built\Release\Lib_ZLib\infblock.obj
+\Working\libs\Built\Release\Lib_ZLib\infcodes.obj
+\Working\libs\Built\Release\Lib_ZLib\inffast.obj
+\Working\libs\Built\Release\Lib_ZLib\inflate.obj
+\Working\libs\Built\Release\Lib_ZLib\inftrees.obj
+\Working\libs\Built\Release\Lib_ZLib\infutil.obj
+\Working\libs\Built\Release\Lib_ZLib\trees.obj
+\Working\libs\Built\Release\Lib_ZLib\uncompr.obj
+\Working\libs\Built\Release\Lib_ZLib\zutil.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP13.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+trees.c
+uncompr.c
+zutil.c
+Creating library...
+<h3>
+--------------------Configuration: ButeMgrMfcDll - Win32 Release--------------------
+</h3>
+
+--------------------Configuration: ButeMgr - Win32 Release MFC DLL--------------------
+Compiling...
+ARange.cpp
+AVector.cpp
+ButeMgr.cpp
+Stdafx.cpp
+Creating library...
+
+ButeMgrMfcDll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CryptMgrMfcDll - Win32 Release--------------------
+</h3>
+
+--------------------Configuration: CryptMgr - Win32 Release MFC DLL--------------------
+Compiling...
+blowfish.cpp
+CryptMgr.cpp
+Creating library...
+
+CryptMgrMfcDll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ButeEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\release\tools\ButeEdit/ButeEdit.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\ButeEdit\ButeEdit.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP19.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\lith" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"..\..\built\release\tools\ButeEdit/ButeEdit.pch" /Yu"stdafx.h" /Fo"..\..\built\release\tools\ButeEdit/" /Fd"..\..\built\release\tools\ButeEdit/" /FD /c 
+"E:\Working\ENGINE\tools\ButeEdit\ModifyBoolDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyByteDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyDlgBase.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyDoubleDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyDWordDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyFloatDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyIntegerDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyPointDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyRangeDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyRectangleDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyStringDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ModifyVectorDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\NewTagDlg.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\BEStringFunc.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ButeEdit.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ButeEditDoc.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\ButeEditView.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\LeftView.cpp"
+"E:\Working\ENGINE\tools\ButeEdit\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP19.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP1A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\lith" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"..\..\built\release\tools\ButeEdit/ButeEdit.pch" /Yc"stdafx.h" /Fo"..\..\built\release\tools\ButeEdit/" /Fd"..\..\built\release\tools\ButeEdit/" /FD /c 
+"E:\Working\ENGINE\tools\ButeEdit\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP1A.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP1B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\ButeEdit/ButeEdit.pdb" /machine:I386 /nodefaultlib:"mfc42d.lib" /nodefaultlib:"mfcs42d.lib" /nodefaultlib:"msvcrtd.lib" /out:"..\..\built\release\tools\ButeEdit/ButeEdit.exe" 
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyBoolDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyByteDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyDlgBase.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyDoubleDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyDWordDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyFloatDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyIntegerDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyPointDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyRangeDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyRectangleDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyStringDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyVectorDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\NewTagDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\BEStringFunc.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEditDoc.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEditView.obj
+\Working\ENGINE\built\release\tools\ButeEdit\LeftView.obj
+\Working\ENGINE\built\release\tools\ButeEdit\MainFrm.obj
+\Working\ENGINE\built\release\tools\ButeEdit\StdAfx.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.res
+..\..\..\Libs\built\Release\Lib_ZLib\Lib_ZLib.lib
+..\..\..\Libs\built\Release\ButeMgrMFCDll\ButeMgrMfcDll.lib
+..\..\..\libs\built\Release\CryptMgrMfcDll\CryptMgrMfcDll.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP1B.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP1C.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP1C.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ModifyBoolDlg.cpp
+ModifyByteDlg.cpp
+ModifyDlgBase.cpp
+ModifyDoubleDlg.cpp
+ModifyDWordDlg.cpp
+ModifyFloatDlg.cpp
+ModifyIntegerDlg.cpp
+ModifyPointDlg.cpp
+ModifyRangeDlg.cpp
+ModifyRectangleDlg.cpp
+ModifyStringDlg.cpp
+ModifyVectorDlg.cpp
+NewTagDlg.cpp
+BEStringFunc.cpp
+ButeEdit.cpp
+ButeEditDoc.cpp
+ButeEditView.cpp
+LeftView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe
+copy \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+ButeEdit.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ButeMgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\STLPORT-4.0\STLPORT" /I "..\stdlith" /I "..\mfcstub" /I "..\cryptmgr" /I "..\lith" /D "NDEBUG" /D "_NOMFC" /D "WIN32" /D "_WINDOWS" /Fp"..\built\release\ButeMgr/ButeMgr.pch" /YX /Fo"..\built\release\ButeMgr/" /Fd"..\built\release\ButeMgr/" /FD /c 
+"E:\Working\libs\ButeMgr\ARange.cpp"
+"E:\Working\libs\ButeMgr\AVector.cpp"
+"E:\Working\libs\ButeMgr\ButeMgr.cpp"
+"E:\Working\libs\ButeMgr\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP1E.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP1F.tmp" with contents
+[
+/nologo /out:"..\built\release\ButeMgr\ButeMgr.lib" 
+\Working\libs\built\release\ButeMgr\ARange.obj
+\Working\libs\built\release\ButeMgr\AVector.obj
+\Working\libs\built\release\ButeMgr\ButeMgr.obj
+\Working\libs\built\release\ButeMgr\Stdafx.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP1F.tmp"
+<h3>Output Window</h3>
+Compiling...
+ARange.cpp
+AVector.cpp
+ButeMgr.cpp
+Stdafx.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+ButeMgr.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ButeMgr - Win32 Release MFC DLL--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP20.tmp" with contents
+[
+/nologo /out:"..\built\Release\ButeMgrMFCDll\ButeMgrMfcDll.lib" 
+\Working\libs\built\Release\ButeMgrMFCDll\ARange.obj
+\Working\libs\built\Release\ButeMgrMFCDll\AVector.obj
+\Working\libs\built\Release\ButeMgrMFCDll\ButeMgr.obj
+\Working\libs\built\Release\ButeMgrMFCDll\Stdafx.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP20.tmp"
+<h3>Output Window</h3>
+Creating library...
+
+
+
+<h3>Results</h3>
+ButeMgrMfcDll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CryptMgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP21.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /Fp"..\built\Release\CryptMgr/cryptmgr.pch" /YX /Fo"..\built\Release\CryptMgr/" /Fd"..\built\Release\CryptMgr/" /FD /c 
+"E:\Working\libs\CryptMgr\blowfish.cpp"
+"E:\Working\libs\CryptMgr\CryptMgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP21.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\built\Release\CryptMgr\cryptmgr.lib"  \Working\libs\built\Release\CryptMgr\blowfish.obj \Working\libs\built\Release\CryptMgr\CryptMgr.obj "
+<h3>Output Window</h3>
+Compiling...
+blowfish.cpp
+CryptMgr.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+cryptmgr.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CryptMgr - Win32 Release MFC DLL--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+CryptMgrMfcDll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenRegMgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP22.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\STLPORT-4.0\STLPORT" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "NO_PRAGMA_LIBS" /FR"..\Built\Release\GenRegMgr/" /Fp"..\Built\Release\GenRegMgr/genregmgr60.pch" /YX /Fo"..\Built\Release\GenRegMgr/" /Fd"..\Built\Release\GenRegMgr/" /FD /c 
+"E:\Working\libs\genregmgr\GenRegMgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP22.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\Built\Release\GenRegMgr\genregmgr.lib"  \Working\libs\Built\Release\GenRegMgr\GenRegMgr.obj "
+<h3>Output Window</h3>
+Compiling...
+GenRegMgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: ltamgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP23.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"..\..\Built\Release\libs\LTAMgr/ltamgr.pch" /YX /Fo"..\..\Built\Release\libs\LTAMgr/" /Fd"..\..\Built\Release\libs\LTAMgr/" /FD /c 
+"E:\Working\ENGINE\libs\ltamgr\ltabitfile.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltacompressedfile.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltaconverter.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltafile.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltafilebuffer.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltahuffmantree.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltaloadonlyalloc.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltanode.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltanodebuilder.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltanodeiterator.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltanodewriter.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltanodreader.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltareader.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltautil.cpp"
+"E:\Working\ENGINE\libs\ltamgr\ltawriter.cpp"
+"E:\Working\ENGINE\libs\ltamgr\lzsswindow.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP23.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+/nologo /out:"..\..\Built\Release\libs\LTAMgr\ltamgr.lib" 
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltabitfile.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltacompressedfile.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltaconverter.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltafile.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltafilebuffer.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltahuffmantree.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltaloadonlyalloc.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltanode.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltanodebuilder.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltanodeiterator.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltanodewriter.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltanodreader.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltareader.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltautil.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\ltawriter.obj
+\Working\ENGINE\Built\Release\libs\LTAMgr\lzsswindow.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP24.tmp"
+<h3>Output Window</h3>
+Compiling...
+ltabitfile.cpp
+ltacompressedfile.cpp
+ltaconverter.cpp
+ltafile.cpp
+ltafilebuffer.cpp
+ltahuffmantree.cpp
+ltaloadonlyalloc.cpp
+ltanode.cpp
+ltanodebuilder.cpp
+ltanodeiterator.cpp
+ltanodewriter.cpp
+ltanodreader.cpp
+ltareader.cpp
+ltautil.cpp
+ltawriter.cpp
+lzsswindow.cpp
+Creating library...
+<h3>
+--------------------Configuration: RegMgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP25.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\lith" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /Fp"..\built\Release\RegMgr/regmgr60.pch" /YX /Fo"..\built\Release\RegMgr/" /Fd"..\built\Release\RegMgr/" /FD /c 
+"E:\Working\libs\RegMgr\Regmgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP25.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\built\Release\RegMgr\regmgr.lib"  \Working\libs\built\Release\RegMgr\Regmgr.obj "
+<h3>Output Window</h3>
+Compiling...
+Regmgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_Lith - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /FR"..\built\Release\Lib_Lith/" /Fp"..\built\Release\Lib_Lith/Lib_Lith.pch" /YX /Fo"..\built\Release\Lib_Lith/" /Fd"..\built\Release\Lib_Lith/" /FD /c 
+"E:\Working\libs\lith\basehash.cpp"
+"E:\Working\libs\lith\baselist.cpp"
+"E:\Working\libs\lith\baselistcounter.cpp"
+"E:\Working\libs\lith\dprintf.cpp"
+"E:\Working\libs\lith\lith.cpp"
+"E:\Working\libs\lith\lithbaselist.cpp"
+"E:\Working\libs\lith\lithchunkallocator.cpp"
+"E:\Working\libs\lith\lithsimpary.cpp"
+"E:\Working\libs\lith\lithsimparystat.cpp"
+"E:\Working\libs\lith\virtlist.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP26.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+/nologo /out:"..\built\Release\Lib_Lith\Lib_Lith.lib" 
+\Working\libs\built\Release\Lib_Lith\basehash.obj
+\Working\libs\built\Release\Lib_Lith\baselist.obj
+\Working\libs\built\Release\Lib_Lith\baselistcounter.obj
+\Working\libs\built\Release\Lib_Lith\dprintf.obj
+\Working\libs\built\Release\Lib_Lith\lith.obj
+\Working\libs\built\Release\Lib_Lith\lithbaselist.obj
+\Working\libs\built\Release\Lib_Lith\lithchunkallocator.obj
+\Working\libs\built\Release\Lib_Lith\lithsimpary.obj
+\Working\libs\built\Release\Lib_Lith\lithsimparystat.obj
+\Working\libs\built\Release\Lib_Lith\virtlist.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP27.tmp"
+<h3>Output Window</h3>
+Compiling...
+basehash.cpp
+baselist.cpp
+baselistcounter.cpp
+dprintf.cpp
+lith.cpp
+lithbaselist.cpp
+lithchunkallocator.cpp
+lithsimpary.cpp
+lithsimparystat.cpp
+virtlist.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_RezMgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP28.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\libs\lith" /I "..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /FR"..\..\built\Release\libs\Lib_RezMgr/" /Fp"..\..\built\Release\libs\Lib_RezMgr/Lib_RezMgr.pch" /YX /Fo"..\..\built\Release\libs\Lib_RezMgr/" /Fd"..\..\built\Release\libs\Lib_RezMgr/" /FD /c 
+"E:\Working\ENGINE\libs\rezmgr\rezfile.cpp"
+"E:\Working\ENGINE\libs\rezmgr\rezhash.cpp"
+"E:\Working\ENGINE\libs\rezmgr\rezmgr.cpp"
+"E:\Working\ENGINE\libs\rezmgr\rezutils.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP28.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP29.tmp" with contents
+[
+/nologo /out:"..\..\built\Release\libs\Lib_RezMgr\Lib_RezMgr.lib" 
+\Working\ENGINE\built\Release\libs\Lib_RezMgr\rezfile.obj
+\Working\ENGINE\built\Release\libs\Lib_RezMgr\rezhash.obj
+\Working\ENGINE\built\Release\libs\Lib_RezMgr\rezmgr.obj
+\Working\ENGINE\built\Release\libs\Lib_RezMgr\rezutils.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP29.tmp"
+<h3>Output Window</h3>
+Compiling...
+rezfile.cpp
+rezhash.cpp
+rezmgr.cpp
+rezutils.cpp
+Creating library...
+<h3>
+--------------------Configuration: DibMgrMfcDll - Win32 Release--------------------
+</h3>
+
+--------------------Configuration: DibMgr - Win32 Release MFC DLL--------------------
+Compiling...
+Dib.cpp
+DibMgr.cpp
+DibPal.cpp
+Creating library...
+
+dibmgr_mfcdll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\Built\Release\tools\DEdit/dedit.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\DEdit\dedit.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP2C.tmp" with contents
+[
+/nologo /MD /W2 /GX /O2 /Op /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\model\\" /I "mrcext" /I "mrcext\vc_headers" /I "..\..\sdk\inc" /I "." /I "..\preprocessor" /I "options" /I "..\shared\world\\" /I "misc" /I "dlgs" /I "controls" /I "frames" /I "project" /I "..\shared\engine" /I "regionedit" /I "draw" /I "docs" /I "views" /I "..\..\libs\rezmgr" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\stdlith\sys\win" /I "trackers" /I "..\..\sdk\inc\physics" /I ".\modelview" /I ".\fileformats" /I ".\keyaggregate" /I ".\levelerror" /I ".\lightmap" /I "..\..\..\libs\genregmgr" /I "..\..\..\libs\dibmgr" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\lith" /I "..\..\libs\ltamgr" /I "..\..\..\libs\cryptmgr" /D "NDEBUG" /D "REZMGRFULL" /D "WIN32" /D "_WINDOWS" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "PRE_FLOAT" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /Fr"..\..\Built\Release\tools\DEdit/" /Fp"..\..\Built\Release\tools\DEdit/dedit60.pch" /Yu"bdefs.h" /Fo"..\..\Built\Release\tools\DEdit/" /Fd"..\..\Built\Release\tools\DEdit/" /FD /c 
+"E:\Working\ENGINE\tools\DEdit\OptionsSheet.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\PropPageOptionsControls.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\PropPageOptionsD3D.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\PropPageOptionsMisc.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\PropPageOptionsModels.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\PropPageOptionsPrefabs.cpp"
+"E:\Working\ENGINE\tools\DEdit\UndoPage.cpp"
+"E:\Working\ENGINE\tools\DEdit\BaseImgDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\ModelDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\NodeView.cpp"
+"E:\Working\ENGINE\tools\DEdit\PrefabDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\ProjectBar.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\PropertiesDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\SoundDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\SpriteDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\TextureDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\WorldsDlg.cpp"
+"E:\Working\ENGINE\tools\shared\model\model.cpp"
+"E:\Working\ENGINE\tools\shared\model\model_ops.cpp"
+"E:\Working\ENGINE\tools\shared\model\modelallocations.cpp"
+"E:\Working\ENGINE\tools\shared\model\transformmaker.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsAdvancedSelect.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsBase.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsClassDialog.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsClipboard.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsControls.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsDisplay.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsGenerateUniqueNames.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsMisc.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsObjectBrowser.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsPrefabs.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsRun.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsViewports.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsWindows.cpp"
+"E:\Working\ENGINE\tools\DEdit\LevelError\Detectors.cpp"
+"E:\Working\ENGINE\tools\DEdit\LevelError\ErrorDetector.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ErrorInformationDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\LevelError\LevelError.cpp"
+"E:\Working\ENGINE\tools\DEdit\LevelError\LevelErrorDB.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\LevelErrorDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\LevelErrorOptionsDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\AddPatchDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\AdvancedSelect.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\AdvancedSelectDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\AllTextureDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\AlphaFromColorDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\AutoTextureOptionsDlg.cpp"
+"E:\Working\ENGINE\tools\shared\world\BasePoly.cpp"
+"E:\Working\ENGINE\tools\DEdit\baserezdlg.cpp"
+"E:\Working\ENGINE\tools\shared\engine\bindmgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\CameraFOVDlg.cpp"
+"E:\Working\ENGINE\tools\shared\engine\classbind.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ClassDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\ClassList.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ClassListDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\ClassTree.cpp"
+"E:\Working\ENGINE\tools\DEdit\FileFormats\CObjInterface.cpp"
+"E:\Working\ENGINE\tools\DEdit\ColorPicker.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ColorSelectDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\ColorWell.cpp"
+"E:\Working\ENGINE\tools\DEdit\controls\ColumnCtrl.cpp"
+"E:\Working\ENGINE\tools\shared\engine\concommand.cpp"
+"E:\Working\ENGINE\tools\shared\engine\conparse.cpp"
+"E:\Working\ENGINE\tools\shared\engine\converge.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\CreatePrimitive.cpp"
+"E:\Working\ENGINE\tools\DEdit\CylinderPrimDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\d3d_texturemgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\Project\d_filemgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\DEdit.cpp"
+"E:\Working\ENGINE\tools\DEdit\dedit_concommand.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\DEditOptions.cpp"
+"E:\Working\ENGINE\tools\DEdit\Frames\DEDockFrameWnd.cpp"
+"E:\Working\ENGINE\tools\shared\engine\dhashtable.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\draw_d3d.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\DrawBase.cpp"
+"E:\Working\ENGINE\tools\shared\engine\dsys_interface.cpp"
+"E:\Working\ENGINE\tools\shared\engine\dtxmgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\edit_actions.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditBrush.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\EditClipboard.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\EditEffectGroupDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\EditGrid.cpp"
+"E:\Working\ENGINE\tools\DEdit\Misc\EditHelpers.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditObjects.cpp"
+"E:\Working\ENGINE\tools\DEdit\Misc\EditorTransfer.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditPatch.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditPlane.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditPoly.cpp"
+"E:\Working\ENGINE\tools\DEdit\Project\EditProjectMgr.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditRegion.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\EventEditorDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\EventListDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\ExportObjFile.cpp"
+"E:\Working\ENGINE\tools\DEdit\FilePalette.cpp"
+"E:\Working\ENGINE\tools\DEdit\Misc\FileUtils.cpp"
+"E:\Working\ENGINE\tools\DEdit\Frames\flattoolbar.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\FrameList.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genericprop_setup.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genltstream.cpp"
+"E:\Working\ENGINE\tools\shared\engine\geomroutines.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ImportBumpMapDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ImportCubeMapDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\ImportObjectDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\ImportObjFileFormat.cpp"
+"E:\Working\ENGINE\tools\DEdit\KeyAggregate\KeyDefaultFactory.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\LevelItemsDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\leveltexturesdlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\LevelTexturesOptionsDlg.cpp"
+"E:\Working\ENGINE\tools\shared\engine\light_table.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\LightAttenuation.cpp"
+"E:\Working\ENGINE\tools\shared\engine\lightmap_compress.cpp"
+"E:\Working\ENGINE\tools\shared\engine\lightmap_planes.cpp"
+"E:\Working\ENGINE\tools\shared\engine\load_pcx.cpp"
+"E:\Working\ENGINE\tools\shared\world\LTTexture.cpp"
+"E:\Working\ENGINE\tools\DEdit\Frames\MainFrm.cpp"
+"E:\Working\ENGINE\tools\DEdit\MapTextureCoordsDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\mtreectl.cpp"
+"E:\Working\ENGINE\tools\DEdit\MultiLineStringDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\Navigator.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\navigatordlg.cpp"
+"E:\Working\ENGINE\tools\shared\engine\nexus.cpp"
+"E:\Working\ENGINE\tools\shared\world\node_ops.cpp"
+"E:\Working\ENGINE\tools\DEdit\NodeViewTreeCtrl.cpp"
+"E:\Working\ENGINE\tools\DEdit\ObjectImporter.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ObjectSearchDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ObjectTrackerDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\PaletteEdit.cpp"
+"E:\Working\ENGINE\tools\shared\engine\parse_world_info.cpp"
+"E:\Working\ENGINE\tools\shared\engine\pixelformat.cpp"
+"E:\Working\ENGINE\tools\shared\world\PrefabMgr.cpp"
+"E:\Working\ENGINE\tools\shared\world\PrefabRef.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\PrefabTrackerDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\ProjectDirDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\ProjectTabControlBar.cpp"
+"E:\Working\ENGINE\tools\DEdit\controls\PropEditString.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\PropEditStringList.cpp"
+"E:\Working\ENGINE\tools\DEdit\Docs\PropertyHelpers.cpp"
+"E:\Working\ENGINE\tools\shared\world\PropList.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\Refs.cpp"
+"E:\Working\ENGINE\tools\DEdit\Docs\RegionDoc.cpp"
+"E:\Working\ENGINE\tools\DEdit\Frames\RegionFrame.cpp"
+"E:\Working\ENGINE\tools\DEdit\Views\RegionView.cpp"
+"E:\Working\ENGINE\tools\DEdit\Views\RegionViewInitTracker.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\RenameResourceDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Controls\ResizeBar.cpp"
+"E:\Working\ENGINE\tools\DEdit\ResizeDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\ResNewDir.cpp"
+"E:\Working\ENGINE\tools\DEdit\ResourceMgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\RotateSelection.cpp"
+"E:\Working\ENGINE\tools\shared\world\s3tc_compress.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\ScaleSelectDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\SelectEffectGroupDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\SetPatchResDlg.cpp"
+"E:\Working\ENGINE\tools\shared\engine\simple_dalloc.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\SolidAlphaDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Misc\Splash.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\SpriteEditDlg.cpp"
+"E:\Working\ENGINE\tools\shared\engine\streamsim.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\StringDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Misc\Texture.cpp"
+"E:\Working\ENGINE\tools\shared\world\TexturedPlane.cpp"
+"E:\Working\ENGINE\tools\DEdit\TextureProp.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\TextureSearchReplaceDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\TextureTrackerDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\UIEvent.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\undo_mgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\UndoWarningDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\UpdateAllObjects.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\UsefulDC.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\UsefulDib.cpp"
+"E:\Working\ENGINE\tools\shared\world\UVtoOPQ.cpp"
+"E:\Working\ENGINE\tools\DEdit\VectorButton.cpp"
+"E:\Working\ENGINE\tools\DEdit\VectorEdit.cpp"
+"E:\Working\ENGINE\tools\shared\engine\version_info.cpp"
+"E:\Working\ENGINE\tools\shared\engine\version_resource.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\ViewDef.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\ViewFunctions.cpp"
+"E:\Working\ENGINE\tools\DEdit\RegionEdit\viewrender.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\WorldInfoDlg.cpp"
+"E:\Working\ENGINE\tools\shared\world\WorldNode.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVCommand.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTracker.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerBrushSize.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerCurveEdit.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerDrawPoly.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerExtrudePoly.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerFarDist.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerFocus.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerGridSize.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerMarkerMove.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerMenuItem.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNavArcRotate.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNavDrag.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNavMove.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNavOrbit.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNavRotate.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNodeMove.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerNodeRotate.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerObjectSize.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerPolyScale.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerTag.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerTextMove.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerTextWrap.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerVertMove.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerVertScale.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerVertSnap.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\RVTrackerZoom.cpp"
+"E:\Working\ENGINE\tools\DEdit\Trackers\TrackerMgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP2C.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP2D.tmp" with contents
+[
+/nologo /MD /W2 /GX /O2 /Op /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\model\\" /I "mrcext" /I "mrcext\vc_headers" /I "..\..\sdk\inc" /I "." /I "..\preprocessor" /I "options" /I "..\shared\world\\" /I "misc" /I "dlgs" /I "controls" /I "frames" /I "project" /I "..\shared\engine" /I "regionedit" /I "draw" /I "docs" /I "views" /I "..\..\libs\rezmgr" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\stdlith\sys\win" /I "trackers" /I "..\..\sdk\inc\physics" /I ".\modelview" /I ".\fileformats" /I ".\keyaggregate" /I ".\levelerror" /I ".\lightmap" /I "..\..\..\libs\genregmgr" /I "..\..\..\libs\dibmgr" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\lith" /I "..\..\libs\ltamgr" /I "..\..\..\libs\cryptmgr" /I ".." /D "NDEBUG" /D "REZMGRFULL" /D "WIN32" /D "_WINDOWS" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "PRE_FLOAT" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /Fr"..\..\Built\Release\tools\DEdit/" /Fp"..\..\Built\Release\tools\DEdit/dedit60.pch" /Yu"bdefs.h" /Fo"..\..\Built\Release\tools\DEdit/" /Fd"..\..\Built\Release\tools\DEdit/" /FD /c 
+"E:\Working\ENGINE\tools\DEdit\dlgs\PropPageDisplay.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\PropPageOptionsClipboard.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\PropPageOptionsRun.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\DebugDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\GenerateUniqueNamesDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\NameChangeReportDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\NavigatorStoreDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\NewProjectDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\ObjectBrowserDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\PopupNoteDlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\controls\ProjectTabCtrl.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\RotationEdit.cpp"
+"E:\Working\ENGINE\tools\DEdit\dlgs\SpherePrimitiveDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP2D.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP2E.tmp" with contents
+[
+/nologo /MD /W2 /GX /O2 /Op /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\model\\" /I "mrcext" /I "mrcext\vc_headers" /I "..\..\sdk\inc" /I "." /I "..\preprocessor" /I "options" /I "..\shared\world\\" /I "misc" /I "dlgs" /I "controls" /I "frames" /I "project" /I "..\shared\engine" /I "regionedit" /I "draw" /I "docs" /I "views" /I "..\..\libs\rezmgr" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\stdlith\sys\win" /I "trackers" /I "..\..\sdk\inc\physics" /I ".\modelview" /I ".\fileformats" /I ".\keyaggregate" /I ".\levelerror" /I ".\lightmap" /I "..\..\..\libs\genregmgr" /I "..\..\..\libs\dibmgr" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\lith" /I "..\..\libs\ltamgr" /I "..\..\..\libs\cryptmgr" /D "NDEBUG" /D "REZMGRFULL" /D "WIN32" /D "_WINDOWS" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "PRE_FLOAT" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /Fr"..\..\Built\Release\tools\DEdit/" /Fo"..\..\Built\Release\tools\DEdit/" /Fd"..\..\Built\Release\tools\DEdit/" /FD /c 
+"E:\Working\ENGINE\tools\shared\model\ltaScene.cpp"
+"E:\Working\ENGINE\tools\DEdit\Options\OptionsModels.cpp"
+"E:\Working\ENGINE\tools\shared\world\bezierpatch.cpp"
+"E:\Working\ENGINE\tools\DEdit\bindkeydlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\Dlgs\DirDialog.cpp"
+"E:\Working\ENGINE\tools\DEdit\globalhotkeydb.cpp"
+"E:\Working\ENGINE\tools\DEdit\hotkey.cpp"
+"E:\Working\ENGINE\tools\DEdit\hotkeydb.cpp"
+"E:\Working\ENGINE\tools\DEdit\keyconfigdlg.cpp"
+"E:\Working\ENGINE\tools\DEdit\KeyAggregate\KeyDefaultAggregate.cpp"
+"E:\Working\ENGINE\tools\DEdit\LoadLTADialog.cpp"
+"E:\Working\ENGINE\sdk\inc\LTEulerAngles.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"E:\Working\ENGINE\tools\DEdit\ModelView\meshshape.cpp"
+"E:\Working\ENGINE\tools\DEdit\ModelView\meshshapelist.cpp"
+"E:\Working\ENGINE\tools\DEdit\ModelView\modelmesh.cpp"
+"E:\Working\ENGINE\tools\DEdit\ModelView\modelmgr.cpp"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\DRAGDOCK.CPP"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\FRAMEWND.CPP"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\MDIFLOAT.CPP"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\SIZECONT.CPP"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\SIZEDLG.CPP"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\SIZEDOCK.CPP"
+"E:\Working\ENGINE\tools\DEdit\MRCEXT\SZTOOLBA.CPP"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP2E.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP2F.tmp" with contents
+[
+/nologo /MD /W2 /GX /O2 /Op /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\model\\" /I "mrcext" /I "mrcext\vc_headers" /I "..\..\sdk\inc" /I "." /I "..\preprocessor" /I "options" /I "..\shared\world\\" /I "misc" /I "dlgs" /I "controls" /I "frames" /I "project" /I "..\shared\engine" /I "regionedit" /I "draw" /I "docs" /I "views" /I "..\..\libs\rezmgr" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\stdlith\sys\win" /I "trackers" /I "..\..\sdk\inc\physics" /I ".\modelview" /I ".\fileformats" /I ".\keyaggregate" /I ".\levelerror" /I ".\lightmap" /I "..\..\..\libs\genregmgr" /I "..\..\..\libs\dibmgr" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\lith" /I "..\..\libs\ltamgr" /I "..\..\..\libs\cryptmgr" /D "NDEBUG" /D "REZMGRFULL" /D "WIN32" /D "_WINDOWS" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "PRE_FLOAT" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /Fr"..\..\Built\Release\tools\DEdit/" /Fp"..\..\Built\Release\tools\DEdit/dedit60.pch" /Yc"bdefs.h" /Fo"..\..\Built\Release\tools\DEdit/" /Fd"..\..\Built\Release\tools\DEdit/" /FD /c 
+"E:\Working\ENGINE\tools\shared\engine\bdefs.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP2F.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP30.tmp" with contents
+[
+d3drm.lib ddraw.lib d3dx8.lib d3d8.lib dxguid.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\Built\Release\tools\DEdit/dedit.pdb" /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libcmtd.lib" /nodefaultlib:"libcmt.lib" /out:"..\..\Built\Release\tools\DEdit/dedit.exe" 
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsSheet.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageDisplay.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsClipboard.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsControls.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsD3D.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsMisc.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsModels.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsPrefabs.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropPageOptionsRun.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UndoPage.obj
+\Working\ENGINE\Built\Release\tools\DEdit\BaseImgDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ModelDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\NodeView.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PrefabDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ProjectBar.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropertiesDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SoundDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SpriteDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\TextureDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\WorldsDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ltaScene.obj
+\Working\ENGINE\Built\Release\tools\DEdit\model.obj
+\Working\ENGINE\Built\Release\tools\DEdit\model_ops.obj
+\Working\ENGINE\Built\Release\tools\DEdit\modelallocations.obj
+\Working\ENGINE\Built\Release\tools\DEdit\transformmaker.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsAdvancedSelect.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsBase.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsClassDialog.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsClipboard.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsControls.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsDisplay.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsGenerateUniqueNames.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsMisc.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsModels.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsObjectBrowser.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsPrefabs.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsRun.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsViewports.obj
+\Working\ENGINE\Built\Release\tools\DEdit\OptionsWindows.obj
+\Working\ENGINE\Built\Release\tools\DEdit\Detectors.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ErrorDetector.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ErrorInformationDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LevelError.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LevelErrorDB.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LevelErrorDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LevelErrorOptionsDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\AddPatchDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\AdvancedSelect.obj
+\Working\ENGINE\Built\Release\tools\DEdit\AdvancedSelectDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\AllTextureDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\AlphaFromColorDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\AutoTextureOptionsDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\BasePoly.obj
+\Working\ENGINE\Built\Release\tools\DEdit\baserezdlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\bdefs.obj
+\Working\ENGINE\Built\Release\tools\DEdit\bezierpatch.obj
+\Working\ENGINE\Built\Release\tools\DEdit\bindkeydlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\bindmgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\CameraFOVDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\classbind.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ClassDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ClassList.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ClassListDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ClassTree.obj
+\Working\ENGINE\Built\Release\tools\DEdit\CObjInterface.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ColorPicker.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ColorSelectDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ColorWell.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ColumnCtrl.obj
+\Working\ENGINE\Built\Release\tools\DEdit\concommand.obj
+\Working\ENGINE\Built\Release\tools\DEdit\conparse.obj
+\Working\ENGINE\Built\Release\tools\DEdit\converge.obj
+\Working\ENGINE\Built\Release\tools\DEdit\CreatePrimitive.obj
+\Working\ENGINE\Built\Release\tools\DEdit\CylinderPrimDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\d3d_texturemgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\d_filemgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DebugDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DEdit.obj
+\Working\ENGINE\Built\Release\tools\DEdit\dedit_concommand.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DEditOptions.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DEDockFrameWnd.obj
+\Working\ENGINE\Built\Release\tools\DEdit\dhashtable.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DirDialog.obj
+\Working\ENGINE\Built\Release\tools\DEdit\draw_d3d.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DrawBase.obj
+\Working\ENGINE\Built\Release\tools\DEdit\dsys_interface.obj
+\Working\ENGINE\Built\Release\tools\DEdit\dtxmgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\edit_actions.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditBrush.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditClipboard.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditEffectGroupDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditGrid.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditHelpers.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditObjects.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditorTransfer.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditPatch.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditPlane.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditPoly.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditProjectMgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EditRegion.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EventEditorDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\EventListDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ExportObjFile.obj
+\Working\ENGINE\Built\Release\tools\DEdit\FilePalette.obj
+\Working\ENGINE\Built\Release\tools\DEdit\FileUtils.obj
+\Working\ENGINE\Built\Release\tools\DEdit\flattoolbar.obj
+\Working\ENGINE\Built\Release\tools\DEdit\FrameList.obj
+\Working\ENGINE\Built\Release\tools\DEdit\GenerateUniqueNamesDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\genericprop_setup.obj
+\Working\ENGINE\Built\Release\tools\DEdit\genltstream.obj
+\Working\ENGINE\Built\Release\tools\DEdit\geomroutines.obj
+\Working\ENGINE\Built\Release\tools\DEdit\globalhotkeydb.obj
+\Working\ENGINE\Built\Release\tools\DEdit\hotkey.obj
+\Working\ENGINE\Built\Release\tools\DEdit\hotkeydb.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ImportBumpMapDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ImportCubeMapDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ImportObjectDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ImportObjFileFormat.obj
+\Working\ENGINE\Built\Release\tools\DEdit\keyconfigdlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\KeyDefaultAggregate.obj
+\Working\ENGINE\Built\Release\tools\DEdit\KeyDefaultFactory.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LevelItemsDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\leveltexturesdlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LevelTexturesOptionsDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\light_table.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LightAttenuation.obj
+\Working\ENGINE\Built\Release\tools\DEdit\lightmap_compress.obj
+\Working\ENGINE\Built\Release\tools\DEdit\lightmap_planes.obj
+\Working\ENGINE\Built\Release\tools\DEdit\load_pcx.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LoadLTADialog.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LTEulerAngles.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ltquatbase.obj
+\Working\ENGINE\Built\Release\tools\DEdit\LTTexture.obj
+\Working\ENGINE\Built\Release\tools\DEdit\MainFrm.obj
+\Working\ENGINE\Built\Release\tools\DEdit\MapTextureCoordsDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\meshshape.obj
+\Working\ENGINE\Built\Release\tools\DEdit\meshshapelist.obj
+\Working\ENGINE\Built\Release\tools\DEdit\modelmesh.obj
+\Working\ENGINE\Built\Release\tools\DEdit\modelmgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\mtreectl.obj
+\Working\ENGINE\Built\Release\tools\DEdit\MultiLineStringDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\NameChangeReportDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\Navigator.obj
+\Working\ENGINE\Built\Release\tools\DEdit\navigatordlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\NavigatorStoreDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\NewProjectDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\nexus.obj
+\Working\ENGINE\Built\Release\tools\DEdit\node_ops.obj
+\Working\ENGINE\Built\Release\tools\DEdit\NodeViewTreeCtrl.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ObjectBrowserDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ObjectImporter.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ObjectSearchDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ObjectTrackerDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PaletteEdit.obj
+\Working\ENGINE\Built\Release\tools\DEdit\parse_world_info.obj
+\Working\ENGINE\Built\Release\tools\DEdit\pixelformat.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PopupNoteDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PrefabMgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PrefabRef.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PrefabTrackerDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ProjectDirDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ProjectTabControlBar.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ProjectTabCtrl.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropEditString.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropEditStringList.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropertyHelpers.obj
+\Working\ENGINE\Built\Release\tools\DEdit\PropList.obj
+\Working\ENGINE\Built\Release\tools\DEdit\Refs.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RegionDoc.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RegionFrame.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RegionView.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RegionViewInitTracker.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RenameResourceDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ResizeBar.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ResizeDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ResNewDir.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ResourceMgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RotateSelection.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RotationEdit.obj
+\Working\ENGINE\Built\Release\tools\DEdit\s3tc_compress.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ScaleSelectDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SelectEffectGroupDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SetPatchResDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\simple_dalloc.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SolidAlphaDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SpherePrimitiveDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\Splash.obj
+\Working\ENGINE\Built\Release\tools\DEdit\SpriteEditDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\streamsim.obj
+\Working\ENGINE\Built\Release\tools\DEdit\StringDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\Texture.obj
+\Working\ENGINE\Built\Release\tools\DEdit\TexturedPlane.obj
+\Working\ENGINE\Built\Release\tools\DEdit\TextureProp.obj
+\Working\ENGINE\Built\Release\tools\DEdit\TextureSearchReplaceDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\TextureTrackerDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UIEvent.obj
+\Working\ENGINE\Built\Release\tools\DEdit\undo_mgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UndoWarningDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UpdateAllObjects.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UsefulDC.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UsefulDib.obj
+\Working\ENGINE\Built\Release\tools\DEdit\UVtoOPQ.obj
+\Working\ENGINE\Built\Release\tools\DEdit\VectorButton.obj
+\Working\ENGINE\Built\Release\tools\DEdit\VectorEdit.obj
+\Working\ENGINE\Built\Release\tools\DEdit\version_info.obj
+\Working\ENGINE\Built\Release\tools\DEdit\version_resource.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ViewDef.obj
+\Working\ENGINE\Built\Release\tools\DEdit\ViewFunctions.obj
+\Working\ENGINE\Built\Release\tools\DEdit\viewrender.obj
+\Working\ENGINE\Built\Release\tools\DEdit\WorldInfoDlg.obj
+\Working\ENGINE\Built\Release\tools\DEdit\WorldNode.obj
+\Working\ENGINE\Built\Release\tools\DEdit\DRAGDOCK.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\FRAMEWND.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\MDIFLOAT.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\SIZECONT.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\SIZEDLG.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\SIZEDOCK.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\SZTOOLBA.OBJ
+\Working\ENGINE\Built\Release\tools\DEdit\RVCommand.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTracker.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerBrushSize.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerCurveEdit.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerDrawPoly.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerExtrudePoly.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerFarDist.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerFocus.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerGridSize.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerMarkerMove.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerMenuItem.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNavArcRotate.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNavDrag.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNavMove.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNavOrbit.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNavRotate.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNodeMove.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerNodeRotate.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerObjectSize.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerPolyScale.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerTag.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerTextMove.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerTextWrap.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerVertMove.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerVertScale.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerVertSnap.obj
+\Working\ENGINE\Built\Release\tools\DEdit\RVTrackerZoom.obj
+\Working\ENGINE\Built\Release\tools\DEdit\TrackerMgr.obj
+\Working\ENGINE\Built\Release\tools\DEdit\dedit.res
+..\shared\world\s3tc.lib
+..\..\..\libs\built\Release\CryptMgrMfcDll\CryptMgrMfcDll.lib
+..\..\..\libs\built\Release\dibmgr_mfcdll\dibmgr_mfcdll.lib
+..\..\..\Libs\built\Release\ButeMgrMFCDll\ButeMgrMfcDll.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+..\..\..\libs\built\Release\GenRegMgr\genregmgr.lib
+..\..\..\libs\built\Release\RegMgr\regmgr.lib
+..\..\..\libs\built\Release\Lib_Lith\Lib_Lith.lib
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+..\..\built\Release\libs\Lib_RezMgr\Lib_RezMgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP30.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP31.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\DEdit\dedit.exe ..\..\..\..\..\development\tools
+copy \Working\ENGINE\Built\Release\tools\DEdit\dedit.exe ..\..\..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP31.bat"
+Compiling resources...
+Compiling...
+bdefs.cpp
+Compiling...
+OptionsSheet.cpp
+PropPageOptionsControls.cpp
+PropPageOptionsD3D.cpp
+PropPageOptionsMisc.cpp
+PropPageOptionsModels.cpp
+PropPageOptionsPrefabs.cpp
+UndoPage.cpp
+BaseImgDlg.cpp
+ModelDlg.cpp
+NodeView.cpp
+PrefabDlg.cpp
+ProjectBar.cpp
+PropertiesDlg.cpp
+SoundDlg.cpp
+SpriteDlg.cpp
+TextureDlg.cpp
+WorldsDlg.cpp
+model.cpp
+model_ops.cpp
+modelallocations.cpp
+Generating Code...
+Compiling...
+transformmaker.cpp
+OptionsAdvancedSelect.cpp
+OptionsBase.cpp
+OptionsClassDialog.cpp
+OptionsClipboard.cpp
+OptionsControls.cpp
+OptionsDisplay.cpp
+OptionsGenerateUniqueNames.cpp
+OptionsMisc.cpp
+OptionsObjectBrowser.cpp
+OptionsPrefabs.cpp
+OptionsRun.cpp
+OptionsViewports.cpp
+OptionsWindows.cpp
+Detectors.cpp
+ErrorDetector.cpp
+ErrorInformationDlg.cpp
+LevelError.cpp
+LevelErrorDB.cpp
+LevelErrorDlg.cpp
+Generating Code...
+Compiling...
+LevelErrorOptionsDlg.cpp
+AddPatchDlg.cpp
+AdvancedSelect.cpp
+AdvancedSelectDlg.cpp
+AllTextureDlg.cpp
+AlphaFromColorDlg.cpp
+AutoTextureOptionsDlg.cpp
+BasePoly.cpp
+baserezdlg.cpp
+bindmgr.cpp
+CameraFOVDlg.cpp
+classbind.cpp
+ClassDlg.cpp
+ClassList.cpp
+ClassListDlg.cpp
+ClassTree.cpp
+CObjInterface.cpp
+ColorPicker.cpp
+ColorSelectDlg.cpp
+ColorWell.cpp
+Generating Code...
+Compiling...
+ColumnCtrl.cpp
+concommand.cpp
+conparse.cpp
+converge.cpp
+CreatePrimitive.cpp
+CylinderPrimDlg.cpp
+d3d_texturemgr.cpp
+d_filemgr.cpp
+DEdit.cpp
+dedit_concommand.cpp
+DEditOptions.cpp
+DEDockFrameWnd.cpp
+dhashtable.cpp
+draw_d3d.cpp
+DrawBase.cpp
+dsys_interface.cpp
+dtxmgr.cpp
+edit_actions.cpp
+EditBrush.cpp
+EditClipboard.cpp
+Generating Code...
+Compiling...
+EditEffectGroupDlg.cpp
+EditGrid.cpp
+EditHelpers.cpp
+EditObjects.cpp
+EditorTransfer.cpp
+EditPatch.cpp
+EditPlane.cpp
+EditPoly.cpp
+EditProjectMgr.cpp
+EditRegion.cpp
+EventEditorDlg.cpp
+EventListDlg.cpp
+ExportObjFile.cpp
+FilePalette.cpp
+FileUtils.cpp
+flattoolbar.cpp
+FrameList.cpp
+genericprop_setup.cpp
+genltstream.cpp
+geomroutines.cpp
+Generating Code...
+Compiling...
+ImportBumpMapDlg.cpp
+ImportCubeMapDlg.cpp
+ImportObjectDlg.cpp
+ImportObjFileFormat.cpp
+KeyDefaultFactory.cpp
+LevelItemsDlg.cpp
+leveltexturesdlg.cpp
+LevelTexturesOptionsDlg.cpp
+light_table.cpp
+LightAttenuation.cpp
+lightmap_compress.cpp
+lightmap_planes.cpp
+load_pcx.cpp
+LTTexture.cpp
+MainFrm.cpp
+MapTextureCoordsDlg.cpp
+mtreectl.cpp
+MultiLineStringDlg.cpp
+Navigator.cpp
+navigatordlg.cpp
+Generating Code...
+Compiling...
+nexus.cpp
+node_ops.cpp
+NodeViewTreeCtrl.cpp
+ObjectImporter.cpp
+ObjectSearchDlg.cpp
+ObjectTrackerDlg.cpp
+PaletteEdit.cpp
+parse_world_info.cpp
+pixelformat.cpp
+PrefabMgr.cpp
+PrefabRef.cpp
+PrefabTrackerDlg.cpp
+ProjectDirDlg.cpp
+ProjectTabControlBar.cpp
+PropEditString.cpp
+PropEditStringList.cpp
+PropertyHelpers.cpp
+PropList.cpp
+Refs.cpp
+RegionDoc.cpp
+Generating Code...
+Compiling...
+RegionFrame.cpp
+RegionView.cpp
+RegionViewInitTracker.cpp
+RenameResourceDlg.cpp
+ResizeBar.cpp
+ResizeDlg.cpp
+ResNewDir.cpp
+ResourceMgr.cpp
+RotateSelection.cpp
+s3tc_compress.cpp
+ScaleSelectDlg.cpp
+SelectEffectGroupDlg.cpp
+SetPatchResDlg.cpp
+simple_dalloc.cpp
+SolidAlphaDlg.cpp
+Splash.cpp
+SpriteEditDlg.cpp
+streamsim.cpp
+StringDlg.cpp
+Texture.cpp
+Generating Code...
+Compiling...
+TexturedPlane.cpp
+TextureProp.cpp
+TextureSearchReplaceDlg.cpp
+TextureTrackerDlg.cpp
+UIEvent.cpp
+undo_mgr.cpp
+UndoWarningDlg.cpp
+UpdateAllObjects.cpp
+UsefulDC.cpp
+UsefulDib.cpp
+UVtoOPQ.cpp
+VectorButton.cpp
+VectorEdit.cpp
+version_info.cpp
+version_resource.cpp
+ViewDef.cpp
+ViewFunctions.cpp
+viewrender.cpp
+WorldInfoDlg.cpp
+WorldNode.cpp
+Generating Code...
+Compiling...
+RVCommand.cpp
+RVTracker.cpp
+RVTrackerBrushSize.cpp
+RVTrackerCurveEdit.cpp
+RVTrackerDrawPoly.cpp
+RVTrackerExtrudePoly.cpp
+RVTrackerFarDist.cpp
+RVTrackerFocus.cpp
+RVTrackerGridSize.cpp
+RVTrackerMarkerMove.cpp
+RVTrackerMenuItem.cpp
+RVTrackerNavArcRotate.cpp
+RVTrackerNavDrag.cpp
+RVTrackerNavMove.cpp
+RVTrackerNavOrbit.cpp
+RVTrackerNavRotate.cpp
+RVTrackerNodeMove.cpp
+RVTrackerNodeRotate.cpp
+RVTrackerObjectSize.cpp
+RVTrackerPolyScale.cpp
+Generating Code...
+Compiling...
+RVTrackerTag.cpp
+RVTrackerTextMove.cpp
+RVTrackerTextWrap.cpp
+RVTrackerVertMove.cpp
+RVTrackerVertScale.cpp
+RVTrackerVertSnap.cpp
+RVTrackerZoom.cpp
+TrackerMgr.cpp
+Generating Code...
+Compiling...
+PropPageDisplay.cpp
+PropPageOptionsClipboard.cpp
+PropPageOptionsRun.cpp
+DebugDlg.cpp
+GenerateUniqueNamesDlg.cpp
+NameChangeReportDlg.cpp
+NavigatorStoreDlg.cpp
+NewProjectDlg.cpp
+ObjectBrowserDlg.cpp
+PopupNoteDlg.cpp
+ProjectTabCtrl.cpp
+RotationEdit.cpp
+SpherePrimitiveDlg.cpp
+Generating Code...
+Compiling...
+ltaScene.cpp
+OptionsModels.cpp
+bezierpatch.cpp
+bindkeydlg.cpp
+DirDialog.cpp
+globalhotkeydb.cpp
+hotkey.cpp
+hotkeydb.cpp
+keyconfigdlg.cpp
+KeyDefaultAggregate.cpp
+LoadLTADialog.cpp
+LTEulerAngles.cpp
+ltquatbase.cpp
+meshshape.cpp
+meshshapelist.cpp
+modelmesh.cpp
+modelmgr.cpp
+DRAGDOCK.CPP
+FRAMEWND.CPP
+MDIFLOAT.CPP
+Generating Code...
+Compiling...
+SIZECONT.CPP
+SIZEDLG.CPP
+SIZEDOCK.CPP
+SZTOOLBA.CPP
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\Built\Release\tools\DEdit\dedit.exe
+copy \Working\ENGINE\Built\Release\tools\DEdit\dedit.exe ..\..\..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+dedit.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DibMgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP33.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\STLPORT-4.0\STLPORT" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "NO_PRAGMA_LIBS" /FR"..\built\Release\DibMgr/" /Fp"..\built\Release\DibMgr/dibmgr60.pch" /YX /Fo"..\built\Release\DibMgr/" /Fd"..\built\Release\DibMgr/" /FD /c 
+"E:\Working\libs\dibmgr\Dib.cpp"
+"E:\Working\libs\dibmgr\DibMgr.cpp"
+"E:\Working\libs\dibmgr\DibPal.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP33.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\built\Release\DibMgr\dibmgr.lib"  \Working\libs\built\Release\DibMgr\Dib.obj \Working\libs\built\Release\DibMgr\DibMgr.obj \Working\libs\built\Release\DibMgr\DibPal.obj "
+<h3>Output Window</h3>
+Compiling...
+Dib.cpp
+DibMgr.cpp
+DibPal.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+dibmgr.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DibMgr - Win32 Release MFC DLL--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+dibmgr_mfcdll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: FxED - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\release\tools\fxed/FxED.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\FxED\FxED.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /I "..\..\sdk\inc\compat" /I "clientfx\shared\src" /I "..\..\libs\rezmgr" /I "..\..\..\libs\lith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\stdlith" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "USE_PRAGMA_LIB" /D "_AFXDLL" /FR"..\..\built\release\tools\fxed/" /Fp"..\..\built\release\tools\fxed/FxED.pch" /Yu"stdafx.h" /Fo"..\..\built\release\tools\fxed/" /Fd"..\..\built\release\tools\fxed/" /FD /c 
+"E:\Working\ENGINE\tools\FxED\ChildFrm.cpp"
+"E:\Working\ENGINE\tools\FxED\ChooseClrAnimDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ChooseClrAnimList.cpp"
+"E:\Working\ENGINE\tools\FxED\ChooseKeyDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ChooseMotionAnimDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ColourKeyCtrl.cpp"
+"E:\Working\ENGINE\tools\FxED\ColourKeyDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\CopyDataDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\EditVectorDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\FloatButton.cpp"
+"E:\Working\ENGINE\tools\FxED\FloatDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\FloatSpinCtrl.cpp"
+"E:\Working\ENGINE\tools\FxED\FoundationWnd.cpp"
+"E:\Working\ENGINE\tools\FxED\FxDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\FxMgr.cpp"
+"E:\Working\ENGINE\tools\FxED\FxPropDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\GameInfoDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ImportSpellsDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\IntButton.cpp"
+"E:\Working\ENGINE\tools\FxED\IntDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\IntSpinCtrl.cpp"
+"E:\Working\ENGINE\tools\FxED\Key.cpp"
+"E:\Working\ENGINE\tools\FxED\KeyControl.cpp"
+"E:\Working\ENGINE\tools\FxED\MainFrm.cpp"
+"E:\Working\ENGINE\tools\FxED\Matrix.cpp"
+"E:\Working\ENGINE\tools\FxED\MotionKeysDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\Phase.cpp"
+"E:\Working\ENGINE\tools\FxED\PhaseInfoDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ResourceLocator.cpp"
+"E:\Working\ENGINE\tools\FxED\RezButton.cpp"
+"E:\Working\ENGINE\tools\FxED\RezDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ScaleAnimDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\ScaleKeyCtrl.cpp"
+"E:\Working\ENGINE\tools\FxED\ScaleKeysDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\SequencerWnd.cpp"
+"E:\Working\ENGINE\tools\FxED\Spell.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellBaseParmDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellCtrl.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellDefTab.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellDlgBar.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellEd.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellEdDoc.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellEdView.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellMgr.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellResolutionDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellsDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\SpellTabCtrl.cpp"
+"E:\Working\ENGINE\tools\FxED\Splash.cpp"
+"E:\Working\ENGINE\tools\FxED\StandardDefs.cpp"
+"E:\Working\ENGINE\tools\FxED\StringDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\TimeBarDlg.cpp"
+"E:\Working\ENGINE\tools\FxED\Track.cpp"
+"E:\Working\ENGINE\tools\FxED\TrackScroll.cpp"
+"E:\Working\ENGINE\tools\FxED\TrackWnd.cpp"
+"E:\Working\ENGINE\tools\FxED\VectorButton.cpp"
+"E:\Working\ENGINE\tools\FxED\VectorCombo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP34.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /I "..\..\sdk\inc\compat" /I "clientfx\shared\src" /I "..\..\libs\rezmgr" /I "..\..\..\libs\lith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\stdlith" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "USE_PRAGMA_LIB" /D "_AFXDLL" /FR"..\..\built\release\tools\fxed/" /Fp"..\..\built\release\tools\fxed/FxED.pch" /Yc"stdafx.h" /Fo"..\..\built\release\tools\fxed/" /Fd"..\..\built\release\tools\fxed/" /FD /c 
+"E:\Working\ENGINE\tools\FxED\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP35.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP36.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\fxed/FxED.pdb" /machine:I386 /nodefaultlib:"mfc42d.lib" /nodefaultlib:"mfcs42d.lib" /nodefaultlib:"msvcrtd.lib" /out:"..\..\built\release\tools\fxed/FxED.exe" 
+\Working\ENGINE\built\release\tools\fxed\ChildFrm.obj
+\Working\ENGINE\built\release\tools\fxed\ChooseClrAnimDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ChooseClrAnimList.obj
+\Working\ENGINE\built\release\tools\fxed\ChooseKeyDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ChooseMotionAnimDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ColourKeyCtrl.obj
+\Working\ENGINE\built\release\tools\fxed\ColourKeyDlg.obj
+\Working\ENGINE\built\release\tools\fxed\CopyDataDlg.obj
+\Working\ENGINE\built\release\tools\fxed\EditVectorDlg.obj
+\Working\ENGINE\built\release\tools\fxed\FloatButton.obj
+\Working\ENGINE\built\release\tools\fxed\FloatDlg.obj
+\Working\ENGINE\built\release\tools\fxed\FloatSpinCtrl.obj
+\Working\ENGINE\built\release\tools\fxed\FoundationWnd.obj
+\Working\ENGINE\built\release\tools\fxed\FxDlg.obj
+\Working\ENGINE\built\release\tools\fxed\FxMgr.obj
+\Working\ENGINE\built\release\tools\fxed\FxPropDlg.obj
+\Working\ENGINE\built\release\tools\fxed\GameInfoDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ImportSpellsDlg.obj
+\Working\ENGINE\built\release\tools\fxed\IntButton.obj
+\Working\ENGINE\built\release\tools\fxed\IntDlg.obj
+\Working\ENGINE\built\release\tools\fxed\IntSpinCtrl.obj
+\Working\ENGINE\built\release\tools\fxed\Key.obj
+\Working\ENGINE\built\release\tools\fxed\KeyControl.obj
+\Working\ENGINE\built\release\tools\fxed\MainFrm.obj
+\Working\ENGINE\built\release\tools\fxed\Matrix.obj
+\Working\ENGINE\built\release\tools\fxed\MotionKeysDlg.obj
+\Working\ENGINE\built\release\tools\fxed\Phase.obj
+\Working\ENGINE\built\release\tools\fxed\PhaseInfoDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ResourceLocator.obj
+\Working\ENGINE\built\release\tools\fxed\RezButton.obj
+\Working\ENGINE\built\release\tools\fxed\RezDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ScaleAnimDlg.obj
+\Working\ENGINE\built\release\tools\fxed\ScaleKeyCtrl.obj
+\Working\ENGINE\built\release\tools\fxed\ScaleKeysDlg.obj
+\Working\ENGINE\built\release\tools\fxed\SequencerWnd.obj
+\Working\ENGINE\built\release\tools\fxed\Spell.obj
+\Working\ENGINE\built\release\tools\fxed\SpellBaseParmDlg.obj
+\Working\ENGINE\built\release\tools\fxed\SpellCtrl.obj
+\Working\ENGINE\built\release\tools\fxed\SpellDefTab.obj
+\Working\ENGINE\built\release\tools\fxed\SpellDlgBar.obj
+\Working\ENGINE\built\release\tools\fxed\SpellEd.obj
+\Working\ENGINE\built\release\tools\fxed\SpellEdDoc.obj
+\Working\ENGINE\built\release\tools\fxed\SpellEdView.obj
+\Working\ENGINE\built\release\tools\fxed\SpellMgr.obj
+\Working\ENGINE\built\release\tools\fxed\SpellResolutionDlg.obj
+\Working\ENGINE\built\release\tools\fxed\SpellsDlg.obj
+\Working\ENGINE\built\release\tools\fxed\SpellTabCtrl.obj
+\Working\ENGINE\built\release\tools\fxed\Splash.obj
+\Working\ENGINE\built\release\tools\fxed\StandardDefs.obj
+\Working\ENGINE\built\release\tools\fxed\StdAfx.obj
+\Working\ENGINE\built\release\tools\fxed\StringDlg.obj
+\Working\ENGINE\built\release\tools\fxed\TimeBarDlg.obj
+\Working\ENGINE\built\release\tools\fxed\Track.obj
+\Working\ENGINE\built\release\tools\fxed\TrackScroll.obj
+\Working\ENGINE\built\release\tools\fxed\TrackWnd.obj
+\Working\ENGINE\built\release\tools\fxed\VectorButton.obj
+\Working\ENGINE\built\release\tools\fxed\VectorCombo.obj
+\Working\ENGINE\built\release\tools\fxed\FxED.res
+..\..\built\Release\libs\Lib_RezMgr\Lib_RezMgr.lib
+..\..\..\Libs\built\Release\ButeMgrMFCDll\ButeMgrMfcDll.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+..\..\..\libs\built\Release\Lib_Lith\Lib_Lith.lib
+..\..\..\libs\built\Release\CryptMgrMfcDll\CryptMgrMfcDll.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP36.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP37.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\fxed\FxED.exe ..\..\..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\fxed\FxED.exe ..\..\..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP37.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+ChooseClrAnimDlg.cpp
+ChooseClrAnimList.cpp
+ChooseKeyDlg.cpp
+ChooseMotionAnimDlg.cpp
+ColourKeyCtrl.cpp
+ColourKeyDlg.cpp
+CopyDataDlg.cpp
+EditVectorDlg.cpp
+FloatButton.cpp
+FloatDlg.cpp
+FloatSpinCtrl.cpp
+FoundationWnd.cpp
+FxDlg.cpp
+FxMgr.cpp
+FxPropDlg.cpp
+GameInfoDlg.cpp
+ImportSpellsDlg.cpp
+IntButton.cpp
+IntDlg.cpp
+Generating Code...
+Compiling...
+IntSpinCtrl.cpp
+Key.cpp
+KeyControl.cpp
+MainFrm.cpp
+Matrix.cpp
+MotionKeysDlg.cpp
+Phase.cpp
+PhaseInfoDlg.cpp
+ResourceLocator.cpp
+RezButton.cpp
+RezDlg.cpp
+ScaleAnimDlg.cpp
+ScaleKeyCtrl.cpp
+ScaleKeysDlg.cpp
+SequencerWnd.cpp
+Spell.cpp
+SpellBaseParmDlg.cpp
+SpellCtrl.cpp
+SpellDefTab.cpp
+SpellDlgBar.cpp
+Generating Code...
+Compiling...
+SpellEd.cpp
+SpellEdDoc.cpp
+SpellEdView.cpp
+SpellMgr.cpp
+SpellResolutionDlg.cpp
+SpellsDlg.cpp
+SpellTabCtrl.cpp
+Splash.cpp
+StandardDefs.cpp
+StringDlg.cpp
+TimeBarDlg.cpp
+Track.cpp
+TrackScroll.cpp
+TrackWnd.cpp
+VectorButton.cpp
+VectorCombo.cpp
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\fxed\FxED.exe
+copy \Working\ENGINE\built\release\tools\fxed\FxED.exe ..\..\..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+FxED.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HeightMaptoNormalMap - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\release\tools\HeightMaptoNormalMap/HeightMaptoNormalMap.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP39.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"..\..\built\release\tools\HeightMaptoNormalMap/HeightMaptoNormalMap.pch" /YX /Fo"..\..\built\release\tools\HeightMaptoNormalMap/" /Fd"..\..\built\release\tools\HeightMaptoNormalMap/" /FD /c 
+"E:\Working\ENGINE\tools\HeightMaptoNormalMap\d3d_device.cpp"
+"E:\Working\ENGINE\tools\HeightMaptoNormalMap\d3d_shell.cpp"
+"E:\Working\ENGINE\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.cpp"
+"E:\Working\ENGINE\tools\HeightMaptoNormalMap\UpdateDlg.cpp"
+"E:\Working\ENGINE\tools\HeightMaptoNormalMap\Utilities.cpp"
+"E:\Working\ENGINE\tools\HeightMaptoNormalMap\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP39.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3A.tmp" with contents
+[
+d3dx8.lib d3d8.lib d3dxof.lib dxguid.lib ddraw.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\HeightMaptoNormalMap/HeightMaptoNormalMap.pdb" /machine:I386 /out:"..\..\built\release\tools\HeightMaptoNormalMap/HeightMaptoNormalMap.exe" 
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\d3d_device.obj
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\d3d_shell.obj
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.obj
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\UpdateDlg.obj
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\Utilities.obj
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\stdafx.obj
+\Working\ENGINE\built\release\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.res
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP3A.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3B.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3B.bat"
+Compiling resources...
+Compiling...
+d3d_device.cpp
+d3d_shell.cpp
+HeightMaptoNormalMap.cpp
+UpdateDlg.cpp
+Utilities.cpp
+stdafx.cpp
+Linking...
+LINK : warning LNK4089: all references to "GDI32.dll" discarded by /OPT:REF
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.exe
+copy \Working\ENGINE\built\release\tools\HeightMaptoNormalMap\HeightMaptoNormalMap.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+HeightMaptoNormalMap.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: LTAsk - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3D.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\..\built\Release\tools\LTAsk/LTAsk.pch" /YX /Fo"..\..\..\built\Release\tools\LTAsk/" /Fd"..\..\..\built\Release\tools\LTAsk/" /FD /c 
+"E:\Working\ENGINE\tools\utils\LTAsk\LTAsk.cpp"
+"E:\Working\ENGINE\tools\utils\LTAsk\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP3D.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\..\built\Release\tools\LTAsk/LTAsk.pdb" /machine:I386 /out:"..\..\..\built\Release\tools\LTAsk/LTAsk.exe" 
+\Working\ENGINE\built\Release\tools\LTAsk\LTAsk.obj
+\Working\ENGINE\built\Release\tools\LTAsk\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP3E.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3F.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\LTAsk\LTAsk.exe ..\..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\LTAsk\LTAsk.exe ..\..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP3F.bat"
+Compiling...
+LTAsk.cpp
+StdAfx.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\LTAsk\LTAsk.exe
+copy \Working\ENGINE\built\Release\tools\LTAsk\LTAsk.exe ..\..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+LTAsk.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LTC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /I "..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\built\Release\tools\LTC/LTC.pch" /YX /Fo"..\..\built\Release\tools\LTC/" /Fd"..\..\built\Release\tools\LTC/" /FD /c 
+"E:\Working\ENGINE\tools\LTC\commandlineparser.cpp"
+"E:\Working\ENGINE\tools\LTC\main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP41.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP42.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\LTC/LTC.pdb" /machine:I386 /out:"..\..\built\Release\tools\LTC/LTC.exe" 
+\Working\ENGINE\built\Release\tools\LTC\commandlineparser.obj
+\Working\ENGINE\built\Release\tools\LTC\main.obj
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP42.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP43.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\LTC\LTC.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\LTC\LTC.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP43.bat"
+Compiling...
+commandlineparser.cpp
+main.cpp
+Linking...
+LINK : warning LNK4089: all references to "KERNEL32.dll" discarded by /OPT:REF
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\LTC\LTC.exe
+copy \Working\ENGINE\built\Release\tools\LTC\LTC.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+LTC.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: Lib_ILTSound - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "USE_ABSTRACT_SOUND_INTERFACES" /FR"..\..\..\built\Release\Runtime\Lib_ILTSound/" /Fp"..\..\..\built\Release\Runtime\Lib_ILTSound/Lib_ILTSound.pch" /YX /Fo"..\..\..\built\Release\Runtime\Lib_ILTSound/" /Fd"..\..\..\built\Release\Runtime\Lib_ILTSound/" /FD /c 
+"E:\Working\ENGINE\Runtime\sound\src\iltsound.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP45.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\built\Release\Runtime\Lib_ILTSound\Lib_ILTSound.lib"  \Working\ENGINE\built\Release\Runtime\Lib_ILTSound\iltsound.obj "
+<h3>Output Window</h3>
+Compiling...
+iltsound.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_ILTSound.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Lib_ILTSound - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP46.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "USE_ABSTRACT_SOUND_INTERFACES" /D "_FINAL" /FR"..\..\..\built\Final\Runtime\Lib_ILTSound/" /Fp"..\..\..\built\Final\Runtime\Lib_ILTSound/Lib_ILTSound.pch" /YX /Fo"..\..\..\built\Final\Runtime\Lib_ILTSound/" /Fd"..\..\..\built\Final\Runtime\Lib_ILTSound/" /FD /c 
+"E:\Working\ENGINE\Runtime\sound\src\iltsound.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP46.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\built\Final\Runtime\Lib_ILTSound\Lib_ILTSound.lib"  \Working\ENGINE\built\Final\Runtime\Lib_ILTSound\iltsound.obj "
+<h3>Output Window</h3>
+Compiling...
+iltsound.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_ILTSound.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Lib_Lith - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP47.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_FINAL" /FR"..\built\Final\Lib_Lith/" /Fp"..\built\Final\Lib_Lith/Lib_Lith.pch" /YX /Fo"..\built\Final\Lib_Lith/" /Fd"..\built\Final\Lib_Lith/" /FD /c 
+"E:\Working\libs\lith\basehash.cpp"
+"E:\Working\libs\lith\baselist.cpp"
+"E:\Working\libs\lith\baselistcounter.cpp"
+"E:\Working\libs\lith\dprintf.cpp"
+"E:\Working\libs\lith\lith.cpp"
+"E:\Working\libs\lith\lithbaselist.cpp"
+"E:\Working\libs\lith\lithchunkallocator.cpp"
+"E:\Working\libs\lith\lithsimpary.cpp"
+"E:\Working\libs\lith\lithsimparystat.cpp"
+"E:\Working\libs\lith\virtlist.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP47.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP48.tmp" with contents
+[
+/nologo /out:"..\built\Final\Lib_Lith\Lib_Lith.lib" 
+\Working\libs\built\Final\Lib_Lith\basehash.obj
+\Working\libs\built\Final\Lib_Lith\baselist.obj
+\Working\libs\built\Final\Lib_Lith\baselistcounter.obj
+\Working\libs\built\Final\Lib_Lith\dprintf.obj
+\Working\libs\built\Final\Lib_Lith\lith.obj
+\Working\libs\built\Final\Lib_Lith\lithbaselist.obj
+\Working\libs\built\Final\Lib_Lith\lithchunkallocator.obj
+\Working\libs\built\Final\Lib_Lith\lithsimpary.obj
+\Working\libs\built\Final\Lib_Lith\lithsimparystat.obj
+\Working\libs\built\Final\Lib_Lith\virtlist.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP48.tmp"
+<h3>Output Window</h3>
+Compiling...
+basehash.cpp
+baselist.cpp
+baselistcounter.cpp
+dprintf.cpp
+lith.cpp
+lithbaselist.cpp
+lithchunkallocator.cpp
+lithsimpary.cpp
+lithsimparystat.cpp
+virtlist.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_Lith.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Lib_RezMgr - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP49.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\libs\lith" /I "..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_FINAL" /FR"..\..\built\Final\libs\Lib_RezMgr/" /Fp"..\..\built\Final\libs\Lib_RezMgr/Lib_RezMgr.pch" /YX /Fo"..\..\built\Final\libs\Lib_RezMgr/" /Fd"..\..\built\Final\libs\Lib_RezMgr/" /FD /c 
+"E:\Working\ENGINE\libs\rezmgr\rezfile.cpp"
+"E:\Working\ENGINE\libs\rezmgr\rezhash.cpp"
+"E:\Working\ENGINE\libs\rezmgr\rezmgr.cpp"
+"E:\Working\ENGINE\libs\rezmgr\rezutils.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP49.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP4A.tmp" with contents
+[
+/nologo /out:"..\..\built\Final\libs\Lib_RezMgr\Lib_RezMgr.lib" 
+\Working\ENGINE\built\Final\libs\Lib_RezMgr\rezfile.obj
+\Working\ENGINE\built\Final\libs\Lib_RezMgr\rezhash.obj
+\Working\ENGINE\built\Final\libs\Lib_RezMgr\rezmgr.obj
+\Working\ENGINE\built\Final\libs\Lib_RezMgr\rezutils.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP4A.tmp"
+<h3>Output Window</h3>
+Compiling...
+rezfile.cpp
+rezhash.cpp
+rezmgr.cpp
+rezutils.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_RezMgr.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Lib_StdLith - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP4B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I ".\\" /I "..\STLPORT-4.0\STLPORT" /I "..\zlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_FINAL" /FR"..\built\Final\Lib_StdLith/" /Fp"..\built\Final\Lib_StdLith/Lib_StdLith.pch" /YX /Fo"..\built\Final\Lib_StdLith/" /Fd"..\built\Final\Lib_StdLith/" /FD /c 
+"E:\Working\libs\stdlith\abstractio.cpp"
+"E:\Working\libs\stdlith\sys\win\compressedio.cpp"
+"E:\Working\libs\stdlith\dynarray.cpp"
+"E:\Working\libs\stdlith\fileio.cpp"
+"E:\Working\libs\stdlith\goodlinklist.cpp"
+"E:\Working\libs\stdlith\helpers.cpp"
+"E:\Working\libs\stdlith\l_allocator.cpp"
+"E:\Working\libs\stdlith\linklist.cpp"
+"E:\Working\libs\stdlith\lithexception.cpp"
+"E:\Working\libs\stdlith\memory.cpp"
+"E:\Working\libs\stdlith\memoryio.cpp"
+"E:\Working\libs\stdlith\stringholder.cpp"
+"E:\Working\libs\stdlith\struct_bank.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP4B.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+/nologo /out:"..\built\Final\Lib_StdLith\Lib_StdLith.lib" 
+\Working\libs\built\Final\Lib_StdLith\abstractio.obj
+\Working\libs\built\Final\Lib_StdLith\compressedio.obj
+\Working\libs\built\Final\Lib_StdLith\dynarray.obj
+\Working\libs\built\Final\Lib_StdLith\fileio.obj
+\Working\libs\built\Final\Lib_StdLith\goodlinklist.obj
+\Working\libs\built\Final\Lib_StdLith\helpers.obj
+\Working\libs\built\Final\Lib_StdLith\l_allocator.obj
+\Working\libs\built\Final\Lib_StdLith\linklist.obj
+\Working\libs\built\Final\Lib_StdLith\lithexception.obj
+\Working\libs\built\Final\Lib_StdLith\memory.obj
+\Working\libs\built\Final\Lib_StdLith\memoryio.obj
+\Working\libs\built\Final\Lib_StdLith\stringholder.obj
+\Working\libs\built\Final\Lib_StdLith\struct_bank.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP4C.tmp"
+<h3>Output Window</h3>
+Compiling...
+abstractio.cpp
+compressedio.cpp
+dynarray.cpp
+fileio.cpp
+goodlinklist.cpp
+helpers.cpp
+l_allocator.cpp
+linklist.cpp
+lithexception.cpp
+memory.cpp
+memoryio.cpp
+stringholder.cpp
+struct_bank.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_StdLith.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Lib_ZLib - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP4D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_FINAL" /FR"..\Built\Final\Lib_ZLib/" /Fp"..\Built\Final\Lib_ZLib/Lib_ZLib.pch" /YX /Fo"..\Built\Final\Lib_ZLib/" /Fd"..\Built\Final\Lib_ZLib/" /FD /c 
+"E:\Working\libs\zlib\adler32.c"
+"E:\Working\libs\zlib\compress.c"
+"E:\Working\libs\zlib\crc32.c"
+"E:\Working\libs\zlib\deflate.c"
+"E:\Working\libs\zlib\gzio.c"
+"E:\Working\libs\zlib\infblock.c"
+"E:\Working\libs\zlib\infcodes.c"
+"E:\Working\libs\zlib\inffast.c"
+"E:\Working\libs\zlib\inflate.c"
+"E:\Working\libs\zlib\inftrees.c"
+"E:\Working\libs\zlib\infutil.c"
+"E:\Working\libs\zlib\trees.c"
+"E:\Working\libs\zlib\uncompr.c"
+"E:\Working\libs\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP4D.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP4E.tmp" with contents
+[
+/nologo /out:"..\Built\Final\Lib_ZLib\Lib_ZLib.lib" 
+\Working\libs\Built\Final\Lib_ZLib\adler32.obj
+\Working\libs\Built\Final\Lib_ZLib\compress.obj
+\Working\libs\Built\Final\Lib_ZLib\crc32.obj
+\Working\libs\Built\Final\Lib_ZLib\deflate.obj
+\Working\libs\Built\Final\Lib_ZLib\gzio.obj
+\Working\libs\Built\Final\Lib_ZLib\infblock.obj
+\Working\libs\Built\Final\Lib_ZLib\infcodes.obj
+\Working\libs\Built\Final\Lib_ZLib\inffast.obj
+\Working\libs\Built\Final\Lib_ZLib\inflate.obj
+\Working\libs\Built\Final\Lib_ZLib\inftrees.obj
+\Working\libs\Built\Final\Lib_ZLib\infutil.obj
+\Working\libs\Built\Final\Lib_ZLib\trees.obj
+\Working\libs\Built\Final\Lib_ZLib\uncompr.obj
+\Working\libs\Built\Final\Lib_ZLib\zutil.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP4E.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+trees.c
+uncompr.c
+zutil.c
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_ZLib.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LithRez - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP4F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "../../libs/rezmgr" /I "..\..\..\libs\lith" /D "WIN32" /D "REZMGRFULL" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\built\Release\tools\LithRez/LithRez.pch" /YX /Fo"..\..\built\Release\tools\LithRez/" /Fd"..\..\built\Release\tools\LithRez/" /FD /c 
+"E:\Working\ENGINE\tools\LithRez\lithrez.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP4F.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP50.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\LithRez/LithRez.pdb" /machine:I386 /nodefaultlib:"LIBCMT" /out:"..\..\built\Release\tools\LithRez/LithRez.exe" 
+\Working\ENGINE\built\Release\tools\LithRez\lithrez.obj
+..\..\built\Release\libs\Lib_RezMgr\Lib_RezMgr.lib
+..\..\..\libs\built\Release\Lib_Lith\Lib_Lith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP50.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP51.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\LithRez\LithRez.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\LithRez\LithRez.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP51.bat"
+Compiling...
+lithrez.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\LithRez\LithRez.exe
+copy \Working\ENGINE\built\Release\tools\LithRez\LithRez.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+LithRez.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MFCStub - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP53.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\stdlith" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /FR"..\built\Release\MFCStub/" /Fp"..\built\Release\MFCStub/MFCStub60.pch" /YX /Fo"..\built\Release\MFCStub/" /Fd"..\built\Release\MFCStub/" /FD /c 
+"E:\Working\libs\MFCStub\mfcs_point.cpp"
+"E:\Working\libs\MFCStub\mfcs_rect.cpp"
+"E:\Working\libs\MFCStub\mfcs_string.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP53.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP54.tmp" with contents
+[
+/nologo /out:"..\Built\Release\MFCStub\MFCStub.lib" 
+\Working\libs\built\Release\MFCStub\mfcs_point.obj
+\Working\libs\built\Release\MFCStub\mfcs_rect.obj
+\Working\libs\built\Release\MFCStub\mfcs_string.obj
+..\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP54.tmp"
+<h3>Output Window</h3>
+Compiling...
+mfcs_point.cpp
+mfcs_rect.cpp
+mfcs_string.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+MFCStub.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MayaModelExport - Win32 Release Maya30--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP55.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\SDKFiles\Maya30SDK\include" /I "..\..\..\libs\ltamgr" /I "..\..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "NT_PLUGIN" /D "USES_MAYA3_SDK" /Fp"..\..\..\Built\Release\tools\Plugins\MayaModelExport30/MayaModelExport.pch" /YX /Fo"..\..\..\Built\Release\tools\Plugins\MayaModelExport30/" /Fd"..\..\..\Built\Release\tools\Plugins\MayaModelExport30/" /FD /c 
+"E:\Working\ENGINE\tools\Plugins\MayaModelExport\DllMain.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelExportCommand.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelFileTranslator.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP55.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Foundation.lib OpenMaya.lib OpenMayaAnim.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\..\Built\Release\tools\Plugins\MayaModelExport30/MayaModelExport30.pdb" /machine:I386 /nodefaultlib:"libcmt.lib" /out:"..\..\..\Built\Release\tools\Plugins\MayaModelExport30\MayaModelExport30.mll" /implib:"..\..\..\Built\Release\tools\Plugins\MayaModelExport30/MayaModelExport30.lib" /libpath:"..\SDKFiles\Maya30SDK\lib" 
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport30\DllMain.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport30\ModelExportCommand.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport30\ModelFileTranslator.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport30\ltquatbase.obj
+..\..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP56.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP57.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport30\MayaModelExport30.mll ..\..\..\..\development\tools\Plugins
+copy \Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport30\MayaModelExport30.mll ..\..\..\..\development\tools\Plugins
+echo copy LithTechModelExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+copy LithTechModelExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+echo copy ..\..\..\Built\Release\tools\Plugins\LithTechModelExportOptions.mel ..\..\..\..\development\tools\Plugins
+copy ..\..\..\Built\Release\tools\Plugins\LithTechModelExportOptions.mel ..\..\..\..\development\tools\Plugins
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP57.bat"
+Compiling...
+DllMain.cpp
+E:\Working\ENGINE\tools\Plugins\MayaModelExport\DllMain.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MFnPlugin.h': No such file or directory
+ModelExportCommand.cpp
+E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelExportCommand.cpp(1) : fatal error C1083: Cannot open include file: 'maya/MArgList.h': No such file or directory
+ModelFileTranslator.cpp
+E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelFileTranslator.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MGlobal.h': No such file or directory
+ltquatbase.cpp
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MayaModelExport30.mll - 3 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MayaModelExport - Win32 Release Maya40--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP58.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\SDKFiles\Maya40SDK\include" /I "..\..\..\libs\ltamgr" /I "..\..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "NT_PLUGIN" /D "USES_MAYA4_SDK" /Fp"..\..\..\Built\Release\tools\Plugins\MayaModelExport40/MayaModelExport.pch" /YX /Fo"..\..\..\Built\Release\tools\Plugins\MayaModelExport40/" /Fd"..\..\..\Built\Release\tools\Plugins\MayaModelExport40/" /FD /c 
+"E:\Working\ENGINE\tools\Plugins\MayaModelExport\DllMain.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelExportCommand.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelFileTranslator.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP58.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP59.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Foundation.lib OpenMaya.lib OpenMayaAnim.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\..\Built\Release\tools\Plugins\MayaModelExport40/MayaModelExport40.pdb" /machine:I386 /nodefaultlib:"libcmt.lib" /out:"..\..\..\Built\Release\tools\Plugins\MayaModelExport40\MayaModelExport40.mll" /implib:"..\..\..\Built\Release\tools\Plugins\MayaModelExport40/MayaModelExport40.lib" /libpath:"..\SDKFiles\Maya40SDK\lib" 
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport40\DllMain.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport40\ModelExportCommand.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport40\ModelFileTranslator.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport40\ltquatbase.obj
+..\..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP59.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5A.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport40\MayaModelExport40.mll ..\..\..\..\development\tools\Plugins
+copy \Working\ENGINE\Built\Release\tools\Plugins\MayaModelExport40\MayaModelExport40.mll ..\..\..\..\development\tools\Plugins
+echo copy LithTechModelExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+copy LithTechModelExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+echo copy ..\..\..\Built\Release\tools\Plugins\LithTechModelExportOptions.mel ..\..\..\..\development\tools\Plugins
+copy ..\..\..\Built\Release\tools\Plugins\LithTechModelExportOptions.mel ..\..\..\..\development\tools\Plugins
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5A.bat"
+Compiling...
+DllMain.cpp
+E:\Working\ENGINE\tools\Plugins\MayaModelExport\DllMain.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MFnPlugin.h': No such file or directory
+ModelExportCommand.cpp
+E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelExportCommand.cpp(1) : fatal error C1083: Cannot open include file: 'maya/MArgList.h': No such file or directory
+ModelFileTranslator.cpp
+E:\Working\ENGINE\tools\Plugins\MayaModelExport\ModelFileTranslator.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MGlobal.h': No such file or directory
+ltquatbase.cpp
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MayaModelExport40.mll - 3 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MayaWorldExport - Win32 Release Maya30--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\SDKFiles\Maya30SDK\include" /I "..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\..\..\libs\ltamgr" /I "..\..\..\sdk\inc" /D "USES_MAYA3_SDK" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "NT_PLUGIN" /Fp"..\..\..\Built\Release\tools\Plugins\MayaWorldExport30/MayaWorldExport.pch" /YX /Fo"..\..\..\Built\Release\tools\Plugins\MayaWorldExport30/" /Fd"..\..\..\Built\Release\tools\Plugins\MayaWorldExport30/" /FD /c 
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\DllMain.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\LTAFile.cpp"
+"E:\Working\ENGINE\sdk\inc\LTEulerAngles.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportCommand.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportFileTranslator.cpp"
+"E:\Working\ENGINE\tools\Plugins\Shared\WorldImport.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportCommand.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportFileTranslator.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP5B.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Foundation.lib OpenMaya.lib OpenMayaAnim.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\..\Built\Release\tools\Plugins\MayaWorldExport30/MayaWorldExport30.pdb" /machine:I386 /nodefaultlib:"libcmt.lib" /out:"..\..\..\Built\Release\tools\Plugins\MayaWorldExport30\MayaWorldExport30.mll" /implib:"..\..\..\Built\Release\tools\Plugins\MayaWorldExport30/MayaWorldExport30.lib" /libpath:"..\SDKFiles\Maya30SDK\lib" 
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\DllMain.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\LTAFile.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\LTEulerAngles.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\WorldExportCommand.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\WorldExportFileTranslator.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\WorldImport.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\WorldImportCommand.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\WorldImportFileTranslator.obj
+..\..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP5C.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5D.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\MayaWorldExport30.mll ..\..\..\..\development\tools\Plugins
+copy \Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport30\MayaWorldExport30.mll ..\..\..\..\development\tools\Plugins
+echo copy LithTechWorldExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+copy LithTechWorldExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+echo copy LithTechWorldImportOptions.mel ..\..\..\Built\Release\tools\Plugins
+copy LithTechWorldImportOptions.mel ..\..\..\Built\Release\tools\Plugins
+echo copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldExportOptions.mel ..\..\..\..\development\tools\Plugins
+copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldExportOptions.mel ..\..\..\..\development\tools\Plugins
+echo copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldImportOptions.mel ..\..\..\..\development\tools\Plugins
+copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldImportOptions.mel ..\..\..\..\development\tools\Plugins
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5D.bat"
+Compiling...
+DllMain.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\DllMain.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MFnPlugin.h': No such file or directory
+LTAFile.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\LTAFile.h(5) : fatal error C1083: Cannot open include file: 'maya/MVector.h': No such file or directory
+LTEulerAngles.cpp
+WorldExportCommand.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportCommand.cpp(1) : fatal error C1083: Cannot open include file: 'maya/MArgList.h': No such file or directory
+WorldExportFileTranslator.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportFileTranslator.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MGlobal.h': No such file or directory
+WorldImport.cpp
+WorldImportCommand.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportCommand.cpp(1) : fatal error C1083: Cannot open include file: 'maya/MArgList.h': No such file or directory
+WorldImportFileTranslator.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportFileTranslator.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MGlobal.h': No such file or directory
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MayaWorldExport30.mll - 6 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MayaWorldExport - Win32 Release Maya40--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\SDKFiles\Maya40SDK\include" /I "..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared" /I "..\..\..\libs\ltamgr" /I "..\..\..\sdk\inc" /D "USES_MAYA4_SDK" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "NT_PLUGIN" /Fp"..\..\..\Built\Release\tools\Plugins\MayaWorldExport40/MayaWorldExport.pch" /YX /Fo"..\..\..\Built\Release\tools\Plugins\MayaWorldExport40/" /Fd"..\..\..\Built\Release\tools\Plugins\MayaWorldExport40/" /FD /c 
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\DllMain.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\LTAFile.cpp"
+"E:\Working\ENGINE\sdk\inc\LTEulerAngles.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportCommand.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportFileTranslator.cpp"
+"E:\Working\ENGINE\tools\Plugins\Shared\WorldImport.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportCommand.cpp"
+"E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportFileTranslator.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP5E.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Foundation.lib OpenMaya.lib OpenMayaAnim.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\..\Built\Release\tools\Plugins\MayaWorldExport40/MayaWorldExport40.pdb" /machine:I386 /nodefaultlib:"libcmt.lib" /out:"..\..\..\Built\Release\tools\Plugins\MayaWorldExport40\MayaWorldExport40.mll" /implib:"..\..\..\Built\Release\tools\Plugins\MayaWorldExport40/MayaWorldExport40.lib" /libpath:"..\SDKFiles\Maya40SDK\lib" 
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\DllMain.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\LTAFile.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\LTEulerAngles.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\WorldExportCommand.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\WorldExportFileTranslator.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\WorldImport.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\WorldImportCommand.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\WorldImportFileTranslator.obj
+..\..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP5F.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP60.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\MayaWorldExport40.mll ..\..\..\..\development\tools\Plugins
+copy \Working\ENGINE\Built\Release\tools\Plugins\MayaWorldExport40\MayaWorldExport40.mll ..\..\..\..\development\tools\Plugins
+echo copy LithTechWorldExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+copy LithTechWorldExportOptions.mel ..\..\..\Built\Release\tools\Plugins
+echo copy LithTechWorldImportOptions.mel ..\..\..\Built\Release\tools\Plugins
+copy LithTechWorldImportOptions.mel ..\..\..\Built\Release\tools\Plugins
+echo copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldExportOptions.mel ..\..\..\..\development\tools\Plugins
+copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldExportOptions.mel ..\..\..\..\development\tools\Plugins
+echo copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldImportOptions.mel ..\..\..\..\development\tools\Plugins
+copy ..\..\..\Built\Release\tools\Plugins\LithTechWorldImportOptions.mel ..\..\..\..\development\tools\Plugins
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP60.bat"
+Compiling...
+DllMain.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\DllMain.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MFnPlugin.h': No such file or directory
+LTAFile.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\LTAFile.h(5) : fatal error C1083: Cannot open include file: 'maya/MVector.h': No such file or directory
+LTEulerAngles.cpp
+WorldExportCommand.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportCommand.cpp(1) : fatal error C1083: Cannot open include file: 'maya/MArgList.h': No such file or directory
+WorldExportFileTranslator.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldExportFileTranslator.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MGlobal.h': No such file or directory
+WorldImport.cpp
+WorldImportCommand.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportCommand.cpp(1) : fatal error C1083: Cannot open include file: 'maya/MArgList.h': No such file or directory
+WorldImportFileTranslator.cpp
+E:\Working\ENGINE\tools\Plugins\MayaWorldExport\WorldImportFileTranslator.cpp(1) : fatal error C1083: Cannot open include file: 'maya\MGlobal.h': No such file or directory
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MayaWorldExport40.mll - 6 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ModelEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\release\tools\ModelEdit/ModelEdit.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\ModelEdit\ModelEdit.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /I ".\\" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\shared\model\\" /I "..\..\sdk\inc" /I "..\Model_Packer\lta2ltb_d3d" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\libs\ltamgr" /I "..\..\..\libs\lith" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "MODEL_STANDALONE" /D "BDEFS_SIM" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "BDEFS_WINDOWS_H" /D "LTA2LTB_D3D" /D "_AFXDLL" /FR"..\..\built\release\tools\ModelEdit/" /Fp"..\..\built\release\tools\ModelEdit/ModelEdit.pch" /Yu"precompile.h" /Fo"..\..\built\release\tools\ModelEdit/" /Fd"..\..\built\release\tools\ModelEdit/" /FD /c 
+"E:\Working\ENGINE\tools\ModelEdit\AboutDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\AddSocketDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\AnimFramerateDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\AnimMergeDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\animnumberdlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\CommandStringDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ContinuousDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\DimensionsDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\DragList.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ExportD3D_Dlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\GenLodDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ImportLODDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ImportStringKeysDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\InvalidAnimDimsDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\KeyframeStringDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\KeyframeTimeDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ModelInfoDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\PieceLODGen.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\PieceLODGenDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\PieceMaterialDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\RenameDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\RenameNodeDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\RotationDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\StringDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\TimeOffsetDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\TranslationDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\UVImportDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\WeightEditDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\WeightSetSelectDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\gl_modelrender.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ImportAnimation.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\KeyframeWnd.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\LODEdit.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ModelEdit.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ModelEditDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\MyEdit.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\PieceMerge.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\RenderWnd.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\SetFOVDlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\SocketEdit.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\win_idle.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\SolidRectWnd.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\EditOBBDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP61.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP62.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /I ".\\" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\shared\model\\" /I "..\..\sdk\inc" /I "..\Model_Packer\lta2ltb_d3d" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\libs\ltamgr" /I "..\..\..\libs\lith" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "MODEL_STANDALONE" /D "BDEFS_SIM" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "BDEFS_WINDOWS_H" /D "LTA2LTB_D3D" /D "_AFXDLL" /FR"..\..\built\release\tools\ModelEdit/" /Fo"..\..\built\release\tools\ModelEdit/" /Fd"..\..\built\release\tools\ModelEdit/" /FD /c 
+"E:\Working\ENGINE\tools\ModelEdit\DirDialog.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\loadltadlg.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\AddChildModelDlg.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\newgenlod.cpp"
+"E:\Working\ENGINE\tools\shared\engine\bdefs.cpp"
+"E:\Working\ENGINE\tools\shared\engine\conparse.cpp"
+"E:\Working\ENGINE\tools\shared\engine\counter.cpp"
+"E:\Working\ENGINE\tools\shared\engine\dtxmgr.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genltstream.cpp"
+"E:\Working\ENGINE\tools\shared\engine\geomroutines.cpp"
+"E:\Working\ENGINE\sdk\inc\LTEulerAngles.cpp"
+"E:\Working\ENGINE\tools\shared\engine\nexus.cpp"
+"E:\Working\ENGINE\tools\shared\engine\pixelformat.cpp"
+"E:\Working\ENGINE\tools\shared\engine\simple_dalloc.cpp"
+"E:\Working\ENGINE\tools\shared\engine\streamsim.cpp"
+"E:\Working\ENGINE\tools\shared\model\animtracker.cpp"
+"E:\Working\ENGINE\tools\shared\model\debug.cpp"
+"E:\Working\ENGINE\tools\shared\model\estring.cpp"
+"E:\Working\ENGINE\tools\shared\model\exportsys.cpp"
+"E:\Working\ENGINE\tools\shared\model\ltaModel.cpp"
+"E:\Working\ENGINE\tools\shared\model\ltaSave.cpp"
+"E:\Working\ENGINE\tools\shared\model\ltaScene.cpp"
+"E:\Working\ENGINE\tools\shared\model\model.cpp"
+"E:\Working\ENGINE\tools\shared\model\model_cleanup.cpp"
+"E:\Working\ENGINE\tools\shared\model\model_ops.cpp"
+"E:\Working\ENGINE\tools\shared\model\modelallocations.cpp"
+"E:\Working\ENGINE\tools\shared\model\transformmaker.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ltwintreeitem.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ltwintreeitemiter.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\ltwintreemgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP62.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP63.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /I ".\\" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\shared\model\\" /I "..\..\sdk\inc" /I "..\Model_Packer\lta2ltb_d3d" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\libs\ltamgr" /I "..\..\..\libs\lith" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "MODEL_STANDALONE" /D "BDEFS_SIM" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "BDEFS_WINDOWS_H" /D "LTA2LTB_D3D" /D "_AFXDLL" /FR"..\..\built\release\tools\ModelEdit/" /Fp"..\..\built\release\tools\ModelEdit/ModelEdit.pch" /Yc"precompile.h" /Fo"..\..\built\release\tools\ModelEdit/" /Fd"..\..\built\release\tools\ModelEdit/" /FD /c 
+"E:\Working\ENGINE\tools\ModelEdit\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP63.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP64.tmp" with contents
+[
+winmm.lib d3d8.lib d3dx8.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\ModelEdit/ModelEdit.pdb" /machine:I386 /out:"..\..\built\release\tools\ModelEdit/ModelEdit.exe" 
+\Working\ENGINE\built\release\tools\ModelEdit\AboutDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\AddSocketDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\AnimFramerateDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\AnimMergeDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\animnumberdlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\CommandStringDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ContinuousDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\DimensionsDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\DirDialog.obj
+\Working\ENGINE\built\release\tools\ModelEdit\DragList.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ExportD3D_Dlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\GenLodDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ImportLODDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ImportStringKeysDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\InvalidAnimDimsDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\KeyframeStringDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\KeyframeTimeDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\loadltadlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ModelInfoDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\PieceLODGen.obj
+\Working\ENGINE\built\release\tools\ModelEdit\PieceLODGenDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\PieceMaterialDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\RenameDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\RenameNodeDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\RotationDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\StringDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\TimeOffsetDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\TranslationDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\UVImportDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\WeightEditDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\WeightSetSelectDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\AddChildModelDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\gl_modelrender.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ImportAnimation.obj
+\Working\ENGINE\built\release\tools\ModelEdit\KeyframeWnd.obj
+\Working\ENGINE\built\release\tools\ModelEdit\LODEdit.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltquatbase.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ModelEdit.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ModelEditDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\MyEdit.obj
+\Working\ENGINE\built\release\tools\ModelEdit\newgenlod.obj
+\Working\ENGINE\built\release\tools\ModelEdit\PieceMerge.obj
+\Working\ENGINE\built\release\tools\ModelEdit\RenderWnd.obj
+\Working\ENGINE\built\release\tools\ModelEdit\SetFOVDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\SocketEdit.obj
+\Working\ENGINE\built\release\tools\ModelEdit\StdAfx.obj
+\Working\ENGINE\built\release\tools\ModelEdit\win_idle.obj
+\Working\ENGINE\built\release\tools\ModelEdit\SolidRectWnd.obj
+\Working\ENGINE\built\release\tools\ModelEdit\bdefs.obj
+\Working\ENGINE\built\release\tools\ModelEdit\conparse.obj
+\Working\ENGINE\built\release\tools\ModelEdit\counter.obj
+\Working\ENGINE\built\release\tools\ModelEdit\dtxmgr.obj
+\Working\ENGINE\built\release\tools\ModelEdit\EditOBBDlg.obj
+\Working\ENGINE\built\release\tools\ModelEdit\genltstream.obj
+\Working\ENGINE\built\release\tools\ModelEdit\geomroutines.obj
+\Working\ENGINE\built\release\tools\ModelEdit\LTEulerAngles.obj
+\Working\ENGINE\built\release\tools\ModelEdit\nexus.obj
+\Working\ENGINE\built\release\tools\ModelEdit\pixelformat.obj
+\Working\ENGINE\built\release\tools\ModelEdit\simple_dalloc.obj
+\Working\ENGINE\built\release\tools\ModelEdit\streamsim.obj
+\Working\ENGINE\built\release\tools\ModelEdit\animtracker.obj
+\Working\ENGINE\built\release\tools\ModelEdit\debug.obj
+\Working\ENGINE\built\release\tools\ModelEdit\estring.obj
+\Working\ENGINE\built\release\tools\ModelEdit\exportsys.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltaModel.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltaSave.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltaScene.obj
+\Working\ENGINE\built\release\tools\ModelEdit\model.obj
+\Working\ENGINE\built\release\tools\ModelEdit\model_cleanup.obj
+\Working\ENGINE\built\release\tools\ModelEdit\model_ops.obj
+\Working\ENGINE\built\release\tools\ModelEdit\modelallocations.obj
+\Working\ENGINE\built\release\tools\ModelEdit\transformmaker.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltwintreeitem.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltwintreeitemiter.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ltwintreemgr.obj
+\Working\ENGINE\built\release\tools\ModelEdit\ModelEdit.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+..\..\..\libs\built\Release\RegMgr\regmgr.lib
+..\..\..\libs\built\Release\Lib_Lith\Lib_Lith.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP64.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP65.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\ModelEdit\ModelEdit.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\ModelEdit\ModelEdit.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP65.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutDlg.cpp
+AddSocketDlg.cpp
+AnimFramerateDlg.cpp
+AnimMergeDlg.cpp
+animnumberdlg.cpp
+CommandStringDlg.cpp
+ContinuousDlg.cpp
+DimensionsDlg.cpp
+DragList.cpp
+ExportD3D_Dlg.cpp
+GenLodDlg.cpp
+ImportLODDlg.cpp
+ImportStringKeysDlg.cpp
+InvalidAnimDimsDlg.cpp
+KeyframeStringDlg.cpp
+KeyframeTimeDlg.cpp
+ModelInfoDlg.cpp
+PieceLODGen.cpp
+PieceLODGenDlg.cpp
+PieceMaterialDlg.cpp
+Generating Code...
+Compiling...
+RenameDlg.cpp
+RenameNodeDlg.cpp
+RotationDlg.cpp
+StringDlg.cpp
+TimeOffsetDlg.cpp
+TranslationDlg.cpp
+UVImportDlg.cpp
+WeightEditDlg.cpp
+WeightSetSelectDlg.cpp
+gl_modelrender.cpp
+ImportAnimation.cpp
+KeyframeWnd.cpp
+LODEdit.cpp
+ModelEdit.cpp
+ModelEditDlg.cpp
+MyEdit.cpp
+PieceMerge.cpp
+RenderWnd.cpp
+SetFOVDlg.cpp
+SocketEdit.cpp
+Generating Code...
+Compiling...
+win_idle.cpp
+SolidRectWnd.cpp
+EditOBBDlg.cpp
+Generating Code...
+Compiling...
+DirDialog.cpp
+loadltadlg.cpp
+AddChildModelDlg.cpp
+ltquatbase.cpp
+newgenlod.cpp
+bdefs.cpp
+conparse.cpp
+counter.cpp
+dtxmgr.cpp
+genltstream.cpp
+geomroutines.cpp
+LTEulerAngles.cpp
+nexus.cpp
+pixelformat.cpp
+simple_dalloc.cpp
+streamsim.cpp
+animtracker.cpp
+debug.cpp
+estring.cpp
+exportsys.cpp
+Generating Code...
+Compiling...
+ltaModel.cpp
+ltaSave.cpp
+ltaScene.cpp
+model.cpp
+model_cleanup.cpp
+model_ops.cpp
+modelallocations.cpp
+transformmaker.cpp
+ltwintreeitem.cpp
+ltwintreeitemiter.cpp
+ltwintreemgr.cpp
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\ModelEdit\ModelEdit.exe
+copy \Working\ENGINE\built\release\tools\ModelEdit\ModelEdit.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+ModelEdit.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Model_Packer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\Release\tools\Model_Packer/Model_Packer.res" /d "NDEBUG" "E:\Working\ENGINE\tools\Model_Packer\Model_Packer.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP67.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\libs\stdlith" /I "..\shared\engine" /I "..\ModelEdit\\" /I "..\shared\model" /I "." /I "..\..\ModelEdit" /I "..\..\sdk\inc" /I "..\..\sdk\inc\compat" /I "..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_CONSOLE" /D "BDEFS_WINDOWS_H" /D "LTA2LTB_D3D" /Fp"..\..\built\Release\tools\Model_Packer/Model_Packer.pch" /YX /Fo"..\..\built\Release\tools\Model_Packer/" /Fd"..\..\built\Release\tools\Model_Packer/" /FD /c 
+"E:\Working\ENGINE\tools\shared\engine\geomroutines.cpp"
+"E:\Working\ENGINE\tools\Model_Packer\lta2ltb_d3d.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"E:\Working\ENGINE\tools\Model_Packer\manifold.cpp"
+"E:\Working\ENGINE\tools\Model_Packer\Model_Packer.cpp"
+"E:\Working\ENGINE\tools\shared\model\ltaSave.cpp"
+"E:\Working\ENGINE\tools\shared\model\ltaModel.cpp"
+"E:\Working\ENGINE\tools\shared\model\ltaScene.cpp"
+"E:\Working\ENGINE\tools\shared\model\model.cpp"
+"E:\Working\ENGINE\tools\shared\model\model_cleanup.cpp"
+"E:\Working\ENGINE\tools\shared\model\model_ops.cpp"
+"E:\Working\ENGINE\tools\shared\model\model_save.cpp"
+"E:\Working\ENGINE\tools\shared\model\modelallocations.cpp"
+"E:\Working\ENGINE\tools\ModelEdit\newgenlod.cpp"
+"E:\Working\ENGINE\tools\shared\model\transformmaker.cpp"
+"E:\Working\ENGINE\tools\shared\engine\conparse.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genltstream.cpp"
+"E:\Working\ENGINE\tools\shared\engine\nexus.cpp"
+"E:\Working\ENGINE\tools\shared\engine\streamsim.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP67.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP68.tmp" with contents
+[
+kernel32.lib user32.lib shell32.lib d3dx8.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\Model_Packer/Model_Packer.pdb" /machine:I386 /out:"..\..\built\Release\tools\Model_Packer/Model_Packer.exe" 
+\Working\ENGINE\built\Release\tools\Model_Packer\geomroutines.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\lta2ltb_d3d.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\ltquatbase.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\manifold.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\ltaSave.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\ltaModel.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\ltaScene.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\model.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\model_cleanup.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\model_ops.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\model_save.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\modelallocations.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\newgenlod.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\transformmaker.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\conparse.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\genltstream.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\nexus.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\streamsim.obj
+\Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP68.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP69.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.exe c:\bin
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP69.bat"
+Compiling resources...
+Compiling...
+geomroutines.cpp
+lta2ltb_d3d.cpp
+ltquatbase.cpp
+manifold.cpp
+Model_Packer.cpp
+ltaSave.cpp
+ltaModel.cpp
+ltaScene.cpp
+model.cpp
+model_cleanup.cpp
+model_ops.cpp
+model_save.cpp
+modelallocations.cpp
+newgenlod.cpp
+transformmaker.cpp
+conparse.cpp
+genltstream.cpp
+nexus.cpp
+streamsim.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.exe
+copy \Working\ENGINE\built\Release\tools\Model_Packer\Model_Packer.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+Model_Packer.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MaxModelExport - Win32 Release MAX30--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\Built\Release\tools\Plugins\MaxModelExport30/MaxModelExport.res" /d "NDEBUG" "E:\Working\ENGINE\tools\Plugins\MaxModelExport\MaxModelExport.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP6B.tmp" with contents
+[
+/nologo /G6 /MD /W3 /GX /O2 /I "..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\sdkfiles\max30sdk\include" /I "..\..\..\sdk\inc" /I "..\..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "USES_MAX3_SDK" /Fp"..\..\..\Built\Release\tools\Plugins\MaxModelExport30/MaxModelExport.pch" /YX /Fo"..\..\..\Built\Release\tools\Plugins\MaxModelExport30/" /Fd"..\..\..\Built\Release\tools\Plugins\MaxModelExport30/" /FD /c 
+"E:\Working\ENGINE\tools\Plugins\MaxModelExport\DLLMain.cpp"
+"E:\Working\ENGINE\tools\Plugins\MaxModelExport\Exporter.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"E:\Working\ENGINE\tools\Plugins\MaxModelExport\MaxModelExport.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP6B.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP6C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib core.lib geom.lib gfx.lib mesh.lib maxutil.lib maxscrpt.lib paramblk2.lib /nologo /base:"0x105b0000" /subsystem:windows /dll /incremental:no /pdb:"..\..\..\Built\Release\tools\Plugins\MaxModelExport30/MaxModelExport30.pdb" /machine:I386 /nodefaultlib:"libcmt" /def:".\MaxModelExport30.def" /out:"..\..\..\Built\Release\tools\Plugins\MaxModelExport30\MaxModelExport30.dle" /implib:"..\..\..\Built\Release\tools\Plugins\MaxModelExport30/MaxModelExport30.lib" /libpath:"..\sdkfiles\max30sdk\lib" /release 
+\Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\DLLMain.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\Exporter.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\ltquatbase.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\MaxModelExport.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\MaxModelExport.res
+..\..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP6C.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP6D.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\MaxModelExport30.dle ..\..\..\..\development\tools\Plugins
+copy \Working\ENGINE\Built\Release\tools\Plugins\MaxModelExport30\MaxModelExport30.dle ..\..\..\..\development\tools\Plugins
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP6D.bat"
+Compiling resources...
+Compiling...
+DLLMain.cpp
+E:\Working\ENGINE\tools\Plugins\MaxModelExport\MaxModelExport.h(9) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+Exporter.cpp
+E:\Working\ENGINE\tools\Plugins\MaxModelExport\Exporter.h(14) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+ltquatbase.cpp
+MaxModelExport.cpp
+E:\Working\ENGINE\tools\Plugins\MaxModelExport\MaxModelExport.h(9) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Plugins.exe - 3 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: PreProcessor - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\release\tools\Preprocessor/PreProcessor.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\PreProcessor\PreProcessor.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP6E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\..\sdk\inc" /I "..\..\sdk\inc\physics" /I "..\shared\engine\\" /I "..\shared\world\\" /I "..\shared\model\\" /I "win" /I "..\..\..\libs\stdlith\sys\win" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\lith" /I "..\dedit\draw" /I ".\packer_pc\\" /I ".\packer_ps2\\" /I "..\dedit\lightmap" /I "..\..\libs\ltamgr" /D "NDEBUG" /D "PRE_FLOAT" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "BDEFS_MFC" /D "STDLITH_MFC" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /FR"..\..\built\release\tools\Preprocessor/" /Fp"..\..\built\release\tools\Preprocessor/preprocessor60.pch" /Yu"bdefs.h" /Fo"..\..\built\release\tools\Preprocessor/" /Fd"..\..\built\release\tools\Preprocessor/" /FD /c 
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\NvTriStrip\NvTriStrip.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\NvTriStrip\NvTriStripObjects.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCLMPacker.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCRenderTree.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCRenderTreeNode.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCRenderTri.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCRenderVert.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCRenderWorld.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\PCWorldPacker.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\ApplyAmbientOverride.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\ApplyRenderGroups.cpp"
+"E:\Working\ENGINE\tools\shared\world\BasePoly.cpp"
+"E:\Working\ENGINE\tools\shared\engine\bindmgr.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\BrushToWorld.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\BspGen.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\BspHullMaker.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\CenterWorldAroundOrigin.cpp"
+"E:\Working\ENGINE\tools\shared\engine\classbind.cpp"
+"E:\Working\ENGINE\tools\shared\engine\conparse.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\ConvertKeyData.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\ConvertScatter.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\create_world_tree.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\CreateDecals.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\createphysicsbsp.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\CreatePolyEdges.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\createvisbsp.cpp"
+"E:\Working\ENGINE\tools\shared\engine\dtxmgr.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditBrush.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditObjects.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditPatch.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditPlane.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditPoly.cpp"
+"E:\Working\ENGINE\tools\shared\world\EditRegion.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\FillInGroupObjects.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\FindWorldModel.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genericprop_setup.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genltstream.cpp"
+"E:\Working\ENGINE\tools\shared\engine\geomroutines.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\gettextureflags.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\gettextureinfo.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\HullPoly.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\LeakFinders.cpp"
+"E:\Working\ENGINE\tools\shared\engine\light_table.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\LightFragmentMaker.cpp"
+"E:\Working\ENGINE\tools\shared\engine\lightmap_compress.cpp"
+"E:\Working\ENGINE\tools\shared\engine\lightmap_planes.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\LightMapMaker.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\LMPolyTree.cpp"
+"E:\Working\ENGINE\tools\DEdit\draw\Navigator.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Node.cpp"
+"E:\Working\ENGINE\tools\shared\world\node_ops.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Noise.cpp"
+"E:\Working\ENGINE\tools\shared\engine\parse_world_info.cpp"
+"E:\Working\ENGINE\tools\shared\engine\pixelformat.cpp"
+"E:\Working\ENGINE\tools\shared\world\PrefabMgr.cpp"
+"E:\Working\ENGINE\tools\shared\world\PrefabRef.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\pregeometry.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PreLeaf.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PreLightMap.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PrePlane.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PrePoly.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PrePolyFragments.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PreSurface.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Processing.cpp"
+"E:\Working\ENGINE\tools\shared\world\PropList.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\replacetextures.cpp"
+"E:\Working\ENGINE\tools\shared\world\SpriteFile.cpp"
+"E:\Working\ENGINE\tools\shared\engine\streamsim.cpp"
+"E:\Working\ENGINE\tools\shared\world\TexturedPlane.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Unseen.cpp"
+"E:\Working\ENGINE\tools\shared\world\UVtoOPQ.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\VisListBuilder.cpp"
+"E:\Working\ENGINE\tools\shared\engine\world_tree.cpp"
+"E:\Working\ENGINE\tools\shared\world\WorldNode.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP6E.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP6F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\..\sdk\inc" /I "..\..\sdk\inc\physics" /I "..\shared\engine\\" /I "..\shared\world\\" /I "..\shared\model\\" /I "win" /I "..\..\..\libs\stdlith\sys\win" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\lith" /I "..\dedit\draw" /I ".\packer_pc\\" /I ".\packer_ps2\\" /I "..\dedit\lightmap" /I "..\..\libs\ltamgr" /D "NDEBUG" /D "PRE_FLOAT" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "BDEFS_MFC" /D "STDLITH_MFC" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /FR"..\..\built\release\tools\Preprocessor/" /Fo"..\..\built\release\tools\Preprocessor/" /Fd"..\..\built\release\tools\Preprocessor/" /FD /c 
+"E:\Working\ENGINE\tools\PreProcessor\Packer_PC\NvTriStrip\VertexCache.cpp"
+"E:\Working\ENGINE\tools\shared\world\bezierpatch.cpp"
+"E:\Working\ENGINE\sdk\inc\LTEulerAngles.cpp"
+"E:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PackerFactory.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PreProcessor.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PreProcessorDlg.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\PreProcessorThread.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\ProcessingOptionsDlg.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\RPDManager.cpp"
+"E:\Working\ENGINE\tools\PreProcessor\Win\Threads.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP6F.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP70.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\..\sdk\inc" /I "..\..\sdk\inc\physics" /I "..\shared\engine\\" /I "..\shared\world\\" /I "..\shared\model\\" /I "win" /I "..\..\..\libs\stdlith\sys\win" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\lith" /I "..\dedit\draw" /I ".\packer_pc\\" /I ".\packer_ps2\\" /I "..\dedit\lightmap" /I "..\..\libs\ltamgr" /D "NDEBUG" /D "PRE_FLOAT" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /D "BDEFS_WINDOWS_H" /FR"..\..\built\release\tools\Preprocessor/" /Fo"..\..\built\release\tools\Preprocessor/" /Fd"..\..\built\release\tools\Preprocessor/" /FD /c 
+"E:\Working\ENGINE\tools\PreProcessor\PreWorld.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP70.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP71.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /Ob2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\..\sdk\inc" /I "..\..\sdk\inc\physics" /I "..\shared\engine\\" /I "..\shared\world\\" /I "..\shared\model\\" /I "win" /I "..\..\..\libs\stdlith\sys\win" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\regmgr" /I "..\..\..\libs\lith" /I "..\dedit\draw" /I ".\packer_pc\\" /I ".\packer_ps2\\" /I "..\dedit\lightmap" /I "..\..\libs\ltamgr" /D "NDEBUG" /D "PRE_FLOAT" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "BDEFS_MFC" /D "STDLITH_MFC" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /D "_AFXDLL" /FR"..\..\built\release\tools\Preprocessor/" /Fp"..\..\built\release\tools\Preprocessor/preprocessor60.pch" /Yc"bdefs.h" /Fo"..\..\built\release\tools\Preprocessor/" /Fd"..\..\built\release\tools\Preprocessor/" /FD /c 
+"E:\Working\ENGINE\tools\shared\engine\bdefs.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP71.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP72.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\Preprocessor/Processor.pdb" /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"msvcrtd.lib" /out:"..\..\built\release\tools\Preprocessor\Processor.exe" 
+\Working\ENGINE\built\release\tools\Preprocessor\NvTriStrip.obj
+\Working\ENGINE\built\release\tools\Preprocessor\NvTriStripObjects.obj
+\Working\ENGINE\built\release\tools\Preprocessor\VertexCache.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCLMPacker.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCRenderTree.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCRenderTreeNode.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCRenderTri.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCRenderVert.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCRenderWorld.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PCWorldPacker.obj
+\Working\ENGINE\built\release\tools\Preprocessor\ApplyAmbientOverride.obj
+\Working\ENGINE\built\release\tools\Preprocessor\ApplyRenderGroups.obj
+\Working\ENGINE\built\release\tools\Preprocessor\BasePoly.obj
+\Working\ENGINE\built\release\tools\Preprocessor\bdefs.obj
+\Working\ENGINE\built\release\tools\Preprocessor\bezierpatch.obj
+\Working\ENGINE\built\release\tools\Preprocessor\bindmgr.obj
+\Working\ENGINE\built\release\tools\Preprocessor\BrushToWorld.obj
+\Working\ENGINE\built\release\tools\Preprocessor\BspGen.obj
+\Working\ENGINE\built\release\tools\Preprocessor\BspHullMaker.obj
+\Working\ENGINE\built\release\tools\Preprocessor\CenterWorldAroundOrigin.obj
+\Working\ENGINE\built\release\tools\Preprocessor\classbind.obj
+\Working\ENGINE\built\release\tools\Preprocessor\conparse.obj
+\Working\ENGINE\built\release\tools\Preprocessor\ConvertKeyData.obj
+\Working\ENGINE\built\release\tools\Preprocessor\ConvertScatter.obj
+\Working\ENGINE\built\release\tools\Preprocessor\create_world_tree.obj
+\Working\ENGINE\built\release\tools\Preprocessor\CreateDecals.obj
+\Working\ENGINE\built\release\tools\Preprocessor\createphysicsbsp.obj
+\Working\ENGINE\built\release\tools\Preprocessor\CreatePolyEdges.obj
+\Working\ENGINE\built\release\tools\Preprocessor\createvisbsp.obj
+\Working\ENGINE\built\release\tools\Preprocessor\dtxmgr.obj
+\Working\ENGINE\built\release\tools\Preprocessor\EditBrush.obj
+\Working\ENGINE\built\release\tools\Preprocessor\EditObjects.obj
+\Working\ENGINE\built\release\tools\Preprocessor\EditPatch.obj
+\Working\ENGINE\built\release\tools\Preprocessor\EditPlane.obj
+\Working\ENGINE\built\release\tools\Preprocessor\EditPoly.obj
+\Working\ENGINE\built\release\tools\Preprocessor\EditRegion.obj
+\Working\ENGINE\built\release\tools\Preprocessor\FillInGroupObjects.obj
+\Working\ENGINE\built\release\tools\Preprocessor\FindWorldModel.obj
+\Working\ENGINE\built\release\tools\Preprocessor\genericprop_setup.obj
+\Working\ENGINE\built\release\tools\Preprocessor\genltstream.obj
+\Working\ENGINE\built\release\tools\Preprocessor\geomroutines.obj
+\Working\ENGINE\built\release\tools\Preprocessor\gettextureflags.obj
+\Working\ENGINE\built\release\tools\Preprocessor\gettextureinfo.obj
+\Working\ENGINE\built\release\tools\Preprocessor\HullPoly.obj
+\Working\ENGINE\built\release\tools\Preprocessor\LeakFinders.obj
+\Working\ENGINE\built\release\tools\Preprocessor\light_table.obj
+\Working\ENGINE\built\release\tools\Preprocessor\LightFragmentMaker.obj
+\Working\ENGINE\built\release\tools\Preprocessor\lightmap_compress.obj
+\Working\ENGINE\built\release\tools\Preprocessor\lightmap_planes.obj
+\Working\ENGINE\built\release\tools\Preprocessor\LightMapMaker.obj
+\Working\ENGINE\built\release\tools\Preprocessor\LMPolyTree.obj
+\Working\ENGINE\built\release\tools\Preprocessor\LTEulerAngles.obj
+\Working\ENGINE\built\release\tools\Preprocessor\ltquatbase.obj
+\Working\ENGINE\built\release\tools\Preprocessor\Navigator.obj
+\Working\ENGINE\built\release\tools\Preprocessor\Node.obj
+\Working\ENGINE\built\release\tools\Preprocessor\node_ops.obj
+\Working\ENGINE\built\release\tools\Preprocessor\Noise.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PackerFactory.obj
+\Working\ENGINE\built\release\tools\Preprocessor\parse_world_info.obj
+\Working\ENGINE\built\release\tools\Preprocessor\pixelformat.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PrefabMgr.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PrefabRef.obj
+\Working\ENGINE\built\release\tools\Preprocessor\pregeometry.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreLeaf.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreLightMap.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PrePlane.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PrePoly.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PrePolyFragments.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreProcessor.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreProcessorDlg.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreProcessorThread.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreSurface.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreWorld.obj
+\Working\ENGINE\built\release\tools\Preprocessor\Processing.obj
+\Working\ENGINE\built\release\tools\Preprocessor\ProcessingOptionsDlg.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PropList.obj
+\Working\ENGINE\built\release\tools\Preprocessor\replacetextures.obj
+\Working\ENGINE\built\release\tools\Preprocessor\RPDManager.obj
+\Working\ENGINE\built\release\tools\Preprocessor\SpriteFile.obj
+\Working\ENGINE\built\release\tools\Preprocessor\streamsim.obj
+\Working\ENGINE\built\release\tools\Preprocessor\TexturedPlane.obj
+\Working\ENGINE\built\release\tools\Preprocessor\Threads.obj
+\Working\ENGINE\built\release\tools\Preprocessor\Unseen.obj
+\Working\ENGINE\built\release\tools\Preprocessor\UVtoOPQ.obj
+\Working\ENGINE\built\release\tools\Preprocessor\VisListBuilder.obj
+\Working\ENGINE\built\release\tools\Preprocessor\world_tree.obj
+\Working\ENGINE\built\release\tools\Preprocessor\WorldNode.obj
+\Working\ENGINE\built\release\tools\Preprocessor\PreProcessor.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+..\..\..\libs\built\Release\RegMgr\regmgr.lib
+..\..\..\Libs\built\Debug\Lib_StdLith\Lib_StdLith.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP72.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP73.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\Preprocessor\Processor.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\Preprocessor\Processor.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP73.bat"
+Compiling resources...
+Compiling...
+bdefs.cpp
+Compiling...
+NvTriStrip.cpp
+NvTriStripObjects.cpp
+PCLMPacker.cpp
+PCRenderTree.cpp
+PCRenderTreeNode.cpp
+PCRenderTri.cpp
+PCRenderVert.cpp
+PCRenderWorld.cpp
+PCWorldPacker.cpp
+ApplyAmbientOverride.cpp
+ApplyRenderGroups.cpp
+BasePoly.cpp
+bindmgr.cpp
+BrushToWorld.cpp
+BspGen.cpp
+BspHullMaker.cpp
+CenterWorldAroundOrigin.cpp
+classbind.cpp
+conparse.cpp
+ConvertKeyData.cpp
+Generating Code...
+Compiling...
+ConvertScatter.cpp
+create_world_tree.cpp
+CreateDecals.cpp
+createphysicsbsp.cpp
+CreatePolyEdges.cpp
+createvisbsp.cpp
+dtxmgr.cpp
+EditBrush.cpp
+EditObjects.cpp
+EditPatch.cpp
+EditPlane.cpp
+EditPoly.cpp
+EditRegion.cpp
+FillInGroupObjects.cpp
+FindWorldModel.cpp
+genericprop_setup.cpp
+genltstream.cpp
+geomroutines.cpp
+gettextureflags.cpp
+gettextureinfo.cpp
+Generating Code...
+Compiling...
+HullPoly.cpp
+LeakFinders.cpp
+light_table.cpp
+LightFragmentMaker.cpp
+lightmap_compress.cpp
+lightmap_planes.cpp
+LightMapMaker.cpp
+LMPolyTree.cpp
+Navigator.cpp
+Node.cpp
+node_ops.cpp
+Noise.cpp
+parse_world_info.cpp
+pixelformat.cpp
+PrefabMgr.cpp
+PrefabRef.cpp
+pregeometry.cpp
+PreLeaf.cpp
+PreLightMap.cpp
+PrePlane.cpp
+Generating Code...
+Compiling...
+PrePoly.cpp
+PrePolyFragments.cpp
+PreSurface.cpp
+Processing.cpp
+PropList.cpp
+replacetextures.cpp
+SpriteFile.cpp
+streamsim.cpp
+TexturedPlane.cpp
+Unseen.cpp
+UVtoOPQ.cpp
+VisListBuilder.cpp
+world_tree.cpp
+WorldNode.cpp
+Generating Code...
+Compiling...
+VertexCache.cpp
+bezierpatch.cpp
+LTEulerAngles.cpp
+ltquatbase.cpp
+PackerFactory.cpp
+PreProcessor.cpp
+PreProcessorDlg.cpp
+PreProcessorThread.cpp
+ProcessingOptionsDlg.cpp
+RPDManager.cpp
+Threads.cpp
+Generating Code...
+Compiling...
+PreWorld.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\Preprocessor\Processor.exe
+copy \Working\ENGINE\built\release\tools\Preprocessor\Processor.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+Processor.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: PropHelpGen - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\Built\Release\tools\PropHelpGen/PropHelpGen.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\PropHelpGen\PropHelpGen.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP75.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\shared" /I "..\shared\engine" /I "..\..\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\lith" /D "NDEBUG" /D "_CONSOLE" /D "WIN32" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "BDEFS_SIM" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "_AFXDLL" /Fo"..\..\Built\Release\tools\PropHelpGen/" /Fd"..\..\Built\Release\tools\PropHelpGen/" /FD /c 
+"E:\Working\ENGINE\tools\shared\engine\bdefs.cpp"
+"E:\Working\ENGINE\tools\shared\engine\bindmgr.cpp"
+"E:\Working\ENGINE\tools\shared\engine\classbind.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP75.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP76.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\shared" /I "..\shared\engine" /I "..\..\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\lith" /D "NDEBUG" /D "_CONSOLE" /D "WIN32" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "BDEFS_SIM" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "_AFXDLL" /Fp"..\..\Built\Release\tools\PropHelpGen/PropHelpGen.pch" /Yu"stdafx.h" /Fo"..\..\Built\Release\tools\PropHelpGen/" /Fd"..\..\Built\Release\tools\PropHelpGen/" /FD /c 
+"E:\Working\ENGINE\tools\PropHelpGen\PropHelpGen.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP76.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP77.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I ".\\" /I "..\shared" /I "..\shared\engine" /I "..\..\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\lith" /D "NDEBUG" /D "_CONSOLE" /D "WIN32" /D "DIRECTEDITOR_BUILD" /D "_MBCS" /D "BDEFS_SIM" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "_AFXDLL" /Fp"..\..\Built\Release\tools\PropHelpGen/PropHelpGen.pch" /Yc"stdafx.h" /Fo"..\..\Built\Release\tools\PropHelpGen/" /Fd"..\..\Built\Release\tools\PropHelpGen/" /FD /c 
+"E:\Working\ENGINE\tools\PropHelpGen\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP77.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP78.tmp" with contents
+[
+/nologo /subsystem:console /incremental:no /pdb:"..\..\Built\Release\tools\PropHelpGen/PropHelpGen.pdb" /machine:I386 /out:"..\..\Built\Release\tools\PropHelpGen/PropHelpGen.exe" 
+\Working\ENGINE\Built\Release\tools\PropHelpGen\bdefs.obj
+\Working\ENGINE\Built\Release\tools\PropHelpGen\bindmgr.obj
+\Working\ENGINE\Built\Release\tools\PropHelpGen\classbind.obj
+\Working\ENGINE\Built\Release\tools\PropHelpGen\PropHelpGen.obj
+\Working\ENGINE\Built\Release\tools\PropHelpGen\StdAfx.obj
+\Working\ENGINE\Built\Release\tools\PropHelpGen\PropHelpGen.res
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+..\..\..\libs\built\Release\Lib_Lith\Lib_Lith.lib
+..\..\..\Libs\built\Release\ButeMgrMFCDll\ButeMgrMfcDll.lib
+..\..\..\libs\built\Release\CryptMgrMfcDll\CryptMgrMfcDll.lib
+\Working\libs\built\Release\CryptMgr\cryptmgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP78.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP79.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\PropHelpGen\PropHelpGen.exe ..\..\..\development\tools
+copy \Working\ENGINE\Built\Release\tools\PropHelpGen\PropHelpGen.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP79.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+bdefs.cpp
+bindmgr.cpp
+classbind.cpp
+Generating Code...
+Compiling...
+PropHelpGen.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\Built\Release\tools\PropHelpGen\PropHelpGen.exe
+copy \Working\ENGINE\Built\Release\tools\PropHelpGen\PropHelpGen.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+PropHelpGen.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: RenderStyle_Packer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\Release\tools\RenderStyle_Packer/RenderStyle_Packer.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\RenderStyle_Packer\RenderStyle_Packer.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP7B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /I "..\shared\model" /I "..\..\..\libs\stdlith" /I "..\..\libs\ltamgr" /I "..\..\..\libs\lith" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"..\..\built\Release\tools\RenderStyle_Packer/RenderStyle_Packer.pch" /YX /Fo"..\..\built\Release\tools\RenderStyle_Packer/" /Fd"..\..\built\Release\tools\RenderStyle_Packer/" /FD /c 
+"E:\Working\ENGINE\tools\RenderStyle_Packer\d3d_renderstyle.cpp"
+"E:\Working\ENGINE\tools\RenderStyle_Packer\PackerDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStyle_Packer\RenderStyle_LTA_Loader.cpp"
+"E:\Working\ENGINE\tools\RenderStyle_Packer\RenderStyle_Packer.cpp"
+"E:\Working\ENGINE\tools\RenderStyle_Packer\renderstylepacker.cpp"
+"E:\Working\ENGINE\tools\RenderStyle_Packer\stdafx.cpp"
+"E:\Working\ENGINE\tools\RenderStyle_Packer\Utilities.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP7B.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP7C.tmp" with contents
+[
+d3dx8.lib d3d8.lib d3dxof.lib dxguid.lib ddraw.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\Release\tools\RenderStyle_Packer/RenderStyle_Packer.pdb" /machine:I386 /nodefaultlib:"LIBCMT.lib" /out:"..\..\built\Release\tools\RenderStyle_Packer/RenderStyle_Packer.exe" 
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\d3d_renderstyle.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\PackerDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_LTA_Loader.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_Packer.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\renderstylepacker.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\stdafx.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\Utilities.obj
+\Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_Packer.res
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+..\..\..\libs\built\Release\Lib_Lith\Lib_Lith.lib
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP7C.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP7D.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_Packer.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_Packer.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP7D.bat"
+Compiling resources...
+Compiling...
+d3d_renderstyle.cpp
+PackerDlg.cpp
+RenderStyle_LTA_Loader.cpp
+RenderStyle_Packer.cpp
+renderstylepacker.cpp
+stdafx.cpp
+Utilities.cpp
+Linking...
+LINK : warning LNK4089: all references to "GDI32.dll" discarded by /OPT:REF
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_Packer.exe
+copy \Working\ENGINE\built\Release\tools\RenderStyle_Packer\RenderStyle_Packer.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+RenderStyle_Packer.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: RenderStylesEditor - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\Release\tools\RenderStylesEditor/RenderStylesEditor.res" /d "NDEBUG" /d "_AFXDLL" /d "_RS_EDITOR" "E:\Working\ENGINE\tools\RenderStylesEditor\RenderStylesEditor.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP7F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc\physics" /I "..\..\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "_RS_EDITOR" /FR"..\..\built\Release\tools\RenderStylesEditor/" /Fp"..\..\built\Release\tools\RenderStylesEditor/RenderStylesEditor.pch" /YX /Fo"..\..\built\Release\tools\RenderStylesEditor/" /Fd"..\..\built\Release\tools\RenderStylesEditor/" /FD /c 
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_device.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_renderstatemgr.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_renderstyle.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_shell.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3dmeshrendobj_rigid.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3dmeshrendobj_skel.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\dtx_files.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\MatrixConfigDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\RenderPassDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\RenderStyle_LTA.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\RenderStylesEditor.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\Utilities.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\vertexbuffercontroller.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\VertexShaderDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP7F.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP80.tmp" with contents
+[
+d3dx8.lib d3d8.lib d3dxof.lib dxguid.lib ddraw.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\Release\tools\RenderStylesEditor/RenderStylesEditor.pdb" /machine:I386 /nodefaultlib:"libcmt" /nodefaultlib:"libcmtd" /out:"..\..\built\Release\tools\RenderStylesEditor/RenderStylesEditor.exe" /libpath:"..\..\lib\release\\" 
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\d3d_device.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\d3d_renderstatemgr.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\d3d_renderstyle.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\d3d_shell.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\d3dmeshrendobj_rigid.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\d3dmeshrendobj_skel.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\dtx_files.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\MatrixConfigDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderPassDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStyle_LTA.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStylesEditor.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\Utilities.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\vertexbuffercontroller.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\VertexShaderDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\stdafx.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStylesEditor.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP80.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP81.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStylesEditor.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStylesEditor.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP81.bat"
+Compiling resources...
+Compiling...
+d3d_device.cpp
+d3d_renderstatemgr.cpp
+d3d_renderstyle.cpp
+d3d_shell.cpp
+d3dmeshrendobj_rigid.cpp
+d3dmeshrendobj_skel.cpp
+dtx_files.cpp
+MatrixConfigDlg.cpp
+RenderPassDlg.cpp
+RenderStyle_LTA.cpp
+RenderStylesEditor.cpp
+Utilities.cpp
+vertexbuffercontroller.cpp
+VertexShaderDlg.cpp
+stdafx.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStylesEditor.exe
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditor\RenderStylesEditor.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+RenderStylesEditor.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: RenderStylesEditor - Win32 Release Viewer--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\Release\tools\RenderStylesEditorViewer/RenderStylesEditor.res" /d "NDEBUG" /d "_AFXDLL" /d "_RS_VIEWER" "E:\Working\ENGINE\tools\RenderStylesEditor\RenderStylesEditor.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP83.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc\physics" /I "..\..\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "_RS_VIEWER" /FR"..\..\built\Release\tools\RenderStylesEditorViewer/" /Fp"..\..\built\Release\tools\RenderStylesEditorViewer/RenderStylesEditor.pch" /YX /Fo"..\..\built\Release\tools\RenderStylesEditorViewer/" /Fd"..\..\built\Release\tools\RenderStylesEditorViewer/" /FD /c 
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_device.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_renderstatemgr.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_renderstyle.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3d_shell.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3dmeshrendobj_rigid.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\d3dmeshrendobj_skel.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\dtx_files.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\MatrixConfigDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\RenderPassDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\RenderStyle_LTA.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\RenderStylesEditor.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\Utilities.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\vertexbuffercontroller.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\VertexShaderDlg.cpp"
+"E:\Working\ENGINE\tools\RenderStylesEditor\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP83.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP84.tmp" with contents
+[
+d3dx8.lib d3d8.lib d3dxof.lib dxguid.lib ddraw.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\Release\tools\RenderStylesEditorViewer/RenderStylesViewer.pdb" /machine:I386 /nodefaultlib:"libcmt" /nodefaultlib:"libcmtd" /out:"..\..\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe" /libpath:"..\..\lib\release\\" 
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\d3d_device.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\d3d_renderstatemgr.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\d3d_renderstyle.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\d3d_shell.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\d3dmeshrendobj_rigid.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\d3dmeshrendobj_skel.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\dtx_files.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\MatrixConfigDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderPassDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStyle_LTA.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesEditor.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\Utilities.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\vertexbuffercontroller.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\VertexShaderDlg.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\stdafx.obj
+\Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesEditor.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+..\..\..\Libs\built\Debug\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP84.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP85.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP85.bat"
+Compiling resources...
+Compiling...
+d3d_device.cpp
+d3d_renderstatemgr.cpp
+d3d_renderstyle.cpp
+d3d_shell.cpp
+d3dmeshrendobj_rigid.cpp
+d3dmeshrendobj_skel.cpp
+dtx_files.cpp
+MatrixConfigDlg.cpp
+RenderPassDlg.cpp
+RenderStyle_LTA.cpp
+RenderStylesEditor.cpp
+Utilities.cpp
+vertexbuffercontroller.cpp
+VertexShaderDlg.cpp
+stdafx.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+RenderStylesViewer.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: RenderStylesEditorViewer - Win32 Release--------------------
+</h3>
+
+--------------------Configuration: RenderStylesEditor - Win32 Release Viewer--------------------
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+RenderStylesViewer.exe - 0 error(s), 0 warning(s)
+
+
+
+<h3>Results</h3>
+RenderStylesEditorViewer.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TSCompiler - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP89.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\built\Release\tools\TSCompiler/TSCompiler.pch" /YX /Fo"..\..\built\Release\tools\TSCompiler/" /Fd"..\..\built\Release\tools\TSCompiler/" /FD /c 
+"E:\Working\ENGINE\tools\TSCompiler\commandlineparser.cpp"
+"E:\Working\ENGINE\tools\TSCompiler\main.cpp"
+"E:\Working\ENGINE\tools\TSCompiler\TextureScriptCompiler.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP89.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\TSCompiler/TSCompiler.pdb" /machine:I386 /out:"..\..\built\Release\tools\TSCompiler/TSCompiler.exe" 
+\Working\ENGINE\built\Release\tools\TSCompiler\commandlineparser.obj
+\Working\ENGINE\built\Release\tools\TSCompiler\main.obj
+\Working\ENGINE\built\Release\tools\TSCompiler\TextureScriptCompiler.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8A.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8B.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\TSCompiler\TSCompiler.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\TSCompiler\TSCompiler.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8B.bat"
+Compiling...
+commandlineparser.cpp
+main.cpp
+TextureScriptCompiler.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\TSCompiler\TSCompiler.exe
+copy \Working\ENGINE\built\Release\tools\TSCompiler\TSCompiler.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+TSCompiler.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: WaveEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\Release\tools\WaveEdit/WaveEdit.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\WaveEdit\WaveEdit.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\..\sdk\inc" /I "..\..\sdk\inc\compat" /I "..\shared\world" /I "..\..\..\libs\stdlith" /D "BDEFS_WINDOWS_H" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /Fo"..\..\built\Release\tools\WaveEdit/" /Fd"..\..\built\Release\tools\WaveEdit/" /FD /c 
+"E:\Working\ENGINE\tools\shared\engine\bdefs.cpp"
+"E:\Working\ENGINE\tools\shared\engine\conparse.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genltstream.cpp"
+"E:\Working\ENGINE\tools\shared\engine\streamsim.cpp"
+"E:\Working\ENGINE\tools\shared\engine\wave.cpp"
+"E:\Working\ENGINE\tools\WaveEdit\WaveEdit.cpp"
+"E:\Working\ENGINE\tools\WaveEdit\WaveEditDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8D.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\..\sdk\inc" /I "..\..\sdk\inc\compat" /I "..\shared\world" /I "..\..\..\libs\stdlith" /D "BDEFS_WINDOWS_H" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /Fp"..\..\built\Release\tools\WaveEdit/WaveEdit.pch" /Yc"stdafx.h" /Fo"..\..\built\Release\tools\WaveEdit/" /Fd"..\..\built\Release\tools\WaveEdit/" /FD /c 
+"E:\Working\ENGINE\tools\WaveEdit\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8E.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8F.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"..\..\built\Release\tools\WaveEdit/WaveEdit.pdb" /machine:I386 /nodefaultlib:"libcmt.lib" /out:"..\..\built\Release\tools\WaveEdit/WaveEdit.exe" 
+\Working\ENGINE\built\Release\tools\WaveEdit\bdefs.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\conparse.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\genltstream.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\StdAfx.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\streamsim.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\wave.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\WaveEdit.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\WaveEditDlg.obj
+\Working\ENGINE\built\Release\tools\WaveEdit\WaveEdit.res
+..\..\built\Release\Runtime\Lib_ILTSound\Lib_ILTSound.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8F.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP90.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\WaveEdit\WaveEdit.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\WaveEdit\WaveEdit.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP90.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+bdefs.cpp
+conparse.cpp
+genltstream.cpp
+streamsim.cpp
+wave.cpp
+WaveEdit.cpp
+WaveEditDlg.cpp
+Generating Code...
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\WaveEdit\WaveEdit.exe
+copy \Working\ENGINE\built\Release\tools\WaveEdit\WaveEdit.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+WaveEdit.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: WinLTC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\release\tools\WinLTC/WinLTC.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\WinLTC\WinLTC.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP92.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\sdk\inc" /I "..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"..\..\built\release\tools\WinLTC/WinLTC.pch" /YX /Fo"..\..\built\release\tools\WinLTC/" /Fd"..\..\built\release\tools\WinLTC/" /FD /c 
+"E:\Working\ENGINE\tools\WinLTC\StdAfx.cpp"
+"E:\Working\ENGINE\tools\WinLTC\WinLTC.cpp"
+"E:\Working\ENGINE\tools\WinLTC\WinLTCDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP92.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\WinLTC/WinLTC.pdb" /machine:I386 /out:"..\..\built\release\tools\WinLTC/WinLTC.exe" 
+\Working\ENGINE\built\release\tools\WinLTC\StdAfx.obj
+\Working\ENGINE\built\release\tools\WinLTC\WinLTC.obj
+\Working\ENGINE\built\release\tools\WinLTC\WinLTCDlg.obj
+\Working\ENGINE\built\release\tools\WinLTC\WinLTC.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP93.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP94.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\WinLTC\WinLTC.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\WinLTC\WinLTC.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP94.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+WinLTC.cpp
+WinLTCDlg.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\WinLTC\WinLTC.exe
+copy \Working\ENGINE\built\release\tools\WinLTC\WinLTC.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+WinLTC.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: dtxutil - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP96.tmp" with contents
+[
+/nologo /MD /W3 /GX /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\..\..\libs\stdlith" /I "..\..\sdk\inc" /I "..\preprocessor" /I "..\shared\world" /I "..\dedit\misc" /D "_AFXDLL" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "DIRECTEDITOR_BUILD" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "PRE_FLOAT" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /FR"..\..\built\Release\tools\dtxutil/" /Fp"..\..\built\Release\tools\dtxutil/dtxutil.pch" /YX /Fo"..\..\built\Release\tools\dtxutil/" /Fd"..\..\built\Release\tools\dtxutil/" /FD /c 
+"E:\Working\ENGINE\tools\shared\engine\dtxmgr.cpp"
+"E:\Working\ENGINE\tools\shared\engine\genltstream.cpp"
+"E:\Working\ENGINE\tools\shared\engine\load_pcx.cpp"
+"E:\Working\ENGINE\tools\shared\world\LTTexture.cpp"
+"E:\Working\ENGINE\tools\shared\engine\pixelformat.cpp"
+"E:\Working\ENGINE\tools\shared\engine\streamsim.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP96.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP97.tmp" with contents
+[
+/nologo /MD /W3 /GX /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\shared\engine" /I "..\..\..\libs\stdlith" /I "..\..\sdk\inc" /I "..\preprocessor" /I "..\shared\world" /I "..\dedit\misc" /D "_AFXDLL" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "DIRECTEDITOR_BUILD" /D "STDLITH_MFC" /D "BDEFS_MFC" /D "PRE_FLOAT" /D "PREPROCESSOR_BUILD" /D "NO_PRAGMA_LIBS" /D "LT15_COMPAT" /FR"..\..\built\Release\tools\dtxutil/" /Fp"..\..\built\Release\tools\dtxutil/dtxutil.pch" /YX /Fo"..\..\built\Release\tools\dtxutil/" /Fd"..\..\built\Release\tools\dtxutil/" /FD /c 
+"E:\Working\ENGINE\tools\dtxutil\main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP97.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP98.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\dtxutil/dtxutil.pdb" /machine:I386 /out:"..\..\built\Release\tools\dxutil\dtxutil.exe" 
+\Working\ENGINE\built\Release\tools\dtxutil\dtxmgr.obj
+\Working\ENGINE\built\Release\tools\dtxutil\genltstream.obj
+\Working\ENGINE\built\Release\tools\dtxutil\load_pcx.obj
+\Working\ENGINE\built\Release\tools\dtxutil\LTTexture.obj
+\Working\ENGINE\built\Release\tools\dtxutil\main.obj
+\Working\ENGINE\built\Release\tools\dtxutil\pixelformat.obj
+\Working\ENGINE\built\Release\tools\dtxutil\streamsim.obj
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP98.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP99.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP99.bat"
+Compiling...
+dtxmgr.cpp
+genltstream.cpp
+load_pcx.cpp
+LTTexture.cpp
+pixelformat.cpp
+streamsim.cpp
+Compiling...
+main.cpp
+..\dedit\misc\TextureHelper.cpp(697) : warning C4101: 'nZOff' : unreferenced local variable
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe
+copy \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+dtxutil.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: ltaview - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\built\Release\tools\ltaview/ltaview.res" /d "NDEBUG" /d "_AFXDLL" "E:\Working\ENGINE\tools\ltaview\ltaview.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP9B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I ".\ltwintree" /I ".\ltatree" /I "..\..\sdk\inc" /I "..\..\libs\ltamgr" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"..\..\built\Release\tools\ltaview/ltaview.pch" /YX /Fo"..\..\built\Release\tools\ltaview/" /Fd"..\..\built\Release\tools\ltaview/" /FD /c 
+"E:\Working\ENGINE\tools\ltaview\LTATree\LTATreeMgr.cpp"
+"E:\Working\ENGINE\tools\ltaview\ltaview.cpp"
+"E:\Working\ENGINE\tools\ltaview\LTWinTree\ltwintreeitem.cpp"
+"E:\Working\ENGINE\tools\ltaview\LTWinTree\ltwintreeitemiter.cpp"
+"E:\Working\ENGINE\tools\ltaview\LTWinTree\ltwintreemgr.cpp"
+"E:\Working\ENGINE\tools\ltaview\MainFrm.cpp"
+"E:\Working\ENGINE\tools\ltaview\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP9B.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP9C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\built\Release\tools\ltaview/ltaview.pdb" /machine:I386 /out:"..\..\built\Release\tools\ltaview/ltaview.exe" 
+\Working\ENGINE\built\Release\tools\ltaview\LTATreeMgr.obj
+\Working\ENGINE\built\Release\tools\ltaview\ltaview.obj
+\Working\ENGINE\built\Release\tools\ltaview\ltwintreeitem.obj
+\Working\ENGINE\built\Release\tools\ltaview\ltwintreeitemiter.obj
+\Working\ENGINE\built\Release\tools\ltaview\ltwintreemgr.obj
+\Working\ENGINE\built\Release\tools\ltaview\MainFrm.obj
+\Working\ENGINE\built\Release\tools\ltaview\StdAfx.obj
+\Working\ENGINE\built\Release\tools\ltaview\ltaview.res
+..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP9C.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP9D.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\ltaview\ltaview.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\ltaview\ltaview.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP9D.bat"
+Compiling resources...
+Compiling...
+LTATreeMgr.cpp
+ltaview.cpp
+ltwintreeitem.cpp
+ltwintreeitemiter.cpp
+ltwintreemgr.cpp
+MainFrm.cpp
+StdAfx.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\ltaview\ltaview.exe
+copy \Working\ENGINE\built\Release\tools\ltaview\ltaview.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+ltaview.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: pma - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP9F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\built\release\tools\pma/pma.pch" /YX /Fo"..\..\built\release\tools\pma/" /Fd"..\..\built\release\tools\pma/" /FD /c 
+"E:\Working\ENGINE\tools\pma\pma.cpp"
+"E:\Working\ENGINE\tools\pma\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP9F.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\release\tools\pma/pma.pdb" /machine:I386 /out:"..\..\built\release\tools\pma/pma.exe" 
+\Working\ENGINE\built\release\tools\pma\pma.obj
+\Working\ENGINE\built\release\tools\pma\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPA0.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA1.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\pma\pma.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\pma\pma.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA1.bat"
+Compiling...
+pma.cpp
+StdAfx.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\pma\pma.exe
+copy \Working\ENGINE\built\release\tools\pma\pma.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+pma.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: pscompiler - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA3.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\built\Release\tools\pscompiler/pscompiler.pch" /YX /Fo"..\..\built\Release\tools\pscompiler/" /Fd"..\..\built\Release\tools\pscompiler/" /FD /c 
+"E:\Working\ENGINE\tools\pscompiler\commandlineparser.cpp"
+"E:\Working\ENGINE\tools\pscompiler\main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPA3.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA4.tmp" with contents
+[
+d3dx8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\pscompiler/pscompiler.pdb" /machine:I386 /out:"..\..\built\Release\tools\pscompiler/pscompiler.exe" 
+\Working\ENGINE\built\Release\tools\pscompiler\commandlineparser.obj
+\Working\ENGINE\built\Release\tools\pscompiler\main.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPA4.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA5.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\pscompiler\pscompiler.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\pscompiler\pscompiler.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA5.bat"
+Compiling...
+commandlineparser.cpp
+main.cpp
+Linking...
+LINK : warning LNK4089: all references to "GDI32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "USER32.dll" discarded by /OPT:REF
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\pscompiler\pscompiler.exe
+copy \Working\ENGINE\built\Release\tools\pscompiler\pscompiler.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+pscompiler.exe - 0 error(s), 2 warning(s)
+<h3>
+--------------------Configuration: recurse_run - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\built\Release\tools\recurse_run/recurse_run.pch" /YX /Fo"..\..\built\Release\tools\recurse_run/" /Fd"..\..\built\Release\tools\recurse_run/" /FD /c 
+"E:\Working\ENGINE\tools\recurse_run\recurse_run.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPA7.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"..\..\built\Release\tools\recurse_run/recurse_run.pdb" /machine:I386 /out:"..\..\built\Release\tools\recurse_run/recurse_run.exe" 
+\Working\ENGINE\built\Release\tools\recurse_run\recurse_run.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPA8.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA9.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\recurse_run\recurse_run.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\recurse_run\recurse_run.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSPA9.bat"
+Compiling...
+recurse_run.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\recurse_run\recurse_run.exe
+copy \Working\ENGINE\built\Release\tools\recurse_run\recurse_run.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+recurse_run.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ButeEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPAB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"..\..\built\release\tools\ButeEdit/ButeEdit.pdb" /machine:I386 /nodefaultlib:"mfc42d.lib" /nodefaultlib:"mfcs42d.lib" /nodefaultlib:"msvcrtd.lib" /out:"..\..\built\release\tools\ButeEdit/ButeEdit.exe" 
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyBoolDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyByteDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyDlgBase.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyDoubleDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyDWordDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyFloatDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyIntegerDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyPointDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyRangeDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyRectangleDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyStringDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ModifyVectorDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\NewTagDlg.obj
+\Working\ENGINE\built\release\tools\ButeEdit\BEStringFunc.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEditDoc.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEditView.obj
+\Working\ENGINE\built\release\tools\ButeEdit\LeftView.obj
+\Working\ENGINE\built\release\tools\ButeEdit\MainFrm.obj
+\Working\ENGINE\built\release\tools\ButeEdit\StdAfx.obj
+\Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.res
+..\..\..\Libs\built\Release\Lib_ZLib\Lib_ZLib.lib
+..\..\..\Libs\built\Release\ButeMgrMFCDll\ButeMgrMfcDll.lib
+..\..\..\libs\built\Release\CryptMgrMfcDll\CryptMgrMfcDll.lib
+..\..\..\Libs\built\Release\Lib_StdLith\Lib_StdLith.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPAB.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPAC.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSPAC.bat"
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe
+copy \Working\ENGINE\built\release\tools\ButeEdit\ButeEdit.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+<h3>
+--------------------Configuration: dtxutil - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPAE.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSPAE.bat"
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe
+copy \Working\ENGINE\built\Release\tools\dxutil\dtxutil.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+<h3>
+--------------------Configuration: MaxWorldExport - Win32 Release MAX30--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30/MaxWorldExport.res" /d "NDEBUG" "E:\Working\ENGINE\tools\Plugins\MaxWorldExport\MaxWorldExport.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\sdkfiles\max30sdk\include" /I "..\..\..\libs\ltamgr" /I "..\..\..\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30/MaxWorldExport.pch" /YX /Fo"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30/" /Fd"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30/" /FD /c 
+"E:\Working\ENGINE\tools\Plugins\MaxWorldExport\DLLMain.cpp"
+"E:\Working\ENGINE\tools\Plugins\MaxWorldExport\Exporter.cpp"
+"E:\Working\ENGINE\tools\Plugins\MaxWorldExport\LTAFile.cpp"
+"E:\Working\ENGINE\tools\Plugins\MaxWorldExport\MaxWorldExport.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPAF.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPB0.tmp" with contents
+[
+comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib maxutil.lib core.lib geom.lib bmm.lib mesh.lib paramblk2.lib mnmath.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30/MaxWorldExport30.pdb" /machine:I386 /nodefaultlib:"libcmt.lib" /def:".\MaxWorldExport30.def" /out:"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30\MaxWorldExport30.dle" /implib:"..\..\..\Built\Release\tools\Plugins\MaxWorldExport30/MaxWorldExport30.lib" /libpath:"..\sdkfiles\max30sdk\lib" 
+\Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\DLLMain.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\Exporter.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\LTAFile.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\MaxWorldExport.obj
+\Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\MaxWorldExport.res
+..\..\..\built\Release\libs\LTAMgr\ltamgr.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSPB0.tmp"
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSPB1.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\MaxWorldExport30.dle ..\..\..\..\development\tools\Plugins
+copy \Working\ENGINE\Built\Release\tools\Plugins\MaxWorldExport30\MaxWorldExport30.dle ..\..\..\..\development\tools\Plugins
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSPB1.bat"
+Compiling resources...
+Compiling...
+DLLMain.cpp
+E:\Working\ENGINE\tools\Plugins\MaxWorldExport\MaxWorldExport.h(9) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+Exporter.cpp
+E:\Working\ENGINE\tools\Plugins\MaxWorldExport\MaxWorldExport.h(9) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+LTAFile.cpp
+E:\Working\ENGINE\tools\Plugins\MaxWorldExport\LTAFile.h(9) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+MaxWorldExport.cpp
+E:\Working\ENGINE\tools\Plugins\MaxWorldExport\MaxWorldExport.h(9) : fatal error C1083: Cannot open include file: 'max.h': No such file or directory
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+tools.exe - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

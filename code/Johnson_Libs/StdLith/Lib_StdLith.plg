@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lib_StdLith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\±è±¤½Ä\LOCALS~1\Temp\RSPEF.tmp" with contents
+[
+/nologo /out:"..\built\Debug\Lib_StdLith.lib" 
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\abstractio.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\compressedio.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\dynarray.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\fileio.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\goodlinklist.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\helpers.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\l_allocator.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\linklist.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\lithexception.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\memory.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\memoryio.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\stringholder.obj
+\work\SuddenAttack\libs\built\Debug\Lib_StdLith\struct_bank.obj
+\work\SuddenAttack\Engine\built\Debug\libs\ltmem.lib
+]
+Creating command line "link.exe -lib @"C:\DOCUME~1\±è±¤½Ä\LOCALS~1\Temp\RSPEF.tmp""
+<h3>Output Window</h3>
+Creating library...
+
+
+
+<h3>Results</h3>
+Lib_StdLith.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

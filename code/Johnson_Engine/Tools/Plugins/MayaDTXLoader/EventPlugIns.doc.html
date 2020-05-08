@@ -1,0 +1,2425 @@
+<html><head><title></title></head>
+<body bgcolor=#D8D8F3>
+ 
+<a href="../MasterIndex.html"(html, name;"><IMG SRC="../images/gif_buttons/top.gif" border=0"></a><a href="index.html"(html, name);"><IMG SRC="../images/gif_buttons/contents.gif" border=0"></a>
+
+<hr><br>
+ 
+<a name="326290"></a>
+<h1>  Adding Image Plug-Ins</h1>
+<p><a name="329699"></a>
+<img src="images/ImagePlugIns.doc.anc.gif"></p>
+<p><a name="2386"></a>
+Alias|Wavefront applications feature an external plug-in module mechanism that lets you create your own image file translators. These plug-in modules are available whenever you start your application. You can access them through the list of image file types presented where you access image files.</p>
+<p><a name="5432"></a>
+Plug-in modules are implemented as <em>dynamically shared objects </em>(DSOs). Plug-ins can be written using C or C++. You only need to implement the algorithms that read and write the image files; the user interface and control flow are implicitly handled by Alias|Wavefront.</p>
+<p><a name="251503"></a>
+This document describes the protocol for writing an image plug-in module. It does not describe how to support multiple-frame or movie files. A problem-solving section is included at the end of the document to help you correct any errors that you may encounter when creating your plug-in. Sample code is provided on-line. For Maya Composer, look in the <em>src</em> subdirectory.</p>
+<p><a name="329031"></a>
+This section discusses the following:</p>
+<ul><a name="329032"><p></a>
+<li><a href="EventPlugIns.doc.html#251504">Overview</a>
+<a name="329040"><p></a>
+<li><a href="EventPlugIns.doc.html#2714">About entry points</a>
+<a name="329045"><p></a>
+<li><a href="EventPlugIns.doc.html#3375">Mandatory entry points</a>
+<a name="329046"><p></a>
+<li><a href="EventPlugIns.doc.html#3447">Optional entry points</a>
+<a name="329047"><p></a>
+<li><a href="EventPlugIns.doc.html#10489">Library functions</a>
+<a name="329048"><p></a>
+<li><a href="EventPlugIns.doc.html#5075">Capability settings</a>
+<a name="329063"><p></a>
+<li><a href="EventPlugIns.doc.html#5249">Data structures</a>
+<a name="329064"><p></a>
+<li><a href="EventPlugIns.doc.html#2296">Compiling your plug-in</a>
+<a name="329065"><p></a>
+<li><a href="EventPlugIns.doc.html#2299">Solving problems</a>
+</ul><a name="251504"></a>
+<h1> Overview</h1>
+<p><a name="2485"></a>
+Alias|Wavefront invokes functions from your image plug-in primarily to read and write image files.</p>
+<p><a name="2240"></a>
+For Maya Composer, reading occurs when evaluating <em>FileIn</em> events, and when displaying images accessed from the <strong>Import Image</strong> panel. Maya Composer also uses your plug-in to write image files when executing a <em>FileOut</em> event, when exporting images using the <strong>Export Image</strong> panel, and when generating output image files from <strong>File&gt;Execute Composition</strong>.</p>
+<a name="2714"></a>
+<h1> About entry points</h1>
+<p><a name="250974"></a>
+Each plug-in must have a defined number of entry points. Alias|Wavefront uses these entry points to determine which features the image plug-in supports. </p>
+<p><a name="251546"></a>
+Some entry points are variables and others are functions. For example, the name of the plug-in is defined by the variable entry point<em> imageName</em>, and the function that opens an image file for reading is defined by the function entry point <em>imageReadOpen</em>.</p>
+<p><a name="250874"></a>
+Some entry points are required, while others are optional. The mandatory entry points are described in the next section. Optional entry points are described in <a href="EventPlugIns.doc.html#3447">"Optional entry points."</a></p>
+<a name="9897"><p></a>
+Your image plug-in source file(s) must have <em>#include &#32;"image.h"</em> at the top of the file. image.h can be found on-line with your Alias|Wavefront application. For Maya Composer, look in the <em>include</em> subdirectory.
+<a name="3375"></a>
+<h1> Mandatory entry points</h1>
+<p><a name="14417"></a>
+The following entry points must be defined:</p>
+<ul><a name="14431"><p></a>
+<li><em>program</em>
+<a name="2631"><p></a>
+<li><em>type</em>
+<a name="2630"><p></a>
+<li><em>version</em>
+<a name="2617"><p></a>
+<li><em>imageKey</em>
+<a name="2620"><p></a>
+<li><em>imageName</em>
+<a name="2622"><p></a>
+<li><em>imageReadOpen </em>and its associated look-up table reading, scanline reading, and close functions (unless your plug-in cannot read as specified by the imageAccess entry point) 
+<a name="2623"><p></a>
+<li><em>imageWriteOpen</em> and its associated scanline writing and close functions (unless you specify otherwise with the imageAccess entry point)
+<a name="2694"><p></a>
+If a mandatory entry point is omitted, the plug-in will not be loaded, and its name will not appear in any menu.
+</ul><a name="6733"></a>
+<h2> program</h2>
+<a name="14488"></a>
+<h3> Definition</h3>
+<pre><a name="14460"></a><code>char *program
+</code></pre><a name="14494"></a>
+<h3> Description</h3>
+<p><a name="14462"></a>
+This entry point specifies which applications can use the plug-in. This should be <em>Wavefront</em> so that all of your Alias|Wavefront applications can read and write image files supported by this plug-in. Set this to be <em>Composer</em> if you want only Maya Composer to recognize it.</p>
+<a name="14502"></a>
+<h3> Example</h3>
+<pre><a name="14464"></a><code>char *program = "Wavefront";
+</code></pre><a name="6732"></a>
+<h2> type</h2>
+<a name="14516"></a>
+<h3> Definition</h3>
+<pre><a name="14469"></a><code>char *type
+</code></pre><a name="14522"></a>
+<h3> Description</h3>
+<p><a name="14471"></a>
+This entry point denotes the type of plug-in. Alias|Wavefront's image file plug-ins are of type <em>image</em>.</p>
+<a name="14534"></a>
+<h3> Example</h3>
+<pre><a name="14473"></a><code>char *type = "image";
+</code></pre><a name="6731"></a>
+<h2> version</h2>
+<a name="14540"></a>
+<h3> Definition</h3>
+<pre><a name="14478"></a><code>char *version
+</code></pre><a name="14544"></a>
+<h3> Description</h3>
+<p><a name="14480"></a>
+This entry point denotes the version of the protocol for which the plug-in was written. Always use <em>IMF_PROTOCOL_CURRENT</em>.</p>
+<a name="14554"></a>
+<h3> Example</h3>
+<pre><a name="2719"></a><code>char *version = IMF_PROTOCOL_CURRENT;
+</code></pre><a name="6730"></a>
+<h2> imageKey</h2>
+<a name="2727"></a>
+<h3> Definition</h3>
+<pre><a name="2728"></a><code>char *imageKey
+</code></pre><a name="2729"></a>
+<h3> Description</h3>
+<p><a name="2730"></a>
+This entry point specifies a unique key to identify your plug-in. For Maya Composer, check the "input image file formats" table in the User's Guide to see which keys are already being used</p>
+<a name="2731"></a>
+<h3> Example</h3>
+<pre><a name="2732"></a><code>char *imageKey = "myFormat";
+</code></pre><a name="6729"></a>
+<h2> imageName</h2>
+<a name="14709"></a>
+<h3> Definition</h3>
+<pre><a name="14710"></a><code>char *imageName
+</code></pre><a name="14866"></a>
+<h3> Description</h3>
+<p><a name="14712"></a>
+This entry point defines the name of your plug-in as displayed in menus. Names should be unique so users can distinguish them.</p>
+<a name="14713"></a>
+<h3> Example</h3>
+<pre><a name="14714"></a><code>char *imageName = "My Image Format";
+</code></pre><a name="6727"></a>
+<h2> imageReadOpen</h2>
+<a name="14818"></a>
+<h3> Definition</h3>
+<pre><a name="14819"></a><code>int imageReadOpen<br>
+(<br>
+ &#32; &#32; &#32;IMF_OBJECT *imf 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="14822"></a>
+Parameter
+</th><th><a name="17830"></a>
+Type
+</th><th><a name="14824"></a>
+Description
+</th></tr>
+<tr><td><p><a name="14826"></a>
+<em>imf</em></p>
+</td><td><p><a name="17832"></a>
+Modified</p>
+</td><td><p><a name="14828"></a>
+Image file header.</p>
+</td></tr>
+<tr><td><p><a name="251119"></a>
+Return Value</p>
+</td><td><p><a name="17846"></a>
+</p>
+</td><td><p><a name="326314"></a>
+<em>IMF_C_NORMAL </em>if the image was successfully opened; <em>IMF_C_ </em>if an error occurred.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="18911"></a>
+<h3> Description</h3>
+<p><a name="21767"></a>
+This function is called when a file is to be opened for reading.</p>
+<p><a name="3729"></a>
+The <em>imf</em> parameter contains all of the information necessary for the reading of the file. Before calling <em>imageReadOpen</em>, it contains the filename. After executing this routine, it must also contain pointers to the routines which access the file, information about the size and other attributes of the image being read, buffers to read scanlines of the image into, etc.</p>
+<p><a name="3724"></a>
+The basic steps of this function are:</p>
+<ul><a name="3667"><p></a>
+<li>Open the file. If you are using an application other than Maya Composer, you must complete the filename first.
+<a name="3673"><p></a>
+<li>Read the header from the file. If the file includes a look-up table, read it at this time.
+<a name="3674"><p></a>
+<li>Assign the <em>close</em>, <em>scanline read</em>, and <em>LUT</em><em> read</em> routines into <em>imf</em>.
+<a name="3675"><p></a>
+<li>Define the parameters of the image in <em>imf-&gt;info.image[0].</em>
+<a name="3676"><p></a>
+<li>Allocate buffers to contain the scanlines.
+<a name="3678"><p></a>
+<li>Allocate private data defining the file descriptor, etc., and associate them with <em>imf-&gt;data</em>.
+</ul><p><a name="3713"></a>
+Some image files may contain multiple images, e.g., the full image and a thumbnail representation. For this discussion, we will assume that you will only be reading the main image from such files.</p>
+<p><a name="3717"></a>
+These are the detailed steps:</p>
+<ol>
+<a name="2828"></a>
+<li>If the filename is not fully qualified, complete it. Then, open the specified file. Continue only if the open was successful. If it fails, you must generate a message using <em>ERR_printf</em>, set <em>imf__err</em> to <em>IMF_C_CANNOT_OPEN</em>, and return <em>FALSE</em>.
+<p><a name="3734"></a>
+<li>Set the image count to be 1, and allocate and initialize one image structure to contain information about this image:
+<p><pre><a name="3756"></a><code>imf-&gt;info.count = 1;<br>
+imf-&gt;info.image = malloc( sizeof( IMF_IMAGE ) );<br>
+(void) imf__init_ifd( imf );
+</code></pre><a name="3738"></a>
+<li>Save the format-specific information describing the file in your own data structure allocated using <em>malloc</em>. This private data structure can contain items like the current file descriptor, last scanline read, active window, etc.:
+<p><pre><a name="3774"></a><code>private = malloc( sizeof( PRIVATE ) );<br>
+private-&gt;... = ...;<br>
+imf-&gt;data = malloc( sizeof( POINTER ) );<br>
+imf-&gt;data[0] = private;
+</code></pre><a name="2860"></a>
+<li>Assign your image access routines to <em>imf-&gt;scan</em> and <em>imf-&gt;close</em>. If your image file contains a look-up table, also specify the routine that reads the look-up table in <em>imf-&gt;lut_read</em>.
+<p><a name="3829"></a>
+<li>If your file format defines input capabilities, extract those from <em>imf-&gt;info.settings</em>. (See <a href="EventPlugIns.doc.html#7659">"IMF_CAPABILITY"</a> for details.)
+<p><a name="3789"></a>
+<li>Read the header information from the file, and store this in your private data structure. You must also define various fields in the <em>imf-&gt;info</em> and <em>imf-&gt;info.image[0]</em> data structures.
+<p><p><a name="3794"></a>
+In the <em>imf-&gt;info</em> structure, set <em>lut_exists</em> according to whether the image has a look-up table.</p>
+<p><a name="3808"></a>
+You can also set <em>program</em>, <em>machine</em>, <em>user</em>, <em>date</em>, <em>time</em>, <em>frame</em> number, <em>job_num</em>, and chromaticity information (<em>red_pri</em>, <em>green_pri</em>, <em>blue_pri</em>, <em>white_pt</em>) if these are stored in the file itself.</p>
+<p><a name="3817"></a>
+You must also set all of the fields in <em>imf-&gt;info.image[0]</em>. The <em>aux_format</em>, <em>aux_count</em>, <em>aux_type</em>, and <em>aux_bits</em> fields refer to z channel information. The field <em>curve.gamma</em> needs to be set to either the gamma defined in your file, or the default gamma by calling <em>IMF_def_input_gamma</em>.</p>
+<a name="2910"></a>
+<li>Allocate a scanline buffer into which your scanline reading routine reads a row of pixels:
+<p><pre><a name="327084"></a><code>private_data_ptr-&gt;buffer = IMF_chan_alloc(<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;imf-&gt;info.image, image_width,<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;imf-&gt;info.key, NULL );
+</code></pre><a name="3425"></a>
+<li>Return <em>TRUE</em> if your function successfully opened and read the image file header, and <em>FALSE</em> if an error occurred.
+<p></ol>
+<a name="3445"></a>
+<h2> Scanline reading function</h2>
+<a name="3110"></a>
+<h3> Definition</h3>
+<pre><a name="327120"></a><code>int your_scan_read_func<br>
+(<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32;data,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32;scan,<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32;**line_buff<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="327123"></a>
+Parameter
+</th><th><a name="327125"></a>
+Type
+</th><th><a name="327127"></a>
+Description
+</th></tr>
+<tr><td><p><a name="327129"></a>
+<em>data</em></p>
+</td><td><p><a name="327131"></a>
+Input</p>
+</td><td><p><a name="327133"></a>
+The private data associated with your image.</p>
+</td></tr>
+<tr><td><p><a name="327135"></a>
+scan</p>
+</td><td><p><a name="327137"></a>
+Input</p>
+</td><td><p><a name="327139"></a>
+The scanline to read.</p>
+</td></tr>
+<tr><td><p><a name="327141"></a>
+line_buff</p>
+</td><td><p><a name="327143"></a>
+Output</p>
+</td><td><p><a name="327145"></a>
+The scanline buffer allocated in <em>imageReadOpen</em>, containing the row of pixels read.</p>
+</td></tr>
+<tr><td><p><a name="327147"></a>
+Return Value</p>
+</td><td><p><a name="327149"></a>
+</p>
+</td><td><p><a name="327151"></a>
+<em>IMF_C_BAD_SCAN</em> if <em>scan</em> is outside the image; <em>IMF_C_NORMAL</em> if the scanline was successfully read; and <em>IMF_C_READ_ERR</em> if an error occurred.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="3168"></a>
+<h3> Description</h3>
+<p><a name="7615"></a>
+This function is called by Alias|Wavefront to read a scanline from your image file. Image files are read according to the image's orientation, either from bottom to top, or from top to bottom.</p>
+<p><a name="3887"></a>
+The steps to follow are:</p>
+<ol>
+<a name="3658"></a>
+<li>Read the specified scanline. The scanline number is based on bottom-to-top ordering. For example, if your image size is 480 lines, and your orientation is <em>IMF_C_TOP_LEFT</em>, the scanlines are read in the order 479 (top), 478 (second from top), 477, , 0 (bottom). If the ordering is <em>IMF_C_BOT_LEFT</em>, they are read in the order 0 (bottom), 1 (second from bottom), 2, , 479 (top).
+<p><a name="4110"></a>
+<li>Transfer the scanline into the buffer allocated in <em>imageReadOpen</em>. The buffer allocated by <em>IMF_chan_alloc</em> contains 8-, 16-, or 32-bit unsigned numbers, according to the number of bits per channel in the file. (The number of bits per channel is rounded up to the nearest number above.)
+<p><p><a name="3995"></a>
+Each component of the scanline is stored in a separate contiguous buffer. These are returned in the parameter <em>line_buff</em>, which is an array of pointers to the components that you allocated:</p>
+<pre><a name="3996"></a><code>/*<br>
+ * Unsigned char's are used for 1 to 8-bit values;<br>
+ * unsigned short's, for 8 to 16-bit values;<br>
+ * unsigned long's, for 17 to 32-bit values.<br>
+ */<br>
+*line_buff = data-&gt;buffer;<br>
+pr = (unsigned char *) data-&gt;buffer[0];<br>
+pg = (unsigned char *) data-&gt;buffer[1];<br>
+pb = (unsigned char *) data-&gt;buffer[2];<br>
+pm = (unsigned char *) data-&gt;buffer[3];<br>
+for ( i = 0; i &lt; data-&gt;image_width; ++i )<br>
+{<br>
+ &#32; &#32; &#32;*(pr++) = red_values[i];<br>
+ &#32; &#32; &#32;*(pg++) = green_values[i];<br>
+ &#32; &#32; &#32;*(pb++) = blue_values[i];<br>
+ &#32; &#32; &#32;*(pm++) = matte_values[i];<br>
+}
+</code></pre><p><a name="10029"></a>
+If the file contains a look-up table, you must still return RGB data, and not the indexes into the look-up table, in <em>line_buff</em>.</p>
+<a name="3244"></a>
+<li>Return <em>IMF_C_BAD_SCAN</em>, <em>IMF_C_NORMAL</em>, or <em>IMF_C_READ_ERR</em> as appropriate.
+<p><a name="3251"><p></a>
+Your scanline reading function must not expect the last scanline of the image to be read, because Alias|Wavefront may skip the last few scanlines if they do not need to be read. Your plug-in must allow Alias|Wavefront to call your close function at any time after calling <em>imageReadOpen</em>.
+</ol>
+<a name="3446"></a>
+<h2> Close function</h2>
+<a name="3281"></a>
+<h3> Definition</h3>
+<pre><a name="3282"></a><code>int your_close_func<br>
+(<br>
+ &#32; &#32; &#32;IMF_OBJECT			*imf<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="3288"></a>
+Parameter
+</th><th><a name="3290"></a>
+Type
+</th><th><a name="3292"></a>
+Description
+</th></tr>
+<tr><td><p><a name="3343"></a>
+<em>imf</em></p>
+</td><td><p><a name="3345"></a>
+Modified</p>
+</td><td><p><a name="3347"></a>
+Image file descriptor.</p>
+</td></tr>
+<tr><td><p><a name="3312"></a>
+Return Value</p>
+</td><td><p><a name="3314"></a>
+</p>
+</td><td><p><a name="3316"></a>
+<em>IMF_C_NORMAL </em>if file closing and memory deallocation was successful; <em>IMF_C_failure_code </em>if error occurred (for example <em>IMF_C_WRITE_ERR</em>).</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="3318"></a>
+<h3> Description</h3>
+<p><a name="3319"></a>
+This function is called whenever Alias|Wavefront is finished reading or writing your image file. The steps to follow are:</p>
+<ol>
+<a name="3355"></a>
+<li>Close the image file.
+<p><a name="3358"></a>
+<li>Deallocate any private data pointed to by <em>imf-&gt;data</em> and set <em>imf-&gt;data</em> to <em>NULL</em>. To deallocate the scanline buffer allocated in either <em>imageReadOpen</em> or <em>imageWriteOpen</em>, use <em>IMF_chan_free</em>.
+<p><a name="3369"></a>
+<li>Return <em>IMF_C_NORMAL </em>if file closing and memory clean-up was successful, and <em>IMF_C_failure_code </em>if not.
+<p></ol>
+<a name="3449"></a>
+<h2> imageWriteOpen</h2>
+<a name="3450"></a>
+<h3> Definition</h3>
+<pre><a name="3451"></a><code>int imageWriteOpen<br>
+(<br>
+ &#32; &#32; &#32;IMF_OBJECT *imf<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="3455"></a>
+Parameter
+</th><th><a name="3457"></a>
+Type
+</th><th><a name="3459"></a>
+Description
+</th></tr>
+<tr><td><p><a name="3461"></a>
+<em>imf</em></p>
+</td><td><p><a name="3463"></a>
+Modified</p>
+</td><td><p><a name="3465"></a>
+Image file descriptor.</p>
+</td></tr>
+<tr><td><p><a name="3467"></a>
+Return Value</p>
+</td><td><p><a name="3469"></a>
+</p>
+</td><td><p><a name="3471"></a>
+<em>TRUE</em> if the image was successfully opened; <em>FALSE</em> if an error occurred.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="3473"></a>
+<h3> Description</h3>
+<p><a name="4203"></a>
+This function is called when a file is to be opened for writing.</p>
+<p><a name="4204"></a>
+The <em>imf</em> parameter contains all of the information necessary to write the file. Before calling <em>imageWriteOpen</em>, it contains the filename. After executing this routine, it must also contain pointers to the routines which access the file, information about the size and other attributes of the image being written, etc.</p>
+<p><a name="4205"></a>
+The basic steps of this function are:</p>
+<ul><a name="4259"><p></a>
+<li>Open the file. If you are using an application other than Maya Composer, you must complete the filename first.
+<a name="4260"><p></a>
+<li>Write the header. If the file includes a look-up table, you may need to write it at this time.
+<a name="4208"><p></a>
+<li>Assign the <em>close</em> and <em>scanline write</em> routines to <em>imf</em>.
+<a name="4211"><p></a>
+<li>Allocate private data defining the file descriptor, etc., and associate them with <em>imf-&gt;data</em>.
+</ul><p><a name="4213"></a>
+These are the detailed steps:</p>
+<ol>
+<a name="4214"></a>
+<li>Open the specified file. Continue only if the open was successful. If it fails, you must generate a message using <em>ERR_printf</em>, set <em>imf__err</em> to <em>IMF_C_CANNOT_OPEN</em>, and return <em>FALSE</em>.
+<p><a name="4215"></a>
+<li>Use <em>imf-&gt;info</em> and <em>imf-&gt;info.image[0]</em> to extract attributes about the file being written.
+<p><a name="4217"></a>
+<li>Save the format-specific information describing the file in your own data structure allocated using <em>malloc</em>. This private data structure can contain items like the current file descriptor, active window, etc.:
+<p><pre><a name="4218"></a><code>private = malloc( sizeof( PRIVATE ) );<br>
+private-&gt;... = ...;<br>
+imf-&gt;data = malloc( sizeof( POINTER ) );<br>
+imf-&gt;data[0] = private;
+</code></pre><a name="4219"></a>
+<li>Specify the image access routines in <em>imf-&gt;scan</em> and <em>imf-&gt;close</em>.
+<p><a name="4220"></a>
+<li>If your file format defines output capabilities, extract those from <em>imf-&gt;info.settings</em>. (See <a href="EventPlugIns.doc.html#7659">"IMF_CAPABILITY"</a> for details.)
+<p><a name="5126"></a>
+<li>Write the file header and look-up table, if defined.
+<p><a name="4230"></a>
+<li>Return <em>IMF_C_NORMAL </em>if your function successfully opened and read the image file header. Return <em>IMF_C_failure_code </em>if an error occurred.
+<p><a name="3506"><p></a>
+In the event of a failed attempt at opening an image file, Alias|Wavefront calls <em>imf__free_obj( imf )</em> to free the <em>IMF_OBJECT</em> passed to <em>imageWriteOpen</em>. Therefore, you must not call <em>imf__free_obj</em> in your error-handling code.
+</ol>
+<a name="3573"></a>
+<h2> Scanline writing function</h2>
+<a name="3574"></a>
+<h3> Definition</h3>
+<pre><a name="3575"></a><code>int your_scan_write_func<br>
+(<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32;data,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32;scan,<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32;*line_buff<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="3581"></a>
+Parameter
+</th><th><a name="3583"></a>
+Type
+</th><th><a name="3585"></a>
+Description
+</th></tr>
+<tr><td><p><a name="3587"></a>
+<em>data</em></p>
+</td><td><p><a name="3589"></a>
+Input</p>
+</td><td><p><a name="3591"></a>
+The private data associated with your image.</p>
+</td></tr>
+<tr><td><p><a name="3593"></a>
+scan</p>
+</td><td><p><a name="3595"></a>
+Input</p>
+</td><td><p><a name="3597"></a>
+The scanline to write.</p>
+</td></tr>
+<tr><td><p><a name="3599"></a>
+line_buff</p>
+</td><td><p><a name="3601"></a>
+Output</p>
+</td><td><p><a name="3603"></a>
+Buffer containing the pixels for the current scanline.</p>
+</td></tr>
+<tr><td><p><a name="3605"></a>
+Return Value</p>
+</td><td><p><a name="3607"></a>
+</p>
+</td><td><p><a name="3609"></a>
+<em>IMF_C_BAD_SCAN</em> if <em>scan</em> is outside the image; <em>IMF_C_NORMAL</em> if the scanline is successfully written; and <em>IMF_C_WRITE_ERR</em> if an error occurs.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="3611"></a>
+<h3> Description</h3>
+<p><a name="3612"></a>
+This function is called by Alias|Wavefront to write a scanline to your image file. Image files are written according to the image's orientation, either from bottom to top, or from top to bottom.</p>
+<p><a name="4345"></a>
+The steps to follow are:</p>
+<ol>
+<a name="3613"></a>
+<li>Write the specified scanline. The scanline number is based on bottom-to-top ordering. For example, if your image size is 480 lines, and your orientation is <em>IMF_C_TOP_LEFT</em>, the scanlines are written in the order 479 (top), 478 (second from top), 477, , 0 (bottom). If the ordering is <em>IMF_C_BOT_LEFT</em>, they are written in the order 0 (bottom), 1 (second from bottom), 2, , 479 (top).
+<p><a name="4368"></a>
+<li>Retrieve red color channel information from <em>line_buff[0]</em>, green from <em>line_buff[1]</em>, and blue from <em>line_buff[2]</em>, where <em>line_buff</em> is the scanline buffer passed in by Alias|Wavefront. If there is a matte channel, it is in <em>line_buff[3]</em>. The z channel, if it exists, is in <em>line_buff[4]</em>. The pixels are stored from left to right.
+<p><pre><a name="3727"></a><code>pr = (unsigned char *) line_buff[0];<br>
+pg = (unsigned char *) line_buff[1];<br>
+pb = (unsigned char *) line_buff[2];<br>
+pm = (unsigned char *) line_buff[3];<br>
+for ( i = 0; i &lt; data-&gt;image_width; ++i )<br>
+{<br>
+ &#32; &#32; &#32;red_values[i] = *(pr++);<br>
+ &#32; &#32; &#32;green_values[i] = *(pg++);<br>
+ &#32; &#32; &#32;blue_values[i] = *(pb++);<br>
+ &#32; &#32; &#32;matte_values[i] = *(pm++);<br>
+}
+</code></pre><p><a name="3744"></a>
+Convert the values to the format used by your file format and write the scanline to the file.</p>
+<a name="3617"></a>
+<li>Return <em>IMF_C_BAD_SCAN</em>, <em>IMF_C_NORMAL</em>, or <em>IMF_C_READ_ERR</em>.
+<p></ol>
+<a name="3447"></a>
+<h1> Optional entry points</h1>
+<p><a name="250896"></a>
+A number of additional entry points exist. If an optional entry point is not defined, a default value is used. Some optional entry points are ignored unless your file format supports that feature.</p>
+<a name="329503"></a>
+<h2> imageAccess</h2>
+<a name="329504"></a>
+<h3> Definition</h3>
+<pre><a name="7617"></a><code>unsigned int imageAccess
+</code></pre><a name="14916"></a>
+<h3> Description</h3>
+<p><a name="7619"></a>
+This variable denotes the reading and writing methods that your plug-in supports. The constants described are bit fields:</p>
+<ul><a name="17927"><p></a>
+<li><em>IMF_C_LUT_READ</em> indicates that your plug-in supports reading palettes from the file. A LUT reading function must be defined and assigned to <em>imf-&gt;lut_read</em> in the <em>imageReadOpen</em> routine.
+<a name="17929"><p></a>
+<li><em>IMF_C_LUT_WRITE</em> indicates that your plug-in supports writing palettes to files.
+<a name="17931"><p></a>
+<li><em>IMF_C_READ</em> indicates that your plug-in supports the sequential reading of scanlines.
+<a name="17935"><p></a>
+<li><em>IMF_C_READ_RANDOM</em> indicates that your plug-in supports the random reading of scanlines.
+<a name="3073"><p></a>
+<li><em>IMF_C_WRITE</em> indicates that your plug supports the sequential writing of scanlines.
+<a name="17939"><p></a>
+<li><em>IMF_C_WRITE_RANDOM</em> indicates that your plug-in supports the random writing of scanlines.
+</ul><p><a name="2481"></a>
+The default value is <em>IMF_C_READ|IMF_C_WRITE</em>.</p>
+<a name="15280"></a>
+<h3> Example</h3>
+<p><a name="3098"></a>
+This example is for a file that supports look-up tables:</p>
+<pre><a name="3822"></a><code>unsigned int imageAccess<br>
+ &#32; &#32; &#32;= IMF_C_LUT_READ | IMF_C_LUT_WRITE<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;| IMF_C_READ | IMF_C_WRITE;
+</code></pre><a name="6785"></a>
+<h2> imageBitsPerChannel</h2>
+<a name="3901"></a>
+<h3> Definition</h3>
+<pre><a name="3902"></a><code>unsigned int imageBitsPerChannel
+</code></pre><a name="3903"></a>
+<h3> Description</h3>
+<p><a name="3904"></a>
+This variable defines the number of bits per color channel that are supported. This applies to the red, green, and blue channels only.</p>
+<p><a name="3133"></a>
+This variable is a bit field, used to indicate that from 1 to 32 bits per channel are supported. Setting the lowest bit indicates that the format supports 1 bit per color channel; setting the highest bit indicates that the format supports 32 bits per color channel. You need to set bits in this variable according to all of the bits-per-channel that your format supports.</p>
+<p><a name="3912"></a>
+The default value is <em>0x00000080</em>, or 8 bits per color channel.</p>
+<a name="3913"></a>
+<h3> Example</h3>
+<p><a name="9057"></a>
+The first example supports only 8 bits per color channel; the second example supports 8, 10, and 16 bits.</p>
+<pre><a name="3152"></a><code>unsigned int imageBitsPerChannel = 0x00000080;
+</code><a name="3914"></a><code>unsigned int imageBitsPerChannel = 0x00008280;
+</code></pre><a name="6786"></a>
+<h2> imageBitsPerMatte</h2>
+<a name="3966"></a>
+<h3> Definition</h3>
+<pre><a name="3967"></a><code>unsigned int imageBitsPerMatte;
+</code></pre><a name="3968"></a>
+<h3> Description</h3>
+<p><a name="4018"></a>
+This variable is identical to <em>imageBitsPerChannel</em>, except that it describes the number of bits supported by the matte channel.</p>
+<p><a name="3178"></a>
+The default value is <em>0x00000000</em>, which means that the format does not support matte channels.</p>
+<a name="3971"></a>
+<h3> Example</h3>
+<p><a name="3187"></a>
+The first example supports only 8 bits in the matte channel; the second example supports 8, 10, and 16 bits.</p>
+<pre><a name="3188"></a><code>unsigned int imageBitsPerMatte = 0x00000080;
+</code><a name="3189"></a><code>unsigned int imageBitsPerMatte = 0x00008280;
+</code></pre><a name="6788"></a>
+<h2> imageBitsPerZChannel</h2>
+<a name="4256"></a>
+<h3> Definition</h3>
+<pre><a name="4257"></a><code>unsigned int imageBitsPerZChannel
+</code></pre><a name="4258"></a>
+<h3> Description</h3>
+<p><a name="3208"></a>
+This variable is identical to <em>imageBitsPerChannel</em>, except that it describes the number of bits supported by the z channel.</p>
+<p><a name="3209"></a>
+The default value is <em>0x00000000</em>, which means that the format does not support z channels.</p>
+<a name="3210"></a>
+<h3> Example</h3>
+<p><a name="3211"></a>
+The first example supports only 8 bits in the z channel; the second example supports 8, 10, and 16 bits.</p>
+<pre><a name="3212"></a><code>unsigned int imageBitsPerZChannel = 0x00000080;
+</code><a name="3213"></a><code>unsigned int imageBitsPerZChannel = 0x00008280;
+</code></pre><a name="6789"></a>
+<h2> imageCapability</h2>
+<a name="4307"></a>
+<h3> Definition</h3>
+<pre><a name="4308"></a><code>void imageCapability<br>
+(<br>
+ &#32; &#32; &#32;IMF_CAPABILITY &#32; &#32; &#32;**capabilities,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*num_input,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*num_output,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*total<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="4314"></a>
+Parameter
+</th><th><a name="4316"></a>
+Type
+</th><th><a name="4318"></a>
+Description
+</th></tr>
+<tr><td><p><a name="4320"></a>
+<em>capabilities</em></p>
+</td><td><p><a name="4322"></a>
+Output</p>
+</td><td><p><a name="4324"></a>
+Returns a pointer to the capabilities for this file type.</p>
+</td></tr>
+<tr><td><p><a name="4326"></a>
+num_input</p>
+</td><td><p><a name="4328"></a>
+Output</p>
+</td><td><p><a name="4330"></a>
+The number of capabilities applicable to file reading.</p>
+</td></tr>
+<tr><td><p><a name="4332"></a>
+num_output</p>
+</td><td><p><a name="4334"></a>
+Output</p>
+</td><td><p><a name="4336"></a>
+The number of capabilities applicable to file writing.</p>
+</td></tr>
+<tr><td><p><a name="4395"></a>
+total</p>
+</td><td><p><a name="4397"></a>
+Output</p>
+</td><td><p><a name="4399"></a>
+The total number of capabilities.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="4344"></a>
+<h3> Description</h3>
+<p><a name="4345"></a>
+This function is called during initialization when Alias|Wavefront determines the capabilities to display in its menus. For more information on capabilities, see <a href="EventPlugIns.doc.html#7659">IMF_CAPABILITY</a>.</p>
+<a name="10127"></a>
+<h3> Example</h3>
+<p><a name="10121"></a>
+This generic code fragment loops through your plug-in's list of capabilities:</p>
+<pre><a name="327396"></a><code>int i;<br>
+*capabilities = your_capabilities;<br>
+for ( *num_input = *num_output = *total = i = 0;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;i &lt; number_elements_in( your_capabilities );<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;++i )<br>
+{<br>
+ &#32; &#32; &#32;if ( your_capabilities[i].imc_when_avail<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;&amp; IMF_CAPABILITY_WHEN_INPUT )<br>
+ &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;++( *num_input );<br>
+ &#32; &#32; &#32;}<br>
+ &#32; &#32; &#32;if ( your_capabilities[i].imc_when_avail<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;&amp; IMF_CAPABILITY_WHEN_OUTPUT )<br>
+ &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;++( *num_output );<br>
+ &#32; &#32; &#32;}<br>
+ &#32; &#32; &#32;if ( your_capabilities[i].imc_when_avail<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;&amp; ( IMF_CAPABILITY_WHEN_INPUT<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;| IMF_CAPABILITY_WHEN_OUTPUT ) )<br>
+ &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;++( *total );<br>
+ &#32; &#32; &#32;}<br>
+}
+</code></pre><a name="4441"></a>
+<h2> imageDescription</h2>
+<a name="4454"></a>
+<h3> Definition</h3>
+<pre><a name="4443"></a><code>char *imageDescription
+</code></pre><a name="4444"></a>
+<h3> Description</h3>
+<p><a name="774832"></a>
+This variable is a string used to provide a more detailed description of the file format. It augments the <em>imageName</em> when displayed in menus.</p>
+<p><a name="4447"></a>
+The default value is <em>NULL</em>, which means that no additional description exists.</p>
+<a name="4448"></a>
+<h3> Example</h3>
+<pre><a name="4449"></a><code>char *imageDescription = "Version 2";
+</code></pre><a name="8427"></a>
+<h2> imageDone</h2>
+<a name="14562"></a>
+<h3> Definition</h3>
+<pre><a name="8429"></a><code>void imageDone( void )
+</code></pre><a name="20031"></a>
+<h3> Description</h3>
+<p><a name="3262"></a>
+This optional routine is called when you exit Alias|Wavefront. If your plug-in requires special licensing, this is where you would release the license.</p>
+<a name="4479"></a>
+<h2> imageExtension</h2>
+<a name="4480"></a>
+<h3> Definition</h3>
+<pre><a name="4481"></a><code>char *imageExtension
+</code></pre><a name="4482"></a>
+<h3> Description</h3>
+<p><a name="4483"></a>
+This variable defines the default extension to use when generating filenames for your plug-in. It must include the preceding period. The default value is <em>NULL</em>, which indicates that the format does not typically use an extension.</p>
+<ul><a name="3302"><p></a>
+<li>In Maya Composer, this is used to determine the format of the image file when the file type is <em>Determine from extension</em>.
+</ul><a name="4485"></a>
+<h3> Example</h3>
+<pre><a name="4486"></a><code>char *imageExtension = ".gif";
+</code></pre><a name="4517"></a>
+<h2> imageFormatString</h2>
+<a name="4518"></a>
+<h3> Definition</h3>
+<pre><a name="4519"></a><code>char *imageFormatString
+</code></pre><a name="4520"></a>
+<h3> Description</h3>
+<ul><a name="4521"><p></a>
+<li>This variable defines the default format of the filename to use, and includes root name, frame number, and extension. It uses the same notation as <em>sprintf</em>.
+<a name="327455"><p></a>
+<li>The first <em>%s</em> encountered is used for the root name; the <em>%d</em> is used for the frame number; and the second <em>%s</em> is used for the extension. The default value is <em>"%s.%04.4d.%s"</em>.
+<a name="327460"><p></a>
+If you are using Maya Composer only, use <em>imageNameSyntax</em> instead.
+</ul><a name="327461"></a>
+<h3> Example</h3>
+<p><a name="3600"></a>
+This example defines a syntax where the root name is immediately followed by the non-zero padded frame number, and then the period-separated extension.</p>
+<pre><a name="4524"></a><code>char *imageFormatString = "%s%d.%s";
+</code></pre><a name="4555"></a>
+<h2> imageHardLinkDuplicates</h2>
+<a name="4556"></a>
+<h3> Definition</h3>
+<pre><a name="4557"></a><code>BOOLEAN imageHardLinkDuplicates
+</code></pre><a name="4558"></a>
+<h3> Description</h3>
+<ul><a name="4577"><p></a>
+<li>This variable indicates whether Alias|Wavefront should create hard links to identical files that are created in a sequence. For example, if <em>image.1.ext, image.2.ext</em>, and<em> image.3.ext</em> are identical, setting this variable to <em>TRUE</em> allows Alias|Wavefront to create exactly one file, and make hard links from the other two to it. If this variable were <em>FALSE</em>, three separate but identical files would be created.
+<a name="4560"><p></a>
+<li>The default value is <em>TRUE</em>.
+</ul><a name="4561"></a>
+<h3> Example</h3>
+<pre><a name="4563"></a><code>BOOLEAN imageHardLinkDuplicates = FALSE;
+</code></pre><a name="4167"></a>
+<h2> imageInit</h2>
+<a name="4168"></a>
+<h3> Definition</h3>
+<pre><a name="4169"></a><code>int imageInit( void )
+</code></pre><a name="4170"></a>
+<h3> Description</h3>
+<ul><a name="3272"><p></a>
+<li>If defined, this routine is invoked before your plug-in is loaded into Alias|Wavefront. If the return value is <em>TRUE</em>, the plug-in is loaded as usual. However, if it returns <em>FALSE</em>, the plug-in is not loaded.
+<a name="3289"><p></a>
+<li>This initialization routine can be used in conjunction with the <em>imageDone</em> routine to provide a means of opening and closing any licensing schemes that you may wish to implement. If the plug-in offers multiple language support, this routine can be used to internationalize any strings. You can also set default values for <em>imageExtension</em> and <em>imageNameSyntax</em> here.
+</ul><a name="330167"></a>
+<h2> imageIsFile</h2>
+<a name="330170"></a>
+<h3> Definition</h3>
+<pre><a name="330172"></a><code>BOOLEAN         imageIsFile( 
+</code><a name="330173"></a><code> &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;char *fn, 
+</code><a name="330174"></a><code> &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;FILE *fp
+</code><a name="330175"></a><code>) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="330373"></a>
+Parameter
+</th><th><a name="330375"></a>
+Type
+</th><th><a name="330377"></a>
+Description
+</th></tr>
+<tr><td><p><a name="330379"></a>
+fn</p>
+</td><td><p><a name="330381"></a>
+char*</p>
+</td><td><p><a name="330383"></a>
+Filename, used only if fp is <em>NULL</em></p>
+</td></tr>
+<tr><td><p><a name="330385"></a>
+fp</p>
+</td><td><p><a name="330387"></a>
+FILE*</p>
+</td><td><p><a name="330389"></a>
+File pointer</p>
+</td></tr>
+<tr><td><p><a name="330397"></a>
+Return Value</p>
+</td><td><p><a name="330399"></a>
+</p>
+</td><td><p><a name="330401"></a>
+<em>TRUE</em> if fn or fp refer to a file supported by this plug-in. </p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="330610"></a>
+<h3> Description</h3>
+<p><a name="330611"></a>
+Checks whether a filename or pointer matches a type supported by this plug-in.</p>
+<a name="330189"></a>
+<h3> Example</h3>
+<pre><a name="330191"></a><code>if ( fp == NULL )
+</code><a name="330192"></a><code>{
+</code><a name="330193"></a><code> &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;	fp = fopen( fn, "r" ) );
+</code><a name="330194"></a><code>}
+</code><a name="330195"></a><code>
+</code><a name="330196"></a><code>/* Read the header from fp and check for a match with this plug-in */
+</code><a name="330197"></a><code>
+</code><a name="330198"></a><code>fread( &amp;magic, 1, sizeof( magic ), fp );
+</code><a name="330199"></a><code>
+</code><a name="330168"></a><code>return ( magic &amp; FORMATS_MAGIC_NUMBER )
+</code></pre><a name="330166"></a>
+<h2> imageNameSyntax</h2>
+<a name="4678"></a>
+<h3> Definition</h3>
+<pre><a name="4679"></a><code>char *imageNameSyntax
+</code></pre><a name="4680"></a>
+<h3> Description</h3>
+<p><a name="3352"></a>
+This variable defines the default format of the filename to use, and includes root name, frame number, and extension.</p>
+<p><a name="3373"></a>
+The name syntax recognizes four strings:</p>
+<ul><a name="3376"><p></a>
+<li><em>Name</em>, which represents the root name of the file
+<a name="3378"><p></a>
+<li><em>Ext</em>, which represents the extension
+<a name="3381"><p></a>
+<li><em>#</em>, which represents the frame number
+<a name="3390"><p></a>
+<li>punctuation, such as period (<em>.</em>), comma (<em>,</em>), and hyphen (<em>-</em>)
+<a name="3379"><p></a>
+<li>These can be combined in any way to produce the desired filename. Each of the name, frame number, and extension can occur at most once, but the <em>#</em> can be repeated to pad the frame number with leading zeroes.
+<a name="3363"><p></a>
+<li>The default value is <em>NULL</em>.
+<a name="3648"><p></a>
+Maya Composer is currently the only Alias|Wavefront application which recognizes this variable. Other applications use the <em>imageFormatString</em>.
+</ul><a name="4683"></a>
+<h3> Example</h3>
+<p><a name="3395"></a>
+This example produces a name with at least two digits used for the frame number. There is no punctuation between the name and the frame number, but a period is placed between the frame number and extension.</p>
+<pre><a name="4684"></a><code>char *imageNameSyntax = "Name##.Ext";
+</code></pre><a name="4726"></a>
+<h2> imageNumberOfChannels</h2>
+<a name="4727"></a>
+<h3> Definition</h3>
+<pre><a name="4728"></a><code>int imageNumberOfChannels
+</code></pre><a name="4729"></a>
+<h3> Description</h3>
+<ul><a name="4730"><p></a>
+<li>This variable defines the maximum number of color channels that your file format supports. It does not include the matte channel. Normally, this is <em>3</em> for RGB images, and <em>1</em> for formats which support gray-scale only.
+<a name="4732"><p></a>
+<li>The default value is <em>3</em>.
+</ul><a name="4733"></a>
+<h3> Example</h3>
+<pre><a name="4734"></a><code>int imageNumberOfChannels = 3;
+</code></pre><a name="4781"></a>
+<h2> imageNumberOfMattes</h2>
+<a name="4782"></a>
+<h3> Definition</h3>
+<pre><a name="4783"></a><code>int imageNumberOfMattes;
+</code></pre><a name="4784"></a>
+<h3> Description</h3>
+<ul><a name="3403"><p></a>
+<li>This variable defines the maximum number of matte, or alpha, channels that your file format supports. Normally, this is <em>1</em> if your format supports matte, and <em>0</em> otherwise.
+<a name="4786"><p></a>
+<li>The default value is <em>0</em>.
+</ul><a name="4787"></a>
+<h3> Example</h3>
+<pre><a name="4788"></a><code>int imageNumberOfMattes = 1;
+</code></pre><a name="4827"></a>
+<h2> imageNumberOfZChannels</h2>
+<a name="4828"></a>
+<h3> Definition</h3>
+<pre><a name="4829"></a><code>int imageNumberOfZChannels
+</code></pre><a name="4830"></a>
+<h3> Description</h3>
+<ul><a name="3423"><p></a>
+<li>This variable defines the maximum number of z, or depth, channels that your file format supports. Normally, this is <em>1</em> if your format supports z, and <em>0</em> otherwise.
+<a name="4832"><p></a>
+<li>The default value is <em>0</em>.
+</ul><a name="4833"></a>
+<h3> Example</h3>
+<pre><a name="4834"></a><code>int imageNumberOfZChannels = 1;
+</code></pre><a name="4856"></a>
+<h2> imageSupportRemoteAccess</h2>
+<a name="4857"></a>
+<h3> Definition</h3>
+<pre><a name="4858"></a><code>BOOLEAN imageSupportRemoteAccess
+</code></pre><a name="4859"></a>
+<h3> Description</h3>
+<ul><a name="4860"><p></a>
+<li>This variable defines whether your plug-in supports remote file access itself. If it does, set this to be <em>TRUE</em>. Otherwise, Alias|Wavefront will perform remote file access where possible, and remove any leading <em>remotehost:</em> from filenames before passing them to your plug-in.
+<a name="4861"><p></a>
+<li>The default value is <em>FALSE</em>.
+</ul><a name="4862"></a>
+<h3> Example</h3>
+<pre><a name="4863"></a><code>BOOLEAN imageSupportRemoteAccess = TRUE;
+</code></pre><a name="4934"></a>
+<h2> imageSupportsActiveWindow</h2>
+<a name="4935"></a>
+<h3> Definition</h3>
+<pre><a name="4936"></a><code>int imageSupportsActiveWindow
+</code></pre><a name="4937"></a>
+<h3> Description</h3>
+<ul><a name="4938"><p></a>
+<li>This variable indicates whether your format supports the notion of an active window. The default value is <em>FALSE</em>.
+</ul><a name="4940"></a>
+<h3> Example</h3>
+<pre><a name="4941"></a><code>int imageSupportsActiveWindow = FALSE;
+</code></pre><a name="9959"></a>
+<h2> Look-up table (LUT) reading function</h2>
+<a name="9960"></a>
+<h3> Definition</h3>
+<pre><a name="9961"></a><code>int your_lut_read_func<br>
+(<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32; &#32; &#32; &#32;data,<br>
+ &#32; &#32; &#32;IMF_LUT &#32; &#32; &#32; &#32; &#32; &#32;**imf_lut<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="9964"></a>
+Parameter
+</th><th><a name="9966"></a>
+Type
+</th><th><a name="9968"></a>
+Description
+</th></tr>
+<tr><td><p><a name="9970"></a>
+<em>data</em></p>
+</td><td><p><a name="9972"></a>
+Input</p>
+</td><td><p><a name="9974"></a>
+The private data associated with your image.</p>
+</td></tr>
+<tr><td><p><a name="9976"></a>
+imf_lut</p>
+</td><td><p><a name="9978"></a>
+Output</p>
+</td><td><p><a name="9980"></a>
+A pointer to a newly allocated look-up table.</p>
+</td></tr>
+<tr><td><p><a name="9982"></a>
+Return Value</p>
+</td><td><p><a name="9984"></a>
+</p>
+</td><td><p><a name="9986"></a>
+<em>TRUE</em> if the LUT was successfully allocated and read; <em>FALSE</em> if an error occurred.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="9988"></a>
+<h3> Description</h3>
+<ul><a name="9989"><p></a>
+<li>Alias|Wavefront calls this function to read the image file's color look-up table. Since LUTs usually use little space, it is recommended that they be read by <em>imageReadOpen</em> and stored in the private data associated with the image. In this case, <em>your_lut_read_func</em> need only allocate a new <em>IMF_LUT</em>, and copy your private version of the LUT to it.
+</ul><ol>
+<a name="9991"></a>
+<li>Allocate the LUT:
+<p><pre><a name="9992"></a><code>if ( ( *imf_lut = IMF_lut_alloc(<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;data-&gt;your_color_map_size ) ) == NULL )<br>
+{<br>
+ &#32; &#32; &#32;return( FALSE );<br>
+}
+</code><ul><a name="9993"><p></a>
+<li>Set <em>(*imf_lut)-&gt;imu_maximum</em> to the maximum value of each LUT entry. For example, if your file format stores each LUT entry as 12 bits of red, 12 bits of green, and 12 bits of blue, use 4095 for <em>imu_maximum</em>.
+<a name="9994"><p></a>
+<li>Set <em>(*imf_lut)-&gt;imu_gamma</em> to be the gamma of the color look-up table if it is stored in the file, or the default input gamma using <em>FMT_def_input_gamma</em>. This should be the gamma which was applied to the LUT entries when they were written.
+<a name="9995"><p></a>
+<li>Fill in each <em>(*imf_lut)-&gt;imu_lut[i].ile_red</em>, <em>(*imf_lut)-&gt;imu_lut[i].ile_green</em>, etc. entry. See <a href="EventPlugIns.doc.html#8539">IMF_LUT</a> for a description of the <em>IMF_LUT</em> structure. Each LUT entry should range from 0 to the <em>imu_maximum</em> entry set in step 2.
+<a name="9996"><p></a>
+<li>Return <em>TRUE</em> if successful, and <em>FALSE</em> if an error occurred.
+</ul></pre></ol>
+<a name="10489"></a>
+<h1> Library functions</h1>
+<a name="5333"></a>
+<h2> imf__build_handle</h2>
+<a name="5334"></a>
+<h3> Definition</h3>
+<pre><a name="5335"></a><code>char *imf__build_handle<br>
+(<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32;*path,<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32;*handle,<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32;*ext<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="5344"></a>
+Parameter
+</th><th><a name="5346"></a>
+Type
+</th><th><a name="5348"></a>
+Description
+</th></tr>
+<tr><td><p><a name="5350"></a>
+<em>path</em></p>
+</td><td><p><a name="5352"></a>
+Input</p>
+</td><td><p><a name="5354"></a>
+The search path to use.</p>
+</td></tr>
+<tr><td><p><a name="5356"></a>
+<em>handle</em></p>
+</td><td><p><a name="5358"></a>
+Input</p>
+</td><td><p><a name="5360"></a>
+The filename.</p>
+</td></tr>
+<tr><td><p><a name="5362"></a>
+<em>ext</em></p>
+</td><td><p><a name="5364"></a>
+Input</p>
+</td><td><p><a name="5366"></a>
+The filename extension.</p>
+</td></tr>
+<tr><td><p><a name="5374"></a>
+Return Value</p>
+</td><td><p><a name="5376"></a>
+</p>
+</td><td><p><a name="5378"></a>
+The completed filename.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="5380"></a>
+<h3> Description</h3>
+<ul><a name="5381"><p></a>
+<li>This function constructs a filename from <em>path</em>, <em>handle</em>, and <em>ext</em>. Use the returned string when opening the file.
+</ul><a name="5420"></a>
+<h3> Examples</h3>
+<pre><a name="327624"></a><code>char *filename;<br>
+FILE *fp = NULL;<br>
+...<br>
+*info = &amp;imf-&gt;info;<br>
+if ( info-&gt;handle_complete )<br>
+{<br>
+ &#32; &#32; &#32;filename = info-&gt;handle;<br>
+}<br>
+else<br>
+{<br>
+ &#32; &#32; &#32;filename = imf__build_handle( NULL, info-&gt;handle,<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;info-&gt;ext );<br>
+ &#32; &#32; &#32;if ( ( fp = fopen( filename, "rb" ) ) == NULL )<br>
+ &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;filename = imf__build_handle( getenv(<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;"WF_IMG_DIR" ),<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;info-&gt;handle, info-&gt;ext );<br>
+ &#32; &#32; &#32;}<br>
+}<br>
+if ( fp == NULL )<br>
+{<br>
+ &#32; &#32; &#32;fp = fopen( filename, "rb" );<br>
+}
+</code></pre><a name="5596"></a>
+<h2> IMF_chan_alloc</h2>
+<a name="5597"></a>
+<h3> Definition</h3>
+<pre><a name="5598"></a><code>POINTER *IMF_chan_alloc<br>
+(<br>
+ &#32; &#32; &#32;IMF_IMAGE &#32; &#32; &#32;*image,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32;res,<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32;*key,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32;*size<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="326028"></a>
+Parameter
+</th><th><a name="326030"></a>
+Type
+</th><th><a name="326032"></a>
+Description
+</th></tr>
+<tr><td><p><a name="326034"></a>
+<em>image</em></p>
+</td><td><p><a name="326036"></a>
+Input</p>
+</td><td><p><a name="326038"></a>
+Image information that specifies what is allocated, e.g., how many color channels, how many matte channels, and how many Z channels.</p>
+</td></tr>
+<tr><td><p><a name="326040"></a>
+<em>res</em></p>
+</td><td><p><a name="326042"></a>
+Input</p>
+</td><td><p><a name="326044"></a>
+The width of a scanline, in pixels.</p>
+</td></tr>
+<tr><td><p><a name="326046"></a>
+<em>key</em></p>
+</td><td><p><a name="326048"></a>
+Input</p>
+</td><td><p><a name="326050"></a>
+The plug-in's key; used for error messages.</p>
+</td></tr>
+<tr><td><p><a name="326052"></a>
+size</p>
+</td><td><p><a name="326054"></a>
+Output</p>
+</td><td><p><a name="326056"></a>
+Size of the allocated scanline.</p>
+</td></tr>
+<tr><td><p><a name="326058"></a>
+Return Value</p>
+</td><td><p><a name="326060"></a>
+</p>
+</td><td><p><a name="326062"></a>
+<em>NULL</em> if insufficient memory; otherwise, a pointer to scanline buffers.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="5643"></a>
+<h3> Description</h3>
+<ul><a name="5664"><p></a>
+<li>This function allocates a set of scanline buffers to be used to pass one scanline of data between Alias|Wavefront and your scanline reading and writing functions. The buffer is set up as an array of pointers to scanline buffers, with the first rows containing color channel data (red, green, and then blue), followed by a matte channel and a z channel if your plug-in defines them. Call this from your <em>imageReadOpen</em> routine.
+<a name="5665"><p></a>
+<li><em>IMF_chan_alloc</em> depends on the <em>imageBitsPerPaletteEntry</em>, <em>imageBitsPerChannel</em>, <em>imageBitsPerMatte</em>, and <em>imageBitsPerZChannel</em> entry points you define at the top of your plug-in code. If your entry point defines 1 to 8 bits per channel, then byte-sized pixels are allocated. If 9 to 16 bits per channel are defined, then 16-bit <em>short</em> pixels are allocated. For 17 to 32 bits per channel, 32-bit <em>long</em> pixels are allocated. All values are in <em>unsigned</em> form. Your scanline reading and writing functions must be aware of whether to interpret channel data as 8-bit unsigned chars, 16-bit shorts, or 32-bit longs.
+</ul><a name="5666"></a>
+<h3> Example</h3>
+<p><a name="5667"></a>
+This sample code fragment shows how to allocate and access a scanline buffer allocated by <em>IMF_chan_alloc</em>. There are 3 color channels with 8 bits per pixel, 1 matte channel with 12 bits per pixel, and 1 z channel with 32 bits per pixel. <em>imf</em> is the <em>IMF_OBJECT</em> structure passed into your <em>imageReadOpen</em> function. Note that <em>imageWriteOpen</em> should not call <em>IMF_chan_alloc</em> because the Alias|Wavefront application allocates the scanline buffer passed into the scanline writing function.</p>
+<pre><a name="6811"></a><code>POINTER *p_buffer;<br>
+p_buffer = IMF_chan_alloc( imf-&gt;info.image,<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;image_width, imf-&gt;info.key, NULL);
+</code></pre><p><a name="6812"></a>
+In your scanline reading function, would store data in the buffer using:</p>
+<pre><a name="5671"></a><code>unsigned char *p_red = p_buffer[0];<br>
+unsigned char *p_blue = p_buffer[1];<br>
+unsigned char *p_green = p_buffer[2];<br>
+unsigned short *p_matte = p_buffer[3];<br>
+unsigned long *p_z = p_buffer[4];<br>
+for ( i = 0; i &lt; image_width; ++i )<br>
+{<br>
+ &#32; &#32; &#32;p_red[i] = red_values[i];<br>
+ &#32; &#32; &#32;p_blue[i] = blue_values[i];<br>
+ &#32; &#32; &#32;p_green[i] = green_values[i];<br>
+ &#32; &#32; &#32;p_matte[i] = matte_values[i];<br>
+ &#32; &#32; &#32;p_z[i] = z_values[i];<br>
+}
+</code></pre><p><a name="5684"></a>
+Your scanline writing function should access the buffer in a similar way.</p>
+<a name="5686"></a>
+<h3> Related Functions</h3>
+<pre><a name="5730"></a><code>IMF_chan_free
+</code></pre><a name="5837"></a>
+<h2> IMF_chan_free</h2>
+<a name="5838"></a>
+<h3> Definition</h3>
+<pre><a name="5839"></a><code>int IMF_chan_free<br>
+(<br>
+ &#32; &#32; &#32;POINTER			*chan_data<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="6068"></a>
+Parameter
+</th><th><a name="6070"></a>
+Type
+</th><th><a name="6072"></a>
+Description
+</th></tr>
+<tr><td><p><a name="6092"></a>
+<em>chan_data</em></p>
+</td><td><p><a name="6094"></a>
+Modified</p>
+</td><td><p><a name="6112"></a>
+The address of a pointer to a scanline buffer allocated by <em>IMF_chan_alloc</em>.</p>
+</td></tr>
+<tr><td><p><a name="6098"></a>
+Return Value</p>
+</td><td><p><a name="6100"></a>
+</p>
+</td><td><p><a name="6102"></a>
+Nothing.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="5857"></a>
+<h3> Description</h3>
+<p><a name="5858"></a>
+This function deallocates a set of scanline buffers was previously allocated by <em>IMF_chan_alloc</em>.</p>
+<a name="5859"></a>
+<h3> Example</h3>
+<p><a name="326063"></a>
+If <em>data-&gt;buffer</em> points to your scanline buffer, free the buffer using:</p>
+<pre><a name="326064"></a><code>IMF_chan_free( data-&gt;buffer );
+</code></pre><a name="5862"></a>
+<h3> Related Functions</h3>
+<pre><a name="5863"></a><code>IMF_chan_alloc
+</code></pre><a name="5898"></a>
+<h2> imf__free_obj</h2>
+<a name="5899"></a>
+<h3> Definition</h3>
+<pre><a name="5900"></a><code>int imf__free_obj<br>
+(<br>
+ &#32; &#32; &#32;IMF_OBJECT *imf<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="5906"></a>
+Parameter
+</th><th><a name="5908"></a>
+Type
+</th><th><a name="5910"></a>
+Description
+</th></tr>
+<tr><td><p><a name="5912"></a>
+<em>imf</em></p>
+</td><td><p><a name="5914"></a>
+Modified</p>
+</td><td><p><a name="5916"></a>
+Structure storing image characteristics such as width and height.</p>
+</td></tr>
+<tr><td><p><a name="6120"></a>
+Return Value</p>
+</td><td><p><a name="6122"></a>
+</p>
+</td><td><p><a name="6124"></a>
+Nothing.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="5918"></a>
+<h3> Description</h3>
+<p><a name="6570"></a>
+This function deallocates space occupied by the <em>IMF_OBJECT</em> structure. This should be called in your close function.</p>
+<p><a name="6585"></a>
+If <em>imf-&gt;data</em> is not <em>NULL</em>, then <em>imf__free_obj</em> frees the space pointed to by <em>imf-&gt;data[0]</em> and then frees <em>imf-&gt;data</em>. Therefore, if you have allocated <em>imf-&gt;data[1]</em> or any other extra space, then your close function and your error-handling routines in <em>imageReadOpen</em> and <em>imageWriteOpen</em> must deallocate the space to avoid a memory leak.</p>
+<a name="6575"><p></a>
+In the event of a failed attempt at opening an image file, Alias|Wavefront calls <em>imf__free_obj( imf )</em> to free the <em>IMF_OBJECT</em> passed to <em>imageReadOpen</em>. Therefore, you must not call <em>imf__free_obj</em> in your error-handling code. If you call your close function to do the error-handling and clean-up, your close function must distinguish between a close after a failed open attempt and a close after having successfully read an image file. Your close function must call <em>imf__free_obj</em> only if the image file was successfully read.
+<a name="6576"></a>
+<h3> Example</h3>
+<pre><a name="5922"></a><code>imf__free_obj( imf );
+</code></pre><a name="5987"></a>
+<h3> Related Functions</h3>
+<pre><a name="5988"></a><code>imf__init_ifd
+</code></pre><a name="5998"></a>
+<h2> imf__init_ifd</h2>
+<a name="326907"></a>
+<h3> Definition</h3>
+<pre><a name="326908"></a><code>int imf__init_ifd<br>
+(<br>
+ &#32; &#32; &#32;IMF_OBJECT *imf<br>
+) 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="326911"></a>
+<strong>Parameter</strong>
+</th><th><a name="326913"></a>
+Type
+</th><th><a name="326915"></a>
+Description
+</th></tr>
+<tr><td><p><a name="326917"></a>
+<em>imf</em></p>
+</td><td><p><a name="326919"></a>
+Modified</p>
+</td><td><p><a name="326921"></a>
+Structure storing image characteristics such as width and height.</p>
+</td></tr>
+<tr><td><p><a name="326923"></a>
+Return Value</p>
+</td><td><p><a name="326925"></a>
+</p>
+</td><td><p><a name="326927"></a>
+Nothing.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+
+</code></pre><a name="6018"></a>
+<h3> Description</h3>
+<p><a name="6019"></a>
+This function initializes the image file descriptor structure pointed to by <em>imf-&gt;info.image</em>. This should be called in your <em>imageReadOpen</em> function. Note that the <em>imf-&gt;info.image</em> field must have been allocated by your function before invoking <em>imf__init_ifd</em>.</p>
+<p><a name="6165"></a>
+The following defines the default values of the <em>IMF_IMAGE</em> structure:</p>
+<ul><a name="6170"><p></a>
+<li><em>usage: IMF_C_GENERIC</em>
+<a name="6180"><p></a>
+<li><em>curve.usage: IMF_C_CORRECTION_GAMMA</em>
+<a name="6184"><p></a>
+<li><em>curve.gamma: fmt_def_gamma</em>
+<a name="6188"><p></a>
+<li><em>curve.info.name: NULL</em>
+<a name="6192"><p></a>
+<li><em>curve.info.count: 1</em>
+<a name="6196"><p></a>
+<li><em>curve.info.elems: 256</em>
+<a name="6200"><p></a>
+<li><em>curve.info.type: IMF_C_INTEGER</em>
+<a name="6204"><p></a>
+<li><em>curve.info.bits: LOG( fmt__gamma_tab_res ) / LOG( 2.0 )</em>
+<a name="6208"><p></a>
+<li><em>curve.response: NULL</em>
+<a name="6212"><p></a>
+<li><em>aspect.name: NULL</em>
+<a name="6216"><p></a>
+<li><em>chan_format: NULL</em>
+<a name="6220"><p></a>
+<li><em>matte_format: NULL</em>
+<a name="6224"><p></a>
+<li><em>aux_format: NULL</em>
+<a name="6228"><p></a>
+<li><em>index_format: NULL</em>
+<a name="6232"><p></a>
+<li><em>chan_config: IMF_C_PLANAR_SEPARATE</em>
+<a name="6236"><p></a>
+<li><em>chan_orient: IMF_C_BOT_LEFT</em>
+<a name="6240"><p></a>
+<li><em>chan_count: 0</em>
+<a name="6244"><p></a>
+<li><em>chan_type: IMF_C_INTEGER</em>
+<a name="6248"><p></a>
+<li><em>chan_bits: 8</em>
+<a name="6252"><p></a>
+<li><em>matte_count: 0</em>
+<a name="6256"><p></a>
+<li><em>matte_type: IMF_C_INTEGER</em>
+<a name="6260"><p></a>
+<li><em>matte_bits: 8</em>
+<a name="6372"><p></a>
+<li><em>aux_count: 0</em>
+<a name="6373"><p></a>
+<li><em>aux_type: IMF_C_INTEGER</em>
+<a name="6374"><p></a>
+<li><em>aux_bits: 8</em>
+<a name="6384"><p></a>
+<li><em>index_count: 0</em>
+<a name="6385"><p></a>
+<li><em>index_type: IMF_C_INTEGER</em>
+<a name="6386"><p></a>
+<li><em>index_bits: 8</em>
+</ul><a name="6025"></a>
+<h3> Example</h3>
+<pre><a name="6026"></a><code>imf__init_ifd( imf );
+</code></pre><a name="6027"></a>
+<h3> Related Functions</h3>
+<pre><a name="6028"></a><code>imf__free_obj
+</code></pre><a name="5075"></a>
+<h1> Capability settings</h1>
+<p><a name="5076"></a>
+When you implement an image plug-in, you need to decide what file format features your plug-in supports, and whether and how the user can specify them in the file browsers used to access image files. Alias|Wavefront automatically passes these features, called capability settings, to your image plug-in when it accesses a file. For example, when writing an image to disk, you may allow the user to select the type of compression to be used. Sometimes, your file format has no special features and does not require capability settings.</p>
+<p><a name="5077"></a>
+The user interface supports two pre-defined capability types:</p>
+<ul><a name="5078"><p></a>
+<li><em>List</em>-presents an option menu with a list of names (strings)
+<a name="5079"><p></a>
+<li><em>Number</em>-displays a numeric field and a thumbwheel for an unbounded number, or numeric field and a slider for a bounded number.
+</ul><p><a name="5083"></a>
+For more information, see <a href="EventPlugIns.doc.html#6789">imageCapability</a> and <a href="EventPlugIns.doc.html#7659">IMF_CAPABILITY</a>.</p>
+<a name="5249"></a>
+<h1> Data structures</h1>
+<a name="7659"></a>
+<h2> IMF_CAPABILITY</h2>
+<a name="7660"></a>
+<h3> Definition</h3>
+<pre><a name="327735"></a><code>typedef struct imf_capability<br>
+{<br>
+ &#32; &#32; &#32;U_SHORT &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imc_code;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*imc_name;<br>
+ &#32; &#32; &#32;MSGCAT_DEFN &#32; &#32; &#32; &#32; &#32;imc_name_msg;<br>
+ &#32; &#32; &#32;U_CHAR &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imc_type;<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imc_value;<br>
+ &#32; &#32; &#32;U_CHAR &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imc_when_avail;<br>
+} IMF_CAPABILITY;
+</code></pre><a name="10210"></a>
+<h3> Purpose</h3>
+<p><a name="10208"></a>
+For those image files with special, type-specific parameters, use the <em>IMF_CAPABILITY</em> structure to define the type-specific capabilities of the driver. The capabilities are stored as an array, with one entry per capability. For example, the SGI driver has two capabilities: one for the compression mode (raw vs. RGB), and one defining whether to create a matte channel in the file.</p>
+<a name="325978"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="325951"></a>
+Field
+</th><th><a name="325953"></a>
+Description
+</th></tr>
+<tr><td><p><a name="325955"></a>
+<em>imc_code</em></p>
+</td><td><p><a name="325957"></a>
+A 16-bit number unique among all the capabilities defined in your <em>IMF_CAPABILITY</em> array.</p>
+</td></tr>
+<tr><td><p><a name="325959"></a>
+<em>imc_name</em></p>
+</td><td><p><a name="325961"></a>
+The string displayed in the user interface describing the capability.</p>
+</td></tr>
+<tr><td><p><a name="325963"></a>
+<em>imc_name_msg</em></p>
+</td><td><p><a name="325965"></a>
+The internationalized version of <em>imc_name</em>.</p>
+</td></tr>
+<tr><td><p><a name="325967"></a>
+<em>imc_type</em></p>
+</td><td><p><a name="325969"></a>
+The capability type. Currently, this can be either <em>IMF_CAPABILITY_TYPE_LIST</em> or <em>IMF_CAPABILITY_TYPE_NUMBER</em>.</p>
+</td></tr>
+<tr><td><p><a name="325971"></a>
+<em>imc_value</em></p>
+</td><td><p><a name="325973"></a>
+A pointer to either a <em>IMF_CAPABILITY_LIST</em> or a <em>IMF_CAPABILITY_NUMBER</em> structure, depending on <em>imc_type</em>.</p>
+</td></tr>
+<tr><td><p><a name="325975"></a>
+<em>imc_when_avail</em></p>
+</td><td><p><a name="325977"></a>
+When is this capability valid? Set to <em>IMF_CAPABILITY_WHEN_ALWAYS </em>for both reading and writing images; <em>IMF_CAPABILITY_WHEN_INPUT</em> for reading images; or <em>IMF_CAPABILITY_WHEN_OUTPUT</em> for writing images.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<p><a name="325985"></a>
+The <em>capabilities</em> are generic parameters. When <em>imageReadOpen</em> or <em>imageWriteOpen</em> is called, the specific user-defined instances of the capabilities are passed in as <em>settings</em>. This sample code fragment shows you how to extract the meanings of these settings:</p>
+<pre><a name="328084"></a><code>static BOOLEAN your_get_capability_settings<br>
+(<br>
+ &#32; &#32; &#32;IMF_OBJECT &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*imf,<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*mode<br>
+)<br>
+{<br>
+ &#32; &#32; &#32;IMF_CAPABILITY &#32; &#32; &#32; &#32; &#32; &#32; &#32;*capability;<br>
+ &#32; &#32; &#32;IMF_CAP_SETTING &#32; &#32; &#32; &#32; &#32; &#32;*setting;<br>
+ &#32; &#32; &#32;IMF_CAP_SETTING &#32; &#32; &#32; &#32; &#32; &#32;**settings;<br>
+<br>
+ &#32; &#32; &#32;if ( ( settings = imf-&gt;info.settings )<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;== NULL )<br>
+ &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;return( TRUE );<br>
+ &#32; &#32; &#32;}<br>
+for ( /* Nothing */; setting = *settings;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;++settings )<br>
+{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;/*<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32;*  Lookup the capability by code.<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32;*/<br>
+<br>
+ &#32; &#32; &#32; &#32; &#32; &#32;for ( capability = your__capabilities;<br>
+<br>
+capability-&gt;imc_name_msg.mcd_set<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;!= 0;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;++capability )<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;if ( capability-&gt;imc_code<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;== setting-&gt;imcs_code )<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;break;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;}<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;}<br>
+<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;if ( capability-&gt;imc_name_msg.mcd_set == 0 )<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;ERR_printf( "Bad capability found." );<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;return( FALSE );<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;}<br>
+<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;switch ( capability-&gt;imc_code )<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;case YOUR_CAPABILITY_IMC_CODE:<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*mode =setting-&gt;imcs_value.imcs_list;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;break;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;case ANOTHER_CAPABILITY_IMC_CODE:<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;...;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;break;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;case ...:<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;default:<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;ERR_printf( "Bad capability found.");<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;return( FALSE );<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;}<br>
+ &#32; &#32; &#32;}<br>
+ &#32; &#32; &#32;return( TRUE );<br>
+}
+</code></pre><a name="9790"></a>
+<h2> IMF_CAPABILITY_ENTRY</h2>
+<a name="7323"></a>
+<h3> Definition</h3>
+<pre><a name="7403"></a><code>typedef struct imf_capability_entry<br>
+{<br>
+ &#32; &#32; &#32;U_SHORT &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;ice_code;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*ice_name;<br>
+ &#32; &#32; &#32;MSGCAT_DEFN &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;ice_name_msg;<br>
+} IMF_CAPABILITY_ENTRY;
+</code></pre><a name="10217"></a>
+<h3> Purpose</h3>
+<p><a name="10232"></a>
+This structure is used to define a single entry of a <em>IMF_CAPABILITY_LIST</em>.</p>
+<a name="7389"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="7327"></a>
+Field
+</th><th><a name="7329"></a>
+Description
+</th></tr>
+<tr><td><p><a name="7331"></a>
+<em>ice_code</em></p>
+</td><td><p><a name="7333"></a>
+A 16-bit number unique among all the capability entries defined in an <em>IMF_CAPABILITY_LIST</em>. This number is used by your <em>imageReadOpen</em> and/or <em>imageWriteOpen</em> code to determine which list entry was selected by the user.</p>
+</td></tr>
+<tr><td><p><a name="7335"></a>
+<em>ice_name</em></p>
+</td><td><p><a name="7337"></a>
+The character string displayed in the user interface for this list item.</p>
+</td></tr>
+<tr><td><p><a name="7342"></a>
+<em>ice_name_msg</em></p>
+</td><td><p><a name="7344"></a>
+An internationalized version of <em>ice_name</em>.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="7459"></a>
+<h2> IMF_CAPABILITY_LIST</h2>
+<a name="7460"></a>
+<h3> Definition</h3>
+<pre><a name="328243"></a><code>typedef struct imf_capability_list<br>
+{<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icl_default;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icl_n_entries;<br>
+ &#32; &#32; &#32;IMF_CAPABILITY_ENTRY &#32; &#32; &#32; &#32;*icl_entries;<br>
+} IMF_CAPABILITY_LIST;
+</code></pre><a name="10224"></a>
+<h3> Purpose</h3>
+<p><a name="10238"></a>
+When an <em>IMF_CAPABILITY</em> record is of type <em>IMF_CAPABILITY_TYPE_LIST</em>, the <em>imc_value</em> field points to an <em>IMF_CAPABILITY_LIST</em> record whose <em>icl_entries</em> pointer is an array of <em>IMF_CAPABILITY_ENTRY</em> records.</p>
+<a name="7479"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="7464"></a>
+Field
+</th><th><a name="7466"></a>
+Description
+</th></tr>
+<tr><td><p><a name="7468"></a>
+<em>icl_default</em></p>
+</td><td><p><a name="7470"></a>
+The <em>ice_code</em> of the default list entry.</p>
+</td></tr>
+<tr><td><p><a name="7472"></a>
+<em>icl_n_entries</em></p>
+</td><td><p><a name="7474"></a>
+The number of entries in the list.</p>
+</td></tr>
+<tr><td><p><a name="7476"></a>
+<em>icl_entries</em></p>
+</td><td><p><a name="7478"></a>
+The list of entries.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="7534"></a>
+<h2> IMF_CAPABILITY_NUMBER</h2>
+<a name="7535"></a>
+<h3> Definition</h3>
+<pre><a name="7567"></a><code>typedef struct imf_capability_number<br>
+{<br>
+ &#32; &#32; &#32;float &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icn_default;<br>
+ &#32; &#32; &#32;BOOLEAN &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icn_minimum_dfnd;<br>
+ &#32; &#32; &#32;float &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icn_minimum;<br>
+ &#32; &#32; &#32;BOOLEAN &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icn_maximum_dfnd;<br>
+ &#32; &#32; &#32;float &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icn_maximum;<br>
+ &#32; &#32; &#32;floay &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;icn_increment;<br>
+} IMF_CAPABILITY_NUMBER;
+</code></pre><a name="10243"></a>
+<h3> Purpose</h3>
+<p><a name="10241"></a>
+If the <em>IMF_CAPABILITY</em> record has type <em>IMF_CAPABILITY_TYPE_NUMBER</em>, this structure is used to define the default and range of the allowable values to the capability.</p>
+<a name="7557"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="7539"></a>
+Field
+</th><th><a name="7541"></a>
+Description
+</th></tr>
+<tr><td><p><a name="7543"></a>
+<em>icn_default</em></p>
+</td><td><p><a name="7545"></a>
+The default value of this number capability.</p>
+</td></tr>
+<tr><td><p><a name="7550"></a>
+<em>icn_minimum_dfnd</em></p>
+</td><td><p><a name="7552"></a>
+Is a minimum value defined? <em>TRUE</em> if so, <em>FALSE</em> if not.</p>
+</td></tr>
+<tr><td><p><a name="7554"></a>
+<em>icn_minimum</em></p>
+</td><td><p><a name="7556"></a>
+The minimum value, in effect only if <em>icn_minimum_dfnd</em> is set to <em>TRUE</em>.</p>
+</td></tr>
+<tr><td><p><a name="7630"></a>
+<em>icn_maximum_dfnd</em></p>
+</td><td><p><a name="7632"></a>
+Is a maximum value defined? <em>TRUE</em> if so, <em>FALSE</em> if not.</p>
+</td></tr>
+<tr><td><p><a name="7634"></a>
+<em>icn_maximum</em></p>
+</td><td><p><a name="7636"></a>
+The maximum value, in effect only if <em>icn_maximum_dfnd</em> is set to <em>TRUE</em>.</p>
+</td></tr>
+<tr><td><p><a name="7611"></a>
+<em>icn_increment</em></p>
+</td><td><p><a name="7613"></a>
+The increment used by the slider or thumbwheel.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<p><a name="7532"></a>
+If <em>icn_minimum_dfnd</em> and <em>icn_maximum_dfnd</em> are both <em>TRUE</em>, a slider is displayed beside the text field. Otherwise, a thumbwheel is displayed.</p>
+<a name="8317"></a>
+<h2> IMF_CAP_SETTING</h2>
+<a name="8318"></a>
+<h3> Definition</h3>
+<pre><a name="8345"></a><code>typedef struct imf_cap_setting<br>
+{<br>
+ &#32; &#32; &#32;U_SHORT &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imcs_code;<br>
+ &#32; &#32; &#32;union<br>
+ &#32; &#32; &#32;{<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;float &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imcs_number;<br>
+ &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imcs_list;<br>
+ &#32; &#32; &#32;} imcs_value;<br>
+} IMF_CAP_SETTING;
+</code></pre><a name="10249"></a>
+<h3> Purpose</h3>
+<p><a name="10250"></a>
+This structure is used to pass the current settings of the capabilities to your plug-in when opening a file.</p>
+<a name="8337"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="8322"></a>
+Field
+</th><th><a name="8324"></a>
+Description
+</th></tr>
+<tr><td><p><a name="8326"></a>
+<em>imcs_code</em></p>
+</td><td><p><a name="8328"></a>
+The <em>imc_code</em> of the setting.</p>
+</td></tr>
+<tr><td><p><a name="8330"></a>
+<em>imcs_number</em></p>
+</td><td><p><a name="8332"></a>
+Value if the capability is an <em>IMF_CAPABILITY_TYPE_NUMBER</em>.</p>
+</td></tr>
+<tr><td><p><a name="8334"></a>
+<em>imcs_list</em></p>
+</td><td><p><a name="8404"></a>
+Value if the capability is an <em>IMF_CAPABILITY_TYPE_LIST</em>. This is a zero-based index into the list.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="6589"></a>
+<h2> IMF_IMAGE</h2>
+<a name="7110"></a>
+<h3> Definition</h3>
+<pre><a name="328508"></a><code>typedef struct<br>
+{<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;usage;<br>
+ &#32; &#32; &#32;IMF_COLOR_RESPONSE &#32; &#32; &#32; &#32;curve;<br>
+ &#32; &#32; &#32;FMT_ASPECT_INFO &#32; &#32; &#32; &#32; &#32; &#32; &#32;aspect;<br>
+ &#32; &#32; &#32;WINDOW_I &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;window;<br>
+ &#32; &#32; &#32;WINDOW_I &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;active;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;chan_config;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;chan_orient;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*chan_format;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;chan_count;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;chan_type;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;chan_bits;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*matte_format;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;matte_count;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;matte_type;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;matte_bits;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*aux_format;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;aux_count;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;aux_type;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;aux_bits;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*index_format;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;index_count;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;index_type;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;index_bits;<br>
+} IMF_IMAGE;
+</code></pre><a name="10264"></a>
+<h3> Purpose</h3>
+<p><a name="10262"></a>
+<em>IMF_IMAGE</em> defines the contents of a single image from a file.</p>
+<a name="7177"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="7115"></a>
+Field
+</th><th><a name="7117"></a>
+Description
+</th></tr>
+<tr><td><p><a name="7119"></a>
+<em>usage</em></p>
+</td><td><p><a name="7121"></a>
+A bit field describing the image type: <em>IMF_C_IMAGE_ANY</em> for any image type; <em>IMF_C_GENERIC</em> for a generic image (the default set by <em>imf__init_ifd</em>); and <em>IMF_C_INDEX_LUT</em> for a look-up table-based image.</p>
+</td></tr>
+<tr><td><p><a name="7123"></a>
+<em>curve</em></p>
+</td><td><p><a name="7125"></a>
+Color correction information.</p>
+</td></tr>
+<tr><td><p><a name="7130"></a>
+<em>aspect</em></p>
+</td><td><p><a name="7132"></a>
+Image aspect information.</p>
+</td></tr>
+<tr><td><p><a name="7134"></a>
+<em>window</em></p>
+</td><td><p><a name="7136"></a>
+Image window boundaries, using zero-based numbers.</p>
+</td></tr>
+<tr><td><p><a name="7138"></a>
+<em>active</em></p>
+</td><td><p><a name="7140"></a>
+Active window boundaries.</p>
+</td></tr>
+<tr><td><p><a name="7142"></a>
+<em>chan_config</em></p>
+</td><td><p><a name="7144"></a>
+Channel planarity. This affects how scanline data is passed to the scanline reading and writing functions. One of <em>IMF_C_PLANAR_CONTIGUOUS</em> for red, green, and blue in one large scanline buffer with values arranged in R, G, B, R, G, B, etc. order; or, <em>IMF_C_PLANAR_SEPARATE</em> for red, green, and blue in separate arrays (normally used).</p>
+</td></tr>
+<tr><td><p><a name="7146"></a>
+<em>chan_orient</em></p>
+</td><td><p><a name="7148"></a>
+Channel orientation: <em>IMF_C_ORIENT_BOT_LEFT</em> for bottom-to-top ordering; or <em>IMF_C_ORIENT_TOP_LEFT</em> for top-to-bottom ordering.</p>
+</td></tr>
+<tr><td><p><a name="7150"></a>
+<em>chan_format</em></p>
+</td><td><p><a name="7152"></a>
+Color channel format.</p>
+</td></tr>
+<tr><td><p><a name="7154"></a>
+<em>chan_count</em></p>
+</td><td><p><a name="7156"></a>
+The number of color channels.</p>
+</td></tr>
+<tr><td><p><a name="7158"></a>
+<em>chan_type</em></p>
+</td><td><p><a name="7160"></a>
+Color channel storage type: <em>IMF_C_INTEGER</em> for positive integer values (the default value assigned by <em>imf__init_ifd</em>); <em>IMF_C_FLOAT</em> for single-precision <em>float</em> values; <em>IMF_C_DOUBLE</em> for double-precision <em>double</em> values.</p>
+</td></tr>
+<tr><td><p><a name="7162"></a>
+<em>chan_bits</em></p>
+</td><td><p><a name="7164"></a>
+Number of bits per color channel value.</p>
+</td></tr>
+<tr><td><p><a name="8735"></a>
+<em>matte_format</em></p>
+</td><td><p><a name="8737"></a>
+Matte channel format.</p>
+</td></tr>
+<tr><td><p><a name="8739"></a>
+<em>matte_count</em></p>
+</td><td><p><a name="8741"></a>
+The number of matte channels.</p>
+</td></tr>
+<tr><td><p><a name="8743"></a>
+<em>matte_type</em></p>
+</td><td><p><a name="8745"></a>
+Matte channel storage type: <em>IMF_C_INTEGER</em> for positive integer values (the default value assigned by <em>imf__init_ifd</em>); <em>IMF_C_FLOAT</em> for single-precision <em>float</em> values; <em>IMF_C_DOUBLE</em> for double-precision <em>double</em> values.</p>
+</td></tr>
+<tr><td><p><a name="8750"></a>
+<em>matte_bits</em></p>
+</td><td><p><a name="8752"></a>
+Number of bits per matte channel value.</p>
+</td></tr>
+<tr><td><p><a name="8787"></a>
+<em>aux_format</em></p>
+</td><td><p><a name="8789"></a>
+Auxiliary (z) channel format.</p>
+</td></tr>
+<tr><td><p><a name="8783"></a>
+<em>aux_count</em></p>
+</td><td><p><a name="8785"></a>
+The number of (z) auxiliary channels.</p>
+</td></tr>
+<tr><td><p><a name="8776"></a>
+<em>aux_type</em></p>
+</td><td><p><a name="8778"></a>
+Auxiliary (z) channel storage type: <em>IMF_C_INTEGER</em> for positive integer values (the default value assigned by <em>imf__init_ifd</em>); <em>IMF_C_FLOAT</em> for single-precision <em>float</em> values; <em>IMF_C_DOUBLE</em> for double-precision <em>double</em> values.</p>
+</td></tr>
+<tr><td><p><a name="8772"></a>
+<em>aux_bits</em></p>
+</td><td><p><a name="8774"></a>
+Number of bits per auxiliary (z) channel value.</p>
+</td></tr>
+<tr><td><p><a name="8826"></a>
+<em>index_format</em></p>
+</td><td><p><a name="8828"></a>
+Color index format.</p>
+</td></tr>
+<tr><td><p><a name="8822"></a>
+<em>index_count</em></p>
+</td><td><p><a name="8824"></a>
+The number of color-indexed image data channels.</p>
+</td></tr>
+<tr><td><p><a name="8815"></a>
+<em>index_type</em></p>
+</td><td><p><a name="8817"></a>
+Color-indexed data channel storage type: <em>IMF_C_INTEGER</em> for positive integer values (the default value assigned by <em>imf__init_ifd</em>); <em>IMF_C_FLOAT</em> for single-precision <em>float</em> values; <em>IMF_C_DOUBLE</em> for double-precision <em>double</em> values.</p>
+</td></tr>
+<tr><td><p><a name="8811"></a>
+<em>index_bits</em></p>
+</td><td><p><a name="8813"></a>
+Number of bits per pixel for palette indexes.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="6599"></a>
+<h2> IMF_INFO</h2>
+<a name="6848"></a>
+<h3> Definition</h3>
+<pre><a name="328598"></a><code>typedef struct<br>
+{<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*key;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*handle;<br>
+ &#32; &#32; &#32;BOOLEAN &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;handle_complete;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*name;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*ext;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*desc;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*program;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*machine;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*user;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*date;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*time;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*filter;<br>
+ &#32; &#32; &#32;char &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*compress;<br>
+ &#32; &#32; &#32;IMF_CAP_SETTING &#32; &#32; &#32; &#32; &#32; &#32;**settings;<br>
+ &#32; &#32; &#32;BOOLEAN &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;lut_exists;<br>
+ &#32; &#32; &#32;IMF_LUT &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*write_lut;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;job_num;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;frame;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;field;<br>
+ &#32; &#32; &#32;U_LONG &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;init_flag;<br>
+ &#32; &#32; &#32;COLOR_XYZ_3F &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;red_pri;<br>
+ &#32; &#32; &#32;COLOR_XYZ_3F &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;green_pri;<br>
+ &#32; &#32; &#32;COLOR_XYZ_3F &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;blue_pri;<br>
+ &#32; &#32; &#32;COLOR_XYZ_3F &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;white_pt;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;count;<br>
+ &#32; &#32; &#32;IMF_IMAGE &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*image;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;track_num_frames;<br>
+ &#32; &#32; &#32;float &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;track_frame_rate;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;track_start_frame;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;num_audio_tracks;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;num_video_tracks;<br>
+} IMF_INFO;
+</code></pre><a name="10272"></a>
+<h3> Purpose</h3>
+<p><a name="10275"></a>
+Contains information describing the image file.</p>
+<a name="6916"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="6854"></a>
+Field
+</th><th><a name="6856"></a>
+Description
+</th></tr>
+<tr><td><p><a name="6858"></a>
+<em>key</em></p>
+</td><td><p><a name="6860"></a>
+The plug-in's unique identifier key.</p>
+</td></tr>
+<tr><td><p><a name="6862"></a>
+<em>handle</em></p>
+</td><td><p><a name="6864"></a>
+Filename of the image.</p>
+</td></tr>
+<tr><td><p><a name="6869"></a>
+<em>handle_complete</em></p>
+</td><td><p><a name="6871"></a>
+Is <em>handle</em> completely built? If <em>FALSE</em>, your plug-in should use <em>imf__build_handle</em> to build a complete filename path.</p>
+</td></tr>
+<tr><td><p><a name="6873"></a>
+<em>name</em></p>
+</td><td><p><a name="6875"></a>
+The name of the image file.</p>
+</td></tr>
+<tr><td><p><a name="6877"></a>
+<em>ext</em></p>
+</td><td><p><a name="6879"></a>
+The filename extension.</p>
+</td></tr>
+<tr><td><p><a name="6881"></a>
+<em>desc</em></p>
+</td><td><p><a name="6883"></a>
+A description of the image file type.</p>
+</td></tr>
+<tr><td><p><a name="6885"></a>
+<em>program</em></p>
+</td><td><p><a name="6887"></a>
+The program that created the image.</p>
+</td></tr>
+<tr><td><p><a name="6889"></a>
+<em>machine</em></p>
+</td><td><p><a name="6891"></a>
+The machine on which the image was created.</p>
+</td></tr>
+<tr><td><p><a name="6893"></a>
+<em>user</em></p>
+</td><td><p><a name="6895"></a>
+The user who created the image.</p>
+</td></tr>
+<tr><td><p><a name="6897"></a>
+<em>date</em></p>
+</td><td><p><a name="6899"></a>
+The creation date of the image.</p>
+</td></tr>
+<tr><td><p><a name="6901"></a>
+<em>time</em></p>
+</td><td><p><a name="6903"></a>
+The time taken to create the file.</p>
+</td></tr>
+<tr><td><p><a name="6905"></a>
+<em>filter</em></p>
+</td><td><p><a name="6907"></a>
+The filter function used by the image.</p>
+</td></tr>
+<tr><td><p><a name="6909"></a>
+<em>compress</em></p>
+</td><td><p><a name="6911"></a>
+The compression function used by the image.</p>
+</td></tr>
+<tr><td><p><a name="6913"></a>
+<em>settings</em></p>
+</td><td><p><a name="6915"></a>
+Capability settings set by the user.</p>
+</td></tr>
+<tr><td><p><a name="9015"></a>
+<em>lut_exists</em></p>
+</td><td><p><a name="9017"></a>
+<em>TRUE</em> if a look-up table (LUT) is used for the image data in the scanline buffers; <em>FALSE</em> if the data is RGB.</p>
+</td></tr>
+<tr><td><p><a name="9011"></a>
+<em>write_lut</em></p>
+</td><td><p><a name="9013"></a>
+Pointer to a LUT. Used only when writing palette-based image files.</p>
+</td></tr>
+<tr><td><p><a name="9007"></a>
+<em>job_num</em></p>
+</td><td><p><a name="9009"></a>
+Process job accounting information.</p>
+</td></tr>
+<tr><td><p><a name="9003"></a>
+<em>frame</em></p>
+</td><td><p><a name="9005"></a>
+The frame number.</p>
+</td></tr>
+<tr><td><p><a name="8999"></a>
+<em>field</em></p>
+</td><td><p><a name="9001"></a>
+Field rendering flag.</p>
+</td></tr>
+<tr><td><p><a name="8995"></a>
+<em>init_flag</em></p>
+</td><td><p><a name="8997"></a>
+Has the caller invoked <em>IMF_info_init</em>?</p>
+</td></tr>
+<tr><td><p><a name="8991"></a>
+<em>red_pri</em></p>
+</td><td><p><a name="8993"></a>
+Red chroma.</p>
+</td></tr>
+<tr><td><p><a name="8987"></a>
+<em>green_pri</em></p>
+</td><td><p><a name="8989"></a>
+Green chroma.</p>
+</td></tr>
+<tr><td><p><a name="8983"></a>
+<em>blue_pri</em></p>
+</td><td><p><a name="8985"></a>
+Blue chroma.</p>
+</td></tr>
+<tr><td><p><a name="8979"></a>
+<em>white_pt</em></p>
+</td><td><p><a name="8981"></a>
+White chroma.</p>
+</td></tr>
+<tr><td><p><a name="8975"></a>
+<em>count</em></p>
+</td><td><p><a name="8977"></a>
+The number of image sub headers pointed to by the <em>image</em> field.</p>
+</td></tr>
+<tr><td><p><a name="8971"></a>
+<em>image</em></p>
+</td><td><p><a name="8973"></a>
+An array of image sub headers containing detailed image information.</p>
+</td></tr>
+<tr><td><p><a name="8967"></a>
+<em>track_num_frames</em></p>
+</td><td><p><a name="8969"></a>
+The number of frames in the current track.</p>
+</td></tr>
+<tr><td><p><a name="8963"></a>
+<em>track_frame_rate</em></p>
+</td><td><p><a name="8965"></a>
+The number of frames per second for the track.</p>
+</td></tr>
+<tr><td><p><a name="8959"></a>
+<em>track_start_frame</em></p>
+</td><td><p><a name="8961"></a>
+The number of the first frame in the current track.</p>
+</td></tr>
+<tr><td><p><a name="8955"></a>
+<em>num_audio_tracks</em></p>
+</td><td><p><a name="8957"></a>
+The number of audio tracks in the current file.</p>
+</td></tr>
+<tr><td><p><a name="8951"></a>
+<em>num_video_tracks</em></p>
+</td><td><p><a name="8953"></a>
+The number of video tracks in the current file.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="8539"></a>
+<h2> IMF_LUT</h2>
+<a name="8540"></a>
+<h3> Definition</h3>
+<pre><a name="8583"></a><code>typedef struct imf_lut<br>
+{<br>
+ &#32; &#32; &#32;IMF_LUT_ENTRY &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*imu_lut;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imu_maximum;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imu_n_entries;<br>
+	float &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;imu_gamma;<br>
+} IMF_LUT;
+</code></pre><a name="10285"></a>
+<h3> Purpose</h3>
+<p><a name="10291"></a>
+This structure defines a look-up table (LUT).</p>
+<a name="8571"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="8544"></a>
+Field
+</th><th><a name="8546"></a>
+Description
+</th></tr>
+<tr><td><p><a name="8548"></a>
+<em>imu_lut</em></p>
+</td><td><p><a name="8550"></a>
+The look-up table entries.</p>
+</td></tr>
+<tr><td><p><a name="8552"></a>
+<em>imu_maximum</em></p>
+</td><td><p><a name="8554"></a>
+The maximum value that each LUT entry can contain.</p>
+</td></tr>
+<tr><td><p><a name="8556"></a>
+<em>imu_n_entries</em></p>
+</td><td><p><a name="8558"></a>
+The number of LUT entries pointed to by <em>imu_lut</em>.</p>
+</td></tr>
+<tr><td><p><a name="8560"></a>
+<em>imu_gamma</em></p>
+</td><td><p><a name="8566"></a>
+The gamma value of the LUT entries.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="8432"></a>
+<h2> IMF_LUT_ENTRY</h2>
+<a name="8433"></a>
+<h3> Definition</h3>
+<pre><a name="8468"></a><code>typedef struct imf_lut_entry<br>
+{<br>
+	U_SHORT					ile_red;<br>
+	U_SHORT					ile_green;<br>
+	U_SHORT					ile_blue;<br>
+	U_CHAR					ile_mode:7;<br>
+	U_CHAR					ile_transparent:1;<br>
+} IMF_LUT_ENTRY;
+</code></pre><a name="10297"></a>
+<h3> Purpose</h3>
+<p><a name="10304"></a>
+This structure defines one entry of a look-up table.</p>
+<a name="8452"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="8437"></a>
+Field
+</th><th><a name="8439"></a>
+Description
+</th></tr>
+<tr><td><p><a name="8441"></a>
+<em>ile_red</em></p>
+</td><td><p><a name="8443"></a>
+The red value of this entry.</p>
+</td></tr>
+<tr><td><p><a name="8445"></a>
+<em>ile_green</em></p>
+</td><td><p><a name="8447"></a>
+The green value of this entry.</p>
+</td></tr>
+<tr><td><p><a name="8449"></a>
+<em>ile_blue</em></p>
+</td><td><p><a name="8520"></a>
+The blue value of this entry.</p>
+</td></tr>
+<tr><td><p><a name="8512"></a>
+<em>ile_mode</em></p>
+</td><td><p><a name="8531"></a>
+<em>IMF_LUT_MODE_FREE</em> if the entry is unused; <em>IMF_LUT_MODE_LOCKED</em> if the entry is locked but usable; <em>IMF_LUT_MODE_RESERVED</em> if the entry is reserved and unusable; or <em>IMF_LUT_MODE_USED</em> if the entry is in use and is modifiable.</p>
+</td></tr>
+<tr><td><p><a name="8508"></a>
+<em>ile_transparent</em></p>
+</td><td><p><a name="8510"></a>
+Set to 0 if the entry is not transparent (i.e., opaque), and 1 if the entry is transparent.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="6593"></a>
+<h2> IMF_OBJECT</h2>
+<a name="21685"></a>
+<h3> Definition</h3>
+<pre><a name="328853"></a><code>typedef struct imf_object<br>
+{<br>
+ &#32; &#32; &#32;POINTER &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;*data;<br>
+ &#32; &#32; &#32;IMF_INFO &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;info;<br>
+ &#32; &#32; &#32;int &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;access;<br>
+ &#32; &#32; &#32;IMF_lutReadProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;lut_read;<br>
+ &#32; &#32; &#32;IMF_scanProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;scan;<br>
+ &#32; &#32; &#32;IMF_closeProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;close;<br>
+ &#32; &#32; &#32;IMF_playbackBindProc &#32; &#32; &#32; &#32; &#32; &#32;playback_bind;<br>
+ &#32; &#32; &#32;IMF_playbackGotoProc &#32; &#32; &#32; &#32; &#32; &#32;playback_goto;<br>
+ &#32; &#32; &#32;IMF_playbackPlayProc &#32; &#32; &#32; &#32; &#32; &#32;playback_play;<br>
+ &#32; &#32; &#32;IMF_playbackParamsProc &#32; &#32; &#32; &#32;playback_params;<br>
+ &#32; &#32; &#32;IMF_playbackStopProc &#32; &#32; &#32; &#32; &#32; &#32;playback_stop;<br>
+ &#32; &#32; &#32;IMF_getFrameProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;get_frame;<br>
+ &#32; &#32; &#32;IMF_getRasterProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;get_raster;<br>
+ &#32; &#32; &#32;IMF_getRegionProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;get region;<br>
+ &#32; &#32; &#32;IMF_setFrameProc &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32; &#32;set_frame;<br>
+} IMF_OBJECT;
+</code></pre><a name="10309"></a>
+<h3> Purpose</h3>
+<p><a name="10310"></a>
+This structure is used when calling <em>imageReadOpen</em> and <em>imageWriteOpen</em>.</p>
+<a name="6833"></a>
+<h3> Description 
+<Table Border="1">
+<caption></caption>
+<tr><th><a name="21689"></a>
+Field
+</th><th><a name="21691"></a>
+Description
+</th></tr>
+<tr><td><p><a name="21693"></a>
+<em>data</em></p>
+</td><td><p><a name="21695"></a>
+The private data associated with your image.</p>
+</td></tr>
+<tr><td><p><a name="21705"></a>
+<em>info</em></p>
+</td><td><p><a name="21707"></a>
+Image file information.</p>
+</td></tr>
+<tr><td><p><a name="6521"></a>
+<em>access</em></p>
+</td><td><p><a name="6523"></a>
+Image access type.</p>
+</td></tr>
+<tr><td><p><a name="6517"></a>
+<em>lut_read</em></p>
+</td><td><p><a name="6519"></a>
+Function that retrieves look-up table information from an image file.</p>
+</td></tr>
+<tr><td><p><a name="6513"></a>
+<em>scan</em></p>
+</td><td><p><a name="6615"></a>
+Your scanline access function.</p>
+</td></tr>
+<tr><td><p><a name="6509"></a>
+<em>close</em></p>
+</td><td><p><a name="6625"></a>
+Image close function.</p>
+</td></tr>
+<tr><td><p><a name="6505"></a>
+<em>playback_bind</em></p>
+</td><td><p><a name="6633"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6501"></a>
+<em>playback_goto</em></p>
+</td><td><p><a name="6648"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6497"></a>
+<em>playback_play</em></p>
+</td><td><p><a name="6659"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6493"></a>
+<em>playback_params</em></p>
+</td><td><p><a name="6669"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6489"></a>
+<em>playback_stop</em></p>
+</td><td><p><a name="6677"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6485"></a>
+<em>get_frame</em></p>
+</td><td><p><a name="6686"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6481"></a>
+<em>get_raster</em></p>
+</td><td><p><a name="6694"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="329583"></a>
+<em>get_region</em></p>
+</td><td><p><a name="329585"></a>
+Set to NULL.</p>
+</td></tr>
+<tr><td><p><a name="6477"></a>
+<em>set_frame</em></p>
+</td><td><p><a name="6705"></a>
+Set to NULL.</p>
+</td></tr>
+
+</Table>
+
+<Table>
+<tr><td>
+</Table>
+</h3>
+<a name="2296"></a>
+<h1> Compiling your plug-in</h1>
+<p><a name="2297"></a>
+Once you have written your plug-in, you need to compile it and create a DSO. For example, if the source code for your plug-in is called <em>my-plug-in.c</em>, use the following commands to build and test the DSO with Maya Composer:</p>
+<pre><a name="2298"></a><code>cc -c -O2 my-plug-in.c<br>
+ld -shared -check_registry<br>
+<br>
+/usr/local/wave/TVC3.5/bin/composer.locations<br>
+ &#32; &#32; &#32;-o MyPlugIn my-plug-in.o<br>
+mv MyPlugIn ~/composer/3.5/plug-ins/MyPlugIn
+</code></pre><a name="2299"></a>
+<h1> Solving problems</h1>
+<p><a name="2300"></a>
+Once you have compiled and created your DSO, you may encounter various problems when trying to execute it. The following list should help you.</p>
+<p><a name="2339"></a>
+<strong>Q</strong>. Maya Composer core dumps almost immediately after I start it.</p>
+<p><a name="325994"></a>
+<strong>A</strong>. Check that the plug-in was successfully compiled. If you are executing your Maya Composer application on a MIPS-1 computer, ensure that you did not compile the plug-in using <em>-mips2</em>.</p>
+<p><a name="2303"></a>
+<strong>Q</strong>. The changes that I made to my plug-in do not appear when I start Maya Composer again.</p>
+<p><a name="2304"></a>
+<strong>A</strong>. There is probably a naming conflict, with two different plug-ins having the same <em>imageName</em>. Ensure that your plug-in is the only one in the plug-in directory, and start the application again.</p>
+<p><a name="2307"></a>
+<strong>Q</strong>. My plug-in does not appear in any menu.</p>
+<p><a name="2308"></a>
+<strong>A</strong>. Verify that all of the mandatory entry points have been defined. Also try executing Maya Composer using the <em>-dso</em> command-line option. And remember that operators returning only numerical values (for exemple, Abs) do not appear in menus. </p>
+<p><a name="2359"></a>
+<strong>Q</strong>. How can I use <em>dbx </em>to debug my plug-in?</p>
+<p><a name="2360"></a>
+<strong>A</strong>. Run <em>dbx</em> against Maya Composer with all the plug-ins loaded. First log in as root and change permissions on the installed binary using the following command: </p>
+<p><a name="329965"></a>
+ chmod 0777 /usr/aw/TVC5.0/bin/vc</p>
+<p><a name="329966"></a>
+Inside <em>dbx</em>, run the application so all the plug-ins are loaded. Once the interface is displayed , CTRL-c <em>dbx</em> to stop it, and set your breakpoints by line number in your plug-in's source code. You cannot refer to function names such as <em>imageReadOpen</em>, since the same routine names are used in each plug-in.</p>
+<p><a name="329970"></a>
+<strong>Q.</strong> How do I debug a problem in my <em>eventInit()</em> routine?</p>
+<p><a name="330069"></a>
+<strong>A.</strong> Because <em>eventInit()</em> is invoked on application startup, debugging it does not work once you start Maya Composer. As a workaround, you can do the following:</p>
+<ol>
+<a name="330097"></a>
+<li>Add a <em>printf</em> statement in eventInit().
+<p><a name="330098"></a>
+<li>Start <em>dbx</em> with Maya Composer (for example, type: dbx /usr/aw/TVC5.0/bin/vc).
+<p><a name="330101"></a>
+<li>Set a breakpoint in printf.
+<p><pre><a name="330083"></a><code>
+</code></pre></ol>
+
+<hr><br>
+ 
+<a href="../MasterIndex.html"(html, name;"><IMG SRC="../images/gif_buttons/top.gif" border=0"></a><a href="index.html"(html, name);"><IMG SRC="../images/gif_buttons/contents.gif" border=0"></a>
+
+<hr><br>
+
+
+
+<address>
+<a href="mailto:composerdocs@aw.sgi.com">composerdocs@aw.sgi.com</a>
+</address>
+
+
+<i>Copyright &#169; 1999, Alias|Wavefront, a division of Silicon
+Graphics Limited.  All rights
+reserved.</i>
+
+
+<!-- Last updated: Wed May 19 23:11:26 1999 -->
+
+<!-- This document contains proprietary and confidential information of
+Alias|Wavefront, Inc. and is protected -->
+<!-- by Federal copyright law. The contents of this document may not be
+disclosed to third parties, translated, -->
+<!-- copied, or duplicated in any form, in whole or in part, without the
+express written permission of -->
+<!-- Alias|Wavefront, Inc. -->
+<!-- The information contained in this document is subject to change
+without notice. Neither Alias|Wavefront, -->
+<!-- Inc. nor its employees shall be responsible for incidental or
+consequential damages resulting from the use of -->
+<!-- this material or liable for technical or editorial omissions made
+herein. -->
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,143 @@
+#ifndef _HERROR_H_
+#define _HERROR_H_
+
+#define HERR_BASE			0xE0000000
+
+// fail code
+#define EINTERNAL			0
+#define EGENERALHACK		1
+#define ESPEEDHACK			2
+#define EMEMORYHACK			3
+#define EMACRO				4
+#define ENETWORK			5
+#define EMESSAGEHACK		6
+#define EFIREGUARDHACK		7
+
+// hacking
+#define HHACK_BASE			0x0
+
+//////////////////////////////////////////////////////////////////////////
+// internal errors
+//////////////////////////////////////////////////////////////////////////
+#define HERR_INTERNAL_BASE					HERR_BASE
+#define HERR_GENERALHACK_BASE				HERR_BASE + (EGENERALHACK	<< 16)
+#define HERR_SPEEDHACK_BASE					HERR_BASE + (ESPEEDHACK		<< 16)
+#define HERR_MEMORYHACK_BASE				HERR_BASE + (EMEMORYHACK	<< 16)
+#define HERR_MACRO_BASE						HERR_BASE + (EMACRO			<< 16)
+#define HERR_NETWORK_BASE					HERR_BASE + (ENETWORK		<< 16)
+#define HERR_MESSAGEHACK_BASE				HERR_BASE + (EMESSAGEHACK	<< 16)
+#define HERR_FIREGUARDHACK_BASE				HERR_BASE + (EFIREGUARDHACK	<< 16)
+
+
+#define HERR_FILE_OPEN_FAILED				HERR_INTERNAL_BASE + 0x1
+#define HERR_PARSE_EXPORT_FAILED			HERR_INTERNAL_BASE + 0x2
+#define HERR_GET_PROCESSNAME_FAILED			HERR_INTERNAL_BASE + 0x3
+#define HERR_GET_SYSTEM_PATH_FAILED			HERR_INTERNAL_BASE + 0x4
+#define HERR_LOAD_EXPORT_FAILED				HERR_INTERNAL_BASE + 0x5
+#define HERR_PARSE_IMPORT_FAILED			HERR_INTERNAL_BASE + 0x6
+
+#define	HERR_CANT_CREATE_EVENT				HERR_INTERNAL_BASE + 0x7
+#define	HERR_CANT_MODIFY_EVENT				HERR_INTERNAL_BASE + 0x8
+
+#define	HERR_LOGICAL_ERROR					HERR_INTERNAL_BASE + 0x9
+
+#define HERR_NOT_ENOUGH_MEMORY				HERR_INTERNAL_BASE + 0xA
+
+#define HERR_CREATE_PROCESS_FAILED			HERR_INTERNAL_BASE + 0xB
+#define HERR_DATETIME_IS_INVALID			HERR_INTERNAL_BASE + 0xC
+#define HERR_READ_RTC_FAILED				HERR_INTERNAL_BASE + 0xD
+#define HERR_FILE_COPY_FAILED				HERR_INTERNAL_BASE + 0xE
+
+#define HERR_GET_MODULENAME_FAILED			HERR_INTERNAL_BASE + 0xF
+#define HERR_SEARCH_PATH_FAILED				HERR_INTERNAL_BASE + 0x10
+
+#define HERR_SERVICE_MANAGER_OPEN_ERROR		HERR_INTERNAL_BASE + 0x11
+#define HERR_SERVICE_OPEN_ERROR				HERR_INTERNAL_BASE + 0x12
+#define HERR_CREATE_SERVICE_FAILED			HERR_INTERNAL_BASE + 0x13
+#define HERR_CHANGE_SERVICE_CONFIG_FAILED	HERR_INTERNAL_BASE + 0x14
+#define HERR_QUERY_SERVICE_STATUS_FAILED	HERR_INTERNAL_BASE + 0x15
+#define HERR_SERVICE_REQUEST_TIMEOUT		HERR_INTERNAL_BASE + 0x16
+#define HERR_SERVICE_START_FAILED			HERR_INTERNAL_BASE + 0x17
+
+#define HERR_DEVICE_OPEN_FAILED				HERR_INTERNAL_BASE + 0x18
+#define HERR_DEVICE_IO_FAILED				HERR_INTERNAL_BASE + 0x19
+
+#define HERR_TIMESRC_INIT_FAILED			HERR_INTERNAL_BASE + 0x1a
+#define HERR_TIMESRC_CHECKTIME_FAILED		HERR_INTERNAL_BASE + 0x1b
+
+// guard::Initialize 에러
+#define HERR_LOG_SYSTEM_INIT_FAILED			HERR_INTERNAL_BASE + 0x1c
+#define HERR_ENGINE_LOAD_FAILED				HERR_INTERNAL_BASE + 0x1d
+
+// protect::start 에러
+#define HERR_ERROR_SYSTEM_INIT_FAILED		HERR_INTERNAL_BASE + 0x1e
+#define HERR_CANT_START_THREAD				HERR_INTERNAL_BASE + 0x1f
+#define HERR_DIRTY_EXIT						HERR_INTERNAL_BASE + 0x20
+
+#define HERR_ALREADY_RUNNING				HERR_INTERNAL_BASE + 0x21
+
+#define HERR_INT_NOT_FOUND					HERR_INTERNAL_BASE + 0x22
+
+#define HERR_UNHANDLED_EXCEPTION			HERR_INTERNAL_BASE + 0x23
+
+#define	HERR_UPDATESERVER_DEAD				HERR_INTERNAL_BASE + 0x24
+#define HERR_UPDATE_TIMEOUT					HERR_INTERNAL_BASE + 0x25
+#define HERR_FILESYSTEM_FULL				HERR_INTERNAL_BASE + 0x26
+#define	HERR_FILE_LOCKED					HERR_INTERNAL_BASE + 0x27
+#define HERR_ACCESS_DENIED					HERR_INTERNAL_BASE + 0x28
+#define	HERR_UPDATE_GENERAL_ERROR			HERR_INTERNAL_BASE + 0x29
+
+#define HERR_UPDATE_DLL_LOAD_FAILED			HERR_INTERNAL_BASE + 0x2A
+#define HERR_UPDATE_GETINTERFACE_NOT_FOUND	HERR_INTERNAL_BASE + 0x2B
+#define HERR_UPDATE_NO_UPDATER1_INTERFACE	HERR_INTERNAL_BASE + 0x2C
+
+#define	HERR_ANOTHER_PROTECT_COLLISION		HERR_INTERNAL_BASE + 0x2D
+
+#define	HERR_UNKNOWN_API_ASEMCODE			HERR_INTERNAL_BASE + 0x2E
+
+#define	HERR_OS_WIN95						HERR_INTERNAL_BASE + 0x2F
+#define	HERR_OS_SAFE_MODE_BOOT				HERR_INTERNAL_BASE + 0x30
+
+#define	HERR_OS_RESOURCE_NOT_RELEASED		HERR_INTERNAL_BASE + 0x31
+#define	HERR_OS_REBOOT_NEEDED				HERR_INTERNAL_BASE + 0x32
+
+#define HERR_UNKNOWN_ERROR					HERR_INTERNAL_BASE + 0xff
+
+//////////////////////////////////////////////////////////////////////////
+// general hack
+//////////////////////////////////////////////////////////////////////////
+#define HHACK_DEBUGGER						HERR_GENERALHACK_BASE	+ HHACK_BASE + 0x0
+
+//////////////////////////////////////////////////////////////////////////
+// speed hack
+//////////////////////////////////////////////////////////////////////////
+#define HHACK_TIMEAPI_MODIFIED				HERR_SPEEDHACK_BASE		+ HHACK_BASE + 0x0
+#define HHACK_SPEED_FAST					HERR_SPEEDHACK_BASE		+ HHACK_BASE + 0x1
+
+//////////////////////////////////////////////////////////////////////////
+// memory hack
+//////////////////////////////////////////////////////////////////////////
+#define HHACK_MEMORYAPI_MODIFIED			HERR_MEMORYHACK_BASE	+ HHACK_BASE + 0x0
+
+//////////////////////////////////////////////////////////////////////////
+// fireguard hack
+//////////////////////////////////////////////////////////////////////////
+#define HHACK_FIREGUARDHACK_UNKNOWN			HERR_FIREGUARDHACK_BASE	+ HHACK_BASE + 0x0
+#define HHACK_PROCESS_TERMINATION			HERR_FIREGUARDHACK_BASE	+ HHACK_BASE + 0x1
+#define HHACK_CODE_MODIFICATION				HERR_FIREGUARDHACK_BASE	+ HHACK_BASE + 0x2
+
+//////////////////////////////////////////////////////////////////////////
+// RTC Init
+//////////////////////////////////////////////////////////////////////////
+#define HRTCINIT_SUCCESS						HHACK_BASE + 0x0
+#define HRTCINIT_FAIL							HHACK_BASE + 0x1
+#define HRTCINIT_ACCESS_DENIED					HHACK_BASE + 0x2
+#define HRTCINIT_INVALID_OWNER					HHACK_BASE + 0x3
+
+
+
+
+
+// #define MAKE_HERROR(fail_code, c)			( HERR_BASE | ((fail_code) << 16) | (c) )
+
+#endif	//_HERROR_H_

@@ -1,0 +1,420 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAMESERVER DIALOG DISCARDABLE  0, 0, 459, 484
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stand A long Server Ver0.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Server Infor",IDC_STATIC,7,6,273,33
+    LTEXT           ".Name:",IDC_STATIC,12,55,22,8
+    LTEXT           "<game name>",IDC_SERVER_NAME,42,55,48,8,NOT WS_GROUP
+    LTEXT           ".Running Time:",IDC_STATIC,12,14,52,8
+    LTEXT           "<servertime>",IDC_SERVER_TIME,66,13,48,8
+    LTEXT           ".Total Players:",IDC_STATIC,184,13,51,8
+    EDITTEXT        IDC_TOTALPLAYERS,241,13,10,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           ".Peak Players:",IDC_STATIC,184,25,51,8
+    EDITTEXT        IDC_PEAKPLAYERS,241,25,11,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        "Game Infor",IDC_STATIC,7,46,273,23
+    LTEXT           ".Players:",IDC_STATIC,110,85,26,8
+    EDITTEXT        IDC_GAME_PLAYERS,141,84,14,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           ".Time in Level:",IDC_STATIC,12,25,49,8
+    LTEXT           "<leveltime>",IDC_TIMEINLEVEL,66,25,38,8
+    LTEXT           ".Average Ping:",IDC_STATIC,184,56,51,8
+    EDITTEXT        IDC_AVERAGEPING,241,56,20,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        "Player List",IDC_STATIC,7,106,274,157
+    CONTROL         "List1",IDC_PLAYERS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,12,119,263,135
+    PUSHBUTTON      "&Boot",IDC_PLAYER_BOOT,9,452,60,14,WS_DISABLED
+    GROUPBOX        "Level List",IDC_STATIC,288,5,164,257
+    CONTROL         "List1",IDC_LEVELS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    WS_BORDER | WS_TABSTOP,294,17,151,236
+    PUSHBUTTON      "Next Level",IDC_COMMANDS_NEXTLEVEL,222,452,45,16
+    PUSHBUTTON      "Select Level",IDC_COMMANDS_SELLEVEL,271,452,48,16
+    PUSHBUTTON      "서버 중지",IDC_STOPSERVER,149,451,48,17
+    GROUPBOX        "출력Console BOX",IDC_STATIC,7,265,445,100
+    EDITTEXT        IDC_CONSOLE_COMMAND,12,382,433,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "지우기",IDC_CONSOLE_CLEAR,396,452,52,14
+    EDITTEXT        IDC_CONSOLE_WINDOW,12,278,433,79,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "서버 시작",IDC_STARTUP,95,451,50,17
+    PUSHBUTTON      "메세지보내기",IDC_CONSOLE_SEND,344,452,49,14
+    GROUPBOX        "GameType 정보",IDC_STATIC,7,74,273,25
+    LTEXT           ".GameType:",IDC_STATIC,12,85,40,8
+    LTEXT           "<gametype>",IDC_GAME_TYPE,57,87,49,8,NOT WS_GROUP
+    LTEXT           "<Number>",IDC_NUM_PLAYERS,247,86,31,8,NOT WS_GROUP
+    LTEXT           ".현재 플레이어 번호:",IDC_STATIC,184,86,60,8
+    GROUPBOX        "입력Console BOX",IDC_STATIC,7,369,445,36
+    GROUPBOX        "Player Boot",IDC_STATIC,6,441,68,31
+    GROUPBOX        "서버 제어 버튼",IDC_STATIC,91,442,111,30
+    GROUPBOX        "메세지 제어 버튼",IDC_STATIC,339,441,113,31
+    GROUPBOX        "Map 제어 버튼",IDC_STATIC,218,441,106,32
+    GROUPBOX        "SERVER IP 설정",IDC_STATIC,7,410,109,26
+    GROUPBOX        "SERVER PORT 설정",IDC_STATIC,122,410,73,25
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    12,419,100,12
+    COMBOBOX        IDC_COMBO2,128,418,58,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "SERVER IP,PORT 설정 Button",IDC_STATIC,219,410,125,25
+    PUSHBUTTON      "IP설정OK",IDC_BUTTON1,223,418,61,14
+    PUSHBUTTON      "PORT설정OK",IDC_BUTTON2,289,418,50,14
+END
+
+IDD_SELECTCONFIG DIALOG DISCARDABLE  0, 0, 145, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ServerSetting File Load BOX"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "설정File Load",IDOK,11,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,56,50,14
+    COMBOBOX        IDC_CONFIG,11,23,122,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Server설정파일Load",IDC_STATIC,7,7,131,41
+    GROUPBOX        "",IDC_STATIC,7,47,131,27
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GAMESERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 477
+    END
+
+    IDD_SELECTCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NOLF                BITMAP  DISCARDABLE     "res\\bmp\\ServerApp.bmp"
+IDB_BACKU               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\BackU.bmp"
+IDB_BACKD               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\BackD.bmp"
+IDB_BACKF               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\BackF.bmp"
+IDB_BACKX               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\BackX.bmp"
+IDB_OKX                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\OKX.bmp"
+IDB_OKF                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\OkF.bmp"
+IDB_OKU                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\OKU.bmp"
+IDB_OKD                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\OKD.bmp"
+IDB_CANCELX             BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\CancelX.bmp"
+IDB_CANCELF             BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\CancelF.bmp"
+IDB_CANCELU             BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\CancelU.bmp"
+IDB_CANCELD             BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\CancelD.bmp"
+IDB_PLAYX               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\PlayX.bmp"
+IDB_PLAYF               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\PlayF.bmp"
+IDB_PLAYU               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\PlayU.bmp"
+IDB_PLAYD               BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\PlayD.bmp"
+IDB_MAINBACKGROUND      BITMAP  DISCARDABLE     "res\\bmp\\MainBackground.bmp"
+CHECKBOXN               BITMAP  DISCARDABLE     "res\\bmp\\CheckBoxN.bmp"
+CHECKBOXF               BITMAP  DISCARDABLE     "res\\bmp\\CheckBoxF.bmp"
+CHECKBOXC               BITMAP  DISCARDABLE     "res\\bmp\\CheckBoxC.bmp"
+IDB_SLDRBACKGROUND      BITMAP  DISCARDABLE     "res\\bmp\\SliderBackground.bmp"
+ADDX                    BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddX.bmp"
+ADDF                    BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddF.bmp"
+ADDU                    BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddU.bmp"
+ADDD                    BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddD.bmp"
+ADDALLX                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddAllX.bmp"
+ADDALLF                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddAllF.bmp"
+ADDALLU                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddAllU.bmp"
+ADDALLD                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\AddAllD.bmp"
+REMOVEX                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveX.bmp"
+REMOVEF                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveF.bmp"
+REMOVEU                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveU.bmp"
+REMOVED                 BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveD.bmp"
+REMOVEALLX              BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveAllX.bmp"
+REMOVEALLF              BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveAllF.bmp"
+REMOVEALLU              BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveAllU.bmp"
+REMOVEALLD              BITMAP  DISCARDABLE     "res\\bmp\\Language\\English\\RemoveAllD.bmp"
+IDB_DOWNARROWU          BITMAP  DISCARDABLE     "res\\bmp\\DownArrowU.bmp"
+IDB_DOWNARROWF          BITMAP  DISCARDABLE     "res\\bmp\\DownArrowF.bmp"
+IDB_DOWNARROWD          BITMAP  DISCARDABLE     "res\\bmp\\DownArrowD.bmp"
+IDB_SLDRTHUMBU          BITMAP  DISCARDABLE     "res\\bmp\\SliderThumbU.bmp"
+IDB_SLDRTHUMBF          BITMAP  DISCARDABLE     "res\\bmp\\SliderThumbF.bmp"
+IDB_SLDRTHUMBD          BITMAP  DISCARDABLE     "res\\bmp\\SliderThumbD.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\ServerApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ServerApp.ico"
+IDI_SELECTED            ICON    DISCARDABLE     "res\\icon1.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "monolith@lith.com\0"
+            VALUE "CompanyName", "Monolith Productions Inc.\0"
+            VALUE "FileDescription", "NOLF Stand-Alone Server\0"
+            VALUE "FileVersion", "1, 0, 0, 2\0"
+            VALUE "InternalName", "NolfServ\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000, Monolith Productions, Inc.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NolfServ.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NOLF\0"
+            VALUE "ProductVersion", "1, 0, 0, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_LOADREZ       "ERROR - Unable to load resources."
+    IDS_ERROR_MEMORY        "ERROR - Out of memory.  The server will be shutdown."
+    IDS_ERROR_BINARIES      "ERROR - Unable to load the game binaries."
+    IDS_ERROR_CANTSTARTSERVER "ERROR - Unable to start server."
+    IDS_ERROR_LOADWORLD     "ERROR - Unable to load the selected map."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONSOLE_SERVERSTOPPED "Server stopped."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_GENERIC      "ERROR - Unable to setup the network game server."
+    IDS_NETERR_SELECTSERVICE 
+                            "ERROR - Unable to use the selected network service."
+    IDS_NETERR_FILLSERVICE  "ERROR - Unable to access the available network services."
+    IDS_NETERR_JOINSESSION  "ERROR - Unable to join the selected game session."
+    IDS_NETERR_HOSTSESSION  "ERROR - Unable to host the game session."
+    IDS_NETERR_INIT         "ERROR - Unable to initialize the networking system."
+    IDS_NETERR_SETNETSERVICE "ERROR - Unable to set the network service."
+    IDS_APPREGNAME          "The Operative 2"
+    IDS_APPNAME             "ServerApp"
+    IDS_GAMEREZ             "game"
+    IDS_NETERR_NOCONFIGS    "ERROR - No server configuration file.  A configuration file must be setup inside the game menus and selected for the server."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CHECKEXIT           "Are you sure you want to stop the server?"
+    IDS_CONSOLE_INITSERVER  "Initializing the server..."
+    IDS_CONSOLE_SERVERINITED "Server initialized."
+    IDS_CONSOLE_UNABLETOHOST "ERROR - Unable to host the game."
+    IDS_CONSOLE_SERVERRUNNING "Server is running."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEFAULT_SESSION_NAME "Good vs. Evil"
+    IDS_ERROR_WORLDS        "ERROR - Unable to get world list from server."
+    IDS_COLUMNHEADER_NAME   "Name"
+    IDS_COLUMNHEADER_PING   "Ping"
+    IDS_COLUMNHEADER_KILLS  "Kills"
+    IDS_COLUMNHEADER_WORLD  "World"
+    IDS_COOPASSAULT         "H.A.R.M. vs. UNITY"
+    IDS_DEATHMATCH          "Deathmatch"
+    IDS_RETAIL              "Retail"
+    IDS_CUSTOM              "Custom"
+    IDS_NONE                "None"
+    IDS_COLUMNHEADER_TIMEONSERVER "Time"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SERVER              "Server"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WIZARDCAPTION       "TO2 Server Setup Wizard"
+    IDS_ERROR_CANTSAVEOPTIONS 
+                            "ERROR - Unable to save the options into autoexec.cfg."
+    IDS_NEWPLAYER           "<Incoming Player>"
+    IDS_56K                 "56k Modem"
+    IDS_CABLE               "Cable"
+    IDS_DSL                 "DSL"
+    IDS_T1                  "T1"
+    IDS_T3                  "T3"
+    IDS_LBL_SESSIONNAME     "Session Name:"
+    IDS_LBL_GAMETYPE        "Game Type:"
+    IDS_LBL_MAXPLAYERS      "Max Players:"
+    IDS_LBL_PORT            "Port:"
+    IDS_LBL_BANDWIDTH       "Bandwidth:"
+    IDS_LBL_BYTESPERSEC     "bytes/sec"
+    IDS_LBL_PASSWORD        "Password:"
+    IDS_LBL_RUNSPEED        "RunSpeed:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LBL_DEFWEAPON       "Default Weapon:"
+    IDS_LBL_AHBONUS         "Armor Health Bonus:"
+    IDS_LBL_FALLDAMAGE      "Fall Damege:"
+    IDS_LBL_RESPAWNSCALE    "Respawn Scale:"
+    IDS_LBL_LEC             "Level Ending Condition:"
+    IDS_LBL_FRAGLIMIT       "Frag Limit:"
+    IDS_LBL_TIMELIMIT       "Time Limit:"
+    IDS_LBL_WINSCORE        "Winning Score:"
+    IDS_LBL_INTELLSCORE     "Intelligence Score:"
+    IDS_LBL_AUDIOTAUNTS     "Audio Taunts"
+    IDS_LBL_LOCATIONDAMAGE  "Location Damage"
+    IDS_LBL_WEAPONSSTAY     "Weapons Stay"
+    IDS_LBL_FRIENDLYFIRE    "Friendly Fire"
+    IDS_LBL_FRAGSCORING     "Frag Scoring"
+    IDS_LBL_MAPLIST         "Map List:"
+    IDS_LBL_SELECTEDMAPS    "Selected Maps:"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\ServerApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1721 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ltmem - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\..\libs\stdlith" /I "..\..\sdk\inc" /I "..\..\runtime\shared\src" /I "..\..\runtime\kernel\src" /I "..\..\runtime\kernel\mem\src" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"..\..\built\debug\libs\ltmem/" /Fp"..\..\built\debug\libs\ltmem/ltmem.pch" /Yu"stdafx.h" /Fo"..\..\built\debug\libs\ltmem/" /Fd"..\..\built\debug\libs\ltmem/" /FD /GZ /c 
+"D:\Working\ENGINE\libs\ltmem\ltmem.cpp"
+"D:\Working\ENGINE\libs\ltmem\ltmemdebug.cpp"
+"D:\Working\ENGINE\libs\ltmem\ltmemheap.cpp"
+"D:\Working\ENGINE\libs\ltmem\ltmemstats.cpp"
+"D:\Working\ENGINE\libs\ltmem\ltmemtrack.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP24.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP25.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\..\libs\stdlith" /I "..\..\sdk\inc" /I "..\..\runtime\shared\src" /I "..\..\runtime\kernel\src" /I "..\..\runtime\kernel\mem\src" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"..\..\built\debug\libs\ltmem/" /Fp"..\..\built\debug\libs\ltmem/ltmem.pch" /Yc"stdafx.h" /Fo"..\..\built\debug\libs\ltmem/" /Fd"..\..\built\debug\libs\ltmem/" /FD /GZ /c 
+"D:\Working\ENGINE\libs\ltmem\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP25.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /out:"..\..\built\debug\libs\ltmem\ltmem.lib" 
+\Working\ENGINE\built\debug\libs\ltmem\ltmem.obj
+\Working\ENGINE\built\debug\libs\ltmem\ltmemdebug.obj
+\Working\ENGINE\built\debug\libs\ltmem\ltmemheap.obj
+\Working\ENGINE\built\debug\libs\ltmem\ltmemstats.obj
+\Working\ENGINE\built\debug\libs\ltmem\ltmemtrack.obj
+\Working\ENGINE\built\debug\libs\ltmem\StdAfx.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP26.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ltmem.cpp
+ltmemdebug.cpp
+ltmemheap.cpp
+ltmemstats.cpp
+ltmemtrack.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: DLL_LTEnglish - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\built\Debug\Runtime\DLL_LTEnglish/ltenglish.res" /d "_DEBUG" "D:\Working\ENGINE\runtime\winbuild\ltenglish\ltenglish.rc"" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\built\Debug\Runtime\DLL_LTEnglish/" /Fp"..\..\..\built\Debug\Runtime\DLL_LTEnglish/DLL_LTEnglish.pch" /YX /Fo"..\..\..\built\Debug\Runtime\DLL_LTEnglish/" /Fd"..\..\..\built\Debug\Runtime\DLL_LTEnglish/" /FD /c 
+"D:\Working\ENGINE\runtime\winbuild\ltenglish\Init.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP27.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP28.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\..\built\Debug\Runtime\DLL_LTEnglish/ltmsg.pdb" /debug /machine:I386 /out:"..\..\..\built\Debug\Runtime\DLL_LTEnglish\ltmsg.dll" /implib:"..\..\..\built\Debug\Runtime\DLL_LTEnglish/ltmsg.lib" /pdbtype:sept 
+\Working\ENGINE\built\Debug\Runtime\DLL_LTEnglish\Init.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_LTEnglish\ltenglish.res
+..\..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP28.tmp"
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP29.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Debug\Runtime\DLL_LTEnglish\ltmsg.dll ..\..\..\..\development\SA
+copy \Working\ENGINE\built\Debug\Runtime\DLL_LTEnglish\ltmsg.dll ..\..\..\..\development\SA
+]
+Creating command line "C:\DOCUME~1\int\LOCALS~1\Temp\RSP29.bat"
+Compiling resources...
+Compiling...
+Init.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Debug\Runtime\DLL_LTEnglish\ltmsg.dll
+copy \Working\ENGINE\built\Debug\Runtime\DLL_LTEnglish\ltmsg.dll ..\..\..\..\development\SA
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+ltmsg.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Lib_Lith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\..\Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\built\Debug\Lib_Lith/" /Fp"..\built\Debug\Lib_Lith/Lib_Lith.pch" /YX /Fo"..\built\Debug\Lib_Lith/" /Fd"..\built\Debug\Lib_Lith/" /FD /GZ /c 
+"D:\Working\libs\lith\basehash.cpp"
+"D:\Working\libs\lith\baselist.cpp"
+"D:\Working\libs\lith\baselistcounter.cpp"
+"D:\Working\libs\lith\dprintf.cpp"
+"D:\Working\libs\lith\lith.cpp"
+"D:\Working\libs\lith\lithbaselist.cpp"
+"D:\Working\libs\lith\lithchunkallocator.cpp"
+"D:\Working\libs\lith\lithsimpary.cpp"
+"D:\Working\libs\lith\lithsimparystat.cpp"
+"D:\Working\libs\lith\virtlist.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP2B.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP2C.tmp" with contents
+[
+/nologo /out:"..\built\Debug\Lib_Lith\Lib_Lith.lib" 
+\Working\libs\built\Debug\Lib_Lith\basehash.obj
+\Working\libs\built\Debug\Lib_Lith\baselist.obj
+\Working\libs\built\Debug\Lib_Lith\baselistcounter.obj
+\Working\libs\built\Debug\Lib_Lith\dprintf.obj
+\Working\libs\built\Debug\Lib_Lith\lith.obj
+\Working\libs\built\Debug\Lib_Lith\lithbaselist.obj
+\Working\libs\built\Debug\Lib_Lith\lithchunkallocator.obj
+\Working\libs\built\Debug\Lib_Lith\lithsimpary.obj
+\Working\libs\built\Debug\Lib_Lith\lithsimparystat.obj
+\Working\libs\built\Debug\Lib_Lith\virtlist.obj
+..\..\ENGINE\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP2C.tmp"
+<h3>Output Window</h3>
+Compiling...
+basehash.cpp
+baselist.cpp
+baselistcounter.cpp
+dprintf.cpp
+lith.cpp
+lithbaselist.cpp
+lithchunkallocator.cpp
+lithsimpary.cpp
+lithsimparystat.cpp
+virtlist.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_RezMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP2D.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\libs\lith" /I "..\..\sdk\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\built\Debug\libs\Lib_RezMgr/" /Fp"..\..\built\Debug\libs\Lib_RezMgr/Lib_RezMgr.pch" /YX /Fo"..\..\built\Debug\libs\Lib_RezMgr/" /Fd"..\..\built\Debug\libs\Lib_RezMgr/" /FD /GZ /c 
+"D:\Working\ENGINE\libs\rezmgr\rezfile.cpp"
+"D:\Working\ENGINE\libs\rezmgr\rezhash.cpp"
+"D:\Working\ENGINE\libs\rezmgr\rezmgr.cpp"
+"D:\Working\ENGINE\libs\rezmgr\rezutils.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP2D.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP2E.tmp" with contents
+[
+/nologo /out:"..\..\built\Debug\libs\Lib_RezMgr\Lib_RezMgr.lib" 
+\Working\ENGINE\built\Debug\libs\Lib_RezMgr\rezfile.obj
+\Working\ENGINE\built\Debug\libs\Lib_RezMgr\rezhash.obj
+\Working\ENGINE\built\Debug\libs\Lib_RezMgr\rezmgr.obj
+\Working\ENGINE\built\Debug\libs\Lib_RezMgr\rezutils.obj
+..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP2E.tmp"
+<h3>Output Window</h3>
+Compiling...
+rezfile.cpp
+rezhash.cpp
+rezmgr.cpp
+rezutils.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_StdLith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP2F.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I ".\\" /I "..\STLPORT-4.0\STLPORT" /I "..\zlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\built\Debug\Lib_StdLith/" /Fp"..\built\Debug\Lib_StdLith/Lib_StdLith.pch" /YX /Fo"..\built\Debug\Lib_StdLith/" /Fd"..\built\Debug\Lib_StdLith/" /FD /GZ /c 
+"D:\Working\libs\stdlith\abstractio.cpp"
+"D:\Working\libs\stdlith\sys\win\compressedio.cpp"
+"D:\Working\libs\stdlith\dynarray.cpp"
+"D:\Working\libs\stdlith\fileio.cpp"
+"D:\Working\libs\stdlith\goodlinklist.cpp"
+"D:\Working\libs\stdlith\helpers.cpp"
+"D:\Working\libs\stdlith\l_allocator.cpp"
+"D:\Working\libs\stdlith\linklist.cpp"
+"D:\Working\libs\stdlith\lithexception.cpp"
+"D:\Working\libs\stdlith\memory.cpp"
+"D:\Working\libs\stdlith\memoryio.cpp"
+"D:\Working\libs\stdlith\stringholder.cpp"
+"D:\Working\libs\stdlith\struct_bank.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP2F.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP30.tmp" with contents
+[
+/nologo /out:"..\built\Debug\Lib_StdLith\Lib_StdLith.lib" 
+\Working\libs\built\Debug\Lib_StdLith\abstractio.obj
+\Working\libs\built\Debug\Lib_StdLith\compressedio.obj
+\Working\libs\built\Debug\Lib_StdLith\dynarray.obj
+\Working\libs\built\Debug\Lib_StdLith\fileio.obj
+\Working\libs\built\Debug\Lib_StdLith\goodlinklist.obj
+\Working\libs\built\Debug\Lib_StdLith\helpers.obj
+\Working\libs\built\Debug\Lib_StdLith\l_allocator.obj
+\Working\libs\built\Debug\Lib_StdLith\linklist.obj
+\Working\libs\built\Debug\Lib_StdLith\lithexception.obj
+\Working\libs\built\Debug\Lib_StdLith\memory.obj
+\Working\libs\built\Debug\Lib_StdLith\memoryio.obj
+\Working\libs\built\Debug\Lib_StdLith\stringholder.obj
+\Working\libs\built\Debug\Lib_StdLith\struct_bank.obj
+..\..\ENGINE\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP30.tmp"
+<h3>Output Window</h3>
+Compiling...
+abstractio.cpp
+compressedio.cpp
+dynarray.cpp
+fileio.cpp
+goodlinklist.cpp
+helpers.cpp
+l_allocator.cpp
+linklist.cpp
+lithexception.cpp
+memory.cpp
+memoryio.cpp
+stringholder.cpp
+struct_bank.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_Info - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP31.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\libltinfo" /I "..\..\kernel\src" /I "..\..\shared\src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\built\Debug\Runtime\Lib_Info/" /Fp"..\..\..\built\Debug\Runtime\Lib_Info/Lib_Info.pch" /YX /Fo"..\..\..\built\Debug\Runtime\Lib_Info/" /Fd"..\..\..\built\Debug\Runtime\Lib_Info/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\info\src\outputredir.cpp"
+"D:\Working\ENGINE\runtime\info\src\sys\win32\outputredir_win32.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP31.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\built\Debug\Runtime\Lib_Info\libltinfo.lib"  \Working\ENGINE\built\Debug\Runtime\Lib_Info\outputredir.obj \Working\ENGINE\built\Debug\Runtime\Lib_Info\outputredir_win32.obj ..\..\..\built\debug\libs\ltmem\ltmem.lib "
+<h3>Output Window</h3>
+Compiling...
+outputredir.cpp
+outputredir_win32.cpp
+Creating library...
+<h3>
+--------------------Configuration: DLL_Server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\built\Debug\Runtime\DLL_Server/server.res" /d "_DEBUG" "D:\Working\ENGINE\runtime\winbuild\server\server.rc"" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP32.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\server\src" /I "..\..\physics\src" /I "..\..\client\src" /I "..\..\sound\src" /I "..\..\kernel\src" /I "..\..\shared\src\sys\win" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src\sys\win" /I "..\..\kernel\net\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\Shared\src" /I "..\..\Model\src" /I "." /I "..\..\kernel\net" /I "..\..\World\src" /I "..\..\..\..\libs\stdlith" /I "..\..\..\libs\rezmgr" /I "..\..\..\..\libs\lith" /I "..\..\crtcompat" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\lithtemplate" /I "..\..\distrobj\src" /I "..\..\..\sdk\inc\autoview" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "DE_SERVER_COMPILE" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "STDLITH_ALLOC_OVERRIDE" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\built\Debug\Runtime\DLL_Server/" /Fp"..\..\..\built\Debug\Runtime\DLL_Server/DLL_Server.pch" /Yu"bdefs.h" /Fo"..\..\..\built\Debug\Runtime\DLL_Server/" /Fd"..\..\..\built\Debug\Runtime\DLL_Server/" /FD /c 
+"D:\Working\ENGINE\runtime\model\src\animtracker.cpp"
+"D:\Working\ENGINE\runtime\shared\src\classbind.cpp"
+"D:\Working\ENGINE\runtime\server\src\classmgr.cpp"
+"D:\Working\ENGINE\runtime\shared\src\collision.cpp"
+"D:\Working\ENGINE\runtime\shared\src\compress.cpp"
+"D:\Working\ENGINE\runtime\shared\src\concommand.cpp"
+"D:\Working\ENGINE\runtime\shared\src\conparse.cpp"
+"D:\Working\ENGINE\runtime\model\src\sys\d3d\d3d_model_load.cpp"
+"D:\Working\ENGINE\runtime\world\src\de_mainworld.cpp"
+"D:\Working\ENGINE\runtime\world\src\de_objects.cpp"
+"D:\Working\ENGINE\runtime\shared\src\dhashtable.cpp"
+"D:\Working\ENGINE\runtime\shared\src\engine_vars.cpp"
+"D:\Working\ENGINE\runtime\shared\src\findobj.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ftserv.cpp"
+"D:\Working\ENGINE\runtime\world\src\fullintersectline.cpp"
+"D:\Working\ENGINE\runtime\server\src\game_serialize.cpp"
+"D:\Working\ENGINE\runtime\shared\src\gamemath.cpp"
+"D:\Working\ENGINE\runtime\shared\src\genericprop_setup.cpp"
+"D:\Working\ENGINE\runtime\shared\src\genltstream.cpp"
+"D:\Working\ENGINE\runtime\shared\src\geometry.cpp"
+"D:\Working\ENGINE\runtime\shared\src\geomroutines.cpp"
+"D:\Working\ENGINE\runtime\shared\src\impl_common.cpp"
+"D:\Working\ENGINE\runtime\server\src\interlink.cpp"
+"D:\Working\ENGINE\runtime\world\src\intersect_line.cpp"
+"D:\Working\ENGINE\runtime\world\src\intersectsweptsphere.cpp"
+"D:\Working\ENGINE\runtime\shared\src\leech.cpp"
+"D:\Working\ENGINE\runtime\world\src\light_table.cpp"
+"D:\Working\ENGINE\runtime\shared\src\lightmap_planes.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\localdriver.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ltmessage.cpp"
+"D:\Working\ENGINE\runtime\server\src\ltmessage_server.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\ltthread.cpp"
+"D:\Working\ENGINE\runtime\shared\src\lttimer.cpp"
+"D:\Working\ENGINE\runtime\model\src\model.cpp"
+"D:\Working\ENGINE\runtime\model\src\model_load.cpp"
+"D:\Working\ENGINE\runtime\model\src\modelallocations.cpp"
+"D:\Working\ENGINE\runtime\shared\src\motion.cpp"
+"D:\Working\ENGINE\runtime\shared\src\moveobject.cpp"
+"D:\Working\ENGINE\runtime\shared\src\moveplayer.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\netmgr.cpp"
+"D:\Working\ENGINE\runtime\shared\src\nexus.cpp"
+"D:\Working\ENGINE\runtime\shared\src\objectmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\packet.cpp"
+"D:\Working\ENGINE\runtime\shared\src\parse_world_info.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ratetracker.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_client.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_concommand.cpp"
+"D:\Working\ENGINE\runtime\server\src\S_Intersect.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_net.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_object.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_consolestate.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_extradata.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_filemgr.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_loaderthread.cpp"
+"D:\Working\ENGINE\runtime\server\src\serverde_impl.cpp"
+"D:\Working\ENGINE\runtime\server\src\serverevent.cpp"
+"D:\Working\ENGINE\runtime\server\src\servermgr.cpp"
+"D:\Working\ENGINE\runtime\server\src\sloaderthread.cpp"
+"D:\Working\ENGINE\runtime\server\src\smoveabstract.cpp"
+"D:\Working\ENGINE\runtime\sound\src\sounddata.cpp"
+"D:\Working\ENGINE\runtime\server\src\soundtrack.cpp"
+"D:\Working\ENGINE\runtime\shared\src\spritecontrolimpl.cpp"
+"D:\Working\ENGINE\runtime\shared\src\stacktrace.cpp"
+"D:\Working\ENGINE\runtime\shared\src\stdlterror.cpp"
+"D:\Working\ENGINE\runtime\shared\src\strtools.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\systeminfo.cpp"
+"D:\Working\ENGINE\runtime\model\src\transformmaker.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\sys\win\udpdriver.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_blocker_math.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_tree.cpp"
+"D:\Working\ENGINE\runtime\server\src\world_server_bsp.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_shared_bsp.cpp"
+"D:\Working\ENGINE\runtime\shared\src\modellt_impl.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltmodel.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltcommon.cpp"
+"D:\Working\ENGINE\runtime\shared\src\shared_iltcommon.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltsoundmgr.cpp"
+"D:\Working\ENGINE\runtime\shared\src\transformlt_impl.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltphysics.cpp"
+"D:\Working\ENGINE\runtime\shared\src\shared_iltphysics.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP32.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP33.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\server\src" /I "..\..\physics\src" /I "..\..\client\src" /I "..\..\sound\src" /I "..\..\kernel\src" /I "..\..\shared\src\sys\win" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src\sys\win" /I "..\..\kernel\net\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\Shared\src" /I "..\..\Model\src" /I "." /I "..\..\kernel\net" /I "..\..\World\src" /I "..\..\..\..\libs\stdlith" /I "..\..\..\libs\rezmgr" /I "..\..\..\..\libs\lith" /I "..\..\crtcompat" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\lithtemplate" /I "..\..\distrobj\src" /I "..\..\..\sdk\inc\autoview" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "DE_SERVER_COMPILE" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "STDLITH_ALLOC_OVERRIDE" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\built\Debug\Runtime\DLL_Server/" /Fo"..\..\..\built\Debug\Runtime\DLL_Server/" /Fd"..\..\..\built\Debug\Runtime\DLL_Server/" /FD /c 
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\bindmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\counter.cpp"
+"D:\Working\ENGINE\runtime\kernel\io\src\sys\win\de_file.cpp"
+"D:\Working\ENGINE\runtime\kernel\mem\src\sys\win\de_memory.cpp"
+"D:\Working\ENGINE\runtime\world\src\de_nodes.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\debugging.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\dsys_interface.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\dutil.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\lthread.cpp"
+"D:\Working\ENGINE\sdk\inc\ltmodule.cpp"
+"D:\Working\ENGINE\sdk\inc\ltobjref.cpp"
+"D:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\server_interface.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\streamsim.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\stringmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\timemgr.cpp"
+"D:\Working\ENGINE\runtime\sound\src\wave.cpp"
+"D:\Working\ENGINE\runtime\shared\src\interface_linkage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP33.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\server\src" /I "..\..\physics\src" /I "..\..\client\src" /I "..\..\sound\src" /I "..\..\kernel\src" /I "..\..\shared\src\sys\win" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src\sys\win" /I "..\..\kernel\net\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\Shared\src" /I "..\..\Model\src" /I "." /I "..\..\kernel\net" /I "..\..\World\src" /I "..\..\..\..\libs\stdlith" /I "..\..\..\libs\rezmgr" /I "..\..\..\..\libs\lith" /I "..\..\crtcompat" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\lithtemplate" /I "..\..\distrobj\src" /I "..\..\..\sdk\inc\autoview" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "DE_SERVER_COMPILE" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "STDLITH_ALLOC_OVERRIDE" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\built\Debug\Runtime\DLL_Server/" /Fp"..\..\..\built\Debug\Runtime\DLL_Server/DLL_Server.pch" /Yc"bdefs.h" /Fo"..\..\..\built\Debug\Runtime\DLL_Server/" /Fd"..\..\..\built\Debug\Runtime\DLL_Server/" /FD /c 
+"D:\Working\ENGINE\runtime\shared\src\bdefs.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP34.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+winmm.lib dxguid.lib dplayx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\..\built\Debug\Runtime\DLL_Server/server.pdb" /debug /machine:I386 /nodefaultlib:"libcd.lib" /nodefaultlib:"libc.lib" /nodefaultlib:"msvcrt.lib" /def:".\server.def" /out:"..\..\..\built\Debug\Runtime\DLL_Server\server.dll" /implib:"..\..\..\built\Debug\Runtime\DLL_Server/server.lib" /pdbtype:sept 
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\animtracker.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\bdefs.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\bindmgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\classbind.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\classmgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\collision.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\compress.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\concommand.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\conparse.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\counter.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\d3d_model_load.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\de_file.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\de_mainworld.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\de_memory.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\de_nodes.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\de_objects.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\debugging.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\dhashtable.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\dsys_interface.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\dutil.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\engine_vars.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\findobj.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ftserv.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\fullintersectline.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\game_serialize.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\gamemath.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\genericprop_setup.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\genltstream.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\geometry.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\geomroutines.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\impl_common.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\interlink.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\intersect_line.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\intersectsweptsphere.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\leech.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\light_table.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\lightmap_planes.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\localdriver.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\lthread.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ltmessage.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ltmessage_server.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ltmodule.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ltobjref.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ltquatbase.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ltthread.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\lttimer.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\model.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\model_load.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\modelallocations.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\motion.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\moveobject.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\moveplayer.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\netmgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\nexus.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\objectmgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\packet.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\parse_world_info.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\ratetracker.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\s_client.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\s_concommand.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\S_Intersect.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\s_net.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\s_object.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_consolestate.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_extradata.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_filemgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_interface.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_loaderthread.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\serverde_impl.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\serverevent.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\servermgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\sloaderthread.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\smoveabstract.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\sounddata.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\soundtrack.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\spritecontrolimpl.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\stacktrace.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\stdlterror.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\streamsim.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\stringmgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\strtools.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\systeminfo.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\timemgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\transformmaker.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\udpdriver.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\wave.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\world_blocker_math.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\world_tree.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\world_server_bsp.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\world_shared_bsp.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\modellt_impl.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_iltmodel.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_iltcommon.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\shared_iltcommon.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_iltsoundmgr.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\transformlt_impl.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server_iltphysics.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\shared_iltphysics.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\interface_linkage.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_Server\server.res
+..\..\..\..\Libs\built\Debug\Lib_StdLith\Lib_StdLith.lib
+..\..\..\built\Debug\libs\Lib_RezMgr\Lib_RezMgr.lib
+..\..\..\..\Libs\built\Debug\Lib_Lith\Lib_Lith.lib
+..\..\..\built\Debug\Runtime\Lib_Info\libltinfo.lib
+..\..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP35.tmp"
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP36.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Debug\Runtime\DLL_Server\server.dll ..\..\..\..\development\SA
+copy \Working\ENGINE\built\Debug\Runtime\DLL_Server\server.dll ..\..\..\..\development\SA
+]
+Creating command line "C:\DOCUME~1\int\LOCALS~1\Temp\RSP36.bat"
+Compiling resources...
+Compiling...
+bdefs.cpp
+Compiling...
+animtracker.cpp
+classbind.cpp
+classmgr.cpp
+collision.cpp
+compress.cpp
+concommand.cpp
+conparse.cpp
+d3d_model_load.cpp
+de_mainworld.cpp
+de_objects.cpp
+dhashtable.cpp
+engine_vars.cpp
+findobj.cpp
+ftserv.cpp
+fullintersectline.cpp
+game_serialize.cpp
+gamemath.cpp
+genericprop_setup.cpp
+genltstream.cpp
+geometry.cpp
+Generating Code...
+Compiling...
+geomroutines.cpp
+impl_common.cpp
+interlink.cpp
+intersect_line.cpp
+intersectsweptsphere.cpp
+leech.cpp
+light_table.cpp
+lightmap_planes.cpp
+localdriver.cpp
+ltmessage.cpp
+ltmessage_server.cpp
+ltthread.cpp
+lttimer.cpp
+model.cpp
+model_load.cpp
+modelallocations.cpp
+motion.cpp
+moveobject.cpp
+moveplayer.cpp
+netmgr.cpp
+Generating Code...
+Compiling...
+nexus.cpp
+objectmgr.cpp
+packet.cpp
+parse_world_info.cpp
+ratetracker.cpp
+s_client.cpp
+s_concommand.cpp
+S_Intersect.cpp
+s_net.cpp
+s_object.cpp
+server_consolestate.cpp
+server_extradata.cpp
+server_filemgr.cpp
+server_loaderthread.cpp
+serverde_impl.cpp
+serverevent.cpp
+servermgr.cpp
+sloaderthread.cpp
+smoveabstract.cpp
+sounddata.cpp
+Generating Code...
+Compiling...
+soundtrack.cpp
+spritecontrolimpl.cpp
+stacktrace.cpp
+stdlterror.cpp
+strtools.cpp
+systeminfo.cpp
+transformmaker.cpp
+udpdriver.cpp
+world_blocker_math.cpp
+world_tree.cpp
+world_server_bsp.cpp
+world_shared_bsp.cpp
+modellt_impl.cpp
+server_iltmodel.cpp
+server_iltcommon.cpp
+shared_iltcommon.cpp
+server_iltsoundmgr.cpp
+transformlt_impl.cpp
+server_iltphysics.cpp
+shared_iltphysics.cpp
+Generating Code...
+Compiling...
+bindmgr.cpp
+counter.cpp
+de_file.cpp
+de_memory.cpp
+de_nodes.cpp
+debugging.cpp
+dsys_interface.cpp
+dutil.cpp
+lthread.cpp
+ltmodule.cpp
+ltobjref.cpp
+ltquatbase.cpp
+server_interface.cpp
+streamsim.cpp
+stringmgr.cpp
+timemgr.cpp
+wave.cpp
+interface_linkage.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\..\built\Debug\Runtime\DLL_Server/server.lib and object ..\..\..\built\Debug\Runtime\DLL_Server/server.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Debug\Runtime\DLL_Server\server.dll
+copy \Working\ENGINE\built\Debug\Runtime\DLL_Server\server.dll ..\..\..\..\development\SA
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+server.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DLL_dx8 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP3A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\..\sdk\inc" /I "..\..\..\..\..\..\libs\lith" /I "..\..\\" /I "..\..\..\..\shared\src\sys\win" /I "..\..\..\..\kernel\src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/" /Fo"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/" /Fd"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\counter.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP3A.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP3B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\..\sdk\inc" /I "..\..\..\..\..\..\libs\lith" /I "..\..\\" /I "..\..\..\..\shared\src\sys\win" /I "..\..\..\..\kernel\src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/" /Fp"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/DLL_dx8.pch" /YX /Fo"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/" /Fd"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\sound\src\sys\s_dx8\parsewavefile.cpp"
+"D:\Working\ENGINE\runtime\sound\src\sys\s_dx8\s_dx8.cpp"
+"D:\Working\ENGINE\runtime\sound\src\sys\s_dx8\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP3B.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP3C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxguid.lib winmm.lib msacm32.lib eaxguid.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/SndDrv.pdb" /debug /machine:I386 /nodefaultlib:"libcd.lib" /out:"..\..\..\..\..\built\Debug\Runtime\DLL_dx8\SndDrv.dll" /implib:"..\..\..\..\..\built\Debug\Runtime\DLL_dx8/SndDrv.lib" /pdbtype:sept 
+\Working\ENGINE\built\Debug\Runtime\DLL_dx8\counter.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_dx8\parsewavefile.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_dx8\s_dx8.obj
+\Working\ENGINE\built\Debug\Runtime\DLL_dx8\StdAfx.obj
+..\..\..\..\..\..\Libs\built\Debug\Lib_Lith\Lib_Lith.lib
+..\..\..\..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP3C.tmp"
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP3D.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Debug\Runtime\DLL_dx8\SndDrv.dll ..\..\..\..\..\..\development\SA
+copy \Working\ENGINE\built\Debug\Runtime\DLL_dx8\SndDrv.dll ..\..\..\..\..\..\development\SA
+]
+Creating command line "C:\DOCUME~1\int\LOCALS~1\Temp\RSP3D.bat"
+Compiling...
+counter.cpp
+Compiling...
+parsewavefile.cpp
+s_dx8.cpp
+StdAfx.cpp
+Linking...
+   Creating library ..\..\..\..\..\built\Debug\Runtime\DLL_dx8/SndDrv.lib and object ..\..\..\..\..\built\Debug\Runtime\DLL_dx8/SndDrv.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Debug\Runtime\DLL_dx8\SndDrv.dll
+copy \Working\ENGINE\built\Debug\Runtime\DLL_dx8\SndDrv.dll ..\..\..\..\..\..\development\SA
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+SndDrv.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LIB_D3DRender - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/d3drender.res" /d "_DEBUG" "D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3drender.rc"" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+/nologo /MDd /W3 /ZI /Od /I "..\..\..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\client\src" /I "." /I "..\..\..\..\kernel\mem\src" /I "..\..\..\..\shared\src" /I "..\..\..\..\kernel\src" /I "..\..\..\..\..\sdk\inc" /I "..\..\..\..\..\..\libs\stdlith" /I "..\..\..\..\shared\src\sys\win" /I "..\..\..\..\world\src" /I "..\..\..\..\model\src" /I "..\..\..\..\model\src\sys\d3d" /I "..\..\..\..\kernel\src\sys\win" /I "..\..\..\..\kernel\io\src" /I "..\..\..\..\lithtemplate" /I "..\..\..\..\..\sdk\inc\physics" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "__D3DREND" /D "__D3D" /D "MODEL_SUPPORT_ABC" /FR"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/" /Fo"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/" /Fd"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\render_a\src\sys\shadows\d3dshadowtexture.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\modelshadowshader.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\texturescriptinstance.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\texturescriptinterpreter.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\texturescriptmgr.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\texturescriptvarmgr.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\3d_ops.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\AABB.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\common_draw.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\common_init.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\common_stuff.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_device.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_device_wrapper.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_draw.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_drawsky.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_init.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_optimizedsurface.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_renderblock.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_rendershader_dynamiclight.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_rendershader_glow.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_rendershader_gouraud.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_rendershader_gouraud_fullbright.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_rendershader_lightmap.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_renderstatemgr.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_renderstyle.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_renderstyleinterface.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_renderworld.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_renderworld_occluder.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_shell.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_surface.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_texture.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_utils.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3d_viewparams.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3dmeshrendobj_rigid.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3dmeshrendobj_skel.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\d3dmeshrendobj_vertanim.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\devicelightlist.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\dirtyrect.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\draw_canvas.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawlight.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawlinesystem.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawmodel.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawobjects.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawparticles.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawparticles_A.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawpolygrid.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawsky.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawsprite.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawvolumeeffects.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\drawworldmodel.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\memstats_world.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\modeldebug.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\objectgroupmgr.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\pixelshadermgr.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\relevantlightlist.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\rendererconsolevars.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\rendererframestats.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\renderlight.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\rendermodelinfolist.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\rendermodelpiecelist.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\rendershadowlist.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\renderstylelookuptables.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\renderstylemap.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\screenglowmgr.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\setupmodel.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\setuptouchinglights.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\tagnodes.cpp"
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\VertexBufferController.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP41.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP42.tmp" with contents
+[
+/nologo /MDd /W3 /ZI /Od /I "..\..\..\..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\client\src" /I "." /I "..\..\..\..\kernel\mem\src" /I "..\..\..\..\shared\src" /I "..\..\..\..\kernel\src" /I "..\..\..\..\..\sdk\inc" /I "..\..\..\..\..\..\libs\stdlith" /I "..\..\..\..\shared\src\sys\win" /I "..\..\..\..\world\src" /I "..\..\..\..\model\src" /I "..\..\..\..\model\src\sys\d3d" /I "..\..\..\..\kernel\src\sys\win" /I "..\..\..\..\kernel\io\src" /I "..\..\..\..\lithtemplate" /I "..\..\..\..\..\sdk\inc\physics" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "__D3DREND" /D "__D3D" /D "MODEL_SUPPORT_ABC" /FR"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/" /Fp"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/LIB_D3DRender.pch" /Yc"precompile.h" /Fo"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/" /Fd"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\render_a\src\sys\d3d\precompile.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP42.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP43.tmp" with contents
+[
+/nologo /out:"..\..\..\..\..\built\Debug\Runtime\Lib_D3DRender\LIB_D3DRender.lib" 
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3dshadowtexture.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\modelshadowshader.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\texturescriptinstance.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\texturescriptinterpreter.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\texturescriptmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\texturescriptvarmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\3d_ops.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\AABB.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\common_draw.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\common_init.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\common_stuff.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_device.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_device_wrapper.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_draw.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_drawsky.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_init.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_optimizedsurface.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_renderblock.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_rendershader_dynamiclight.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_rendershader_glow.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_rendershader_gouraud.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_rendershader_gouraud_fullbright.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_rendershader_lightmap.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_renderstatemgr.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_renderstyle.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_renderstyleinterface.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_renderworld.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_renderworld_occluder.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_shell.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_surface.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_texture.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_utils.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3d_viewparams.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3dmeshrendobj_rigid.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3dmeshrendobj_skel.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3dmeshrendobj_vertanim.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\devicelightlist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\dirtyrect.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\draw_canvas.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawlight.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawlinesystem.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawmodel.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawobjects.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawparticles.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawparticles_A.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawpolygrid.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawsky.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawsprite.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawvolumeeffects.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\drawworldmodel.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\memstats_world.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\modeldebug.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\objectgroupmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\pixelshadermgr.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\precompile.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\relevantlightlist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\rendererconsolevars.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\rendererframestats.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\renderlight.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\rendermodelinfolist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\rendermodelpiecelist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\rendershadowlist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\renderstylelookuptables.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\renderstylemap.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\screenglowmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\setupmodel.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\setuptouchinglights.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\tagnodes.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\VertexBufferController.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_D3DRender\d3drender.res
+..\..\..\..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP43.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+precompile.cpp
+Compiling...
+d3dshadowtexture.cpp
+modelshadowshader.cpp
+texturescriptinstance.cpp
+texturescriptinterpreter.cpp
+texturescriptmgr.cpp
+texturescriptvarmgr.cpp
+3d_ops.cpp
+AABB.cpp
+common_draw.cpp
+common_init.cpp
+common_stuff.cpp
+d3d_device.cpp
+d3d_device_wrapper.cpp
+d3d_draw.cpp
+d3d_drawsky.cpp
+d3d_init.cpp
+d3d_optimizedsurface.cpp
+d3d_renderblock.cpp
+d3d_rendershader_dynamiclight.cpp
+d3d_rendershader_glow.cpp
+Generating Code...
+Compiling...
+d3d_rendershader_gouraud.cpp
+d3d_rendershader_gouraud_fullbright.cpp
+d3d_rendershader_lightmap.cpp
+d3d_renderstatemgr.cpp
+d3d_renderstyle.cpp
+d3d_renderstyleinterface.cpp
+d3d_renderworld.cpp
+d3d_renderworld_occluder.cpp
+d3d_shell.cpp
+d3d_surface.cpp
+d3d_texture.cpp
+d3d_utils.cpp
+d3d_viewparams.cpp
+d3dmeshrendobj_rigid.cpp
+d3dmeshrendobj_skel.cpp
+d3dmeshrendobj_vertanim.cpp
+devicelightlist.cpp
+dirtyrect.cpp
+draw_canvas.cpp
+drawlight.cpp
+Generating Code...
+Compiling...
+drawlinesystem.cpp
+drawmodel.cpp
+drawobjects.cpp
+drawparticles.cpp
+drawparticles_A.cpp
+drawpolygrid.cpp
+drawsky.cpp
+drawsprite.cpp
+drawvolumeeffects.cpp
+drawworldmodel.cpp
+memstats_world.cpp
+modeldebug.cpp
+objectgroupmgr.cpp
+pixelshadermgr.cpp
+relevantlightlist.cpp
+rendererconsolevars.cpp
+rendererframestats.cpp
+renderlight.cpp
+rendermodelinfolist.cpp
+rendermodelpiecelist.cpp
+Generating Code...
+Compiling...
+rendershadowlist.cpp
+renderstylelookuptables.cpp
+renderstylemap.cpp
+screenglowmgr.cpp
+setupmodel.cpp
+setuptouchinglights.cpp
+tagnodes.cpp
+VertexBufferController.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Lib_ILTSound - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\sdk\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "USE_ABSTRACT_SOUND_INTERFACES" /FR"..\..\..\built\Debug\Runtime\Lib_ILTSound/" /Fp"..\..\..\built\Debug\Runtime\Lib_ILTSound/Lib_ILTSound.pch" /YX /Fo"..\..\..\built\Debug\Runtime\Lib_ILTSound/" /Fd"..\..\..\built\Debug\Runtime\Lib_ILTSound/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\sound\src\iltsound.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP45.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\built\Debug\Runtime\Lib_ILTSound\Lib_ILTSound.lib"  \Working\ENGINE\built\Debug\Runtime\Lib_ILTSound\iltsound.obj ..\..\..\built\debug\libs\ltmem\ltmem.lib "
+<h3>Output Window</h3>
+Compiling...
+iltsound.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_NullRender - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\..\..\built\Debug\Runtime\Lib_NullRender/nullrender.res" /d "_DEBUG" "D:\Working\ENGINE\runtime\render_a\src\sys\nulldib\nullrender.rc"" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP46.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\shared\src" /I "..\..\..\..\shared\src\sys\win" /I "..\..\..\..\..\sdk\inc" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\..\..\built\Debug\Runtime\Lib_NullRender/Lib_NullRender.pch" /YX /Fo"..\..\..\..\..\built\Debug\Runtime\Lib_NullRender/" /Fd"..\..\..\..\..\built\Debug\Runtime\Lib_NullRender/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\render_a\src\sys\nulldib\NullRender.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP46.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP47.tmp" with contents
+[
+/nologo /out:"..\..\..\..\..\built\Debug\Runtime\Lib_NullRender\Lib_NullRender.lib" 
+\Working\ENGINE\built\Debug\Runtime\Lib_NullRender\NullRender.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_NullRender\nullrender.res
+..\..\..\..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP47.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+NullRender.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_UI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP48.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\..\libs\stdlith" /I "..\..\..\..\libs\lith" /I "..\..\..\libs\rezmgr" /I "..\..\controlfilemgr" /I "..\..\crtcompat" /I "..\..\lithtemplate" /I "." /I "..\..\client\src" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src" /I "..\..\kernel\src\sys\win" /I "..\..\model\src" /I "..\..\sound\src" /I "..\..\server\src" /I "..\..\shared\src\sys\win" /I "..\..\shared\src" /I "..\..\world\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\kernel\net\src" /I "..\..\render_b\src" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\ui\src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\built\Debug\Runtime\Lib_UI/" /Fp"..\..\..\built\Debug\Runtime\Lib_UI/Lib_UI.pch" /YX /Fo"..\..\..\built\Debug\Runtime\Lib_UI/" /Fd"..\..\..\built\Debug\Runtime\Lib_UI/" /FD /GZ /c 
+"D:\Working\ENGINE\runtime\ui\src\cuibase.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuibase_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuibitmapfont.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuibutton.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuibutton_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuicheck.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuicheck_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\sys\d3d\cuidebug.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuidropdownlist.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuidropdownlist_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuifont_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuifontmanager.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiformattedpolystring.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiformattedpolystring_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiinterval.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiinterval_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuilinklist.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuilist.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuilist_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuimessagequeue.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuioption.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuioption_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuipolystring.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuipolystring_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuipolytex.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiprogress.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiprogress_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiredblack.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuirenderstate.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuislider.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuislider_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuistaticimage.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuistaticimage_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuistatictext.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuistatictext_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuivectorfont.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiwidget.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiwidget_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiwidgetmanager.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiwindow.cpp"
+"D:\Working\ENGINE\runtime\ui\src\cuiwindow_impl.cpp"
+"D:\Working\ENGINE\runtime\ui\src\MBCSUtil.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP48.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP49.tmp" with contents
+[
+/nologo /out:"..\..\..\built\Debug\Runtime\Lib_UI\Lib_UI.lib" 
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuibase.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuibase_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuibitmapfont.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuibutton.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuibutton_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuicheck.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuicheck_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuidebug.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuidropdownlist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuidropdownlist_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuifont_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuifontmanager.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiformattedpolystring.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiformattedpolystring_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiinterval.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiinterval_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuilinklist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuilist.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuilist_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuimessagequeue.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuioption.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuioption_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuipolystring.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuipolystring_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuipolytex.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiprogress.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiprogress_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiredblack.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuirenderstate.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuislider.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuislider_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuistaticimage.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuistaticimage_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuistatictext.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuistatictext_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuivectorfont.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiwidget.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiwidget_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiwidgetmanager.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiwindow.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\cuiwindow_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Lib_UI\MBCSUtil.obj
+..\..\..\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP49.tmp"
+<h3>Output Window</h3>
+Compiling...
+cuibase.cpp
+cuibase_impl.cpp
+cuibitmapfont.cpp
+cuibutton.cpp
+cuibutton_impl.cpp
+cuicheck.cpp
+cuicheck_impl.cpp
+cuidebug.cpp
+cuidropdownlist.cpp
+cuidropdownlist_impl.cpp
+cuifont_impl.cpp
+cuifontmanager.cpp
+cuiformattedpolystring.cpp
+cuiformattedpolystring_impl.cpp
+cuiinterval.cpp
+cuiinterval_impl.cpp
+cuilinklist.cpp
+cuilist.cpp
+cuilist_impl.cpp
+cuimessagequeue.cpp
+cuioption.cpp
+cuioption_impl.cpp
+cuipolystring.cpp
+cuipolystring_impl.cpp
+d:\working\engine\runtime\ui\src\cuipolystring_impl.cpp(522) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+cuipolytex.cpp
+cuiprogress.cpp
+cuiprogress_impl.cpp
+cuiredblack.cpp
+cuirenderstate.cpp
+cuislider.cpp
+cuislider_impl.cpp
+cuistaticimage.cpp
+cuistaticimage_impl.cpp
+cuistatictext.cpp
+cuistatictext_impl.cpp
+cuivectorfont.cpp
+cuiwidget.cpp
+cuiwidget_impl.cpp
+cuiwidgetmanager.cpp
+cuiwindow.cpp
+cuiwindow_impl.cpp
+MBCSUtil.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_ZLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP4A.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\..\libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\Built\Debug\Lib_ZLib/" /Fp"..\Built\Debug\Lib_ZLib/Lib_ZLib.pch" /YX /Fo"..\Built\Debug\Lib_ZLib/" /Fd"..\Built\Debug\Lib_ZLib/" /FD /GZ /c 
+"D:\Working\libs\zlib\adler32.c"
+"D:\Working\libs\zlib\compress.c"
+"D:\Working\libs\zlib\crc32.c"
+"D:\Working\libs\zlib\deflate.c"
+"D:\Working\libs\zlib\gzio.c"
+"D:\Working\libs\zlib\infblock.c"
+"D:\Working\libs\zlib\infcodes.c"
+"D:\Working\libs\zlib\inffast.c"
+"D:\Working\libs\zlib\inflate.c"
+"D:\Working\libs\zlib\inftrees.c"
+"D:\Working\libs\zlib\infutil.c"
+"D:\Working\libs\zlib\trees.c"
+"D:\Working\libs\zlib\uncompr.c"
+"D:\Working\libs\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP4A.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP4B.tmp" with contents
+[
+/nologo /out:"..\Built\Debug\Lib_ZLib\Lib_ZLib.lib" 
+\Working\libs\Built\Debug\Lib_ZLib\adler32.obj
+\Working\libs\Built\Debug\Lib_ZLib\compress.obj
+\Working\libs\Built\Debug\Lib_ZLib\crc32.obj
+\Working\libs\Built\Debug\Lib_ZLib\deflate.obj
+\Working\libs\Built\Debug\Lib_ZLib\gzio.obj
+\Working\libs\Built\Debug\Lib_ZLib\infblock.obj
+\Working\libs\Built\Debug\Lib_ZLib\infcodes.obj
+\Working\libs\Built\Debug\Lib_ZLib\inffast.obj
+\Working\libs\Built\Debug\Lib_ZLib\inflate.obj
+\Working\libs\Built\Debug\Lib_ZLib\inftrees.obj
+\Working\libs\Built\Debug\Lib_ZLib\infutil.obj
+\Working\libs\Built\Debug\Lib_ZLib\trees.obj
+\Working\libs\Built\Debug\Lib_ZLib\uncompr.obj
+\Working\libs\Built\Debug\Lib_ZLib\zutil.obj
+..\..\ENGINE\built\debug\libs\ltmem\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\int\LOCALS~1\Temp\RSP4B.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+trees.c
+uncompr.c
+zutil.c
+Creating library...
+<h3>
+--------------------Configuration: Exe_LithTech - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\built\Debug\Runtime\Exe_LithTech/lithtech.res" /d "_DEBUG" "D:\Working\ENGINE\runtime\winbuild\lithtech\lithtech.rc"" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\libs\stdlith" /I "..\..\..\..\libs\lith" /I "..\..\..\libs\rezmgr" /I "..\..\controlfilemgr" /I "..\..\crtcompat" /I "..\..\lithtemplate" /I "." /I "..\..\client\src" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src" /I "..\..\kernel\src\sys\win" /I "..\..\model\src" /I "..\..\sound\src" /I "..\..\server\src" /I "..\..\shared\src\sys\win" /I "..\..\shared\src" /I "..\..\world\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\kernel\net\src" /I "..\..\render_b\src" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\ui\src" /I "..\..\distrobj\src" /I "..\..\state_mgr\src" /I "..\..\physics\src" /I "..\..\render_a\src\sys\d3d" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /I "..\..\..\..\libs\mfcstub" /D "_DEBUG" /D "DE_LOCAL_SERVERBIND" /D "DE_CLIENT_COMPILE" /D "DSNDMGR_NO_MFC" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "__D3D" /D "__D3DREND" /D "MODEL_SUPPORT_ABC" /D "WIN32" /D "_WINDOWS" /Fr"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fo"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fd"..\..\..\built\Debug\Runtime\Exe_LithTech/" /FD /c 
+"D:\Working\ENGINE\runtime\controlfilemgr\controlfilemgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\client.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_formatmgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\clientmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\counter.cpp"
+"D:\Working\ENGINE\sdk\inc\lterror.cpp"
+"D:\Working\ENGINE\sdk\inc\ltobjref.cpp"
+"D:\Working\ENGINE\sdk\inc\ltquatbase.cpp"
+"D:\Working\ENGINE\runtime\shared\src\interface_linkage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP4C.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP4D.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\libs\stdlith" /I "..\..\..\..\libs\lith" /I "..\..\..\libs\rezmgr" /I "..\..\controlfilemgr" /I "..\..\crtcompat" /I "..\..\lithtemplate" /I "." /I "..\..\client\src" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src" /I "..\..\kernel\src\sys\win" /I "..\..\model\src" /I "..\..\sound\src" /I "..\..\server\src" /I "..\..\shared\src\sys\win" /I "..\..\shared\src" /I "..\..\world\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\kernel\net\src" /I "..\..\render_b\src" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\ui\src" /I "..\..\distrobj\src" /I "..\..\state_mgr\src" /I "..\..\physics\src" /I "..\..\render_a\src\sys\d3d" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /I "..\..\..\..\libs\mfcstub" /D "_DEBUG" /D "DE_LOCAL_SERVERBIND" /D "DE_CLIENT_COMPILE" /D "DSNDMGR_NO_MFC" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "__D3D" /D "__D3DREND" /D "MODEL_SUPPORT_ABC" /D "WIN32" /D "_WINDOWS" /Fr"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fp"..\..\..\built\Debug\Runtime\Exe_LithTech/EXE_Lithtech.pch" /Yu"bdefs.h" /Fo"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fd"..\..\..\built\Debug\Runtime\Exe_LithTech/" /FD /c 
+"D:\Working\ENGINE\runtime\model\src\animtracker.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\bindmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\binkvideomgrimpl.cpp"
+"D:\Working\ENGINE\runtime\shared\src\classbind.cpp"
+"D:\Working\ENGINE\runtime\server\src\classmgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_graphmgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_ticks.cpp"
+"D:\Working\ENGINE\runtime\client\src\clientde_impl.cpp"
+"D:\Working\ENGINE\runtime\client\src\clientshell.cpp"
+"D:\Working\ENGINE\runtime\client\src\cmoveabstract.cpp"
+"D:\Working\ENGINE\runtime\client\src\cnet.cpp"
+"D:\Working\ENGINE\runtime\client\src\cobject.cpp"
+"D:\Working\ENGINE\runtime\shared\src\collision.cpp"
+"D:\Working\ENGINE\runtime\shared\src\compress.cpp"
+"D:\Working\ENGINE\runtime\shared\src\concommand.cpp"
+"D:\Working\ENGINE\runtime\shared\src\conparse.cpp"
+"D:\Working\ENGINE\runtime\client\src\console.cpp"
+"D:\Working\ENGINE\runtime\client\src\consolecommands.cpp"
+"D:\Working\ENGINE\runtime\client\src\cutil.cpp"
+"D:\Working\ENGINE\runtime\model\src\sys\d3d\d3d_model_load.cpp"
+"D:\Working\ENGINE\runtime\render_b\src\sys\d3d\d3ddrawprim.cpp"
+"D:\Working\ENGINE\runtime\render_b\src\sys\d3d\d3dtexinterface.cpp"
+"D:\Working\ENGINE\runtime\kernel\io\src\sys\win\de_file.cpp"
+"D:\Working\ENGINE\runtime\world\src\de_mainworld.cpp"
+"D:\Working\ENGINE\runtime\kernel\mem\src\sys\win\de_memory.cpp"
+"D:\Working\ENGINE\runtime\world\src\de_nodes.cpp"
+"D:\Working\ENGINE\runtime\world\src\de_objects.cpp"
+"D:\Working\ENGINE\runtime\shared\src\debuggeometry.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\debugging.cpp"
+"D:\Working\ENGINE\runtime\client\src\debuggraphmgr.cpp"
+"D:\Working\ENGINE\runtime\shared\src\dhashtable.cpp"
+"D:\Working\ENGINE\runtime\shared\src\sys\win\dstreamopenqueuemgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\dsys_interface.cpp"
+"D:\Working\ENGINE\runtime\shared\src\dtxmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\dutil.cpp"
+"D:\Working\ENGINE\runtime\shared\src\engine_vars.cpp"
+"D:\Working\ENGINE\runtime\client\src\errorlog.cpp"
+"D:\Working\ENGINE\runtime\shared\src\findobj.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ftclient.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ftserv.cpp"
+"D:\Working\ENGINE\runtime\world\src\fullintersectline.cpp"
+"D:\Working\ENGINE\runtime\server\src\game_serialize.cpp"
+"D:\Working\ENGINE\runtime\shared\src\gamemath.cpp"
+"D:\Working\ENGINE\runtime\shared\src\genericprop_setup.cpp"
+"D:\Working\ENGINE\runtime\shared\src\genltstream.cpp"
+"D:\Working\ENGINE\runtime\shared\src\geometry.cpp"
+"D:\Working\ENGINE\runtime\shared\src\geomroutines.cpp"
+"D:\Working\ENGINE\runtime\shared\src\impl_common.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\input.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\InputSim.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\interface_helpers.cpp"
+"D:\Working\ENGINE\runtime\server\src\interlink.cpp"
+"D:\Working\ENGINE\runtime\world\src\intersect_line.cpp"
+"D:\Working\ENGINE\runtime\world\src\intersectsweptsphere.cpp"
+"D:\Working\ENGINE\runtime\shared\src\leech.cpp"
+"D:\Working\ENGINE\runtime\world\src\light_table.cpp"
+"D:\Working\ENGINE\runtime\shared\src\lightmap_compress.cpp"
+"D:\Working\ENGINE\runtime\shared\src\lightmap_planes.cpp"
+"D:\Working\ENGINE\runtime\client\src\linesystem.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\load_pcx.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\localdriver.cpp"
+"D:\Working\ENGINE\runtime\client\src\ltbenchmark_impl.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\ltdirectmusic_impl.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\ltdirectmusiccontrolfile.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\ltdirectmusicloader.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\lthread.cpp"
+"D:\Working\ENGINE\runtime\client\src\ltinfo_impl.cpp"
+"D:\Working\ENGINE\runtime\kernel\mem\src\ltmemory.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ltmessage.cpp"
+"D:\Working\ENGINE\runtime\client\src\ltmessage_client.cpp"
+"D:\Working\ENGINE\runtime\server\src\ltmessage_server.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\ltthread.cpp"
+"D:\Working\ENGINE\runtime\shared\src\lttimer.cpp"
+"D:\Working\ENGINE\runtime\client\src\memorywatch.cpp"
+"D:\Working\ENGINE\runtime\model\src\model.cpp"
+"D:\Working\ENGINE\runtime\model\src\model_load.cpp"
+"D:\Working\ENGINE\runtime\model\src\modelallocations.cpp"
+"D:\Working\ENGINE\runtime\shared\src\motion.cpp"
+"D:\Working\ENGINE\runtime\shared\src\moveobject.cpp"
+"D:\Working\ENGINE\runtime\shared\src\moveplayer.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\musicdriver.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\netmgr.cpp"
+"D:\Working\ENGINE\runtime\shared\src\nexus.cpp"
+"D:\Working\ENGINE\runtime\shared\src\objectmgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\packet.cpp"
+"D:\Working\ENGINE\runtime\shared\src\parse_world_info.cpp"
+"D:\Working\ENGINE\runtime\client\src\particlesystem.cpp"
+"D:\Working\ENGINE\runtime\shared\src\pixelformat.cpp"
+"D:\Working\ENGINE\runtime\client\src\polygrid.cpp"
+"D:\Working\ENGINE\runtime\client\src\predict.cpp"
+"D:\Working\ENGINE\runtime\shared\src\ratetracker.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\render.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_client.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_concommand.cpp"
+"D:\Working\ENGINE\runtime\server\src\S_Intersect.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_net.cpp"
+"D:\Working\ENGINE\runtime\server\src\s_object.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_consolestate.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_extradata.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_filemgr.cpp"
+"D:\Working\ENGINE\runtime\server\src\serverde_impl.cpp"
+"D:\Working\ENGINE\runtime\server\src\serverevent.cpp"
+"D:\Working\ENGINE\runtime\server\src\servermgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\setupobject.cpp"
+"D:\Working\ENGINE\runtime\client\src\shellnet.cpp"
+"D:\Working\ENGINE\runtime\client\src\shelltransfer.cpp"
+"D:\Working\ENGINE\runtime\client\src\shellutil.cpp"
+"D:\Working\ENGINE\runtime\server\src\smoveabstract.cpp"
+"D:\Working\ENGINE\runtime\sound\src\soundbuffer.cpp"
+"D:\Working\ENGINE\runtime\sound\src\sounddata.cpp"
+"D:\Working\ENGINE\runtime\sound\src\soundinstance.cpp"
+"D:\Working\ENGINE\runtime\server\src\soundtrack.cpp"
+"D:\Working\ENGINE\runtime\client\src\sprite.cpp"
+"D:\Working\ENGINE\runtime\shared\src\spritecontrolimpl.cpp"
+"D:\Working\ENGINE\runtime\shared\src\stacktrace.cpp"
+"D:\Working\ENGINE\runtime\shared\src\stdlterror.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\streamsim.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\stringmgr.cpp"
+"D:\Working\ENGINE\runtime\shared\src\strtools.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\systeminfo.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\text_mgr.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\timemgr.cpp"
+"D:\Working\ENGINE\runtime\model\src\transformmaker.cpp"
+"D:\Working\ENGINE\runtime\kernel\net\src\sys\win\udpdriver.cpp"
+"D:\Working\ENGINE\runtime\shared\src\version_info.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\version_resource.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\videomgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\volumeeffect.cpp"
+"D:\Working\ENGINE\runtime\sound\src\wave.cpp"
+"D:\Working\ENGINE\runtime\client\src\sys\win\winclientde_impl.cpp"
+"D:\Working\ENGINE\runtime\client\src\sys\win\winconsole_impl.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_tree.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_blind_object_data.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_blocker_data.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_blocker_math.cpp"
+"D:\Working\ENGINE\runtime\client\src\world_client_bsp.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_particle_blocker_data.cpp"
+"D:\Working\ENGINE\runtime\server\src\world_server_bsp.cpp"
+"D:\Working\ENGINE\runtime\world\src\world_shared_bsp.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_filemgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_iltmodel.cpp"
+"D:\Working\ENGINE\runtime\shared\src\modellt_impl.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltmodel.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_iltcommon.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltcommon.cpp"
+"D:\Working\ENGINE\runtime\shared\src\shared_iltcommon.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\sys\win\lt_cursor_impl.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_iltphysics.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltphysics.cpp"
+"D:\Working\ENGINE\runtime\shared\src\shared_iltphysics.cpp"
+"D:\Working\ENGINE\runtime\shared\src\transformlt_impl.cpp"
+"D:\Working\ENGINE\runtime\server\src\server_iltsoundmgr.cpp"
+"D:\Working\ENGINE\runtime\sound\src\soundmgr.cpp"
+"D:\Working\ENGINE\runtime\client\src\client_iltvideomgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP4D.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP4E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm- /Zi /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\libs\stdlith" /I "..\..\..\..\libs\lith" /I "..\..\..\libs\rezmgr" /I "..\..\controlfilemgr" /I "..\..\crtcompat" /I "..\..\lithtemplate" /I "." /I "..\..\client\src" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src" /I "..\..\kernel\src\sys\win" /I "..\..\model\src" /I "..\..\sound\src" /I "..\..\server\src" /I "..\..\shared\src\sys\win" /I "..\..\shared\src" /I "..\..\world\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\kernel\net\src" /I "..\..\render_b\src" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\ui\src" /I "..\..\distrobj\src" /I "..\..\state_mgr\src" /I "..\..\physics\src" /I "..\..\render_a\src\sys\d3d" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /I "..\..\..\..\libs\mfcstub" /D "_DEBUG" /D "DE_LOCAL_SERVERBIND" /D "DE_CLIENT_COMPILE" /D "DSNDMGR_NO_MFC" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "__D3D" /D "__D3DREND" /D "MODEL_SUPPORT_ABC" /D "WIN32" /D "_WINDOWS" /Fr"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fo"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fd"..\..\..\built\Debug\Runtime\Exe_LithTech/" /FD /c 
+"D:\Working\ENGINE\sdk\inc\ltmodule.cpp"
+"D:\Working\ENGINE\runtime\kernel\src\icommandlineargs.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP4E.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP4F.tmp" with contents
+[
+/nologo /MDd /W3 /Zi /Od /I "..\..\..\..\Libs\STLPORT-4.0\STLPORT" /I "..\..\..\..\libs\stdlith" /I "..\..\..\..\libs\lith" /I "..\..\..\libs\rezmgr" /I "..\..\controlfilemgr" /I "..\..\crtcompat" /I "..\..\lithtemplate" /I "." /I "..\..\client\src" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src" /I "..\..\kernel\src\sys\win" /I "..\..\model\src" /I "..\..\sound\src" /I "..\..\server\src" /I "..\..\shared\src\sys\win" /I "..\..\shared\src" /I "..\..\world\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\kernel\net\src" /I "..\..\render_b\src" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\ui\src" /I "..\..\distrobj\src" /I "..\..\state_mgr\src" /I "..\..\physics\src" /I "..\..\render_a\src\sys\d3d" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /I "..\..\..\..\libs\mfcstub" /D "_DEBUG" /D "DE_LOCAL_SERVERBIND" /D "DE_CLIENT_COMPILE" /D "DSNDMGR_NO_MFC" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "__D3D" /D "__D3DREND" /D "MODEL_SUPPORT_ABC" /D "WIN32" /D "_WINDOWS" /Fr"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fp"..\..\..\built\Debug\Runtime\Exe_LithTech/EXE_Lithtech.pch" /Yc"bdefs.h" /Fo"..\..\..\built\Debug\Runtime\Exe_LithTech/" /Fd"..\..\..\built\Debug\Runtime\Exe_LithTech/" /FD /c 
+"D:\Working\ENGINE\runtime\shared\src\bdefs.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP4F.tmp" 
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP50.tmp" with contents
+[
+ddraw.lib d3dx8.lib d3d8.lib dxguid.lib winmm.lib atl.lib dplayx.lib dinput8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\..\..\built\Debug\Runtime\Exe_LithTech/Lithtech.pdb" /debug /machine:I386 /nodefaultlib:"libcd.lib" /nodefaultlib:"libc.lib" /nodefaultlib:"msvcrt.lib" /out:"..\..\..\built\Debug\Runtime\EXE_Lithtech\Lithtech.exe" /pdbtype:sept 
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\controlfilemgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\animtracker.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\bdefs.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\bindmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\binkvideomgrimpl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\classbind.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\classmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_formatmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_graphmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_ticks.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\clientde_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\clientmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\clientshell.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\cmoveabstract.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\cnet.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\cobject.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\collision.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\compress.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\concommand.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\conparse.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\console.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\consolecommands.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\counter.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\cutil.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\d3d_model_load.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\d3ddrawprim.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\d3dtexinterface.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\de_file.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\de_mainworld.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\de_memory.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\de_nodes.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\de_objects.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\debuggeometry.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\debugging.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\debuggraphmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\dhashtable.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\dstreamopenqueuemgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\dsys_interface.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\dtxmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\dutil.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\engine_vars.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\errorlog.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\findobj.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ftclient.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ftserv.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\fullintersectline.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\game_serialize.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\gamemath.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\genericprop_setup.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\genltstream.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\geometry.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\geomroutines.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\impl_common.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\input.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\InputSim.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\interface_helpers.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\interlink.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\intersect_line.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\intersectsweptsphere.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\leech.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\light_table.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lightmap_compress.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lightmap_planes.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\linesystem.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\load_pcx.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\localdriver.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltbenchmark_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltdirectmusic_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltdirectmusiccontrolfile.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltdirectmusicloader.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lterror.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lthread.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltinfo_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltmemory.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltmessage.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltmessage_client.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltmessage_server.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltmodule.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltobjref.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltquatbase.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ltthread.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lttimer.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\memorywatch.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\model.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\model_load.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\modelallocations.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\motion.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\moveobject.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\moveplayer.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\musicdriver.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\netmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\nexus.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\objectmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\packet.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\parse_world_info.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\particlesystem.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\pixelformat.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\polygrid.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\predict.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\ratetracker.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\render.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\s_client.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\s_concommand.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\S_Intersect.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\s_net.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\s_object.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_consolestate.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_extradata.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_filemgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\serverde_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\serverevent.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\servermgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\setupobject.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\shellnet.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\shelltransfer.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\shellutil.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\smoveabstract.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\soundbuffer.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\sounddata.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\soundinstance.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\soundtrack.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\sprite.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\spritecontrolimpl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\stacktrace.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\stdlterror.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\streamsim.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\stringmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\strtools.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\systeminfo.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\text_mgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\timemgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\transformmaker.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\udpdriver.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\version_info.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\version_resource.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\videomgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\volumeeffect.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\wave.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\winclientde_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\winconsole_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_tree.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_blind_object_data.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_blocker_data.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_blocker_math.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_client_bsp.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_particle_blocker_data.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_server_bsp.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\world_shared_bsp.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\icommandlineargs.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_filemgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_iltmodel.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\modellt_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_iltmodel.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_iltcommon.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_iltcommon.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\shared_iltcommon.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lt_cursor_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_iltphysics.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_iltphysics.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\shared_iltphysics.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\transformlt_impl.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\server_iltsoundmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\soundmgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\client_iltvideomgr.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\interface_linkage.obj
+\Working\ENGINE\built\Debug\Runtime\Exe_LithTech\lithtech.res
+..\..\..\built\Debug\Runtime\Lib_Info\libltinfo.lib
+..\..\..\built\Debug\Runtime\Lib_ILTSound\Lib_ILTSound.lib
+..\..\..\built\Debug\Runtime\Lib_D3DRender\LIB_D3DRender.lib
+..\..\..\built\Debug\Runtime\Lib_UI\Lib_UI.lib
+..\..\..\built\Debug\libs\Lib_RezMgr\Lib_RezMgr.lib
+..\..\..\..\Libs\built\Debug\Lib_Lith\Lib_Lith.lib
+..\..\..\..\Libs\built\Debug\Lib_StdLith\Lib_StdLith.lib
+..\..\..\..\libs\built\Debug\Lib_ZLib\Lib_ZLib.lib
+..\..\..\built\debug\libs\ltmem\ltmem.lib
+\Working\ENGINE\built\Debug\Runtime\Lib_NullRender\Lib_NullRender.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\int\LOCALS~1\Temp\RSP50.tmp"
+Creating temporary file "C:\DOCUME~1\int\LOCALS~1\Temp\RSP51.bat" with contents
+[
+@echo off
+copy \Working\ENGINE\built\Debug\Runtime\EXE_Lithtech\Lithtech.exe ..\..\..\..\development\SA
+]
+Creating command line "C:\DOCUME~1\int\LOCALS~1\Temp\RSP51.bat"
+Compiling resources...
+Compiling...
+bdefs.cpp
+Compiling...
+controlfilemgr.cpp
+client.cpp
+client_formatmgr.cpp
+clientmgr.cpp
+counter.cpp
+lterror.cpp
+ltobjref.cpp
+ltquatbase.cpp
+interface_linkage.cpp
+Generating Code...
+Compiling...
+animtracker.cpp
+bindmgr.cpp
+binkvideomgrimpl.cpp
+classbind.cpp
+classmgr.cpp
+client_graphmgr.cpp
+client_ticks.cpp
+clientde_impl.cpp
+clientshell.cpp
+cmoveabstract.cpp
+cnet.cpp
+cobject.cpp
+collision.cpp
+compress.cpp
+concommand.cpp
+conparse.cpp
+console.cpp
+consolecommands.cpp
+cutil.cpp
+d3d_model_load.cpp
+Generating Code...
+Compiling...
+d3ddrawprim.cpp
+d3dtexinterface.cpp
+de_file.cpp
+de_mainworld.cpp
+de_memory.cpp
+de_nodes.cpp
+de_objects.cpp
+debuggeometry.cpp
+debugging.cpp
+debuggraphmgr.cpp
+dhashtable.cpp
+dstreamopenqueuemgr.cpp
+dsys_interface.cpp
+dtxmgr.cpp
+dutil.cpp
+engine_vars.cpp
+errorlog.cpp
+findobj.cpp
+ftclient.cpp
+ftserv.cpp
+Generating Code...
+Compiling...
+fullintersectline.cpp
+game_serialize.cpp
+gamemath.cpp
+genericprop_setup.cpp
+genltstream.cpp
+geometry.cpp
+geomroutines.cpp
+impl_common.cpp
+input.cpp
+InputSim.cpp
+interface_helpers.cpp
+interlink.cpp
+intersect_line.cpp
+intersectsweptsphere.cpp
+leech.cpp
+light_table.cpp
+lightmap_compress.cpp
+lightmap_planes.cpp
+linesystem.cpp
+load_pcx.cpp
+Generating Code...
+Compiling...
+localdriver.cpp
+ltbenchmark_impl.cpp
+ltdirectmusic_impl.cpp
+ltdirectmusiccontrolfile.cpp
+ltdirectmusicloader.cpp
+lthread.cpp
+ltinfo_impl.cpp
+ltmemory.cpp
+ltmessage.cpp
+ltmessage_client.cpp
+ltmessage_server.cpp
+ltthread.cpp
+lttimer.cpp
+memorywatch.cpp
+model.cpp
+model_load.cpp
+modelallocations.cpp
+motion.cpp
+moveobject.cpp
+moveplayer.cpp
+Generating Code...
+Compiling...
+musicdriver.cpp
+netmgr.cpp
+nexus.cpp
+objectmgr.cpp
+packet.cpp
+parse_world_info.cpp
+particlesystem.cpp
+pixelformat.cpp
+polygrid.cpp
+predict.cpp
+ratetracker.cpp
+render.cpp
+s_client.cpp
+s_concommand.cpp
+S_Intersect.cpp
+s_net.cpp
+s_object.cpp
+server_consolestate.cpp
+server_extradata.cpp
+server_filemgr.cpp
+Generating Code...
+Compiling...
+serverde_impl.cpp
+serverevent.cpp
+servermgr.cpp
+setupobject.cpp
+shellnet.cpp
+shelltransfer.cpp
+shellutil.cpp
+smoveabstract.cpp
+soundbuffer.cpp
+sounddata.cpp
+soundinstance.cpp
+soundtrack.cpp
+sprite.cpp
+spritecontrolimpl.cpp
+stacktrace.cpp
+stdlterror.cpp
+streamsim.cpp
+stringmgr.cpp
+strtools.cpp
+systeminfo.cpp
+Generating Code...
+Compiling...
+text_mgr.cpp
+timemgr.cpp
+transformmaker.cpp
+udpdriver.cpp
+version_info.cpp
+version_resource.cpp
+videomgr.cpp
+volumeeffect.cpp
+wave.cpp
+winclientde_impl.cpp
+winconsole_impl.cpp
+world_tree.cpp
+world_blind_object_data.cpp
+world_blocker_data.cpp
+world_blocker_math.cpp
+world_client_bsp.cpp
+world_particle_blocker_data.cpp
+world_server_bsp.cpp
+world_shared_bsp.cpp
+client_filemgr.cpp
+Generating Code...
+Compiling...
+client_iltmodel.cpp
+modellt_impl.cpp
+server_iltmodel.cpp
+client_iltcommon.cpp
+server_iltcommon.cpp
+shared_iltcommon.cpp
+lt_cursor_impl.cpp
+client_iltphysics.cpp
+server_iltphysics.cpp
+shared_iltphysics.cpp
+transformlt_impl.cpp
+server_iltsoundmgr.cpp
+soundmgr.cpp
+client_iltvideomgr.cpp
+Generating Code...
+Compiling...
+ltmodule.cpp
+icommandlineargs.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\..\built\Debug\Runtime\EXE_Lithtech\Lithtech.lib and object ..\..\..\built\Debug\Runtime\EXE_Lithtech\Lithtech.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Debug\Runtime\EXE_Lithtech\Lithtech.exe
+        1개 파일이 복사되었습니다.
+<h3>
+--------------------Configuration: Engine - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+
+
+
+<h3>Results</h3>
+Engine.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

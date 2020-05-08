@@ -1,0 +1,815 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ButeEdit"=.\ButeEdit\ButeEdit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_ZLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ButeMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgrMfcDll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ButeMgr"=..\..\Johnson_Libs\ButeMgr\ButeMgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ButeMgrMfcDll"=..\..\Johnson_Libs\ButeMgr\ButeMgrMfcDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CryptMgr"=..\..\Johnson_Libs\CryptMgr\cryptmgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CryptMgrMfcDll"=..\..\Johnson_Libs\CryptMgr\CryptMgrMfcDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DEdit"=.\DEdit\dedit60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name GenRegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_RezMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ButeMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DibMgrMfcDll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DibMgr"=..\..\Johnson_Libs\DibMgr\dibmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DibMgrMfcDll"=..\..\Johnson_Libs\DibMgr\DibMgrMfcDll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FxED"=.\FxED\FxED.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_RezMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgrMfcDll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GenRegMgr"=..\..\Johnson_Libs\GenRegMgr\genregmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "HeightMaptoNormalMap"=.\HeightMaptoNormalMap\HeightMaptoNormalMap.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LTAsk"=.\utils\LTAsk\LTAsk.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LTC"=.\LTC\LTC.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Lib_ILTSound"=..\Runtime\sound\src\Lib_ILTSound.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_Lith"=..\..\Johnson_Libs\Lith\Lib_Lith.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_RezMgr"=..\libs\rezmgr\Lib_RezMgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_StdLith"=..\..\Johnson_Libs\StdLith\Lib_StdLith.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib_ZLib"=..\..\Johnson_Libs\ZLib\Lib_ZLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LithRez"=.\LithRez\LithRez.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_RezMgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MFCStub"=..\..\Johnson_Libs\MFCStub\MFCStub60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MaxDTXLoader"=.\Plugins\MaxDTXLoader\MaxDTXLoader.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MaxModelExport"=.\Plugins\MaxModelExport\MaxModelExport.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MaxWorldExport"=.\Plugins\MaxWorldExport\MaxWorldExport.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MaxWorldImport"=.\Plugins\MaxWorldImport\MaxWorldImport.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MayaDTXLoader"=.\Plugins\MayaDTXLoader\MayaDTXLoader.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MayaModelExport"=.\Plugins\MayaModelExport\MayaModelExport.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MayaWorldExport"=.\Plugins\MayaWorldExport\MayaWorldExport.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ModelEdit"=.\ModelEdit\ModelEdit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RegMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Model_Packer"=.\Model_Packer\Model_Packer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Plugins"=.\PLUGINS\Plugins.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name MaxModelExport
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MaxWorldExport
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MaxWorldImport
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MayaModelExport
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MayaWorldExport
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MayaDTXLoader
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name MaxDTXLoader
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PreProcessor"=.\PreProcessor\preprocessor60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RegMgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PropHelpGen"=.\PropHelpGen\PropHelpGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeMgrMfcDll
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CryptMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RegMgr"=..\..\Johnson_Libs\RegMgr\regmgr60.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RenderStyle_Packer"=.\RenderStyle_Packer\RenderStyle_Packer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_Lith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RenderStylesEditor"=.\RenderStylesEditor\RenderStylesEditor.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RenderStylesEditorViewer"=.\RENDERSTYLESEDITOR\RenderStylesEditorViewer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TSCompiler"=.\TSCompiler\TSCompiler.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WaveEdit"=.\WaveEdit\WaveEdit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_ILTSound
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "WinLTC"=.\WinLTC\WinLTC.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dtxutil"=.\dtxutil\dtxutil.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib_StdLith
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ltamgr"=..\libs\ltamgr\ltamgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ltaview"=.\ltaview\ltaview.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ltamgr
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "pma"=.\pma\pma.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "pscompiler"=.\pscompiler\pscompiler.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "recurse_run"=.\recurse_run\recurse_run.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tools"=.\tools.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ButeEdit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DEdit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dtxutil
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FxED
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LithRez
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LTAsk
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ltaview
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LTC
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Model_Packer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ModelEdit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name pma
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PreProcessor
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PropHelpGen
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name recurse_run
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RenderStyle_Packer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RenderStylesEditor
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name WaveEdit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name WinLTC
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Plugins
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name HeightMaptoNormalMap
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RenderStylesEditorViewer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name TSCompiler
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name pscompiler
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

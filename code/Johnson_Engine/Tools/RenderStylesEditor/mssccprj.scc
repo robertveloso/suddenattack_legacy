@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[RenderStylesEditor.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Tools/RenderStylesEditor", HQBCAAAA
+
+[RenderStylesEditor.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Tools/RenderStylesEditor", HQBCAAAA
+
+[RenderStylesEditorViewer.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Tools/RenderStylesEditor", HQBCAAAA
+
+[RenderStylesEditorViewer.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Tools/RenderStylesEditor", HQBCAAAA

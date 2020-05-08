@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WONAPI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP174.tmp" with contents
+[
+/nologo /out:"..\..\built\Debug\libs\WonAPI\WONAPI.lib" 
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Auth.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Common.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Crypt.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\DB.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Dir.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\gqueryreporting.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Misc.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\nonport.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Routing.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Server.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\Socket.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\WONAPI.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\WONStatus.obj
+\FPS_Project\SuddenAttack\Engine\built\Debug\libs\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP174.tmp"
+<h3>Output Window</h3>
+Creating library...
+<h3>
+--------------------Configuration: ServerDir - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP175.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\..\Engine\sdk\inc" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\libs\wonapi" /I "..\..\ClientRes\Shared" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"..\..\built\Debug\libs\ServerDir/ServerDir.pch" /Yu"stdafx.h" /Fo"..\..\built\Debug\libs\ServerDir/" /Fd"..\..\built\Debug\libs\ServerDir/" /FD /GZ /c 
+"D:\FPS_Project\SuddenAttack\Game\LIBS\SERVERDIR\CServerDir_Titan.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP175.tmp" 
+Creating temporary file "C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP176.tmp" with contents
+[
+wonapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"..\..\built\Debug\libs\ServerDir/ServerDir.pdb" /debug /machine:I386 /out:"..\..\built\Debug\libs\ServerDir/ServerDir.dll" /implib:"..\..\built\Debug\libs\ServerDir/ServerDir.lib" /pdbtype:sept /libpath:"..\..\built\debug\libs\wonapi" 
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\CServerDir_Titan.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\StdAfx.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\TitanTest.obj
+\FPS_Project\SuddenAttack\Engine\built\Debug\libs\ltmem.lib
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\WonAPI\WONAPI.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP176.tmp"
+warning: unresolved Environment Variable  "$(GAME_MAIN_DIR)"
+warning: unresolved Environment Variable  "$(GAME_MAIN_DIR)"
+Creating temporary file "C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP177.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll
+echo copy \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll 
+copy \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll 
+echo copy \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll D:\FPS_Project\SuddenAttack\Development\Tools
+copy \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll D:\FPS_Project\SuddenAttack\Development\Tools
+echo   copy   \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.lib   \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\..\serverdir.lib
+copy   \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.lib    \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\..\serverdir.lib
+]
+Creating command line "C:\DOCUME~1\bestline\LOCALS~1\Temp\RSP177.bat"
+Compiling...
+CServerDir_Titan.cpp
+Linking...
+   Creating library ..\..\built\Debug\libs\ServerDir/ServerDir.lib and object ..\..\built\Debug\libs\ServerDir/ServerDir.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll
+copy \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll 
+        1개 파일이 복사되었습니다.
+copy \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.dll D:\FPS_Project\SuddenAttack\Development\Tools
+        1개 파일이 복사되었습니다.
+  copy   \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\ServerDir.lib   \FPS_Project\SuddenAttack\Game\built\Debug\libs\ServerDir\..\serverdir.lib
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+ServerDir.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

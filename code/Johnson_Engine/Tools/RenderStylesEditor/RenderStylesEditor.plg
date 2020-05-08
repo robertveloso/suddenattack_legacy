@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RenderStylesEditor - Win32 Release Viewer--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP88.bat" with contents
+[
+@echo off
+echo copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+]
+Creating command line "C:\DOCUME~1\John\LOCALS~1\Temp\RSP88.bat"
+<h3>Output Window</h3>
+Performing Custom Build Step on \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe
+copy \Working\ENGINE\built\Release\tools\RenderStylesEditorViewer\RenderStylesViewer.exe ..\..\..\development\tools
+        1개 파일이 복사되었습니다.
+
+
+
+<h3>Results</h3>
+RenderStylesViewer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

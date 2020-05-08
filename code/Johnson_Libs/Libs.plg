@@ -1,0 +1,342 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ButeMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP1FFA.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\STLPORT-4.0\STLPORT" /I "..\stdlith" /I "..\mfcstub" /I "..\cryptmgr" /I "..\lith" /D "_DEBUG" /D "_NOMFC" /D "WIN32" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/ButeMgr.pch" /Yu"StdAfx.h" /Fo"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\ButeMgr\ARange.cpp"
+"D:\sa\code\Johnson_Libs\ButeMgr\AVector.cpp"
+"D:\sa\code\Johnson_Libs\ButeMgr\ButeMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP1FFA.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP1FFB.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\STLPORT-4.0\STLPORT" /I "..\stdlith" /I "..\mfcstub" /I "..\cryptmgr" /I "..\lith" /D "_DEBUG" /D "_NOMFC" /D "WIN32" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/ButeMgr.pch" /Yc"StdAfx.h" /Fo"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\ButeMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\ButeMgr\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP1FFB.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP1FFC.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\ButeMgr.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\ARange.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\AVector.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\ButeMgr.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\ButeMgr\Stdafx.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP1FFC.tmp"
+<h3>Output Window</h3>
+Compiling...
+Stdafx.cpp
+Compiling...
+ARange.cpp
+AVector.cpp
+ButeMgr.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: ButeMgrMfcDll - Win32 Debug--------------------
+</h3>
+
+--------------------Configuration: ButeMgr - Win32 Debug MFC DLL--------------------
+
+ButeMgrMfcDll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CryptMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP253D.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Z7 /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/cryptmgr.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\CryptMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\CryptMgr\blowfish.cpp"
+"D:\sa\code\Johnson_Libs\CryptMgr\CryptMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP253D.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\Lib\Debug\cryptmgr.lib"  \sa\code\Johnson_Built\Johnson_Client\Debug\CryptMgr\blowfish.obj \sa\code\Johnson_Built\Johnson_Client\Debug\CryptMgr\CryptMgr.obj "
+<h3>Output Window</h3>
+Compiling...
+blowfish.cpp
+CryptMgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: CryptMgrMfcDll - Win32 Debug--------------------
+</h3>
+
+--------------------Configuration: CryptMgr - Win32 Debug MFC DLL--------------------
+
+CryptMgrMfcDll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DibMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP27ED.tmp" with contents
+[
+/nologo /MTd /W3 /GX /Z7 /Od /I "..\STLPORT-4.0\STLPORT" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "NO_PRAGMA_LIBS" /FR"..\built\Debug\DibMgr/" /Fp"..\built\Debug\DibMgr/dibmgr60.pch" /YX /Fo"..\built\Debug\DibMgr/" /Fd"..\built\Debug\DibMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\dibmgr\Dib.cpp"
+"D:\sa\code\Johnson_Libs\dibmgr\DibMgr.cpp"
+"D:\sa\code\Johnson_Libs\dibmgr\DibPal.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP27ED.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\built\Debug\dibmgr.lib"  \sa\code\Johnson_Libs\built\Debug\DibMgr\Dib.obj \sa\code\Johnson_Libs\built\Debug\DibMgr\DibMgr.obj \sa\code\Johnson_Libs\built\Debug\DibMgr\DibPal.obj "
+<h3>Output Window</h3>
+Compiling...
+Dib.cpp
+DibMgr.cpp
+DibPal.cpp
+Creating library...
+<h3>
+--------------------Configuration: DibMgrMfcDll - Win32 Debug--------------------
+</h3>
+
+--------------------Configuration: DibMgr - Win32 Debug MFC DLL--------------------
+
+dibmgr_mfcdll.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenRegMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2CE0.tmp" with contents
+[
+/nologo /MTd /W3 /GX /ZI /Od /I "..\STLPORT-4.0\STLPORT" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NO_PRAGMA_LIBS" /FR"..\Built\Debug\GenRegMgr/" /Fp"..\Built\Debug\GenRegMgr/genregmgr60.pch" /YX /Fo"..\Built\Debug\GenRegMgr/" /Fd"..\Built\Debug\GenRegMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\genregmgr\GenRegMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2CE0.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\Built\Debug\genregmgr.lib"  \sa\code\Johnson_Libs\Built\Debug\GenRegMgr\GenRegMgr.obj "
+<h3>Output Window</h3>
+Compiling...
+GenRegMgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_Lith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2F33.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/" /Fp"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/Lib_Lith.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/" /Fd"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/" /FD /GZ /c 
+"D:\sa\code\Johnson_Libs\lith\basehash.cpp"
+"D:\sa\code\Johnson_Libs\lith\baselist.cpp"
+"D:\sa\code\Johnson_Libs\lith\baselistcounter.cpp"
+"D:\sa\code\Johnson_Libs\lith\dprintf.cpp"
+"D:\sa\code\Johnson_Libs\lith\lith.cpp"
+"D:\sa\code\Johnson_Libs\lith\lithbaselist.cpp"
+"D:\sa\code\Johnson_Libs\lith\lithchunkallocator.cpp"
+"D:\sa\code\Johnson_Libs\lith\lithsimpary.cpp"
+"D:\sa\code\Johnson_Libs\lith\lithsimparystat.cpp"
+"D:\sa\code\Johnson_Libs\lith\virtlist.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2F33.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2F34.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\Lib_Lith.lib" 
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\basehash.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\baselist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\baselistcounter.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\dprintf.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lith.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithbaselist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithchunkallocator.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithsimpary.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithsimparystat.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\virtlist.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP2F34.tmp"
+<h3>Output Window</h3>
+Compiling...
+basehash.cpp
+baselist.cpp
+baselistcounter.cpp
+dprintf.cpp
+lith.cpp
+lithbaselist.cpp
+lithchunkallocator.cpp
+lithsimpary.cpp
+lithsimparystat.cpp
+virtlist.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_StdLith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3417.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I ".\\" /I "..\STLPORT-4.0\STLPORT" /I "..\zlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/" /Fp"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/Lib_StdLith.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/" /Fd"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/" /FD /GZ /c 
+"D:\sa\code\Johnson_Libs\stdlith\abstractio.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\sys\win\compressedio.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\dynarray.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\fileio.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\goodlinklist.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\helpers.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\l_allocator.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\linklist.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\lithexception.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\memory.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\memoryio.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\stringholder.cpp"
+"D:\sa\code\Johnson_Libs\stdlith\struct_bank.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP3417.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3437.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\Lib_StdLith.lib" 
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\abstractio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\compressedio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\dynarray.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\fileio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\goodlinklist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\helpers.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\l_allocator.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\linklist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\lithexception.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\memory.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\memoryio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\stringholder.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\struct_bank.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP3437.tmp"
+<h3>Output Window</h3>
+Compiling...
+abstractio.cpp
+compressedio.cpp
+dynarray.cpp
+fileio.cpp
+goodlinklist.cpp
+helpers.cpp
+l_allocator.cpp
+linklist.cpp
+lithexception.cpp
+memory.cpp
+memoryio.cpp
+stringholder.cpp
+struct_bank.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_ZLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3745.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib/" /Fp"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib/Lib_ZLib.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib/" /Fd"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib/" /FD /GZ /c 
+"D:\sa\code\Johnson_Libs\zlib\adler32.c"
+"D:\sa\code\Johnson_Libs\zlib\compress.c"
+"D:\sa\code\Johnson_Libs\zlib\crc32.c"
+"D:\sa\code\Johnson_Libs\zlib\deflate.c"
+"D:\sa\code\Johnson_Libs\zlib\gzio.c"
+"D:\sa\code\Johnson_Libs\zlib\infblock.c"
+"D:\sa\code\Johnson_Libs\zlib\infcodes.c"
+"D:\sa\code\Johnson_Libs\zlib\inffast.c"
+"D:\sa\code\Johnson_Libs\zlib\inflate.c"
+"D:\sa\code\Johnson_Libs\zlib\inftrees.c"
+"D:\sa\code\Johnson_Libs\zlib\infutil.c"
+"D:\sa\code\Johnson_Libs\zlib\trees.c"
+"D:\sa\code\Johnson_Libs\zlib\uncompr.c"
+"D:\sa\code\Johnson_Libs\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP3745.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3746.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\Lib_ZLib.lib" 
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\adler32.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\compress.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\crc32.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\deflate.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\gzio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\infblock.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\infcodes.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\inffast.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\inflate.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\inftrees.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\infutil.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\trees.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\uncompr.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_ZLib\zutil.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP3746.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+trees.c
+uncompr.c
+zutil.c
+Creating library...
+<h3>
+--------------------Configuration: MFCStub - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP39C8.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\stdlith" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/MFCStub60.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\MFCStub/" /FD /c 
+"D:\sa\code\Johnson_Libs\MFCStub\mfcs_point.cpp"
+"D:\sa\code\Johnson_Libs\MFCStub\mfcs_rect.cpp"
+"D:\sa\code\Johnson_Libs\MFCStub\mfcs_string.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP39C8.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP39C9.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\MFCStub.lib" 
+\sa\code\Johnson_Built\Johnson_Client\Debug\MFCStub\mfcs_point.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\MFCStub\mfcs_rect.obj
+\sa\code\Johnson_Built\Johnson_Client\Debug\MFCStub\mfcs_string.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP39C9.tmp"
+<h3>Output Window</h3>
+Compiling...
+mfcs_point.cpp
+mfcs_rect.cpp
+mfcs_string.cpp
+Creating library...
+<h3>
+--------------------Configuration: RegMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3B51.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\lith" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /Fp"..\..\Johnson_Built\Johnson_Client\debug\RegMgr/regmgr60.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\debug\RegMgr/" /Fd"..\..\Johnson_Built\Johnson_Client\debug\RegMgr/" /FD /c 
+"D:\sa\code\Johnson_Libs\RegMgr\Regmgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP3B51.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\Lib\Debug\Regmgr.lib"  \sa\code\Johnson_Built\Johnson_Client\debug\RegMgr\Regmgr.obj "
+<h3>Output Window</h3>
+Compiling...
+Regmgr.cpp
+Creating library...
+<h3>
+--------------------Configuration: regmgr32 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3C8A.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"..\..\Johnson_Built\Johnson_Client\Debug\RegMgr32/" /Fp"..\..\Johnson_Built\Johnson_Client\Debug\RegMgr32/regmgr32.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Client\Debug\RegMgr32/" /Fd"..\..\Johnson_Built\Johnson_Client\Debug\RegMgr32/" /FD /c 
+"D:\sa\code\Johnson_Libs\RegMgr32\regmgr32.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP3C8A.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\Lib\Debug\RegMgr32.lib"  \sa\code\Johnson_Built\Johnson_Client\Debug\RegMgr32\regmgr32.obj "
+<h3>Output Window</h3>
+Compiling...
+regmgr32.cpp
+Creating library...
+<h3>
+--------------------Configuration: Libs - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Libs - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\SALauncher.Properties.Resources.resources
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\SALauncher.frmMain.resources
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Debug\launcher.ini
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\SALauncher.frmOptions.resources
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Debug\SALauncher 1.0 (By ExtremsX).exe.config
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Debug\SALauncher 1.0 (By ExtremsX).exe
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Debug\SALauncher 1.0 (By ExtremsX).pdb
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\SALauncher 1.0 (By ExtremsX).exe
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Debug\SALauncher 1.0 (By ExtremsX).pdb

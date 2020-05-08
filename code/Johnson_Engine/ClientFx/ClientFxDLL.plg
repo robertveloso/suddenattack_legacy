@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ClientFxDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP3795.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\libs\STLPORT-4.0\STLPORT" /I ".\shared" /I "..\sdk\inc" /I "..\..\libs\mfcstub" /I "..\..\libs\stdlith" /I "..\..\libs\butemgr" /I "..\..\libs\cryptmgr" /I "..\..\libs\lith" /I "..\libs\ltguimgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENTFX" /FR"..\built\Debug\clientfx\\" /Fp"..\built\Debug\clientfx\ClientFxDLL.pch" /Yu"stdafx.h" /Fo"..\built\Debug\clientfx\\" /Fd"..\built\Debug\clientfx\\" /FD /c 
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\BaseFx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\bouncychunkfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\camjitterfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\camwobblefx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\clientfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\CreateFX.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\cycletimer.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\Shared\DebugNew.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\dynalightfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\fallingstufffx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\FlareSpriteFX.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\lightningfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\LTBbouncychunkfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\ltbmodelfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\nullfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\ParticleSystemFX.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\playrandomsoundfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\playsoundfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\polyfanfx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\polytubefx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\spritefx.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\spritesystemfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP3795.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP37A5.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\libs\STLPORT-4.0\STLPORT" /I ".\shared" /I "..\sdk\inc" /I "..\..\libs\mfcstub" /I "..\..\libs\stdlith" /I "..\..\libs\butemgr" /I "..\..\libs\cryptmgr" /I "..\..\libs\lith" /I "..\libs\ltguimgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENTFX" /FR"..\built\Debug\clientfx\\" /Fo"..\built\Debug\clientfx\\" /Fd"..\built\Debug\clientfx\\" /FD /c 
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP37A5.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP37A6.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\libs\STLPORT-4.0\STLPORT" /I ".\shared" /I "..\sdk\inc" /I "..\..\libs\mfcstub" /I "..\..\libs\stdlith" /I "..\..\libs\butemgr" /I "..\..\libs\cryptmgr" /I "..\..\libs\lith" /I "..\libs\ltguimgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "NOPS2" /D "MEMTRACK_CLIENTFX" /FR"..\built\Debug\clientfx\\" /Fp"..\built\Debug\clientfx\ClientFxDLL.pch" /Yc"stdafx.h" /Fo"..\built\Debug\clientfx\\" /Fd"..\built\Debug\clientfx\\" /FD /c 
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP37A6.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP37A7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib ButeMgr.lib MfcStub.lib cryptmgr.lib lib_stdlith.lib lib_lith.lib ltmem.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\built\Debug\clientfx\ClientFx.pdb" /debug /machine:I386 /out:"..\built\Debug\clientfx\ClientFx.fxd" /implib:"..\built\Debug\clientfx\ClientFx.lib" /pdbtype:sept /libpath:"..\..\libs\built\debug" /libpath:"..\built\debug\libs" 
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\BaseFx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\bouncychunkfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\camjitterfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\camwobblefx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\clientfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\CreateFX.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\cycletimer.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\DebugNew.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\dynalightfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\fallingstufffx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\FlareSpriteFX.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\lightningfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\LTBbouncychunkfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\ltbmodelfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\ltmodule.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\ltquatbase.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\nullfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\ParticleSystemFX.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\playrandomsoundfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\playsoundfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\polyfanfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\polytubefx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\spritefx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\spritesystemfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\built\Debug\clientfx\stdafx.obj
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP37A7.tmp"
+<h3>Output Window</h3>
+Compiling...
+stdafx.cpp
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Engine\ClientFx\stdafx.h(14) : fatal error C1083: Cannot open include file: 'mfcstub.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ClientFx.fxd - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

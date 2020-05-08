@@ -1,0 +1,146 @@
+// this script posts the lta model exporter file translator options.
+// the optionsString is of the form:
+//    varName1=value1;varName2=value2;...
+//
+// parameters:
+//    $parent - the elf parent layout for this options layout.
+//              it is always a scrollLayout.
+//    $action - the action that is to be performed with this invokation
+//              of this proc.  valid actions are:
+//                  "query" - construct the options string and pass
+//                            it to the resultCallback.
+//                  "post" - post all the elf controls.
+//    $initialSettings - the current options string in effect at the
+//                       time this script is invoked.
+//    $resultCallback - this is the proc to be called with the result
+//                      string.  resultCallback( string $optionsString )
+//
+// returns:
+//    1 if successful
+//    0 on failure
+
+global proc LithTechModelExportGetPath( string $buttonPath, string $dirPath, string $notUsed )
+{
+	textFieldButtonGrp -edit -fileName $dirPath $buttonPath;
+}
+
+global proc int LithTechModelExportOptions ( string $parent, string $action, string $initialSettings, string $resultCallback )
+{
+	int $result = 0;
+	
+	if( $action == "post" )
+	{
+		setParent $parent;
+
+		columnLayout -adjustableColumn true mainLayout;
+			textFieldGrp -label "Animation Name:" -text "baseAnim" animName;
+			floatFieldGrp -label "Scale Modifier:" -value1 1.0 -precision 3 scale;
+			checkBox -label "Ignore Bind Pose" -align "left" -value off ignoreBindPose;
+			checkBox -label "Export Normals" -align "left" -value on exportNormals;
+			checkBox -label "Export World Node" -align "left" -value on exportWorldNode;
+			checkBox -label "Use Playback Range" -align "left" -value on usePlaybackRange;
+			checkBox -label "Use Maya Texture Information" -align "left" -value off -onCommand "textFieldButtonGrp -edit -enable true baseTexPath" -offCommand "textFieldButtonGrp -edit -enable false baseTexPath" useTextureInfo;
+			string $texPathCtl = `textFieldButtonGrp -enable false -label "Base Texture Path:" -fileName "" -buttonLabel "..." baseTexPath`;
+			string $texPathButtonCmd = ( "fileBrowserDialog -m 4 -an \"\" -fc \"LithTechModelExportGetPath " + $texPathCtl + "\"" );
+			textFieldButtonGrp -edit -buttonCommand $texPathButtonCmd baseTexPath;
+
+		// now set the current settings
+		string $currentOptions = $initialSettings;
+		string $optionList[];
+		string $optionBreakDown[];
+		int $index;
+
+		if( size( $currentOptions ) > 0 )
+		{
+			tokenize( $currentOptions, ";", $optionList );
+
+			for( $index = 0; $index < size($optionList); $index++ )
+			{
+				tokenize( $optionList[$index], "=", $optionBreakDown );
+
+				if( $optionBreakDown[0] == "useTextureInfo" )
+				{
+					if( $optionBreakDown[1] == "0" )
+					{
+						checkBox -edit -value off useTextureInfo;
+						textFieldButtonGrp -edit -enable false baseTexPath;
+					}
+					else
+					{
+						checkBox -edit -value on useTextureInfo;
+						textFieldButtonGrp -edit -enable true baseTexPath;
+					}
+				}
+
+				if( $optionBreakDown[0] == "baseTexPath" )
+				{
+					textFieldButtonGrp -edit -fileName $optionBreakDown[1] baseTexPath;
+				}
+
+				if( $optionBreakDown[0] == "usePlaybackRange" )
+				{
+					if( $optionBreakDown[1] == "0" )
+						checkBox -edit -value off usePlaybackRange;
+					else
+						checkBox -edit -value on usePlaybackRange;
+				}
+
+				if( $optionBreakDown[0] == "ignoreBindPose" )
+				{
+					if( $optionBreakDown[1] == "0" )
+						checkBox -edit -value off ignoreBindPose;
+					else
+						checkBox -edit -value on ignoreBindPose;
+				}
+
+				if( $optionBreakDown[0] == "exportNormals" )
+				{
+					if( $optionBreakDown[1] == "0" )
+						checkBox -edit -value off exportNormals;
+					else
+						checkBox -edit -value on exportNormals;
+				}
+
+				if( $optionBreakDown[0] == "exportWorldNode" )
+				{
+					if( $optionBreakDown[1] == "0" )
+						checkBox -edit -value off exportWorldNode;
+					else
+						checkBox -edit -value on exportWorldNode;
+				}
+
+				if( $optionBreakDown[0] == "scale" )
+				{
+					float $tmpFloat = $optionBreakDown[1];
+					floatFieldGrp -edit -value1 $tmpFloat scale;
+				}
+
+				if( $optionBreakDown[0] == "animName" )
+				{
+					textFieldGrp -edit -text $optionBreakDown[1] animName;
+				}
+			}
+		}
+
+		$result = 1;
+	}
+	else if( $action == "query" )
+	{
+		string $currentOptions;
+
+		$currentOptions += ( "useTextureInfo=" + `checkBox -query -value useTextureInfo` );
+		$currentOptions += ( ";baseTexPath=" + `textFieldButtonGrp -query -fileName baseTexPath` );
+		$currentOptions += ( ";scale=" + `floatFieldGrp -query -value1 scale` );
+		$currentOptions += ( ";animName=" + `textFieldGrp -query -text animName` );
+		$currentOptions += ( ";usePlaybackRange=" + `checkBox -query -value usePlaybackRange` );
+		$currentOptions += ( ";ignoreBindPose=" + `checkBox -query -value ignoreBindPose` );
+		$currentOptions += ( ";exportNormals=" + `checkBox -query -value exportNormals` );
+		$currentOptions += ( ";exportWorldNode=" + `checkBox -query -value exportWorldNode` );
+
+		eval( $resultCallback + " \"" + $currentOptions + "\"" );
+
+		$result = 1;
+	}
+
+	return $result;
+}

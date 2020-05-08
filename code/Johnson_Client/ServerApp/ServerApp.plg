@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ServerApp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F3.tmp" with contents
+[
+server.lib regmgr32.lib regmgr.lib lib_lith.lib ButeMgrMfcDll.lib cryptmgrmfcdll.lib lib_stdlith.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\Built\Debug\ServerApp/NOLF2Srv.pdb" /debug /machine:I386 /out:"..\Built\Debug\ServerApp\NOLF2Srv.exe" /pdbtype:sept /libpath:"...\..\engine\built\Debug\Runtime\DLL_Server" /libpath:"..\..\libs\built\Debug" /libpath:"..\..\Engine\built\Debug\libs" 
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\CommonUtilities.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\DebugNew.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\GameAlloc.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ltmodule.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\NetDefs.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ParsedMsg.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ProfileUtils.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\SAVersionMgr.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ScmdConsole.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ScmdConsoleDriver_ServerApp.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\SelectConfigDlg.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ServerApp.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ServerDlg.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\Splash.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\StdAfx.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\VersionMgr.obj
+\FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\ServerApp.res
+\FPS_Project\SuddenAttack\libs\built\Debug\Lib_Lith.lib
+\FPS_Project\SuddenAttack\libs\built\Debug\Lib_StdLith.lib
+\FPS_Project\SuddenAttack\libs\built\debug\Regmgr.lib
+\FPS_Project\SuddenAttack\Engine\built\Debug\libs\ltmem.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F3.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F4.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\NOLF2Srv.exe
+echo copy \FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\NOLF2Srv.exe E:\FPS_Project\SuddenAttack\Development\SA
+copy \FPS_Project\SuddenAttack\Game\Built\Debug\ServerApp\NOLF2Srv.exe E:\FPS_Project\SuddenAttack\Development\SA
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F4.bat"
+Linking...
+LINK : fatal error LNK1104: cannot open file "server.lib"
+Error executing link.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+NOLF2Srv.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

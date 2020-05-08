@@ -1,0 +1,623 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lib_Network - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6E7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/Lib_Network.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /FD /GZ /c 
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\ClientGate.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\CommSocket.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\HttpResponser.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\ListenSocket.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\Message.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\MessageQueue.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\PacketAssembler.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\PacketBuffer.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\PacketMessage.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Application\Peer.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\QueryBuffer.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\QueryMessage.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\Responser.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SendPacket.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SessionGate.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SessionManager.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SignalMessage.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\SignalQueue.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp"
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Session\Timer.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP6E7.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6E8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/Lib_Network.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /Fd"..\..\..\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network/" /FD /GZ /c 
+"C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP6E8.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP6F9.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\Lib_Network.lib" 
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\StdAfx.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\ClientGate.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\CommSocket.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\HttpResponser.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\ListenSocket.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Message.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\MessageQueue.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\PacketAssembler.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\PacketBuffer.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\PacketMessage.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Peer.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\QueryBuffer.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\QueryMessage.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Responser.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SendPacket.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SessionGate.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SessionManager.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SignalMessage.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\SignalQueue.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\TcpAsyncSelect.obj
+\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Built\Johnson_Client\Debug\ClientShellDLL\Network\Timer.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP6F9.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientGate.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(23) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(24) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(25) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(26) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(27) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(28) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(30) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(31) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(46) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(50) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(52) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(53) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(55) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(56) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(57) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(58) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(59) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(60) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(63) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(64) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(65) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(66) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(67) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(70) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(71) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2253: 'GetOwnerKey' : pure specifier only applies to virtual function - specifier ignored
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(73) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(74) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(75) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(77) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(79) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(80) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2146: syntax error : missing ';' before identifier 'm_lpdwOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'm_lpdwOwnerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2146: syntax error : missing ';' before identifier 'm_lpAssemblerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'm_lpAssemblerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(89) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(96) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(103) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(153) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(157) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(161) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(163) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(164) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(165) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(166) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(167) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(168) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(170) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(171) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(172) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(173) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(174) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(177) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(191) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(203) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(205) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(211) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(218) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(226) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(237) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(243) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(99) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2146: syntax error : missing ';' before identifier 'GetNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(106) : warning C4183: 'GetNetworkKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(64) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(64) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(65) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(65) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : fatal error C1003: error count exceeds 100; stopping compilation
+CommSocket.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2146: syntax error : missing ';' before identifier 'm_lpdwOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'm_lpdwOwnerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2146: syntax error : missing ';' before identifier 'm_lpAssemblerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'm_lpAssemblerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(89) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(96) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(103) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\datastructure\memorypool.h(233) : fatal error C1506: unrecoverable block scoping error
+HttpResponser.cpp
+ListenSocket.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2146: syntax error : missing ';' before identifier 'm_lpdwOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'm_lpdwOwnerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2146: syntax error : missing ';' before identifier 'm_lpAssemblerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'm_lpAssemblerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(89) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(96) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(103) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\datastructure\memorypool.h(233) : fatal error C1506: unrecoverable block scoping error
+Message.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class GamehiSolution::Session::Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\datastructure\innerobject.h(72) : fatal error C1506: unrecoverable block scoping error
+MessageQueue.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class GamehiSolution::Session::Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\datastructure\innerobject.h(72) : fatal error C1506: unrecoverable block scoping error
+PacketAssembler.cpp
+PacketBuffer.cpp
+PacketMessage.cpp
+Peer.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(99) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2146: syntax error : missing ';' before identifier 'GetNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(106) : warning C4183: 'GetNetworkKey': member function definition looks like a ctor, but name does not match enclosing class
+QueryBuffer.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(99) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2146: syntax error : missing ';' before identifier 'GetNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(106) : warning C4183: 'GetNetworkKey': member function definition looks like a ctor, but name does not match enclosing class
+QueryMessage.cpp
+Responser.cpp
+SendPacket.cpp
+SessionGate.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(23) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(24) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(25) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(26) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(27) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(28) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(30) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(31) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(46) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(50) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(52) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(53) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(55) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(56) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(57) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(58) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(59) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(60) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(63) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(64) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(65) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(66) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(67) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(70) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(71) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2253: 'GetOwnerKey' : pure specifier only applies to virtual function - specifier ignored
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(73) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(74) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(75) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(77) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(79) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(80) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2146: syntax error : missing ';' before identifier 'm_lpdwOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'm_lpdwOwnerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2146: syntax error : missing ';' before identifier 'm_lpAssemblerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'm_lpAssemblerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(89) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(96) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(103) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(153) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(157) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(161) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(163) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(164) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(165) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(166) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(167) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(168) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(170) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(171) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(172) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(173) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(174) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(177) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(191) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(203) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(205) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(211) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(218) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(226) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(237) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(243) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(99) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2146: syntax error : missing ';' before identifier 'GetNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(106) : warning C4183: 'GetNetworkKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(64) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(64) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(65) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(65) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : fatal error C1003: error count exceeds 100; stopping compilation
+SessionManager.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(23) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(24) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(25) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(26) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(27) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(28) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(30) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(31) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(46) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(50) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(52) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(53) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(55) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(56) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(57) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(58) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(59) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(60) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(63) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(64) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(65) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(66) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(67) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(70) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(71) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2253: 'GetOwnerKey' : pure specifier only applies to virtual function - specifier ignored
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(73) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(74) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(75) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(77) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(79) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(80) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2146: syntax error : missing ';' before identifier 'm_lpdwOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'm_lpdwOwnerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2146: syntax error : missing ';' before identifier 'm_lpAssemblerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'm_lpAssemblerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(89) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(96) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(103) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(153) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(157) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(161) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(163) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(164) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(165) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(166) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(167) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(168) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(170) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(171) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(172) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(173) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(174) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(177) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(191) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(203) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(205) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(211) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(218) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(226) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(237) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(243) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(29) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(99) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2146: syntax error : missing ';' before identifier 'GetNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(103) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\application\peer.h(106) : warning C4183: 'GetNetworkKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2146: syntax error : missing ';' before identifier 'm_lpNetworkKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(45) : error C2501: 'm_lpNetworkKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(64) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(64) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(65) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(65) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : error C2629: unexpected 'class Message::CMessage ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : error C2238: unexpected token(s) preceding ';'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\message.h(67) : fatal error C1003: error count exceeds 100; stopping compilation
+SignalMessage.cpp
+SignalQueue.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class GamehiSolution::Session::Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+TcpAsyncSelect.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(23) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(24) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(25) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(26) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(27) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(28) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(30) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(31) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(46) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(50) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(52) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(53) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(55) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(56) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(57) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(58) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(59) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(60) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(63) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(64) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(65) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(66) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(67) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(70) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(71) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(72) : error C2253: 'GetOwnerKey' : pure specifier only applies to virtual function - specifier ignored
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(73) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(74) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(75) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(77) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(79) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\network.h(80) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2146: syntax error : missing ';' before identifier 'm_lpdwOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(65) : error C2501: 'm_lpdwOwnerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2146: syntax error : missing ';' before identifier 'm_lpAssemblerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(66) : error C2501: 'm_lpAssemblerKey' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(89) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(93) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(96) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\socket.h(103) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(98) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(153) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(157) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(161) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(163) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(164) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(165) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(166) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(167) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(168) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(170) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(171) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(172) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(173) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(174) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(177) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(191) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2146: syntax error : missing ';' before identifier 'GetOwnerKey'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2433: 'ULONG_PTR' : 'virtual' not permitted on data declarations
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(199) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(203) : warning C4183: 'GetOwnerKey': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(205) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(211) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(218) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(226) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(237) : error C2061: syntax error : identifier 'ULONG_PTR'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\network\tcpasyncselect.h(243) : error C2061: syntax error : identifier 'ULONG_PTR'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(313) : error C2065: 'ULONG_PTR' : undeclared identifier
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(313) : error C2146: syntax error : missing ')' before identifier 'lpOwnerKey'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(313) : error C2350: 'CTcpAsyncSelect::Connect' is not a static member
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(313) : error C2059: syntax error : ')'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(314) : error C2143: syntax error : missing ';' before '{'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(314) : error C2447: missing function header (old-style formal list?)
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(374) : error C2146: syntax error : missing ')' before identifier 'lpNetworkKey'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(374) : error C2350: 'CTcpAsyncSelect::Send' is not a static member
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(374) : error C2059: syntax error : ')'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(375) : error C2143: syntax error : missing ';' before '{'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(375) : error C2447: missing function header (old-style formal list?)
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(383) : error C2146: syntax error : missing ')' before identifier 'lpNetworkKey'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(383) : error C2182: 'CloseSocket' : illegal use of type 'void'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(383) : error C2350: 'CTcpAsyncSelect::CloseSocket' is not a static member
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(383) : error C2059: syntax error : ')'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(384) : error C2143: syntax error : missing ';' before '{'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(384) : error C2447: missing function header (old-style formal list?)
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(396) : error C2146: syntax error : missing ')' before identifier 'lpNetworkKey'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(396) : error C2182: 'ShutDown' : illegal use of type 'void'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(396) : error C2350: 'CTcpAsyncSelect::ShutDown' is not a static member
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(396) : error C2059: syntax error : ')'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(397) : error C2143: syntax error : missing ';' before '{'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(397) : error C2447: missing function header (old-style formal list?)
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(403) : error C2146: syntax error : missing ')' before identifier 'lpNetworkKey'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(403) : error C2182: 'SetConnectRecvEvent' : illegal use of type 'void'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(403) : error C2350: 'CTcpAsyncSelect::SetConnectRecvEvent' is not a static member
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(403) : error C2059: syntax error : ')'
+C:\Users\veloso\Downloads\SuddenAttack\SuddenAttack\Johnson_Code\Johnson_Client\ClientShellDLL\Lib_Network\NJean\Network\TcpAsyncSelect.cpp(403) : fatal error C1003: error count exceeds 100; stopping compilation
+Timer.cpp
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2146: syntax error : missing ';' before identifier 'm_wParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(14) : error C2501: 'm_wParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2146: syntax error : missing ';' before identifier 'm_lParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(15) : error C2501: 'm_lParam' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2629: unexpected 'class GamehiSolution::Session::Message::CSignal ('
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(18) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2146: syntax error : missing ';' before identifier 'GetWParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(28) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(31) : warning C4183: 'GetWParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2146: syntax error : missing ';' before identifier 'GetLParam'
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(32) : error C2501: 'ULONG_PTR' : missing storage-class or type specifiers
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\njean\session\signalqueue.h(35) : warning C4183: 'GetLParam': member function definition looks like a ctor, but name does not match enclosing class
+c:\users\veloso\downloads\suddenattack\suddenattack\johnson_code\johnson_client\clientshelldll\lib_network\datastructure\memorypool.h(233) : fatal error C1506: unrecoverable block scoping error
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Lib_Network.lib - 495 error(s), 29 warning(s)
+</pre>
+</body>
+</html>

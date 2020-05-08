@@ -1,0 +1,31 @@
+Debug:
+	msdev MaxModelExport\MaxModelExport.dsp /MAKE "MaxModelExport - Win32 Debug MAX30"
+	msdev MaxModelExport\MaxModelExport.dsp /MAKE "MaxModelExport - Win32 Debug MAX40"
+	msdev MaxWorldExport\MaxWorldExport.dsp /MAKE "MaxWorldExport - Win32 Debug MAX30"
+	msdev MaxWorldExport\MaxWorldExport.dsp /MAKE "MaxWorldExport - Win32 Debug MAX40"
+	msdev MaxWorldImport\MaxWorldImport.dsp /MAKE "MaxWorldImport - Win32 Debug MAX30"
+	msdev MaxWorldImport\MaxWorldImport.dsp /MAKE "MaxWorldImport - Win32 Debug MAX40"
+	msdev MaxDTXLoader\MaxDTXLoader.dsp /MAKE "MaxDTXLoader - Win32 Debug MAX30"
+	msdev MaxDTXLoader\MaxDTXLoader.dsp /MAKE "MaxDTXLoader - Win32 Debug MAX40"
+	msdev MayaModelExport\MayaModelExport.dsp /MAKE "MayaModelExport - Win32 Debug Maya30"
+	msdev MayaModelExport\MayaModelExport.dsp /MAKE "MayaModelExport - Win32 Debug Maya40"
+	msdev MayaWorldExport\MayaWorldExport.dsp /MAKE "MayaWorldExport - Win32 Debug Maya30"
+	msdev MayaWorldExport\MayaWorldExport.dsp /MAKE "MayaWorldExport - Win32 Debug Maya40"
+	msdev MayaDTXLoader\MayaDTXLoader.dsp /MAKE "MayaDTXLoader - Win32 Debug"
+
+Release:
+	msdev MaxModelExport\MaxModelExport.dsp /MAKE "MaxModelExport - Win32 Release MAX30"
+	msdev MaxModelExport\MaxModelExport.dsp /MAKE "MaxModelExport - Win32 Release MAX40"
+	msdev MaxWorldExport\MaxWorldExport.dsp /MAKE "MaxWorldExport - Win32 Release MAX30"
+	msdev MaxWorldExport\MaxWorldExport.dsp /MAKE "MaxWorldExport - Win32 Release MAX40"
+	msdev MaxWorldImport\MaxWorldImport.dsp /MAKE "MaxWorldImport - Win32 Release MAX30"
+	msdev MaxWorldImport\MaxWorldImport.dsp /MAKE "MaxWorldImport - Win32 Release MAX40"
+	msdev MaxDTXLoader\MaxDTXLoader.dsp /MAKE "MaxDTXLoader - Win32 Release MAX30"
+	msdev MaxDTXLoader\MaxDTXLoader.dsp /MAKE "MaxDTXLoader - Win32 Release MAX40"
+	msdev MayaModelExport\MayaModelExport.dsp /MAKE "MayaModelExport - Win32 Release Maya30"
+	msdev MayaModelExport\MayaModelExport.dsp /MAKE "MayaModelExport - Win32 Release Maya40"
+	msdev MayaWorldExport\MayaWorldExport.dsp /MAKE "MayaWorldExport - Win32 Release Maya30"
+	msdev MayaWorldExport\MayaWorldExport.dsp /MAKE "MayaWorldExport - Win32 Release Maya40"
+	msdev MayaDTXLoader\MayaDTXLoader.dsp /MAKE "MayaDTXLoader - Win32 Release"
+
+All: Debug Release

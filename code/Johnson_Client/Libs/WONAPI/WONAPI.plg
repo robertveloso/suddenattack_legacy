@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WONAPI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP51D.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\WONAPI.lib" 
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Auth.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Common.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Crypt.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\DB.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Dir.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\gqueryreporting.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Misc.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\nonport.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Routing.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Server.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\Socket.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\WONAPI.obj
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Client\Debug\libs\WonAPI\WONStatus.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\noname\LOCALS~1\Temp\RSP51D.tmp"
+<h3>Output Window</h3>
+Creating library...
+
+
+
+<h3>Results</h3>
+WONAPI.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

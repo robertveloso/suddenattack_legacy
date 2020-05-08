@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\PreProcessor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PreProcessor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "DEdit PreProcessor Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1996",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_PREPROCESSOR_DIALOG DIALOGEX 0, 0, 500, 226
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LithTech World Processor"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    RTEXT           "Generating BSP",IDC_BSP_TEXT,203,50,55,10,NOT 
+                    WS_VISIBLE
+    CONTROL         "Progress1",IDC_HULL_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,263,140,230,10
+    RTEXT           "Generating Hulls",IDC_HULL_TEXT,203,140,55,10,NOT 
+                    WS_VISIBLE
+    CONTROL         "Progress1",IDC_VIS_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,263,185,230,10
+    RTEXT           "Full Optimization",IDC_VIS_TEXT,203,186,55,10,NOT 
+                    WS_VISIBLE
+    CONTROL         "Progress1",IDC_BSP_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,263,50,230,10
+    RTEXT           "Setting Up",IDC_SETTINGUP_TEXT,223,5,35,10,NOT 
+                    WS_VISIBLE
+    CONTROL         "Progress1",IDC_SETTINGUP_PROGRESS,"msctls_progress32",
+                    NOT WS_VISIBLE | WS_BORDER,263,5,230,10
+    RTEXT           "Lighting",IDC_LIGHTING_TEXT,223,95,35,10,NOT WS_VISIBLE
+    CONTROL         "Progress1",IDC_LIGHTING_PROGRESS,"msctls_progress32",
+                    NOT WS_VISIBLE | WS_BORDER,263,95,230,10
+    EDITTEXT        IDC_TEXT_BAR,5,5,193,190,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL,WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "&OK",IDOK,50,205,100,15,NOT WS_VISIBLE
+    CONTROL         "Slider1",IDC_PRIORITY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,393,204,100,15
+    LTEXT           "Process Priority",IDC_STATIC,337,208,49,8
+END
+
+IDD_PROCESSINGOPTIONS DIALOG DISCARDABLE  0, 0, 338, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Processing Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "General",IDC_STATIC,7,7,88,60
+    CONTROL         "Objects Only",IDC_OBJECTSONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,20,56,8
+    CONTROL         "Ignore Hidden",IDC_IGNOREHIDDEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,30,70,10
+    CONTROL         "Ignore Frozen",IDC_IGNOREFROZEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,42,70,10
+    CONTROL         "Fix T Junctions",IDC_FIXTJUNC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,53,70,10
+    GROUPBOX        "Lighting",IDC_STATIC,97,7,234,60
+    CONTROL         "Apply Lighting",IDC_APPLYLIGHTING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,103,19,89,10
+    CONTROL         "Light Animations",IDC_LIGHTANIMATIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,103,30,89,10
+    CONTROL         "Shadows",IDC_SHADOWS,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,103,41,89,10
+    CONTROL         "Volumetric Ambient",IDC_VOLUMETRICAMBIENT,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,103,52,89,10
+    CONTROL         "Lambert Lighting",IDC_LAMBERT_LIGHTING,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,208,19,68,10
+    CONTROL         "Lambertian Lightmaps",IDC_LAMBERTIAN_LIGHTMAPS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,208,30,94,10
+    CONTROL         "Super Sample",IDC_LIGHTMAP_SUPER_SAMPLE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,208,41,58,10
+    EDITTEXT        IDC_NUM_SUPER_SAMPLES,269,40,15,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_DISABLED
+    CONTROL         "Vertex Lighting Only",IDC_VERTEXLIGHTING,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,208,52,89,10
+    GROUPBOX        "Options",IDC_STATIC,7,70,324,105
+    CTEXT           "Less Polies",IDC_STATIC,13,82,50,10
+    CONTROL         "Slider1",IDC_BALANCESLIDER,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,29,90,15,70
+    CTEXT           "Balanced Tree",IDC_STATIC,13,159,50,10
+    LTEXT           "Project Directory",IDC_STATIC,84,84,185,10
+    EDITTEXT        IDC_PROJECTDIR,84,94,222,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSEPROJDIR,309,94,16,15
+    LTEXT           "Extra Parameters",IDC_STATIC,84,114,190,10
+    EDITTEXT        IDC_EXTRAPARAMETERS,84,126,241,15,ES_AUTOHSCROLL
+    LTEXT           "Platform",IDC_STATIC,84,151,32,8
+    COMBOBOX        IDC_PLATFORM_DROPDOWN,116,150,51,44,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Log File",IDC_LOGFILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,148,40,10
+    DEFPUSHBUTTON   "OK",IDOK,96,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,180,50,14
+    CONTROL         "Error Log",IDC_ERRORLOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,159,45,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "LithTech\0"
+            VALUE "FileDescription", "Preprocessor\0"
+            VALUE "FileVersion", "2.27.01.001\0"
+            VALUE "InternalName", "Preprocessor\0"
+            VALUE "LegalCopyright", "Copyright © 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Preprocessor.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Preprocessor Application\0"
+            VALUE "ProductVersion", "3.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PREPROCESSOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 493
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PROCESSINGOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        VERTGUIDE, 13
+        VERTGUIDE, 103
+        VERTGUIDE, 208
+        VERTGUIDE, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+        HORZGUIDE, 20
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROCESSINGOPTIONS DLGINIT
+BEGIN
+    IDC_PLATFORM_DROPDOWN, 0x403, 3, 0
+0x4350, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About PreProcessor..."
+    IDS_PROCESSINGOPTIONSTITLE "Processing Options for %1!s!"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\PreProcessor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

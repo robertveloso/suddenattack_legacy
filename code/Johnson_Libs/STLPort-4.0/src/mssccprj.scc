@@ -1,0 +1,109 @@
+SCC = This is a Source Code Control file
+
+[bcb.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[bc502.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[bcb55.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[common_percent_rules.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[common_rules.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[common_macros.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[cygwin.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[dec.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[gcc-glibc.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[gcc7.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[gcc8.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[intel.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[hpacc.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[gcc.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[kai.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[mingw32.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[MrCpp.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[nmake_common.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[SCpp.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[sunpro-compat.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[sunpro.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[sunpro6.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[vc6.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[vc6-unicode.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[vc5.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[vc_common.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA
+
+[watcom-qnx.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/STLPort-4.0/src", MNCCAAAA

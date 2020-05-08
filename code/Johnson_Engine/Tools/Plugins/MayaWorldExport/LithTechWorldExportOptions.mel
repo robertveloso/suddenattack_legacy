@@ -1,0 +1,170 @@
+// this script posts the lta world exporter file translator options.
+// the optionsString is of the form:
+//    varName1=value1;varName2=value2;...
+//
+// parameters:
+//    $parent - the elf parent layout for this options layout.
+//              it is always a scrollLayout.
+//    $action - the action that is to be performed with this invokation
+//              of this proc.  valid actions are:
+//                  "query" - construct the options string and pass
+//                            it to the resultCallback.
+//                  "post" - post all the elf controls.
+//    $initialSettings - the current options string in effect at the
+//                       time this script is invoked.
+//    $resultCallback - this is the proc to be called with the result
+//                      string.  resultCallback( string $optionsString )
+//
+// returns:
+//    1 if successful
+//    0 on failure
+
+global proc LithTechWorldExportGetPath( string $buttonPath, string $dirPath, string $notUsed )
+{
+	textFieldButtonGrp -edit -fileName $dirPath $buttonPath;
+}
+
+global proc LithTechWorldExportUpdateControls()
+{
+	int $exportAnimations = `checkBox -query -value exportAnimations`;
+	int $forceKeys = `checkBox -query -value forceKeys`;
+	int $bothTrue = $exportAnimations && $forceKeys;
+
+	checkBox -edit -enable $exportAnimations forceKeys;
+	intFieldGrp -edit -enable $bothTrue forceKeysFrames;
+	checkBox -edit -enable $bothTrue includeKeys;
+	checkBox -edit -enable $exportAnimations externalKeys;
+
+	int $externalKeys = `checkBox -query -value externalKeys`;
+	$bothTrue = $exportAnimations && $externalKeys;
+
+	textFieldGrp -edit -enable $bothTrue keyPath;
+
+	int $forceKeysFrames = `intFieldGrp -query -value1 forceKeysFrames`;
+	if( $forceKeysFrames < 1 )
+	{
+		intFieldGrp -edit -value1 1 forceKeysFrames;
+	}
+}
+
+global proc int LithTechWorldExportOptions ( string $parent, string $action, string $initialSettings, string $resultCallback )
+{
+	int $result = 0;
+	
+	if( $action == "post" )
+	{
+		setParent $parent;
+
+		columnLayout -adjustableColumn true mainLayout;
+			string $projPathCtl = `textFieldButtonGrp -label "Project Path:" -fileName "" -buttonLabel "..." projectPath`;
+			floatFieldGrp -label "Scale:" -value1 1.0 -precision 3 scale;
+			checkBox -label "Export As Detail Brushes" -align "left" -value on detailBrushes;
+			checkBox -label "Triangulate Brushes" -align "left" -value off triangulateBrushes;
+			checkBox -label "Use Maya Texture Information" -align "left" -value on useTextureInfo;
+			checkBox -label "Export Animated World Models" -align "left" -value off -changeCommand "LithTechWorldExportUpdateControls" exportAnimations;
+			checkBox -label "Force Keys" -align "left" -value off -changeCommand "LithTechWorldExportUpdateControls" forceKeys;
+			intFieldGrp -label "Every" -extraLabel "Frames" -value1 5 -changeCommand "LithTechWorldExportUpdateControls" forceKeysFrames;
+			checkBox -label "Include Defined Keys" -align "left" -value off includeKeys;
+			checkBox -label "Create External Key File" -align "left" -value off -changeCommand "LithTechWorldExportUpdateControls" externalKeys;
+			textFieldGrp -label "Path Offset:" -fileName "" keyPath;
+
+		string $projPathButtonCmd = ( "fileBrowserDialog -m 4 -an \"\" -fc \"LithTechWorldExportGetPath " + $projPathCtl + "\"" );
+		textFieldButtonGrp -edit -buttonCommand $projPathButtonCmd projectPath;
+
+		// now set the current settings
+		string $currentOptions = $initialSettings;
+		string $optionList[];
+		string $optionBreakDown[];
+		int $index;
+
+		if( size( $currentOptions ) > 0 )
+		{
+			tokenize( $currentOptions, ";", $optionList );
+
+			for( $index = 0; $index < size($optionList); $index++ )
+			{
+				tokenize( $optionList[$index], "=", $optionBreakDown );
+
+				if( $optionBreakDown[0] == "useTextureInfo" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue useTextureInfo;
+				}
+				else if( $optionBreakDown[0] == "projectPath" )
+				{
+					textFieldButtonGrp -edit -fileName $optionBreakDown[1] projectPath;
+				}
+				else if( $optionBreakDown[0] == "scale" )
+				{
+					float $optionFloatValue = $optionBreakDown[1];
+					floatFieldGrp -edit -value1 $optionFloatValue scale;
+				}
+				else if( $optionBreakDown[0] == "detailBrushes" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue detailBrushes;
+				}
+				else if( $optionBreakDown[0] == "triangulateBrushes" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue triangulateBrushes;
+				}
+				else if( $optionBreakDown[0] == "exportAnimations" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue exportAnimations;
+				}
+				else if( $optionBreakDown[0] == "forceKeys" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue forceKeys;
+				}
+				else if( $optionBreakDown[0] == "forceKeysFrames" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					intFieldGrp -edit -value1 $optionIntValue forceKeysFrames;
+				}
+				else if( $optionBreakDown[0] == "includeKeys" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue includeKeys;
+				}
+				else if( $optionBreakDown[0] == "externalKeys" )
+				{
+					int $optionIntValue = $optionBreakDown[1];
+					checkBox -edit -value $optionIntValue externalKeys;
+				}
+				else if( $optionBreakDown[0] == "keyPath" )
+				{
+					textFieldGrp -edit -fileName $optionBreakDown[1] keyPath;
+				}
+			}
+		}
+
+		LithTechWorldExportUpdateControls;
+
+		$result = 1;
+	}
+	else if( $action == "query" )
+	{
+		string $currentOptions;
+
+		$currentOptions += ( "useTextureInfo=" + `checkBox -query -value useTextureInfo` );
+		$currentOptions += ( ";projectPath=" + `textFieldButtonGrp -query -fileName projectPath` );
+		$currentOptions += ( ";scale=" + `floatFieldGrp -query -value1 scale` );
+		$currentOptions += ( ";detailBrushes=" + `checkBox -query -value detailBrushes` );
+		$currentOptions += ( ";triangulateBrushes=" + `checkBox -query -value triangulateBrushes` );
+		$currentOptions += ( ";exportAnimations=" + `checkBox -query -value exportAnimations` );
+		$currentOptions += ( ";forceKeys=" + `checkBox -query -value forceKeys` );
+		$currentOptions += ( ";forceKeysFrames=" + `intFieldGrp -query -value1 forceKeysFrames` );
+		$currentOptions += ( ";includeKeys=" + `checkBox -query -value includeKeys` );
+		$currentOptions += ( ";externalKeys=" + `checkBox -query -value externalKeys` );
+		$currentOptions += ( ";keyPath=" + `textFieldGrp -query -fileName keyPath` );
+
+		eval( $resultCallback + " \"" + $currentOptions + "\"" );
+
+		$result = 1;
+	}
+
+	return $result;
+}

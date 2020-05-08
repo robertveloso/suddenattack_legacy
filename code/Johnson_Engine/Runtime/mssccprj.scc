@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[Engine.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Runtime", NRWBAAAA
+
+[Engine.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Runtime", NRWBAAAA
+
+[Engine.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Runtime", NRWBAAAA
+
+[Engine.sln]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Engine/Runtime", NRWBAAAA

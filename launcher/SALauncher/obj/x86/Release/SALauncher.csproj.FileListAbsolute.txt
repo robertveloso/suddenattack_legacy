@@ -1,0 +1,12 @@
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Release\SALauncher 1.0 (By ExtremsX).exe.config
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Release\launcher.ini
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Release\SALauncher 1.0 (By ExtremsX).exe
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\bin\Release\SALauncher 1.0 (By ExtremsX).pdb
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\ResolveAssemblyReference.cache
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\SALauncher.frmMain.resources
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\SALauncher.frmOptions.resources
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\SALauncher.Properties.Resources.resources
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\GenerateResource.read.1.tlog
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\GenerateResource.write.1.tlog
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\SALauncher 1.0 (By ExtremsX).exe
+c:\users\erycson\documents\visual studio 2010\Projects\SALauncher\SALauncher\obj\x86\Release\SALauncher 1.0 (By ExtremsX).pdb

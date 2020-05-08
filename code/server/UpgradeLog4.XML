@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Test">
+</Property><Property Name="Solution File" Value="D:\sa\Johnson_Code\Johnson_Server\Test.sln">
+</Property><Property Name="Date" Value="quarta-feira, 6 de maio de 2020">
+</Property><Property Name="Time" Value="22:05">
+</Property><Property Name="Log Number" Value="4">
+</Property></Properties><Event ErrorLevel="1" Project="CasualServerLib" Source="CasualServerLib\CasualServerLib.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="CasualServerLib" Source="CasualServerLib\CasualServerLib.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="CasualServerLib" Source="CasualServerLib\CasualServerLib.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GameServer" Source="GameServer\GameServer.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="GameServer" Source="GameServer\GameServer.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="GameServer" Source="GameServer\GameServer.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="GameServer" Source="GameServer\GameServer.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="Dispatcher" Source="Dispatcher\Dispatcher.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="Dispatcher" Source="Dispatcher\Dispatcher.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="Dispatcher" Source="Dispatcher\Dispatcher.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="Packet" Source="Share\Packet\Packet.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="Packet" Source="Share\Packet\Packet.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="Packet" Source="Share\Packet\Packet.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="LogicObject" Source="Share\LogicObject\LogicObject.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="LogicObject" Source="Share\LogicObject\LogicObject.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="LogicObject" Source="Share\LogicObject\LogicObject.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="System" Source="System\System.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="System" Source="System\System.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="System" Source="System\System.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Test.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Test.sln" Description="Converted">
+</Event></UpgradeLog>

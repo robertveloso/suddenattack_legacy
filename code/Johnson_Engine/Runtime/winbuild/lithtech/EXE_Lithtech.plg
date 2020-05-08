@@ -1,0 +1,204 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Exe_LithTech - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+warning: unresolved Environment Variable  "$(SA_MAIN_DIR)"
+warning: unresolved Environment Variable  "$(SA_MAIN_DIR)"
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP3A8.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \Johnson_Work\Johnson_Code\Lib\Debug\SuddenAttack.exe
+echo copy \Johnson_Work\Johnson_Code\Lib\Debug\SuddenAttack.exe 
+copy \Johnson_Work\Johnson_Code\Lib\Debug\SuddenAttack.exe 
+]
+Creating command line "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP3A8.bat"
+<h3>Output Window</h3>
+Performing Custom Build Step on \Johnson_Work\Johnson_Code\Lib\Debug\SuddenAttack.exe
+copy \Johnson_Work\Johnson_Code\Lib\Debug\SuddenAttack.exe 
+已复制         1 个文件。
+Creating temporary file "C:\DOCUME~1\noname\LOCALS~1\Temp\RSP3A9.tmp" with contents
+[
+/nologo /o"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech/EXE_Lithtech.bsc" 
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\bdefs.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\controlfilemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\animtracker.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\bindmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\binkvideomgrimpl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\classbind.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\classmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_formatmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_graphmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_ticks.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\clientde_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\clientmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\clientshell.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\cmoveabstract.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\cnet.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\cobject.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\collision.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\compress.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\concommand.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\conparse.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\console.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\consolecommands.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\counter.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\cutil.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\d3d_model_load.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\d3ddrawprim.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\d3dtexinterface.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\de_file.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\de_mainworld.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\de_memory.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\de_nodes.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\de_objects.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\debuggeometry.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\debugging.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\debuggraphmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\dhashtable.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\dstreamopenqueuemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\dsys_interface.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\dtxmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\dutil.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\engine_vars.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\errorlog.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\findobj.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ftclient.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ftserv.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\fullintersectline.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\game_serialize.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\gamemath.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\genericprop_setup.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\genltstream.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\geometry.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\geomroutines.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\impl_common.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\input.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\InputSim.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\interface_helpers.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\interlink.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\intersect_line.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\intersectsweptsphere.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\leech.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\light_table.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\lightmap_compress.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\lightmap_planes.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\linesystem.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\load_pcx.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\localdriver.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltbenchmark_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltdirectmusic_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltdirectmusiccontrolfile.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltdirectmusicloader.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\lterror.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\lthread.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltinfo_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltmemory.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltmessage.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltmessage_client.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltmessage_server.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltmodule.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltobjref.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltquatbase.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ltthread.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\lttimer.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\memorywatch.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\model.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\model_load.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\modelallocations.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\motion.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\moveobject.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\moveplayer.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\musicdriver.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\netmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\nexus.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\NFPacketDebug.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\objectmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\packet.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\parse_world_info.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\particlesystem.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\pixelformat.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\polygrid.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\predict.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\ratetracker.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\render.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\s_client.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\s_concommand.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\S_Intersect.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\s_net.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\s_object.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_consolestate.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_extradata.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_filemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\serverde_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\serverevent.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\servermgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\setupobject.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\shellnet.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\shelltransfer.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\shellutil.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\smoveabstract.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\soundbuffer.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\sounddata.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\soundinstance.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\soundtrack.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\sprite.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\spritecontrolimpl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\stacktrace.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\stdlterror.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\streamsim.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\stringmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\strtools.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\systeminfo.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\text_mgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\timemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\transformmaker.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\udpdriver.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\version_info.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\version_resource.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\videomgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\volumeeffect.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\watermark.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\wave.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\winclientde_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\winconsole_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_tree.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_blind_object_data.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_blocker_data.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_blocker_math.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_client_bsp.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_particle_blocker_data.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_server_bsp.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\world_shared_bsp.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\icommandlineargs.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_filemgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_iltmodel.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\modellt_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_iltmodel.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_iltcommon.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_iltcommon.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\shared_iltcommon.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\lt_cursor_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_iltphysics.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_iltphysics.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\shared_iltphysics.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\transformlt_impl.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\server_iltsoundmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\soundmgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\client_iltvideomgr.sbr
+\Johnson_Work\Johnson_Code\Johnson_Built\Johnson_Engine\Debug\Runtime\Exe_LithTech\interface_linkage.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\noname\LOCALS~1\Temp\RSP3A9.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SuddenAttack.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

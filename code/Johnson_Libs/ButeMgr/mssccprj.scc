@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[ButeMgr.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/ButeMgr", GFCCAAAA
+
+[ButeMgrMfcDll.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/ButeMgr", GFCCAAAA
+
+[ButeMgrMfcDll.mak]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs/ButeMgr", GFCCAAAA

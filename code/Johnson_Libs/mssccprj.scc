@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[Libs.dsp]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs", XECCAAAA
+
+[Libs.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs", XECCAAAA
+
+[LT_Lib_All.dsw]
+SCC_Aux_Path = "\\192.168.0.103\sa"
+SCC_Project_Name = "$/SA/Johnson_Code/Johnson_Libs", XECCAAAA

@@ -1,0 +1,267 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ClientShellDLL - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2DE8.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "..\..\Shared\SA" /I ".\\" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\ClientShellShared" /I "..\..\clientres\shared" /I "..\..\clientres\SA" /I "..\..\shared" /I "..\..\..\Engine\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\lith" /I "..\..\..\libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\libs\regmgr" /I "..\..\libs\wonapi" /I "..\..\libs\serverdir" /D "NDEBUG" /D "_CLIENTBUILD" /D "WIN32" /D "_WINDOWS" /D "_NOLFBUILD" /D "NO_PRAGMA_LIBS" /D "NOPS2" /D "_FINAL" /D "MEMTRACK_CLIENT" /D "USE_FIRE_GUARD" /Fp"..\..\Built\Final\ClientShellDll\SA/ClientShellDLL.pch" /Yu"stdafx.h" /Fo"..\..\Built\Final\ClientShellDll\SA/" /Fd"..\..\Built\Final\ClientShellDll\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\GameHIIME.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\GlobalModule.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\GlobalsInit.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\Lib_LogicObject\Room\Option.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAClientWeaponAllocator.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAGameClientShell.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAHUDMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAInterfaceMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SALayoutMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SA\SAMissionButeMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAPlayerMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAPlayerStats.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAScreenMgr.cpp"
+"D:\sa\code\Johnson_Client\Shared\SA\SAVersionMgr.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDAir.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDCarrying.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDDoomsday.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDHiding.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDHidingBar.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDObjectives.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDAmmo.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDCameraBloodFX.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDChooser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDCompass.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDCrosshair.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDDamageDir.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDFlashBangFX.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDGameOver.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDGameState.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDGogglesFX.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDMiniMap.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDPlayerState.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDProgressBar.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDRadio.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDRespawn.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDSensiCtrl.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\HUDTimer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupHelp.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupInvite.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupItemBuy.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupMenu.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupNickName.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupOption_Ex.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupPassword.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupRoomOption.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupScreenBase.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupScreenCreateRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupScreenOption.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupSearchResult.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupSearchUser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupUserInfo.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\PopupWeaponDetail.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenBase.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenChannel.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenCharacter.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenInventory.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenMain.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenResult.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenShop.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAListChannel.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAListRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAListTeam.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAListText.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAListUser.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\SAMapList.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\TextScroll.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenAudio.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenConfigure.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenControls.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenCreateRoom.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenCrosshair.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenDisplay.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenEndCoopMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenEndDMMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenEndMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenFailure.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenGame.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHost.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostDDOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostDMOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostLevels.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostMission.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostTDMOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenHostWeapons.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenJoin.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenJoinLAN.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenJoystick.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenKeyboard.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenLoad.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenMouse.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenMulti.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenOptions.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenPerformance.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenPlayer.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenPlayerSkills.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenPlayerTeam.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenProfile.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenSave.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenSingle.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenTeam.cpp"
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\ScreenWeapon.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2DE8.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2DF9.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "..\..\Shared\SA" /I ".\\" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\ClientShellShared" /I "..\..\clientres\shared" /I "..\..\clientres\SA" /I "..\..\shared" /I "..\..\..\Engine\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\lith" /I "..\..\..\libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\libs\regmgr" /I "..\..\libs\wonapi" /I "..\..\libs\serverdir" /D "NDEBUG" /D "_CLIENTBUILD" /D "WIN32" /D "_WINDOWS" /D "_NOLFBUILD" /D "NO_PRAGMA_LIBS" /D "NOPS2" /D "_FINAL" /D "MEMTRACK_CLIENT" /D "USE_FIRE_GUARD" /Fo"..\..\Built\Final\ClientShellDll\SA/" /Fd"..\..\Built\Final\ClientShellDll\SA/" /FD /c 
+"D:\sa\code\Johnson_Engine\sdk\inc\iltbaseclass.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltobjref.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2DF9.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2DFA.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "..\..\Shared\SA" /I ".\\" /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\ClientShellShared" /I "..\..\clientres\shared" /I "..\..\clientres\SA" /I "..\..\shared" /I "..\..\..\Engine\sdk\inc" /I "..\..\..\libs\stdlith" /I "..\..\..\libs\butemgr" /I "..\..\..\libs\cryptmgr" /I "..\..\..\libs\lith" /I "..\..\..\libs\mfcstub" /I "..\..\libs\ltguimgr" /I "..\..\..\libs\regmgr" /I "..\..\libs\wonapi" /I "..\..\libs\serverdir" /D "NDEBUG" /D "_CLIENTBUILD" /D "WIN32" /D "_WINDOWS" /D "_NOLFBUILD" /D "NO_PRAGMA_LIBS" /D "NOPS2" /D "_FINAL" /D "MEMTRACK_CLIENT" /D "USE_FIRE_GUARD" /Fp"..\..\Built\Final\ClientShellDll\SA/ClientShellDLL.pch" /Yc"stdafx.h" /Fo"..\..\Built\Final\ClientShellDll\SA/" /Fd"..\..\Built\Final\ClientShellDll\SA/" /FD /c 
+"D:\sa\code\Johnson_Client\ClientShellDLL\sa\Stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP2DFA.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2E0B.tmp" with contents
+[
+winmm.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib ole32.lib advapi32.lib ClientShellShared.lib ButeMgr.lib MFCStub.lib CryptMgr.lib Lib_StdLith.lib Lib_Lith.lib LtGuiMgr.lib ServerDir.lib RegMgr.lib LTMem.lib d3dx8.lib imm32.lib Shell32.lib ./CurseFilter.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\Built\Final\ClientShellDll\SA/CShell.pdb" /debug /machine:I386 /nodefaultlib:"libc" /out:"..\..\Built\Final\ClientShellDll\SA\CShell.dll" /implib:"..\..\Built\Final\ClientShellDll\SA/CShell.lib" /libpath:"..\..\..\Libs\Built\Final" /libpath:"..\..\..\Engine\built\Final\libs" /libpath:"..\..\Built\Final\Libs" /Release 
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\GameHIIME.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\GlobalModule.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\GlobalsInit.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\iltbaseclass.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ltmodule.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ltobjref.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ltquatbase.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\Option.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAClientWeaponAllocator.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAGameClientShell.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAHUDMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAInterfaceMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SALayoutMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAMissionButeMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAPlayerMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAPlayerStats.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAScreenMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAVersionMgr.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\Stdafx.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDAir.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDCarrying.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDDoomsday.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDHiding.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDHidingBar.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDObjectives.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDAmmo.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDCameraBloodFX.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDChooser.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDCompass.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDCrosshair.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDDamageDir.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDFlashBangFX.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDGameOver.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDGameState.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDGogglesFX.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDMiniMap.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDPlayerState.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDProgressBar.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDRadio.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDRespawn.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDSensiCtrl.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\HUDTimer.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupHelp.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupInvite.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupItemBuy.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupMenu.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupNickName.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupOption_Ex.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupPassword.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupRoomOption.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupScreenBase.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupScreenCreateRoom.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupScreenOption.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupSearchResult.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupSearchUser.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupUserInfo.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\PopupWeaponDetail.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenBase.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenChannel.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenCharacter.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenInventory.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenMain.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenResult.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenRoom.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenShop.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAListChannel.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAListRoom.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAListTeam.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAListText.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAListUser.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\SAMapList.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\TextScroll.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenAudio.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenConfigure.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenControls.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenCreateRoom.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenCrosshair.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenDisplay.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenEndCoopMission.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenEndDMMission.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenEndMission.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenFailure.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenGame.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHost.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostDDOptions.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostDMOptions.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostLevels.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostMission.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostOptions.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostTDMOptions.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenHostWeapons.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenJoin.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenJoinLAN.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenJoystick.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenKeyboard.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenLoad.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenMouse.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenMulti.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenOptions.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenPerformance.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenPlayer.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenPlayerSkills.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenPlayerTeam.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenProfile.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenSave.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenSingle.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenTeam.obj
+\sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\ScreenWeapon.obj
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP2E0B.tmp"
+warning: unresolved Environment Variable  "$(SA_REZ_DIR)"
+warning: unresolved Environment Variable  "$(SA_REZ_DIR)"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP2E0C.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\CShell.dll
+echo copy \sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\CShell.dll 
+copy \sa\code\Johnson_Client\Built\Final\ClientShellDll\SA\CShell.dll 
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP2E0C.bat"
+Compiling...
+Stdafx.cpp
+D:\sa\code\Johnson_Client\ClientShellDLL\sa\StdAfx.h(24) : fatal error C1083: Cannot open include file: 'mfcstub.h': No such file or directory
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CShell.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

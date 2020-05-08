@@ -1,0 +1,631 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LTGUIMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP193.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\..\libs\STLPORT-4.0\STLPORT" /I "..\..\..\Engine\sdk\inc" /I "..\..\..\Engine\sdk\inc\compat" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_LITHTECH2" /D "LT15_COMPAT" /FR"..\..\built\Debug\libs\LTGuiMgr/" /Fo"..\..\built\Debug\libs\LTGuiMgr/" /Fd"..\..\built\Debug\libs\LTGuiMgr/" /FD /c 
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguibutton.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguicolumnctrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguicommandhandler.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguictrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguicyclectrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguieditctrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguiframe.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguilistctrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguislider.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguitextitemctrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguitoggle.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguiwindow.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\SAIMEeditCtrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\LTGUICount.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\ltguilargetext.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\SAGUIColumnCtrl.cpp"
+"E:\FPS_Project\SuddenAttack\Game\Libs\LTGUIMgr\SAGUITextCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP193.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP194.tmp" with contents
+[
+/nologo /out:"..\..\built\Debug\libs\LTGuiMgr.lib" 
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguibutton.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguicolumnctrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguicommandhandler.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguictrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguicyclectrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguieditctrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguiframe.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguilistctrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguislider.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguitextitemctrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguitoggle.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguiwindow.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\SAIMEeditCtrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\LTGUICount.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\ltguilargetext.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\SAGUIColumnCtrl.obj
+\FPS_Project\SuddenAttack\Game\built\Debug\libs\LTGuiMgr\SAGUITextCtrl.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP194.tmp"
+<h3>Output Window</h3>
+Compiling...
+ltguibutton.cpp
+ltguicolumnctrl.cpp
+ltguicommandhandler.cpp
+ltguictrl.cpp
+ltguicyclectrl.cpp
+ltguieditctrl.cpp
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(11) : warning C4005: 'VK_LBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(321) : see previous definition of 'VK_LBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(12) : warning C4005: 'VK_RBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(322) : see previous definition of 'VK_RBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(13) : warning C4005: 'VK_CANCEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(323) : see previous definition of 'VK_CANCEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(14) : warning C4005: 'VK_MBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(324) : see previous definition of 'VK_MBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(16) : warning C4005: 'VK_BACK' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(326) : see previous definition of 'VK_BACK'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(17) : warning C4005: 'VK_TAB' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(327) : see previous definition of 'VK_TAB'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(19) : warning C4005: 'VK_CLEAR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(329) : see previous definition of 'VK_CLEAR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(20) : warning C4005: 'VK_RETURN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(330) : see previous definition of 'VK_RETURN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(22) : warning C4005: 'VK_SHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(332) : see previous definition of 'VK_SHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(23) : warning C4005: 'VK_CONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(333) : see previous definition of 'VK_CONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(24) : warning C4005: 'VK_MENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(334) : see previous definition of 'VK_MENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(25) : warning C4005: 'VK_PAUSE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(335) : see previous definition of 'VK_PAUSE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(26) : warning C4005: 'VK_CAPITAL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(336) : see previous definition of 'VK_CAPITAL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(29) : warning C4005: 'VK_ESCAPE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(346) : see previous definition of 'VK_ESCAPE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(31) : warning C4005: 'VK_SPACE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(353) : see previous definition of 'VK_SPACE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(32) : warning C4005: 'VK_PRIOR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(354) : see previous definition of 'VK_PRIOR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(33) : warning C4005: 'VK_NEXT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(355) : see previous definition of 'VK_NEXT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(34) : warning C4005: 'VK_END' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(356) : see previous definition of 'VK_END'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(35) : warning C4005: 'VK_HOME' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(357) : see previous definition of 'VK_HOME'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(36) : warning C4005: 'VK_LEFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(358) : see previous definition of 'VK_LEFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(37) : warning C4005: 'VK_UP' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(359) : see previous definition of 'VK_UP'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(38) : warning C4005: 'VK_RIGHT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(360) : see previous definition of 'VK_RIGHT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(39) : warning C4005: 'VK_DOWN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(361) : see previous definition of 'VK_DOWN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(40) : warning C4005: 'VK_SELECT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(362) : see previous definition of 'VK_SELECT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(41) : warning C4005: 'VK_PRINT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(363) : see previous definition of 'VK_PRINT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(42) : warning C4005: 'VK_EXECUTE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(364) : see previous definition of 'VK_EXECUTE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(43) : warning C4005: 'VK_SNAPSHOT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(365) : see previous definition of 'VK_SNAPSHOT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(44) : warning C4005: 'VK_INSERT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(366) : see previous definition of 'VK_INSERT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(45) : warning C4005: 'VK_DELETE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(367) : see previous definition of 'VK_DELETE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(46) : warning C4005: 'VK_HELP' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(368) : see previous definition of 'VK_HELP'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(86) : warning C4005: 'VK_LWIN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(373) : see previous definition of 'VK_LWIN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(87) : warning C4005: 'VK_RWIN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(374) : see previous definition of 'VK_RWIN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(88) : warning C4005: 'VK_APPS' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(375) : see previous definition of 'VK_APPS'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(90) : warning C4005: 'VK_NUMPAD0' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(377) : see previous definition of 'VK_NUMPAD0'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(91) : warning C4005: 'VK_NUMPAD1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(378) : see previous definition of 'VK_NUMPAD1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(92) : warning C4005: 'VK_NUMPAD2' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(379) : see previous definition of 'VK_NUMPAD2'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(93) : warning C4005: 'VK_NUMPAD3' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(380) : see previous definition of 'VK_NUMPAD3'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(94) : warning C4005: 'VK_NUMPAD4' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(381) : see previous definition of 'VK_NUMPAD4'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(95) : warning C4005: 'VK_NUMPAD5' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(382) : see previous definition of 'VK_NUMPAD5'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(96) : warning C4005: 'VK_NUMPAD6' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(383) : see previous definition of 'VK_NUMPAD6'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(97) : warning C4005: 'VK_NUMPAD7' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(384) : see previous definition of 'VK_NUMPAD7'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(98) : warning C4005: 'VK_NUMPAD8' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(385) : see previous definition of 'VK_NUMPAD8'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(99) : warning C4005: 'VK_NUMPAD9' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(386) : see previous definition of 'VK_NUMPAD9'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(100) : warning C4005: 'VK_MULTIPLY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(387) : see previous definition of 'VK_MULTIPLY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(101) : warning C4005: 'VK_ADD' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(388) : see previous definition of 'VK_ADD'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(102) : warning C4005: 'VK_SEPARATOR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(389) : see previous definition of 'VK_SEPARATOR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(103) : warning C4005: 'VK_SUBTRACT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(390) : see previous definition of 'VK_SUBTRACT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(104) : warning C4005: 'VK_DECIMAL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(391) : see previous definition of 'VK_DECIMAL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(105) : warning C4005: 'VK_DIVIDE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(392) : see previous definition of 'VK_DIVIDE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(106) : warning C4005: 'VK_F1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(393) : see previous definition of 'VK_F1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(107) : warning C4005: 'VK_F2' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(394) : see previous definition of 'VK_F2'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(108) : warning C4005: 'VK_F3' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(395) : see previous definition of 'VK_F3'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(109) : warning C4005: 'VK_F4' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(396) : see previous definition of 'VK_F4'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(110) : warning C4005: 'VK_F5' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(397) : see previous definition of 'VK_F5'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(111) : warning C4005: 'VK_F6' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(398) : see previous definition of 'VK_F6'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(112) : warning C4005: 'VK_F7' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(399) : see previous definition of 'VK_F7'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(113) : warning C4005: 'VK_F8' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(400) : see previous definition of 'VK_F8'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(114) : warning C4005: 'VK_F9' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(401) : see previous definition of 'VK_F9'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(115) : warning C4005: 'VK_F10' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(402) : see previous definition of 'VK_F10'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(116) : warning C4005: 'VK_F11' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(403) : see previous definition of 'VK_F11'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(117) : warning C4005: 'VK_F12' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(404) : see previous definition of 'VK_F12'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(118) : warning C4005: 'VK_F13' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(405) : see previous definition of 'VK_F13'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(119) : warning C4005: 'VK_F14' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(406) : see previous definition of 'VK_F14'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(120) : warning C4005: 'VK_F15' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(407) : see previous definition of 'VK_F15'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(121) : warning C4005: 'VK_F16' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(408) : see previous definition of 'VK_F16'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(122) : warning C4005: 'VK_F17' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(409) : see previous definition of 'VK_F17'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(123) : warning C4005: 'VK_F18' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(410) : see previous definition of 'VK_F18'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(124) : warning C4005: 'VK_F19' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(411) : see previous definition of 'VK_F19'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(125) : warning C4005: 'VK_F20' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(412) : see previous definition of 'VK_F20'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(126) : warning C4005: 'VK_F21' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(413) : see previous definition of 'VK_F21'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(127) : warning C4005: 'VK_F22' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(414) : see previous definition of 'VK_F22'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(128) : warning C4005: 'VK_F23' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(415) : see previous definition of 'VK_F23'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(129) : warning C4005: 'VK_F24' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(416) : see previous definition of 'VK_F24'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(131) : warning C4005: 'VK_NUMLOCK' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(418) : see previous definition of 'VK_NUMLOCK'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(132) : warning C4005: 'VK_SCROLL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(419) : see previous definition of 'VK_SCROLL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(134) : warning C4005: 'VK_LSHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(426) : see previous definition of 'VK_LSHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(135) : warning C4005: 'VK_RSHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(427) : see previous definition of 'VK_RSHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(136) : warning C4005: 'VK_LCONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(428) : see previous definition of 'VK_LCONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(137) : warning C4005: 'VK_RCONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(429) : see previous definition of 'VK_RCONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(138) : warning C4005: 'VK_LMENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(430) : see previous definition of 'VK_LMENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(139) : warning C4005: 'VK_RMENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(431) : see previous definition of 'VK_RMENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(141) : warning C4005: 'VK_PROCESSKEY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(434) : see previous definition of 'VK_PROCESSKEY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(143) : warning C4005: 'VK_ATTN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(437) : see previous definition of 'VK_ATTN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(144) : warning C4005: 'VK_CRSEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(438) : see previous definition of 'VK_CRSEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(145) : warning C4005: 'VK_EXSEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(439) : see previous definition of 'VK_EXSEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(146) : warning C4005: 'VK_EREOF' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(440) : see previous definition of 'VK_EREOF'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(147) : warning C4005: 'VK_PLAY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(441) : see previous definition of 'VK_PLAY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(148) : warning C4005: 'VK_ZOOM' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(442) : see previous definition of 'VK_ZOOM'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(149) : warning C4005: 'VK_NONAME' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(443) : see previous definition of 'VK_NONAME'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(150) : warning C4005: 'VK_PA1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(444) : see previous definition of 'VK_PA1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(151) : warning C4005: 'VK_OEM_CLEAR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(445) : see previous definition of 'VK_OEM_CLEAR'
+ltguiframe.cpp
+ltguilistctrl.cpp
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(11) : warning C4005: 'VK_LBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(321) : see previous definition of 'VK_LBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(12) : warning C4005: 'VK_RBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(322) : see previous definition of 'VK_RBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(13) : warning C4005: 'VK_CANCEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(323) : see previous definition of 'VK_CANCEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(14) : warning C4005: 'VK_MBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(324) : see previous definition of 'VK_MBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(16) : warning C4005: 'VK_BACK' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(326) : see previous definition of 'VK_BACK'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(17) : warning C4005: 'VK_TAB' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(327) : see previous definition of 'VK_TAB'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(19) : warning C4005: 'VK_CLEAR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(329) : see previous definition of 'VK_CLEAR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(20) : warning C4005: 'VK_RETURN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(330) : see previous definition of 'VK_RETURN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(22) : warning C4005: 'VK_SHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(332) : see previous definition of 'VK_SHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(23) : warning C4005: 'VK_CONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(333) : see previous definition of 'VK_CONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(24) : warning C4005: 'VK_MENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(334) : see previous definition of 'VK_MENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(25) : warning C4005: 'VK_PAUSE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(335) : see previous definition of 'VK_PAUSE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(26) : warning C4005: 'VK_CAPITAL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(336) : see previous definition of 'VK_CAPITAL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(29) : warning C4005: 'VK_ESCAPE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(346) : see previous definition of 'VK_ESCAPE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(31) : warning C4005: 'VK_SPACE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(353) : see previous definition of 'VK_SPACE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(32) : warning C4005: 'VK_PRIOR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(354) : see previous definition of 'VK_PRIOR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(33) : warning C4005: 'VK_NEXT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(355) : see previous definition of 'VK_NEXT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(34) : warning C4005: 'VK_END' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(356) : see previous definition of 'VK_END'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(35) : warning C4005: 'VK_HOME' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(357) : see previous definition of 'VK_HOME'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(36) : warning C4005: 'VK_LEFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(358) : see previous definition of 'VK_LEFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(37) : warning C4005: 'VK_UP' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(359) : see previous definition of 'VK_UP'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(38) : warning C4005: 'VK_RIGHT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(360) : see previous definition of 'VK_RIGHT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(39) : warning C4005: 'VK_DOWN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(361) : see previous definition of 'VK_DOWN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(40) : warning C4005: 'VK_SELECT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(362) : see previous definition of 'VK_SELECT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(41) : warning C4005: 'VK_PRINT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(363) : see previous definition of 'VK_PRINT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(42) : warning C4005: 'VK_EXECUTE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(364) : see previous definition of 'VK_EXECUTE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(43) : warning C4005: 'VK_SNAPSHOT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(365) : see previous definition of 'VK_SNAPSHOT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(44) : warning C4005: 'VK_INSERT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(366) : see previous definition of 'VK_INSERT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(45) : warning C4005: 'VK_DELETE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(367) : see previous definition of 'VK_DELETE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(46) : warning C4005: 'VK_HELP' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(368) : see previous definition of 'VK_HELP'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(86) : warning C4005: 'VK_LWIN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(373) : see previous definition of 'VK_LWIN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(87) : warning C4005: 'VK_RWIN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(374) : see previous definition of 'VK_RWIN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(88) : warning C4005: 'VK_APPS' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(375) : see previous definition of 'VK_APPS'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(90) : warning C4005: 'VK_NUMPAD0' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(377) : see previous definition of 'VK_NUMPAD0'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(91) : warning C4005: 'VK_NUMPAD1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(378) : see previous definition of 'VK_NUMPAD1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(92) : warning C4005: 'VK_NUMPAD2' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(379) : see previous definition of 'VK_NUMPAD2'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(93) : warning C4005: 'VK_NUMPAD3' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(380) : see previous definition of 'VK_NUMPAD3'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(94) : warning C4005: 'VK_NUMPAD4' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(381) : see previous definition of 'VK_NUMPAD4'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(95) : warning C4005: 'VK_NUMPAD5' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(382) : see previous definition of 'VK_NUMPAD5'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(96) : warning C4005: 'VK_NUMPAD6' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(383) : see previous definition of 'VK_NUMPAD6'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(97) : warning C4005: 'VK_NUMPAD7' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(384) : see previous definition of 'VK_NUMPAD7'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(98) : warning C4005: 'VK_NUMPAD8' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(385) : see previous definition of 'VK_NUMPAD8'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(99) : warning C4005: 'VK_NUMPAD9' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(386) : see previous definition of 'VK_NUMPAD9'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(100) : warning C4005: 'VK_MULTIPLY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(387) : see previous definition of 'VK_MULTIPLY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(101) : warning C4005: 'VK_ADD' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(388) : see previous definition of 'VK_ADD'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(102) : warning C4005: 'VK_SEPARATOR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(389) : see previous definition of 'VK_SEPARATOR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(103) : warning C4005: 'VK_SUBTRACT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(390) : see previous definition of 'VK_SUBTRACT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(104) : warning C4005: 'VK_DECIMAL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(391) : see previous definition of 'VK_DECIMAL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(105) : warning C4005: 'VK_DIVIDE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(392) : see previous definition of 'VK_DIVIDE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(106) : warning C4005: 'VK_F1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(393) : see previous definition of 'VK_F1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(107) : warning C4005: 'VK_F2' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(394) : see previous definition of 'VK_F2'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(108) : warning C4005: 'VK_F3' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(395) : see previous definition of 'VK_F3'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(109) : warning C4005: 'VK_F4' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(396) : see previous definition of 'VK_F4'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(110) : warning C4005: 'VK_F5' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(397) : see previous definition of 'VK_F5'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(111) : warning C4005: 'VK_F6' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(398) : see previous definition of 'VK_F6'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(112) : warning C4005: 'VK_F7' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(399) : see previous definition of 'VK_F7'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(113) : warning C4005: 'VK_F8' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(400) : see previous definition of 'VK_F8'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(114) : warning C4005: 'VK_F9' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(401) : see previous definition of 'VK_F9'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(115) : warning C4005: 'VK_F10' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(402) : see previous definition of 'VK_F10'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(116) : warning C4005: 'VK_F11' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(403) : see previous definition of 'VK_F11'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(117) : warning C4005: 'VK_F12' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(404) : see previous definition of 'VK_F12'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(118) : warning C4005: 'VK_F13' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(405) : see previous definition of 'VK_F13'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(119) : warning C4005: 'VK_F14' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(406) : see previous definition of 'VK_F14'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(120) : warning C4005: 'VK_F15' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(407) : see previous definition of 'VK_F15'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(121) : warning C4005: 'VK_F16' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(408) : see previous definition of 'VK_F16'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(122) : warning C4005: 'VK_F17' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(409) : see previous definition of 'VK_F17'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(123) : warning C4005: 'VK_F18' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(410) : see previous definition of 'VK_F18'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(124) : warning C4005: 'VK_F19' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(411) : see previous definition of 'VK_F19'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(125) : warning C4005: 'VK_F20' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(412) : see previous definition of 'VK_F20'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(126) : warning C4005: 'VK_F21' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(413) : see previous definition of 'VK_F21'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(127) : warning C4005: 'VK_F22' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(414) : see previous definition of 'VK_F22'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(128) : warning C4005: 'VK_F23' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(415) : see previous definition of 'VK_F23'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(129) : warning C4005: 'VK_F24' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(416) : see previous definition of 'VK_F24'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(131) : warning C4005: 'VK_NUMLOCK' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(418) : see previous definition of 'VK_NUMLOCK'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(132) : warning C4005: 'VK_SCROLL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(419) : see previous definition of 'VK_SCROLL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(134) : warning C4005: 'VK_LSHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(426) : see previous definition of 'VK_LSHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(135) : warning C4005: 'VK_RSHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(427) : see previous definition of 'VK_RSHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(136) : warning C4005: 'VK_LCONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(428) : see previous definition of 'VK_LCONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(137) : warning C4005: 'VK_RCONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(429) : see previous definition of 'VK_RCONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(138) : warning C4005: 'VK_LMENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(430) : see previous definition of 'VK_LMENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(139) : warning C4005: 'VK_RMENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(431) : see previous definition of 'VK_RMENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(141) : warning C4005: 'VK_PROCESSKEY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(434) : see previous definition of 'VK_PROCESSKEY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(143) : warning C4005: 'VK_ATTN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(437) : see previous definition of 'VK_ATTN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(144) : warning C4005: 'VK_CRSEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(438) : see previous definition of 'VK_CRSEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(145) : warning C4005: 'VK_EXSEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(439) : see previous definition of 'VK_EXSEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(146) : warning C4005: 'VK_EREOF' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(440) : see previous definition of 'VK_EREOF'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(147) : warning C4005: 'VK_PLAY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(441) : see previous definition of 'VK_PLAY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(148) : warning C4005: 'VK_ZOOM' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(442) : see previous definition of 'VK_ZOOM'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(149) : warning C4005: 'VK_NONAME' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(443) : see previous definition of 'VK_NONAME'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(150) : warning C4005: 'VK_PA1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(444) : see previous definition of 'VK_PA1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(151) : warning C4005: 'VK_OEM_CLEAR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(445) : see previous definition of 'VK_OEM_CLEAR'
+ltguislider.cpp
+ltguitextitemctrl.cpp
+ltguitoggle.cpp
+ltguiwindow.cpp
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(11) : warning C4005: 'VK_LBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(321) : see previous definition of 'VK_LBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(12) : warning C4005: 'VK_RBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(322) : see previous definition of 'VK_RBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(13) : warning C4005: 'VK_CANCEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(323) : see previous definition of 'VK_CANCEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(14) : warning C4005: 'VK_MBUTTON' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(324) : see previous definition of 'VK_MBUTTON'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(16) : warning C4005: 'VK_BACK' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(326) : see previous definition of 'VK_BACK'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(17) : warning C4005: 'VK_TAB' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(327) : see previous definition of 'VK_TAB'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(19) : warning C4005: 'VK_CLEAR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(329) : see previous definition of 'VK_CLEAR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(20) : warning C4005: 'VK_RETURN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(330) : see previous definition of 'VK_RETURN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(22) : warning C4005: 'VK_SHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(332) : see previous definition of 'VK_SHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(23) : warning C4005: 'VK_CONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(333) : see previous definition of 'VK_CONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(24) : warning C4005: 'VK_MENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(334) : see previous definition of 'VK_MENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(25) : warning C4005: 'VK_PAUSE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(335) : see previous definition of 'VK_PAUSE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(26) : warning C4005: 'VK_CAPITAL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(336) : see previous definition of 'VK_CAPITAL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(29) : warning C4005: 'VK_ESCAPE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(346) : see previous definition of 'VK_ESCAPE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(31) : warning C4005: 'VK_SPACE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(353) : see previous definition of 'VK_SPACE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(32) : warning C4005: 'VK_PRIOR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(354) : see previous definition of 'VK_PRIOR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(33) : warning C4005: 'VK_NEXT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(355) : see previous definition of 'VK_NEXT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(34) : warning C4005: 'VK_END' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(356) : see previous definition of 'VK_END'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(35) : warning C4005: 'VK_HOME' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(357) : see previous definition of 'VK_HOME'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(36) : warning C4005: 'VK_LEFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(358) : see previous definition of 'VK_LEFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(37) : warning C4005: 'VK_UP' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(359) : see previous definition of 'VK_UP'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(38) : warning C4005: 'VK_RIGHT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(360) : see previous definition of 'VK_RIGHT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(39) : warning C4005: 'VK_DOWN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(361) : see previous definition of 'VK_DOWN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(40) : warning C4005: 'VK_SELECT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(362) : see previous definition of 'VK_SELECT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(41) : warning C4005: 'VK_PRINT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(363) : see previous definition of 'VK_PRINT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(42) : warning C4005: 'VK_EXECUTE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(364) : see previous definition of 'VK_EXECUTE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(43) : warning C4005: 'VK_SNAPSHOT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(365) : see previous definition of 'VK_SNAPSHOT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(44) : warning C4005: 'VK_INSERT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(366) : see previous definition of 'VK_INSERT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(45) : warning C4005: 'VK_DELETE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(367) : see previous definition of 'VK_DELETE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(46) : warning C4005: 'VK_HELP' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(368) : see previous definition of 'VK_HELP'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(86) : warning C4005: 'VK_LWIN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(373) : see previous definition of 'VK_LWIN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(87) : warning C4005: 'VK_RWIN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(374) : see previous definition of 'VK_RWIN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(88) : warning C4005: 'VK_APPS' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(375) : see previous definition of 'VK_APPS'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(90) : warning C4005: 'VK_NUMPAD0' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(377) : see previous definition of 'VK_NUMPAD0'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(91) : warning C4005: 'VK_NUMPAD1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(378) : see previous definition of 'VK_NUMPAD1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(92) : warning C4005: 'VK_NUMPAD2' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(379) : see previous definition of 'VK_NUMPAD2'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(93) : warning C4005: 'VK_NUMPAD3' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(380) : see previous definition of 'VK_NUMPAD3'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(94) : warning C4005: 'VK_NUMPAD4' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(381) : see previous definition of 'VK_NUMPAD4'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(95) : warning C4005: 'VK_NUMPAD5' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(382) : see previous definition of 'VK_NUMPAD5'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(96) : warning C4005: 'VK_NUMPAD6' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(383) : see previous definition of 'VK_NUMPAD6'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(97) : warning C4005: 'VK_NUMPAD7' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(384) : see previous definition of 'VK_NUMPAD7'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(98) : warning C4005: 'VK_NUMPAD8' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(385) : see previous definition of 'VK_NUMPAD8'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(99) : warning C4005: 'VK_NUMPAD9' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(386) : see previous definition of 'VK_NUMPAD9'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(100) : warning C4005: 'VK_MULTIPLY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(387) : see previous definition of 'VK_MULTIPLY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(101) : warning C4005: 'VK_ADD' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(388) : see previous definition of 'VK_ADD'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(102) : warning C4005: 'VK_SEPARATOR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(389) : see previous definition of 'VK_SEPARATOR'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(103) : warning C4005: 'VK_SUBTRACT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(390) : see previous definition of 'VK_SUBTRACT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(104) : warning C4005: 'VK_DECIMAL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(391) : see previous definition of 'VK_DECIMAL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(105) : warning C4005: 'VK_DIVIDE' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(392) : see previous definition of 'VK_DIVIDE'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(106) : warning C4005: 'VK_F1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(393) : see previous definition of 'VK_F1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(107) : warning C4005: 'VK_F2' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(394) : see previous definition of 'VK_F2'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(108) : warning C4005: 'VK_F3' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(395) : see previous definition of 'VK_F3'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(109) : warning C4005: 'VK_F4' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(396) : see previous definition of 'VK_F4'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(110) : warning C4005: 'VK_F5' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(397) : see previous definition of 'VK_F5'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(111) : warning C4005: 'VK_F6' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(398) : see previous definition of 'VK_F6'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(112) : warning C4005: 'VK_F7' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(399) : see previous definition of 'VK_F7'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(113) : warning C4005: 'VK_F8' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(400) : see previous definition of 'VK_F8'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(114) : warning C4005: 'VK_F9' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(401) : see previous definition of 'VK_F9'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(115) : warning C4005: 'VK_F10' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(402) : see previous definition of 'VK_F10'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(116) : warning C4005: 'VK_F11' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(403) : see previous definition of 'VK_F11'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(117) : warning C4005: 'VK_F12' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(404) : see previous definition of 'VK_F12'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(118) : warning C4005: 'VK_F13' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(405) : see previous definition of 'VK_F13'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(119) : warning C4005: 'VK_F14' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(406) : see previous definition of 'VK_F14'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(120) : warning C4005: 'VK_F15' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(407) : see previous definition of 'VK_F15'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(121) : warning C4005: 'VK_F16' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(408) : see previous definition of 'VK_F16'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(122) : warning C4005: 'VK_F17' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(409) : see previous definition of 'VK_F17'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(123) : warning C4005: 'VK_F18' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(410) : see previous definition of 'VK_F18'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(124) : warning C4005: 'VK_F19' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(411) : see previous definition of 'VK_F19'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(125) : warning C4005: 'VK_F20' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(412) : see previous definition of 'VK_F20'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(126) : warning C4005: 'VK_F21' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(413) : see previous definition of 'VK_F21'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(127) : warning C4005: 'VK_F22' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(414) : see previous definition of 'VK_F22'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(128) : warning C4005: 'VK_F23' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(415) : see previous definition of 'VK_F23'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(129) : warning C4005: 'VK_F24' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(416) : see previous definition of 'VK_F24'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(131) : warning C4005: 'VK_NUMLOCK' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(418) : see previous definition of 'VK_NUMLOCK'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(132) : warning C4005: 'VK_SCROLL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(419) : see previous definition of 'VK_SCROLL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(134) : warning C4005: 'VK_LSHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(426) : see previous definition of 'VK_LSHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(135) : warning C4005: 'VK_RSHIFT' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(427) : see previous definition of 'VK_RSHIFT'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(136) : warning C4005: 'VK_LCONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(428) : see previous definition of 'VK_LCONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(137) : warning C4005: 'VK_RCONTROL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(429) : see previous definition of 'VK_RCONTROL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(138) : warning C4005: 'VK_LMENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(430) : see previous definition of 'VK_LMENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(139) : warning C4005: 'VK_RMENU' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(431) : see previous definition of 'VK_RMENU'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(141) : warning C4005: 'VK_PROCESSKEY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(434) : see previous definition of 'VK_PROCESSKEY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(143) : warning C4005: 'VK_ATTN' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(437) : see previous definition of 'VK_ATTN'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(144) : warning C4005: 'VK_CRSEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(438) : see previous definition of 'VK_CRSEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(145) : warning C4005: 'VK_EXSEL' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(439) : see previous definition of 'VK_EXSEL'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(146) : warning C4005: 'VK_EREOF' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(440) : see previous definition of 'VK_EREOF'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(147) : warning C4005: 'VK_PLAY' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(441) : see previous definition of 'VK_PLAY'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(148) : warning C4005: 'VK_ZOOM' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(442) : see previous definition of 'VK_ZOOM'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(149) : warning C4005: 'VK_NONAME' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(443) : see previous definition of 'VK_NONAME'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(150) : warning C4005: 'VK_PA1' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(444) : see previous definition of 'VK_PA1'
+e:\fps_project\suddenattack\game\libs\ltguimgr\vkdefs.h(151) : warning C4005: 'VK_OEM_CLEAR' : macro redefinition
+        c:\microsoft visual studio\vc98\include\winuser.h(445) : see previous definition of 'VK_OEM_CLEAR'
+SAIMEeditCtrl.cpp
+e:\fps_project\suddenattack\game\libs\ltguimgr\saimeeditctrl.cpp(89) : error C2039: 'GetDC' : is not a member of 'ID3DXFont'
+        c:\dx90sdk\include\d3dx8core.h(90) : see declaration of 'ID3DXFont'
+e:\fps_project\suddenattack\game\libs\ltguimgr\saimeeditctrl.cpp(96) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+e:\fps_project\suddenattack\game\libs\ltguimgr\saimeeditctrl.cpp(97) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+LTGUICount.cpp
+ltguilargetext.cpp
+SAGUIColumnCtrl.cpp
+SAGUITextCtrl.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+LTGuiMgr.lib - 1 error(s), 275 warning(s)
+</pre>
+</body>
+</html>

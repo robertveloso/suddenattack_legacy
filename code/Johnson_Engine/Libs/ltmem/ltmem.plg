@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ltmem - Win32 Final--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP37E4.tmp" with contents
+[
+/nologo /out:"..\..\built\Final\libs\ltmem.lib" 
+\sa\code\Johnson_Engine\built\Final\libs\Lib_ltmem\ltmem.obj
+\sa\code\Johnson_Engine\built\Final\libs\Lib_ltmem\ltmemdebug.obj
+\sa\code\Johnson_Engine\built\Final\libs\Lib_ltmem\ltmemheap.obj
+\sa\code\Johnson_Engine\built\Final\libs\Lib_ltmem\ltmemstats.obj
+\sa\code\Johnson_Engine\built\Final\libs\Lib_ltmem\ltmemtrack.obj
+\sa\code\Johnson_Engine\built\Final\libs\Lib_ltmem\StdAfx.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP37E4.tmp"
+<h3>Output Window</h3>
+Creating library...
+
+
+
+<h3>Results</h3>
+ltmem.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

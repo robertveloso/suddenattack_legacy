@@ -1,0 +1,657 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ltmem - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP9AB9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\sdk\inc" /I "..\..\runtime\shared\src" /I "..\..\runtime\kernel\src" /I "..\..\runtime\kernel\mem\src" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/" /Fp"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/ltmem.pch" /Yu"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/" /Fd"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/" /FD /GZ /c 
+"D:\sa\code\Johnson_Engine\libs\ltmem\ltmem.cpp"
+"D:\sa\code\Johnson_Engine\libs\ltmem\ltmemdebug.cpp"
+"D:\sa\code\Johnson_Engine\libs\ltmem\ltmemheap.cpp"
+"D:\sa\code\Johnson_Engine\libs\ltmem\ltmemstats.cpp"
+"D:\sa\code\Johnson_Engine\libs\ltmem\ltmemtrack.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP9AB9.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP9ABA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\..\Johnson_Libs\stdlith" /I "..\..\sdk\inc" /I "..\..\runtime\shared\src" /I "..\..\runtime\kernel\src" /I "..\..\runtime\kernel\mem\src" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/" /Fp"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/ltmem.pch" /Yc"stdafx.h" /Fo"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/" /Fd"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem/" /FD /GZ /c 
+"D:\sa\code\Johnson_Engine\libs\ltmem\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP9ABA.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP9ABB.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\ltmem.lib" 
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem\ltmem.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem\ltmemdebug.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem\ltmemheap.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem\ltmemstats.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem\ltmemtrack.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_ltmem\StdAfx.obj
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSP9ABB.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ltmem.cpp
+ltmemdebug.cpp
+ltmemheap.cpp
+ltmemstats.cpp
+ltmemtrack.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: DLL_LTMsg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/ltmsg.res" /i "Lang\EN" /d "_DEBUG" "D:\sa\code\Johnson_Engine\Runtime\winbuild\ltmsg\Lang\EN\ltmsg.rc"" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP9E27.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /I "..\..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/" /Fp"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/DLL_LTMsg.pch" /YX /Fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/" /Fd"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/" /FD /c 
+"D:\sa\code\Johnson_Engine\Runtime\winbuild\ltmsg\Init.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSP9E27.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP9E28.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /profile /debug /machine:I386 /out:"..\..\..\..\Lib\Debug\LTMsg.dll" /implib:"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/LTMsg.lib" 
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg\Init.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg\ltmsg.res
+\sa\code\Lib\Debug\ltmem.lib
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSP9E28.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSP9E29.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\LTMsg.dll
+echo copy \sa\code\Lib\Debug\LTMsg.dll D:\sa\code\Johnson_Client
+copy \sa\code\Lib\Debug\LTMsg.dll D:\sa\code\Johnson_Client
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSP9E29.bat"
+Compiling resources...
+Compiling...
+Init.cpp
+Linking...
+<h3>Output Window</h3>
+Performing Custom Build Step on \sa\code\Lib\Debug\LTMsg.dll
+copy \sa\code\Lib\Debug\LTMsg.dll D:\sa\code\Johnson_Client
+        1 arquivo(s) copiado(s).
+Creating command line "bscmake.exe /nologo /o"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg/DLL_LTMsg.bsc"  \sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_LTMsg\Init.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+<h3>
+--------------------Configuration: Lib_Lith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPA1A5.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/" /Fp"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/Lib_Lith.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/" /Fd"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_Lith/" /FD /GZ /c 
+"D:\sa\code\Johnson_Libs\Lith\basehash.cpp"
+"D:\sa\code\Johnson_Libs\Lith\baselist.cpp"
+"D:\sa\code\Johnson_Libs\Lith\baselistcounter.cpp"
+"D:\sa\code\Johnson_Libs\Lith\dprintf.cpp"
+"D:\sa\code\Johnson_Libs\Lith\lith.cpp"
+"D:\sa\code\Johnson_Libs\Lith\lithbaselist.cpp"
+"D:\sa\code\Johnson_Libs\Lith\lithchunkallocator.cpp"
+"D:\sa\code\Johnson_Libs\Lith\lithsimpary.cpp"
+"D:\sa\code\Johnson_Libs\Lith\lithsimparystat.cpp"
+"D:\sa\code\Johnson_Libs\Lith\virtlist.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPA1A5.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPA1A6.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\Lib_Lith.lib" 
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\basehash.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\baselist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\baselistcounter.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\dprintf.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lith.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithbaselist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithchunkallocator.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithsimpary.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\lithsimparystat.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_Lith\virtlist.obj
+\sa\code\Lib\Debug\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSPA1A6.tmp"
+<h3>Output Window</h3>
+Compiling...
+basehash.cpp
+baselist.cpp
+baselistcounter.cpp
+dprintf.cpp
+lith.cpp
+lithbaselist.cpp
+lithchunkallocator.cpp
+lithsimpary.cpp
+lithsimparystat.cpp
+virtlist.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_RezMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPAB6B.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I "..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\..\Johnson_Libs\lith" /I "..\..\sdk\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr/" /Fp"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr/Lib_RezMgr.pch" /YX /Fo"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr/" /Fd"..\..\..\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr/" /FD /GZ /c 
+"D:\sa\code\Johnson_Engine\libs\rezmgr\rezfile.cpp"
+"D:\sa\code\Johnson_Engine\libs\rezmgr\rezhash.cpp"
+"D:\sa\code\Johnson_Engine\libs\rezmgr\rezmgr.cpp"
+"D:\sa\code\Johnson_Engine\libs\rezmgr\rezutils.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPAB6B.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPAB6C.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Debug\Lib_RezMgr.lib" 
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr\rezfile.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr\rezhash.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr\rezmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\libs\Lib_RezMgr\rezutils.obj
+\sa\code\Lib\Debug\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSPAB6C.tmp"
+<h3>Output Window</h3>
+Compiling...
+rezfile.cpp
+rezhash.cpp
+rezmgr.cpp
+rezutils.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_StdLith - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPAD03.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I ".\\" /I "..\STLPORT-4.0\STLPORT" /I "..\zlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/" /Fp"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/Lib_StdLith.pch" /YX /Fo"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/" /Fd"..\..\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith/" /FD /GZ /c 
+"D:\sa\code\Johnson_Libs\StdLith\abstractio.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\sys\win\compressedio.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\dynarray.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\fileio.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\goodlinklist.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\helpers.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\l_allocator.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\linklist.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\lithexception.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\memory.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\memoryio.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\stringholder.cpp"
+"D:\sa\code\Johnson_Libs\StdLith\struct_bank.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPAD03.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPAD04.tmp" with contents
+[
+/nologo /out:"..\..\Lib\Debug\Lib_StdLith.lib" 
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\abstractio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\compressedio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\dynarray.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\fileio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\goodlinklist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\helpers.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\l_allocator.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\linklist.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\lithexception.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\memory.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\memoryio.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\stringholder.obj
+\sa\code\Johnson_Built\Johnson_Libs\Debug\Lib_StdLith\struct_bank.obj
+\sa\code\Lib\Debug\ltmem.lib
+]
+Creating command line "link.exe -lib @C:\Users\veloso\AppData\Local\Temp\RSPAD04.tmp"
+<h3>Output Window</h3>
+Compiling...
+abstractio.cpp
+compressedio.cpp
+dynarray.cpp
+fileio.cpp
+goodlinklist.cpp
+helpers.cpp
+l_allocator.cpp
+linklist.cpp
+lithexception.cpp
+memory.cpp
+memoryio.cpp
+stringholder.cpp
+struct_bank.cpp
+Creating library...
+<h3>
+--------------------Configuration: Lib_Info - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPB09F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\\" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\libltinfo" /I "..\..\kernel\src" /I "..\..\shared\src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Libs\Lib_Info/" /Fp"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Libs\Lib_Info/Lib_Info.pch" /YX /Fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Libs\Lib_Info/" /Fd"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Libs\Lib_Info/" /FD /GZ /c 
+"D:\sa\code\Johnson_Engine\Runtime\info\src\outputredir.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\info\src\sys\win32\outputredir_win32.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPB09F.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\..\Lib\Debug\Lib_Info.lib"  \sa\code\Johnson_Built\Johnson_Engine\Debug\Libs\Lib_Info\outputredir.obj \sa\code\Johnson_Built\Johnson_Engine\Debug\Libs\Lib_Info\outputredir_win32.obj \sa\code\Lib\Debug\ltmem.lib "
+<h3>Output Window</h3>
+Compiling...
+outputredir.cpp
+outputredir_win32.cpp
+Creating library...
+<h3>
+--------------------Configuration: DLL_Server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/server.res" /d "_DEBUG" "D:\sa\code\Johnson_Engine\Runtime\winbuild\server\server.rc"" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPB36F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\server\src" /I "..\..\physics\src" /I "..\..\client\src" /I "..\..\sound\src" /I "..\..\kernel\src" /I "..\..\shared\src\sys\win" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src\sys\win" /I "..\..\kernel\net\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\Shared\src" /I "..\..\Model\src" /I "." /I "..\..\kernel\net" /I "..\..\World\src" /I "..\..\..\..\Johnson_Libs\stdlith" /I "..\..\..\libs\rezmgr" /I "..\..\..\..\Johnson_Libs\lith" /I "..\..\crtcompat" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\lithtemplate" /I "..\..\distrobj\src" /I "..\..\..\sdk\inc\autoview" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "DE_SERVER_COMPILE" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "STDLITH_ALLOC_OVERRIDE" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /Fp"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/DLL_Server.pch" /Yu"bdefs.h" /Fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /Fd"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /FD /c 
+"D:\sa\code\Johnson_Engine\Runtime\model\src\animtracker.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\classbind.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\classmgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\collision.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\compress.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\concommand.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\conparse.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\model\src\sys\d3d\d3d_model_load.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\de_mainworld.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\de_objects.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\dhashtable.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\engine_vars.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\findobj.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\ftserv.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\fullintersectline.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\game_serialize.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\gamemath.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\genericprop_setup.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\genltstream.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\geometry.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\geomroutines.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\impl_common.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\interlink.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\intersect_line.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\intersectsweptsphere.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\leech.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\light_table.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\lightmap_planes.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\net\src\localdriver.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\ltmessage.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\ltmessage_server.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\ltthread.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\lttimer.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\model\src\model.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\model\src\model_load.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\model\src\modelallocations.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\motion.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\moveobject.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\moveplayer.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\net\src\netmgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\nexus.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\net\src\NFPacketDebug.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\objectmgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\net\src\packet.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\parse_world_info.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\ratetracker.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\s_client.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\s_concommand.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\S_Intersect.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\s_net.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\s_object.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_consolestate.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_extradata.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_filemgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_loaderthread.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\serverde_impl.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\serverevent.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\servermgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\sloaderthread.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\smoveabstract.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\sound\src\sounddata.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\soundtrack.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\spritecontrolimpl.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\stacktrace.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\stdlterror.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\strtools.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\systeminfo.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\model\src\transformmaker.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\net\src\sys\win\udpdriver.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\world_blind_object_data.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\world_blocker_data.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\world_blocker_math.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\world_particle_blocker_data.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\world_tree.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\world_server_bsp.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\world_shared_bsp.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\modellt_impl.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_iltmodel.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_iltcommon.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\shared_iltcommon.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_iltsoundmgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\transformlt_impl.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\server\src\server_iltphysics.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\shared_iltphysics.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPB36F.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPB370.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\server\src" /I "..\..\physics\src" /I "..\..\client\src" /I "..\..\sound\src" /I "..\..\kernel\src" /I "..\..\shared\src\sys\win" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src\sys\win" /I "..\..\kernel\net\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\Shared\src" /I "..\..\Model\src" /I "." /I "..\..\kernel\net" /I "..\..\World\src" /I "..\..\..\..\Johnson_Libs\stdlith" /I "..\..\..\libs\rezmgr" /I "..\..\..\..\Johnson_Libs\lith" /I "..\..\crtcompat" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\lithtemplate" /I "..\..\distrobj\src" /I "..\..\..\sdk\inc\autoview" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "DE_SERVER_COMPILE" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "STDLITH_ALLOC_OVERRIDE" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /Fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /Fd"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /FD /c 
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\bindmgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\counter.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\io\src\sys\win\de_file.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\mem\src\sys\win\de_memory.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\world\src\de_nodes.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\debugging.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\dsys_interface.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\dutil.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\lthread.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltmodule.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltobjref.cpp"
+"D:\sa\code\Johnson_Engine\sdk\inc\ltquatbase.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\server_interface.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\streamsim.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\stringmgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\kernel\src\sys\win\timemgr.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\sound\src\wave.cpp"
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\interface_linkage.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPB370.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPB381.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\..\Johnson_Libs\STLPORT-4.0\STLPORT" /I "..\..\server\src" /I "..\..\physics\src" /I "..\..\client\src" /I "..\..\sound\src" /I "..\..\kernel\src" /I "..\..\shared\src\sys\win" /I "..\..\kernel\mem\src" /I "..\..\kernel\io\src" /I "..\..\kernel\src\sys\win" /I "..\..\kernel\net\src" /I "..\..\..\sdk\inc" /I "..\..\..\sdk\inc\compat" /I "..\..\Shared\src" /I "..\..\Model\src" /I "." /I "..\..\kernel\net" /I "..\..\World\src" /I "..\..\..\..\Johnson_Libs\stdlith" /I "..\..\..\libs\rezmgr" /I "..\..\..\..\Johnson_Libs\lith" /I "..\..\crtcompat" /I "..\..\mpm\src" /I "..\..\comm\src" /I "..\..\lithtemplate" /I "..\..\distrobj\src" /I "..\..\..\sdk\inc\autoview" /I "..\..\..\sdk\inc\physics" /I "..\..\..\sdk\inc\state_mgr" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "DE_SERVER_COMPILE" /D "DIRECTENGINE_COMPILE" /D "_MBCS" /D "STDLITH_ALLOC_OVERRIDE" /D "LT15_COMPAT" /D "NO_PRAGMA_LIBS" /D "__D3D" /D "__D3DREND" /FR"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /Fp"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/DLL_Server.pch" /Yc"bdefs.h" /Fo"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /Fd"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/" /FD /c 
+"D:\sa\code\Johnson_Engine\Runtime\shared\src\bdefs.cpp"
+]
+Creating command line "cl.exe @C:\Users\veloso\AppData\Local\Temp\RSPB381.tmp" 
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPB382.tmp" with contents
+[
+winmm.lib dxguid.lib dplayx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib LIB_Lith.lib Lib_StdLith.lib Lib_RezMgr.lib lib_info.lib /nologo /subsystem:windows /dll /profile /debug /machine:I386 /nodefaultlib:"libcd.lib" /nodefaultlib:"libc.lib" /def:".\server.def" /out:"..\..\..\..\Lib\Debug\server.dll" /implib:"..\..\..\..\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server/server.lib" /libpath:"..\..\..\..\Lib\Debug" 
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\animtracker.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\bdefs.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\bindmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\classbind.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\classmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\collision.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\compress.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\concommand.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\conparse.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\counter.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\d3d_model_load.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_file.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_mainworld.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_memory.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_nodes.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\de_objects.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\debugging.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\dhashtable.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\dsys_interface.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\dutil.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\engine_vars.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\findobj.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ftserv.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\fullintersectline.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\game_serialize.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\gamemath.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\genericprop_setup.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\genltstream.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\geometry.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\geomroutines.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\impl_common.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\interlink.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\intersect_line.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\intersectsweptsphere.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\leech.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\light_table.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\lightmap_planes.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\localdriver.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\lthread.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltmessage.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltmessage_server.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltmodule.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltobjref.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltquatbase.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ltthread.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\lttimer.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\model.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\model_load.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\modelallocations.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\motion.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\moveobject.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\moveplayer.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\netmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\nexus.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\NFPacketDebug.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\objectmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\packet.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\parse_world_info.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\ratetracker.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_client.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_concommand.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\S_Intersect.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_net.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\s_object.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_consolestate.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_extradata.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_filemgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_interface.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_loaderthread.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\serverde_impl.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\serverevent.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\servermgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\sloaderthread.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\smoveabstract.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\sounddata.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\soundtrack.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\spritecontrolimpl.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\stacktrace.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\stdlterror.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\streamsim.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\stringmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\strtools.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\systeminfo.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\timemgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\transformmaker.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\udpdriver.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\wave.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_blind_object_data.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_blocker_data.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_blocker_math.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_particle_blocker_data.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_tree.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_server_bsp.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\world_shared_bsp.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\modellt_impl.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltmodel.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltcommon.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\shared_iltcommon.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltsoundmgr.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\transformlt_impl.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server_iltphysics.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\shared_iltphysics.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\interface_linkage.obj
+\sa\code\Johnson_Built\Johnson_Engine\Debug\Runtime\DLL_Server\server.res
+\sa\code\Lib\Debug\Lib_Lith.lib
+\sa\code\Lib\Debug\Lib_RezMgr.lib
+\sa\code\Lib\Debug\Lib_StdLith.lib
+\sa\code\Lib\Debug\Lib_Info.lib
+\sa\code\Lib\Debug\ltmem.lib
+]
+Creating command line "link.exe @C:\Users\veloso\AppData\Local\Temp\RSPB382.tmp"
+Creating temporary file "C:\Users\veloso\AppData\Local\Temp\RSPB383.bat" with contents
+[
+@echo off
+Rem IncrediBuild_OutputFile \sa\code\Lib\Debug\server.dll
+echo copy \sa\code\Lib\Debug\server.dll D:\sa\code\Johnson_Client
+copy \sa\code\Lib\Debug\server.dll D:\sa\code\Johnson_Client
+]
+Creating command line "C:\Users\veloso\AppData\Local\Temp\RSPB383.bat"
+Compiling resources...
+Compiling...
+bdefs.cpp
+Compiling...
+animtracker.cpp
+classbind.cpp
+classmgr.cpp
+collision.cpp
+compress.cpp
+concommand.cpp
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(109) : error C2011: '_D3DCOLORVALUE' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(128) : error C2011: '_D3DRECT' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(147) : error C2011: '_D3DVECTOR' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(416) : error C2011: '_D3DMATRIX' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(615) : error C2011: '_D3DLIGHTTYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(749) : error C2011: '_D3DSHADEMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(756) : error C2011: '_D3DFILLMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(763) : error C2011: '_D3DLINEPATTERN' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(778) : error C2011: '_D3DBLEND' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(807) : error C2011: '_D3DTEXTUREADDRESS' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(815) : error C2011: '_D3DCULL' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(822) : error C2011: '_D3DCMPFUNC' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(834) : error C2011: '_D3DFOGMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(858) : error C2011: '_D3DPRIMITIVETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(878) : error C2011: '_D3DTRANSFORMSTATETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(896) : error C2011: '_D3DRENDERSTATETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(370) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(371) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(373) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(443) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(448) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(449) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+d:\sa\code\johnson_engine\runtime\sound\src\soundmgr.h(58) : fatal error C1083: Cannot open include file: 'dmusici.h': No such file or directory
+conparse.cpp
+d3d_model_load.cpp
+de_mainworld.cpp
+de_objects.cpp
+dhashtable.cpp
+engine_vars.cpp
+findobj.cpp
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(109) : error C2011: '_D3DCOLORVALUE' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(128) : error C2011: '_D3DRECT' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(147) : error C2011: '_D3DVECTOR' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(416) : error C2011: '_D3DMATRIX' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(615) : error C2011: '_D3DLIGHTTYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(749) : error C2011: '_D3DSHADEMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(756) : error C2011: '_D3DFILLMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(763) : error C2011: '_D3DLINEPATTERN' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(778) : error C2011: '_D3DBLEND' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(807) : error C2011: '_D3DTEXTUREADDRESS' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(815) : error C2011: '_D3DCULL' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(822) : error C2011: '_D3DCMPFUNC' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(834) : error C2011: '_D3DFOGMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(858) : error C2011: '_D3DPRIMITIVETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(878) : error C2011: '_D3DTRANSFORMSTATETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(896) : error C2011: '_D3DRENDERSTATETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(370) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(371) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(373) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(443) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(448) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(449) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+d:\sa\code\johnson_engine\runtime\sound\src\soundmgr.h(58) : fatal error C1083: Cannot open include file: 'dmusici.h': No such file or directory
+ftserv.cpp
+fullintersectline.cpp
+game_serialize.cpp
+gamemath.cpp
+genericprop_setup.cpp
+genltstream.cpp
+geometry.cpp
+Generating Code...
+Compiling...
+geomroutines.cpp
+impl_common.cpp
+interlink.cpp
+intersect_line.cpp
+intersectsweptsphere.cpp
+leech.cpp
+light_table.cpp
+lightmap_planes.cpp
+localdriver.cpp
+ltmessage.cpp
+ltmessage_server.cpp
+ltthread.cpp
+lttimer.cpp
+model.cpp
+model_load.cpp
+modelallocations.cpp
+motion.cpp
+moveobject.cpp
+moveplayer.cpp
+netmgr.cpp
+Generating Code...
+Compiling...
+nexus.cpp
+NFPacketDebug.cpp
+objectmgr.cpp
+packet.cpp
+parse_world_info.cpp
+ratetracker.cpp
+s_client.cpp
+s_concommand.cpp
+S_Intersect.cpp
+s_net.cpp
+s_object.cpp
+server_consolestate.cpp
+server_extradata.cpp
+server_filemgr.cpp
+server_loaderthread.cpp
+serverde_impl.cpp
+serverevent.cpp
+servermgr.cpp
+sloaderthread.cpp
+smoveabstract.cpp
+Generating Code...
+Compiling...
+sounddata.cpp
+soundtrack.cpp
+spritecontrolimpl.cpp
+stacktrace.cpp
+stdlterror.cpp
+strtools.cpp
+systeminfo.cpp
+transformmaker.cpp
+udpdriver.cpp
+world_blind_object_data.cpp
+world_blocker_data.cpp
+world_blocker_math.cpp
+world_particle_blocker_data.cpp
+world_tree.cpp
+world_server_bsp.cpp
+world_shared_bsp.cpp
+modellt_impl.cpp
+server_iltmodel.cpp
+server_iltcommon.cpp
+shared_iltcommon.cpp
+Generating Code...
+Compiling...
+server_iltsoundmgr.cpp
+transformlt_impl.cpp
+server_iltphysics.cpp
+shared_iltphysics.cpp
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(109) : error C2011: '_D3DCOLORVALUE' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(128) : error C2011: '_D3DRECT' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(147) : error C2011: '_D3DVECTOR' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(416) : error C2011: '_D3DMATRIX' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(615) : error C2011: '_D3DLIGHTTYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(749) : error C2011: '_D3DSHADEMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(756) : error C2011: '_D3DFILLMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(763) : error C2011: '_D3DLINEPATTERN' : 'struct' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(778) : error C2011: '_D3DBLEND' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(807) : error C2011: '_D3DTEXTUREADDRESS' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(815) : error C2011: '_D3DCULL' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(822) : error C2011: '_D3DCMPFUNC' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(834) : error C2011: '_D3DFOGMODE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(858) : error C2011: '_D3DPRIMITIVETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(878) : error C2011: '_D3DTRANSFORMSTATETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\d3dtypes.h(896) : error C2011: '_D3DRENDERSTATETYPE' : 'enum' type redefinition
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(370) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(371) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(373) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(443) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(448) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+c:\program files (x86)\microsoft visual studio\vc98\include\dsound.h(449) : error C2061: syntax error : identifier 'LPD3DVECTOR'
+d:\sa\code\johnson_engine\runtime\sound\src\soundmgr.h(58) : fatal error C1083: Cannot open include file: 'dmusici.h': No such file or directory
+Generating Code...
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Engine.exe - 69 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
